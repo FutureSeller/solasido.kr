@@ -1,34 +1,37 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    siteName: 'Portfolio',
+    siteUrl: 'https://fox-portfolio.vercel.app',
+    title: 'Portfolio',
+    description: 'Hansol Chung\'s Portfolio',
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-typescript',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-plugin-sass',
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        implementation: require('sass'),
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-typegen',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        emitSchema: {
+          'src/__generated__/gatsby-schema.graphql': true,
+        },
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'images',
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
+    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
   ],
 }
