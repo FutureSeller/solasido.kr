@@ -20,7 +20,7 @@ export default function TitleSlideIn() {
       top: calc(50% - 1.3rem);
       left: -20rem;
       width: 90rem;
-      height: 1.8rem;
+      height: 1.9rem;
       background-color: ${color.solRed};
       animation: ${slideIn} 1s forwards;
 
@@ -31,8 +31,8 @@ export default function TitleSlideIn() {
 
       ${bp.mq[bp.BreakPoint.MOBILE]} {
         width: 48rem;
-        height: 0.9rem;
-        top: calc(50% - 1rem);
+        height: 1rem;
+        top: calc(50% - 0.7rem);
       }
     `}/>
   )
