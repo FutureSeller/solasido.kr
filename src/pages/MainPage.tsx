@@ -72,7 +72,7 @@ export default function MainPage() {
       <Subtitle isAbove>Branding</Subtitle>
       <Subtitle>Identity Design</Subtitle>
       <Logo customCss={css`
-        margin-top: 17rem;
+        margin-top: 14rem;
 
         ${bp.mq[bp.BreakPoint.MOBILE]} {
           width: 4rem;
