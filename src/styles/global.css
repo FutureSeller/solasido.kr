@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: 'lovelo';
-  src: url('/fonts/lovelo') format('otf');
+  src: url('/fonts/lovelo.woff2') format('woff2'), url('/fonts/lovelo.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

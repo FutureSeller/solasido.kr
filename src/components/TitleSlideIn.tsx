@@ -17,7 +17,7 @@ export default function TitleSlideIn() {
   return (
     <div css={css`
       position: absolute;
-      top: calc(50% - 2.2rem);
+      top: calc(50% - 1.3rem);
       left: -20rem;
       width: 90rem;
       height: 1.8rem;

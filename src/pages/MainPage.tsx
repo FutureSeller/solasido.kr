@@ -28,17 +28,17 @@ const Subtitle = styled.p <{ isAbove?: boolean }>`
   font-family: 'lovelo';
   font-size: 3.6rem;
   font-weight: 900;
-  width: 29rem;
+  width: 33rem;
   border-bottom: 0.4rem solid ${color.solBlack};
   margin-top: ${({ isAbove }) => isAbove ? '7.5rem' : '2.4rem'};
 
   ${bp.mq[bp.BreakPoint.TABLET]} {
-    width: 26rem;
+    width: 28rem;
     font-size: 3.2rem;
   }
 
   ${bp.mq[bp.BreakPoint.MOBILE]} {
-    width: 16rem;
+    width: 18rem;
     font-size: 2rem;
     border-bottom: 0.3rem solid ${color.solBlack};
     margin-top: ${({ isAbove }) => isAbove ? '13rem' : '0.8rem'};
@@ -46,7 +46,7 @@ const Subtitle = styled.p <{ isAbove?: boolean }>`
 `
 
 const Slogan = styled.p`
-  font-family: 'Sources Sans Pro';
+  font-family: 'Source Sans Pro';
   font-size: 2.6rem;
   font-weight: 600;
   margin-top: 5.2rem;
