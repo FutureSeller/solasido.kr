@@ -1,4 +1,4 @@
-{
+{ 
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
@@ -13,7 +13,8 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "noEmit": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["@emotion/react/types/css-prop"]
   },
   "include": ["./src/**/*"],
   "exclude": ["node_modules", "public", ".cache"]

@@ -1,19 +1,32 @@
-import './Layout.scss'
+/** @jsx jsx */
+import { ReactNode } from 'react'
+import { jsx } from '@emotion/react'
+import styled from '@emotion/styled'
 
-import React from 'react'
+import { bp } from '../styles/responsive'
+
+const Wrapper = styled.div`
+  width: calc(100% - 6rem);
+  height: 100vh;
+  padding: 25rem 15rem 0;
+
+  ${bp.mq[bp.BreakPoint.LAPTOP]} {
+    padding: 25rem 10rem;
+  }
+
+  ${bp.mq[bp.BreakPoint.TABLET]} {
+    padding: 25rem 6rem;
+  }
+
+  ${bp.mq[bp.BreakPoint.MOBILE]} {
+    padding: 15rem 3rem;
+  }
+`
 
 interface Props {
-  children: React.ReactNode | React.ReactNode[]
+  children: ReactNode | ReactNode[]
 }
 
 export default function Layout({ children }: Props) {
-  return (
-    <div>
-      <main>{children}</main>
-      <footer style={{ marginTop: '2rem' }}>
-        © {new Date().getFullYear()}, Built with &nbsp;
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
-    </div>
-  )
+  return <Wrapper>{children}</Wrapper>
 }

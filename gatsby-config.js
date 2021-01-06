@@ -8,12 +8,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-typescript',
     {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        implementation: require('sass'),
-      },
-    },
-    {
       resolve: 'gatsby-plugin-typegen',
       options: {
         emitSchema: {
@@ -21,17 +15,18 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: 'images',
-    //     path: `${__dirname}/src/images`,
-    //   },
-    // },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/static/assets`,
+      },
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     'gatsby-plugin-robots-txt',
+    'gatsby-plugin-emotion',
   ],
 }

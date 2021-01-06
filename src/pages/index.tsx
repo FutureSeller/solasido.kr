@@ -1,18 +1,28 @@
-import React from 'react'
-import { Link } from 'gatsby'
+/** @jsx jsx */
+import { Fragment } from 'react'
+import { jsx } from '@emotion/react'
+import styled from '@emotion/styled'
 
-import Layout from '../components/Layout'
 import SEO from '../components/SEO'
+import Navigation from '../components/Navigation'
+import MainPage from './MainPage'
+import Aside from '../components/Aside'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1 style={{ fontFamily: 'lovelo' }}>Hi people</h1>
-    <p style={{ fontFamily: 'Source Sans Pro'}}>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }} />
-    <Link to="/404/">Go to page 2</Link> <br />
-  </Layout>
-)
+const Layout = styled.div`
+  width: 100%;
+  height: 100%;
+  margin: 0;
+`
 
-export default IndexPage
+export default function IndexPage() {
+  return (
+    <Fragment>
+      <SEO title="Portfolio" />
+      <Layout>
+        <Navigation />
+        <MainPage />
+        <Aside />
+      </Layout>
+    </Fragment>
+  )
+}
