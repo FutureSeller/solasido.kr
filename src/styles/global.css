@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 
 @font-face {
   font-family: 'lovelo';
   src: url('/fonts/lovelo.woff2') format('woff2'), url('/fonts/lovelo.woff') format('woff');
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal;
 }
 
