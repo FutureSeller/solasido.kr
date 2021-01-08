@@ -4,5 +4,5 @@
  * See: https://www.gatsbyjs.com/docs/browser-apis/
  */
 
- import './src/styles/reset.css'
- import './src/styles/global.css'
+import './src/styles/reset.css'
+import './src/styles/global.css'
