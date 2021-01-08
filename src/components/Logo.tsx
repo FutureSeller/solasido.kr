@@ -1,15 +1,10 @@
 /** @jsx jsx */
-// import React from 'react'
-import { jsx } from '@emotion/react'
-import { Interpolation, Theme } from '@emotion/react'
+import { jsx, css } from '@emotion/react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-interface Props {
-  style?: { [key: string]: string | number }
-  customCss?: Interpolation<Theme>
-}
+import { bp } from '../styles/responsive'
 
-export default function Logo({ style, customCss }: Props) {
+export default function Logo() {
   const data = useStaticQuery<GatsbyTypes.LogoQuery>(graphql`
     query Logo {
       logo: file(relativePath: { eq: "logo.svg" }) {
@@ -20,6 +15,14 @@ export default function Logo({ style, customCss }: Props) {
   `)
   
   return data?.logo && data?.logo?.extension === 'svg'
-    ? <img src={data?.logo?.publicURL} alt="logo" style={style} css={customCss}/>
+    ? <img
+      src={data?.logo?.publicURL}
+      alt="logo"
+      css={css`
+        margin-top: 14rem;
+        ${bp.mq[bp.BreakPoint.MOBILE]} {
+          width: 4rem;
+          margin-top: 11rem;
+      }`} />
     : null
 }

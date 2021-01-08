@@ -1,10 +1,10 @@
 /** @jsx jsx */
-import { jsx, css } from '@emotion/react'
+import { jsx, keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
 
 import Layout from '../components/Layout'
 import Logo from '../components/Logo'
-import TitleSlideIn from '../components/TitleSlideIn'
+import Interests from '../components/Interests'
 
 import { color } from '../styles/color'
 import { bp } from '../styles/responsive'
@@ -24,24 +24,33 @@ const Title = styled.h1`
   }
 `
 
-const Subtitle = styled.p <{ isAbove?: boolean }>`
-  font-family: 'lovelo';
-  font-size: 3.6rem;
-  font-weight: 900;
-  width: 33rem;
-  border-bottom: 0.4rem solid ${color.solBlack};
-  margin-top: ${({ isAbove }) => isAbove ? '7.5rem' : '2.4rem'};
+const slideIn = keyframes`
+  0% {
+    transform: translateX(-900px);
+  }
+  100% { 
+    transform: translateX(0);
+  }
+`
+
+const SlideinUnderline = styled.div`
+  position: absolute;
+  top: calc(50% - 1.3rem);
+  left: -20rem;
+  width: 90rem;
+  height: 1.9rem;
+  background-color: ${color.solRed};
+  animation: ${slideIn} 1s forwards;
 
   ${bp.mq[bp.BreakPoint.TABLET]} {
-    width: 28rem;
-    font-size: 3.2rem;
+    width: 73rem;
+    height: 1.5rem;
   }
 
   ${bp.mq[bp.BreakPoint.MOBILE]} {
-    width: 18rem;
-    font-size: 2rem;
-    border-bottom: 0.3rem solid ${color.solBlack};
-    margin-top: ${({ isAbove }) => isAbove ? '13rem' : '0.8rem'};
+    width: 48rem;
+    height: 1rem;
+    top: calc(50% - 0.7rem);
   }
 `
 
@@ -64,21 +73,13 @@ const Slogan = styled.p`
 
 export default function MainPage() {
   return (
-    <Layout>
+    <Layout id="#">
       <Title>
-        Porfolio
-        <TitleSlideIn />
+        <span>Porfolio</span>
+        <SlideinUnderline />
       </Title>
-      <Subtitle isAbove>Branding</Subtitle>
-      <Subtitle>Identity Design</Subtitle>
-      <Logo customCss={css`
-        margin-top: 14rem;
-
-        ${bp.mq[bp.BreakPoint.MOBILE]} {
-          width: 4rem;
-          margin-top: 11rem;
-        }
-      `} />
+      <Interests pathname="main" />
+      <Logo />
       <Slogan>Better Design, Better Life.</Slogan>
     </Layout>
   )
