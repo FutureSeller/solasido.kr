@@ -4,9 +4,11 @@ import { jsx } from '@emotion/react'
 import styled from '@emotion/styled'
 
 import SEO from '../components/SEO'
-import Navigation from '../components/Navigation'
+import LeftSidebar from '../components/LeftSidebar'
+import RightSidebar from '../components/RightSidebar'
 import MainPage from './MainPage'
-import Aside from '../components/Aside'
+import ContactPage from './ContactPage'
+
 
 const Layout = styled.div`
   width: 100%;
@@ -19,9 +21,10 @@ export default function IndexPage() {
     <Fragment>
       <SEO title="Portfolio" />
       <Layout>
-        <Navigation />
+        <LeftSidebar />
         <MainPage />
-        <Aside />
+        <ContactPage />
+        <RightSidebar />
       </Layout>
     </Fragment>
   )
