@@ -13,12 +13,12 @@ const ContactInfoWrapper = styled.ul`
   & li:first-of-type {
     margin-right: 11rem;
 
-    ${bp.mq[bp.BreakPoint.MOBILE]} {
+    ${bp.mq[bp.BreakPoint.TABLET]} {
       margin-bottom: 1.4rem;
     }
   }
 
-  ${bp.mq[bp.BreakPoint.MOBILE]} {
+  ${bp.mq[bp.BreakPoint.TABLET]} {
     flex-direction: column;
     margin-top: 4.7rem;
   }
