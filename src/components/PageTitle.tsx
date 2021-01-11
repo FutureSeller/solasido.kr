@@ -38,7 +38,7 @@ const slideIn = keyframes`
 `
 
 const SlideinUnderline = styled.div`
-  width: 9rem;
+  width: 8rem;
   height: 0.8rem;
   background-color: ${color.solRed};
   animation: ${slideIn} 1s forwards;

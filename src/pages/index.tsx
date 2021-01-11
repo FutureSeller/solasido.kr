@@ -7,6 +7,7 @@ import SEO from '../components/SEO'
 import LeftSidebar from '../components/LeftSidebar'
 import RightSidebar from '../components/RightSidebar'
 import MainPage from './MainPage'
+import AboutPage from './AboutPage'
 import ContactPage from './ContactPage'
 
 
@@ -23,6 +24,7 @@ export default function IndexPage() {
       <Layout>
         <LeftSidebar />
         <MainPage />
+        <AboutPage />
         <ContactPage />
         <RightSidebar />
       </Layout>

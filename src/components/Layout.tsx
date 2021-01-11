@@ -15,11 +15,12 @@ const LayoutFragment = styled.div`
   }
 
   ${bp.mq[bp.BreakPoint.TABLET]} {
-    padding: 25rem 6rem 15rem;
+    padding: 25rem 3rem 15rem;
   }
 
   ${bp.mq[bp.BreakPoint.MOBILE]} {
-    padding: 8rem 3rem;
+    width: 100%;
+    padding: 15rem 1rem;
   }
 `
 
