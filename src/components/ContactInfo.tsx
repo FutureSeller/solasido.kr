@@ -10,7 +10,7 @@ const ContactInfoWrapper = styled.ul`
   margin-top: 5.6rem;
   font-family: 'Source Sans Pro';
 
-  & :first-child {
+  & li:first-of-type {
     margin-right: 11rem;
 
     ${bp.mq[bp.BreakPoint.MOBILE]} {
