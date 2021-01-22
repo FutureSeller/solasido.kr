@@ -31,3 +31,17 @@ a {
 a:visited {
   text-decoration: none;
 }
+
+.ReactModal__Body--open {
+  position: static;
+  overflow-y: scroll;
+}
+
+.ReactModal__Html--open {
+  overflow-y: hidden;
+}
+
+.ReactModalPortal {
+  position: fixed;
+  z-index: 1 !important;
+}
