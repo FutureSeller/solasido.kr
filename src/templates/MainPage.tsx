@@ -3,7 +3,6 @@ import { jsx, keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
 
 import Layout from '../components/Layout'
-import Logo from '../components/Logo'
 import Interests from '../components/Interests'
 
 import { color } from '../styles/color'
@@ -62,7 +61,7 @@ const Signature = styled.p`
   color: ${color.solRed};
   vertical-align: top;
   line-height: 0.5;
-  margin-top: 23rem;
+  margin-top: 18rem;
 
   ${bp.mq[bp.BreakPoint.TABLET]} {
     font-size: 18rem;
@@ -70,7 +69,7 @@ const Signature = styled.p`
 
   ${bp.mq[bp.BreakPoint.MOBILE]} {
     font-size: 14rem;
-    margin-top: 16rem;
+    margin-top: 14rem;
   }
 `
 

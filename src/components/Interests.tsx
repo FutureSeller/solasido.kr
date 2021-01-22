@@ -9,11 +9,11 @@ const Wrapper = styled.div<{ pathname: string }>`
   margin-top: ${({ pathname }) => pathname === 'main' ? '5.1rem' : '2.8rem'};
 
   ${bp.mq[bp.BreakPoint.TABLET]} {
-    margin-top: 2.2rem;
+    margin-top: 5rem;
   }
 
   ${bp.mq[bp.BreakPoint.MOBILE]} {
-    margin-top: ${({ pathname }) => pathname === 'main' ? '12.2rem' : '2.8rem'};
+    margin-top: ${({ pathname }) => pathname === 'main' ? '10rem' : '2.8rem'};
   }
 `
 
