@@ -6,3 +6,14 @@
 
 import './src/styles/reset.css'
 import './src/styles/global.css'
+
+export const shouldUpdateScroll = ({
+  routerProps: { location },
+  getSavedScrollPosition,
+}) => {
+  if (location.hash) {
+    return true
+  }
+
+  return getSavedScrollPosition(location)
+}
