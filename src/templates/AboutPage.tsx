@@ -15,13 +15,14 @@ const Indent = styled.div`
 `
 
 const WhoAmI = styled.p`
-  width: 35rem;
+  width: 36rem;
   font-family: 'Noto Sans KR';
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 3.6rem;
 
   ${bp.mq[bp.BreakPoint.TABLET]} {
+    width: 30rem;
     font-size: 2rem;
     line-height: 3.2rem;
   }
@@ -83,7 +84,7 @@ export default function AboutPage() {
       <Indent>
         <Panel>
           <div>
-            <WhoAmI>브랜드의 핵심 가치와 아이덴티티를 명료하게 전달하는 디자이너</WhoAmI>
+            <WhoAmI>브랜드의 핵심 가치와 아이덴티티를 명확하게 전달하는 디자이너</WhoAmI>
             <Moto>Simple is the best.</Moto>
           </div>
           <SloganWrapper>
