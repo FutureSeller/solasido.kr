@@ -46,10 +46,7 @@ export default function Thumbnail({ title, category, pathname, thumbnail }: {
 }) {
   return (
     <div>
-      <Link
-        to={`/${pathname?.split('.')[0].replace('-thumbnail', '')}`}
-        state={{ isModal: true }}
-      >
+      <Link to={`/${pathname?.split('.')[0].replace('-thumbnail', '')}`}>
         <ImageWrapper>
           {thumbnail &&
             <Img

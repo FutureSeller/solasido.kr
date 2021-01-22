@@ -1,14 +1,22 @@
 /** @jsx jsx */
-import { jsx, css } from '@emotion/react'
+import { jsx } from '@emotion/react'
 import styled from '@emotion/styled'
 
 import Layout from '../components/Layout'
-import Indent from '../components/Indent'
 import PageTitle from '../components/PageTitle'
 import ContactInfo from '../components/ContactInfo'
 import Interests from '../components/Interests'
 
 import { bp } from '../styles/responsive'
+
+const Indent = styled.div`
+  padding-left: 1rem;
+`
+
+const ContactPageWrapper = styled.div`
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+`
 
 const KoreanName = styled.p`
   font-family: 'Noto Sans KR';
@@ -47,18 +55,15 @@ const EnglishName = styled.p`
 export default function ContactPage() {
   return (
     <Layout id="contact">
-      <div css={css`
-        padding-top: 10rem;
-        padding-bottom: 5rem;
-      `}>
+      <ContactPageWrapper>
         <PageTitle>Contact</PageTitle>
-        <Indent >
+        <Indent>
           <Interests pathname="contact" />
           <KoreanName>정한솔</KoreanName>
           <EnglishName>Chung Hansol</EnglishName>
           <ContactInfo />
         </Indent>
-      </div>
+      </ContactPageWrapper>
     </Layout>
   )
 }

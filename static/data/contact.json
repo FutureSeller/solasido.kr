@@ -1,0 +1,17 @@
+[
+  { 
+    "title": "Mail me at", 
+    "link": "mailto:sol_asido_@naver.com", 
+    "text": "sol_asido_@naver.com" 
+  },
+  { 
+    "title": "Linkedin", 
+    "link": "https://www.linkedin.com/in/solasido", 
+    "text": "www.linkedin.com/in/solasido" 
+  },
+  { 
+    "title": "Resume", 
+    "link": "/resume.pdf", 
+    "text": "click here" 
+  }
+]

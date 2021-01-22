@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/react'
 import styled from '@emotion/styled'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import { color } from '../styles/color'
 import { bp } from '../styles/responsive'
@@ -53,21 +54,28 @@ const Link = styled.a`
   }
 `
 
-const CONTACT_INFO = [
-  { title: 'Mail me at', link: 'mailto:sol_asido_@naver.com' },
-  { title: 'Linkedin', link: 'https://www.linkedin.com/in/solasido' },
-  { title: 'Resume', link: '/resume.pdf' }
-]
-
 export default function ContactInfo() {
+  const contactInfo = useStaticQuery<GatsbyTypes.ContactInfoQuery>(graphql`
+    query ContactInfo {
+      allContactJson {
+        edges {
+          node {
+            id
+            title
+            link
+            text
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <ContactInfoWrapper> 
-      {CONTACT_INFO.map(({ title, link }) => (
-        <li key={title}>
+      {contactInfo.allContactJson.edges.map(({ node: { id, title, link, text } }) => (
+        <li key={id}>
           <Title>{title}</Title>
-          <Link href={link} target="_blank" rel="noreferrer">
-            {link.replace(/(mailto:|https:\/\/)/, '').replace('/resume.pdf', 'click here')}
-          </Link>
+          <Link href={link} target="_blank" rel="noreferrer">{text}</Link>
         </li>
       ))}
     </ContactInfoWrapper>

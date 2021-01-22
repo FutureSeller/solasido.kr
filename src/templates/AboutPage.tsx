@@ -3,13 +3,16 @@ import { jsx } from '@emotion/react'
 import styled from '@emotion/styled'
 
 import Layout from '../components/Layout'
-import Indent from '../components/Indent'
 import PageTitle from '../components/PageTitle'
 import Quotes from '../components/Quotes'
 import SloganImage from '../components/SloganImage'
 
 import { color } from '../styles/color'
 import { bp } from '../styles/responsive'
+
+const Indent = styled.div`
+  padding-left: 1rem;
+`
 
 const WhoAmI = styled.p`
   width: 35rem;

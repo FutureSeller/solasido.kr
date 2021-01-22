@@ -41,9 +41,9 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
       path: `/${project.node.pathname.split('.')[0].replace('-thumbnail', '')}`,
       component: path.resolve(__dirname, 'src/templates/ModalPage.tsx'),
       context: {
-        detailPage: details.find(
-          detail => detail.data.detail.childImageSharp.fluid.src.endsWith(project.node.pathname.replace('-thumbnail', ''))
-        )
+        detail: details.find(
+          ({ data }) => data.detail.childImageSharp.fluid.src.endsWith(project.node.pathname.replace('-thumbnail', ''))
+        ).data.detail.childImageSharp
       },
     })
   })
