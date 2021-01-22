@@ -55,6 +55,25 @@ const SlideinUnderline = styled.div`
   }
 `
 
+const Signature = styled.p`
+  font-family: 'Georgia Script';
+  font-size: 20rem;
+  font-weight: 500;
+  color: ${color.solRed};
+  vertical-align: top;
+  line-height: 0.5;
+  margin-top: 23rem;
+
+  ${bp.mq[bp.BreakPoint.TABLET]} {
+    font-size: 18rem;
+  }
+
+  ${bp.mq[bp.BreakPoint.MOBILE]} {
+    font-size: 14rem;
+    margin-top: 16rem;
+  }
+`
+
 const Slogan = styled.p`
   font-family: 'Source Sans Pro';
   font-size: 2.6rem;
@@ -79,7 +98,7 @@ export default function MainPage() {
         <SlideinUnderline />
       </Title>
       <Interests pathname="main" />
-      <Logo />
+      <Signature>solasido</Signature>
       <Slogan>Better Design, Better Life.</Slogan>
     </Layout>
   )
