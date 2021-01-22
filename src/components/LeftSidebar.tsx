@@ -1,11 +1,14 @@
 /** @jsx jsx */
+import { useState } from 'react'
 import { jsx } from '@emotion/react'
-import { useLocation } from '@reach/router'
-import { Link, GatsbyLinkProps } from 'gatsby'
+import { useLocation, navigate } from '@reach/router'
+import { GatsbyLinkProps } from 'gatsby'
 import styled from '@emotion/styled'
+import { useScrollYPosition } from 'react-use-scroll-position'
 
 import { color } from '../styles/color'
 import { bp } from '../styles/responsive'
+import { useEffect } from 'react'
 
 const Nav = styled.nav`
   display: flex;
@@ -30,33 +33,52 @@ const Navigator = styled.div`
   height: 8.6rem;
 `
 
-const MarkedLink = ({ to, relativePath }: GatsbyLinkProps<{to: string}> & { relativePath: string }) => (
-  <Link
-    to={to}
+const MarkedLink = ({ to, enabled }: GatsbyLinkProps<{ to: string }> & { enabled: boolean }) => (
+  <button
     css={{
       display: 'inline-block',
       textAlign: 'center',
       height: 12,
       width: 12,
-      backgroundColor: to === relativePath ? color.solRed : color.solWhite,
+      backgroundColor: enabled ? color.solRed : color.solWhite,
       border: `0.2rem solid ${color.solRed}`,
       borderRadius: '100%',
     }}
+    onClick={() => navigate(to)}
   />
 )
 
-export default function LeftSidebar() {
-  const { pathname, hash } = useLocation()
-  const relativePath = `${pathname}${hash}`
+const getIndex = (scrollY: number, heights: number[]) => heights.findIndex(height => height >= scrollY) ?? 0
 
-  return (
+enum PageName {
+  MAIN,
+  ABOUT,
+  PROJECTS,
+  CONTACT
+}
+
+export default function LeftSidebar() {
+  const { pathname } = useLocation()
+  const scrollY = useScrollYPosition()
+  const [heights, setHeights] = useState<number[]>([])
+
+  useEffect(() => {
+    setHeights([
+      document.getElementById('main')?.clientHeight ?? 0,
+      document.getElementById('about')?.clientHeight ?? 0,
+      document.getElementById('projects')?.clientHeight ?? 0,
+      document.getElementById('contact')?.clientHeight ?? 0,
+    ].map((s => (v: number) => s += v)(0)))
+  }, [])
+
+  return pathname === '/' ? (
     <Nav>
       <Navigator>
-        <MarkedLink to="/" relativePath={relativePath} />
-        <MarkedLink to="/#about" relativePath={relativePath} />
-        <MarkedLink to="/#projects" relativePath={relativePath} />
-        <MarkedLink to="/#contact" relativePath={relativePath} />
+        <MarkedLink to="/#main" enabled={getIndex(scrollY, heights) === PageName.MAIN} />
+        <MarkedLink to="/#about" enabled={getIndex(scrollY, heights) === PageName.ABOUT} />
+        <MarkedLink to="/#projects" enabled={getIndex(scrollY, heights) === PageName.PROJECTS} />
+        <MarkedLink to="/#contact" enabled={getIndex(scrollY, heights) === PageName.CONTACT} />
       </Navigator>
     </Nav>
-  )
+  ) : null
 }
