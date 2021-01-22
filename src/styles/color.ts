@@ -1,5 +1,5 @@
 export const color = {
-  solRed: '#e04221',
+  solRed: '#ff2a00',
   solBlack: '#000',
   solWhite: '#fff',
   solGrey: '#5b5656',
