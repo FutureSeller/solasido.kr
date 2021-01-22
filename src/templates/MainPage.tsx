@@ -14,6 +14,7 @@ const Title = styled.h1`
   font-family: 'lovelo';
   font-size: 11.4rem;
   font-weight: 900;
+  margin-top: 20rem;
 
   ${bp.mq[bp.BreakPoint.TABLET]} {
     font-size: 9rem;
@@ -59,7 +60,6 @@ const Slogan = styled.p`
   font-size: 2.6rem;
   font-weight: 600;
   margin-top: 5.2rem;
-  margin-bottom: 7.8rem;
 
   ${bp.mq[bp.BreakPoint.TABLET]} {
     font-size: 2.2rem;
@@ -73,7 +73,7 @@ const Slogan = styled.p`
 
 export default function MainPage() {
   return (
-    <Layout id="#">
+    <Layout id="main">
       <Title>
         <span>Porfolio</span>
         <SlideinUnderline />

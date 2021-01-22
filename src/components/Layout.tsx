@@ -8,24 +8,29 @@ import { bp } from '../styles/responsive'
 const LayoutFragment = styled.div`
   width: calc(100% - 6rem);
   height: 100%;
-  padding: 25rem 15rem 15rem;
+  min-height: 100vh;
+  padding: 0 15rem;
+  margin-top: 20rem;
 
   ${bp.mq[bp.BreakPoint.LAPTOP]} {
-    padding: 25rem 10rem 15rem;
+    min-height: 0;
+    padding: 0 10rem;
+    margin-bottom: 10rem;
   }
 
   ${bp.mq[bp.BreakPoint.TABLET]} {
-    padding: 25rem 3rem 15rem;
+    padding: 0 3rem;
   }
 
   ${bp.mq[bp.BreakPoint.MOBILE]} {
     width: 100%;
-    padding: 15rem 1rem;
+    margin-top: 10rem;
+    padding: 0 1rem;
   }
 `
 
 export default function Layout({ id, children }: {
-  id: string
+  id?: string
   children: ReactNode | ReactNode[]
 }) {
   return <LayoutFragment id={id}>{children}</LayoutFragment>

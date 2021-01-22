@@ -6,10 +6,10 @@ import styled from '@emotion/styled'
 import SEO from '../components/SEO'
 import LeftSidebar from '../components/LeftSidebar'
 import RightSidebar from '../components/RightSidebar'
-import MainPage from './MainPage'
-import AboutPage from './AboutPage'
-import ContactPage from './ContactPage'
-
+import MainPage from '../templates/MainPage'
+import AboutPage from '../templates/AboutPage'
+import ProjectsPage from '../templates/ProjectsPage'
+import ContactPage from '../templates/ContactPage'
 
 const Layout = styled.div`
   width: 100%;
@@ -20,11 +20,12 @@ const Layout = styled.div`
 export default function IndexPage() {
   return (
     <Fragment>
-      <SEO title="Portfolio" />
+      <SEO />
       <Layout>
         <LeftSidebar />
         <MainPage />
         <AboutPage />
+        <ProjectsPage />
         <ContactPage />
         <RightSidebar />
       </Layout>
