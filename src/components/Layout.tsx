@@ -12,8 +12,11 @@ const LayoutFragment = styled.div`
   padding: 0 15rem;
   margin-top: 20rem;
 
-  ${bp.mq[bp.BreakPoint.LAPTOP]} {
+  ${bp.mq[bp.BreakPoint.LARGE_LAPTOP]} {
     min-height: 0;
+  }
+
+  ${bp.mq[bp.BreakPoint.LAPTOP]} {
     padding: 0 10rem;
     margin-bottom: 10rem;
   }

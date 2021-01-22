@@ -59,9 +59,9 @@ const Signature = styled.p`
   font-size: 20rem;
   font-weight: 500;
   color: ${color.solRed};
-  vertical-align: top;
+  vertical-align: bottom;
   line-height: 0.5;
-  margin-top: 18rem;
+  margin-top: 24rem;
 
   ${bp.mq[bp.BreakPoint.TABLET]} {
     font-size: 18rem;
@@ -77,7 +77,6 @@ const Slogan = styled.p`
   font-family: 'Source Sans Pro';
   font-size: 2.6rem;
   font-weight: 600;
-  margin-top: 5.2rem;
 
   ${bp.mq[bp.BreakPoint.TABLET]} {
     font-size: 2.2rem;
