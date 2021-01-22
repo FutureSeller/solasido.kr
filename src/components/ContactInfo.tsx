@@ -10,11 +10,11 @@ const ContactInfoWrapper = styled.ul`
   margin-top: 5.6rem;
   font-family: 'Source Sans Pro';
 
-  & li:first-of-type {
-    margin-right: 11rem;
+  & li:nth-of-type(2) {
+    margin: 0 11rem;
 
     ${bp.mq[bp.BreakPoint.TABLET]} {
-      margin-bottom: 1.4rem;
+      margin: 1.4rem 0;
     }
   }
 
@@ -55,7 +55,8 @@ const Link = styled.a`
 
 const CONTACT_INFO = [
   { title: 'Mail me at', link: 'mailto:sol_asido_@naver.com' },
-  { title: 'About me', link: 'https://www.linkedin.com/in/solasido' }
+  { title: 'Linkedin', link: 'https://www.linkedin.com/in/solasido' },
+  { title: 'Resume', link: '/resume.pdf' }
 ]
 
 export default function ContactInfo() {
@@ -64,7 +65,9 @@ export default function ContactInfo() {
       {CONTACT_INFO.map(({ title, link }) => (
         <li key={title}>
           <Title>{title}</Title>
-          <Link href={link} target="_blank" rel="noreferrer">{link.replace(/(mailto:|https:\/\/)/, '')}</Link>
+          <Link href={link} target="_blank" rel="noreferrer">
+            {link.replace(/(mailto:|https:\/\/)/, '').replace('/resume.pdf', 'click here')}
+          </Link>
         </li>
       ))}
     </ContactInfoWrapper>
