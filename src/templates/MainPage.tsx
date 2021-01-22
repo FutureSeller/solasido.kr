@@ -84,7 +84,6 @@ const Slogan = styled.p`
 
   ${bp.mq[bp.BreakPoint.MOBILE]} {
     font-size: 1.8rem;
-    margin-top: 2rem;
   }
 `
 
