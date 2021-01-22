@@ -2,10 +2,11 @@ enum BreakPoint {
   MOBILE,
   TABLET,
   LAPTOP,
+  LARGE_LAPTOP,
   DESKTOP,
 }
 
-const breakPoints = [450, 768, 1024, 1440]
+const breakPoints = [450, 768, 1024, 1280, 1440]
 
 export const bp = {
   BreakPoint,
