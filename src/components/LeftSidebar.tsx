@@ -1,14 +1,15 @@
 /** @jsx jsx */
-import { useState } from 'react'
 import { jsx } from '@emotion/react'
 import { useLocation, navigate } from '@reach/router'
 import { GatsbyLinkProps } from 'gatsby'
 import styled from '@emotion/styled'
-import { useScrollYPosition } from 'react-use-scroll-position'
 
+import { useScrollYPosition } from 'react-use-scroll-position'
+import useHashHeights from '../hooks/useHashHeights'
+
+import { getIndex, PageName } from '../utils/height'
 import { color } from '../styles/color'
 import { bp } from '../styles/responsive'
-import { useEffect } from 'react'
 
 const Nav = styled.nav`
   display: flex;
@@ -48,28 +49,10 @@ const MarkedLink = ({ to, enabled }: GatsbyLinkProps<{ to: string }> & { enabled
   />
 )
 
-const getIndex = (scrollY: number, heights: number[]) => heights.findIndex(height => height >= scrollY) ?? 0
-
-enum PageName {
-  MAIN,
-  ABOUT,
-  PROJECTS,
-  CONTACT
-}
-
 export default function LeftSidebar() {
   const { pathname } = useLocation()
+  const heights = useHashHeights()
   const scrollY = useScrollYPosition()
-  const [heights, setHeights] = useState<number[]>([])
-
-  useEffect(() => {
-    setHeights([
-      document.getElementById('main')?.clientHeight ?? 0,
-      document.getElementById('about')?.clientHeight ?? 0,
-      document.getElementById('projects')?.clientHeight ?? 0,
-      document.getElementById('contact')?.clientHeight ?? 0,
-    ].map((s => (v: number) => s += v)(0)))
-  }, [])
 
   return pathname === '/' ? (
     <Nav>

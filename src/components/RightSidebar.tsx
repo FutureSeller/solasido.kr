@@ -1,8 +1,10 @@
 import React from 'react'
-import { useLocation } from '@reach/router'
 import styled from '@emotion/styled'
-import { isEmpty } from 'lodash'
 
+import { useScrollYPosition } from 'react-use-scroll-position'
+import useHashHeights from '../hooks/useHashHeights'
+
+import { getIndex, PageName } from '../utils/height'
 import { color } from '../styles/color'
 import { bp } from '../styles/responsive'
 
@@ -25,7 +27,8 @@ const Aside = styled.aside`
 `
 
 export default function RightSidebar() {
-  const { hash } = useLocation()
+  const heights = useHashHeights()
+  const scrollY = useScrollYPosition()
 
-  return isEmpty(hash) ? null : <Aside>Better design, Better Life.</Aside>
+  return getIndex(scrollY, heights) === PageName.MAIN ? null : <Aside>Better design, Better Life.</Aside>
 }
