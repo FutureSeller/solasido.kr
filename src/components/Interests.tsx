@@ -22,19 +22,19 @@ const Interest = styled.p`
   font-size: 3.6rem;
   font-weight: 900;
   line-height: 3.6rem;
-  width: 29rem;
+  width: 28.3rem;
   border-bottom: 0.4rem solid ${color.solBlack};
   padding-top: 2.4rem;
 
   ${bp.mq[bp.BreakPoint.TABLET]} {
-    width: 25.5rem;
+    width: 25.1rem;
     font-size: 3.2rem;
     line-height: 3.2rem;
     padding-top: 1.8rem;
   }
 
   ${bp.mq[bp.BreakPoint.MOBILE]} {
-    width: 18rem;
+    width: 17.3rem;
     font-size: 2.2rem;
     line-height: 2.2rem;
     border-bottom: 0.3rem solid ${color.solBlack};
@@ -46,7 +46,7 @@ export default function Interests({ pathname }: { pathname: string}) {
   return (
     <Wrapper pathname={pathname}>
       <Interest>Branding</Interest>
-      <Interest>Identity Design</Interest>
+      <Interest>Brand Identity</Interest>
     </Wrapper>
   )
 }
