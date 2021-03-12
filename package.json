@@ -13,6 +13,7 @@
     "gatsby-plugin-emotion": "^5.1.0",
     "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-offline": "^3.4.0",
+    "gatsby-plugin-preload-fonts": "^2.0.0",
     "gatsby-plugin-react-helmet": "^3.4.0",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-robots-txt": "^1.5.5",
@@ -54,6 +55,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean && rm -rf src/__generated__",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "lint": "eslint -c=.eslintrc.js --ignore-path .gitignore . --ext ts --ext tsx --ext jsx"
+    "lint": "eslint -c=.eslintrc.js --ignore-path .gitignore . --ext ts --ext tsx --ext jsx",
+    "preload-fonts": "gatsby-preload-fonts"
   }
 }
