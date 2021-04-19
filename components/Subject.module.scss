@@ -1,0 +1,33 @@
+@import '../styles/responsive';
+
+.Subject {
+  display: inline-block;
+  font-family: 'Neue Bold';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+
+  @include tablet {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+}
+
+.Subject__content {
+  display: block;
+  border-bottom: 4px solid black;
+  padding-top: 10px;
+
+  @include tablet {
+    border-bottom: 2.5px solid black;
+  }
+
+  @include mobile {
+    border-bottom: 2px solid black;
+  }
+}

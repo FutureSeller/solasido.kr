@@ -1,0 +1,97 @@
+@import '../styles/responsive';
+@import '../styles/color';
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(100% + 60px);
+  }
+}
+
+.Main {
+  font-family: 'Neue Display';
+  font-weight: 900;
+  line-height: 110px;
+  font-size: 100px;
+  display: inline-block;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  @include mobile {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.Main__slogan {
+  padding-top: 290px;
+
+  @include tablet {
+    padding-top: 370px;
+  }
+
+  @include mobile {
+    padding-top: 200px;
+  }
+
+  & > span {
+    opacity: 0;
+    animation: blink 1.8s forwards;
+  }
+
+  & > span:nth-of-type(1) {
+    animation-delay: 0.5s;
+  }
+
+  & > span:nth-of-type(2) {
+    animation-delay: 1s;
+  }
+}
+
+.Main__portfolio {
+  position: relative;
+  opacity: 0;
+  animation: blink 1.8s forwards;
+  animation-delay: 1.5s;
+
+  &::before {
+    position: absolute;
+    left: -60px;
+    top: 28%;
+    border-bottom: 25px solid $red;
+    content: '';
+    animation: slideIn 1s forwards;
+    animation-delay: 2s;
+
+    @include tablet {
+      top: 25.5%;
+      border-bottom: 16px solid $red;
+    }
+
+    @include mobile {
+      top: 30%;
+      border-bottom: 8px solid $red;
+    }
+  }
+}
+
+.Main__subject {
+  padding-top: 160px;
+  opacity: 0;
+  animation: blink 1.8s forwards;
+  animation-delay: 2.5s;
+}

@@ -1,21 +1,20 @@
 @font-face {
-  font-family: "Neue Black";
-  src: url("/fonts/Neue-Black.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Neue Bold";
-  src: url("/fonts/Neue-Bold.woff2") format("woff2");
+  font-family: 'Neue Black';
+  src: url('/fonts/Neue-Black.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Neue Wide";
-  src: url("/fonts/NeueDisplay-Wide.woff2") format("woff2");
+  font-family: 'Neue Bold';
+  src: url('/fonts/Neue-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Display';
+  src: url('/fonts/NeueDisplay-Wide.woff2') format('woff2');
   font-style: normal;
   font-weight: 900;
   font-display: swap;
