@@ -51,14 +51,7 @@
   & > span {
     opacity: 0;
     animation: blink 1.8s forwards;
-  }
-
-  & > span:nth-of-type(1) {
     animation-delay: 0.5s;
-  }
-
-  & > span:nth-of-type(2) {
-    animation-delay: 1s;
   }
 }
 
@@ -66,7 +59,7 @@
   position: relative;
   opacity: 0;
   animation: blink 1.8s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 
   &::before {
     position: absolute;
@@ -75,7 +68,7 @@
     border-bottom: 25px solid $red;
     content: '';
     animation: slideIn 1s forwards;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 
     @include tablet {
       top: 25.5%;
@@ -93,5 +86,5 @@
   padding-top: 160px;
   opacity: 0;
   animation: blink 1.8s forwards;
-  animation-delay: 2.5s;
+  animation-delay: 2s;
 }

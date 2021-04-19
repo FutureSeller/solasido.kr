@@ -1,0 +1,13 @@
+@import '../styles/responsive';
+
+.Content {
+  padding-left: 90px;
+
+  @include tablet {
+    padding-left: 20px;
+  }
+
+  @include mobile {
+    padding-left: 0;
+  }
+}
