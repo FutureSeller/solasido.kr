@@ -5,7 +5,7 @@ import Subject from './Subject'
 
 export default function Main() {
   return (
-    <div className={styles.Main}>
+    <section className={styles.Main}>
       <div className={styles.Main__slogan}>
         <span>Better Design,</span>
         <br />
@@ -15,6 +15,6 @@ export default function Main() {
       <Content>
         <Subject className={styles.Main__subject} />
       </Content>
-    </div>
+    </section>
   )
 }
