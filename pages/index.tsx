@@ -4,8 +4,8 @@ import Main from '../components/Main'
 
 export default function Home() {
   return (
-    <div className={styles.Home}>
+    <main className={styles.Home}>
       <Main />
-    </div>
+    </main>
   )
 }

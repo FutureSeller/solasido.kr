@@ -8,29 +8,22 @@
   line-height: 110px;
   font-size: 100px;
   display: inline-block;
+  padding-top: 288px;
 
   @include tablet {
     font-size: 60px;
     line-height: 65px;
+    padding-top: 378px;
   }
 
   @include mobile {
     font-size: 28px;
     line-height: 35px;
+    padding-top: 206px;
   }
 }
 
 .Main__slogan {
-  padding-top: 288px;
-
-  @include tablet {
-    padding-top: 378px;
-  }
-
-  @include mobile {
-    padding-top: 206px;
-  }
-
   & > span {
     opacity: 0;
     animation: blink 1.8s forwards;
