@@ -8,12 +8,12 @@
   font-size: 30px;
   line-height: 30px;
 
-  @include tablet {
+  @include md {
     font-size: 20px;
     line-height: 20px;
   }
 
-  @include mobile {
+  @include sm {
     font-size: 14px;
     line-height: 14px;
   }
@@ -24,12 +24,12 @@
   border-bottom: 4px solid $black;
   padding-top: 20px;
 
-  @include tablet {
+  @include md {
     border-bottom: 2.5px solid $black;
     padding-top: 12.5px;
   }
 
-  @include mobile {
+  @include sm {
     border-bottom: 2px solid $black;
     padding-top: 10px;
   }

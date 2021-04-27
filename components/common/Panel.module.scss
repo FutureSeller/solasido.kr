@@ -1,13 +1,17 @@
 @import '../../styles/responsive';
 
 .Content {
-  padding-left: 90px;
+  padding: 0 90px;
 
-  @include tablet {
-    padding-left: 20px;
+  @include md {
+    padding: 0 50px;
   }
 
-  @include mobile {
-    padding-left: 0;
+  @include sm {
+    padding: 0 40px;
+  }
+
+  @include xs {
+    padding: 0;
   }
 }

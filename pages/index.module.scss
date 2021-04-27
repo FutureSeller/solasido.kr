@@ -3,11 +3,11 @@
 .Home {
   padding: 0 60px;
 
-  @include tablet {
+  @include md {
     padding: 0 30px;
   }
 
-  @include mobile {
+  @include sm {
     padding: 0 20px;
   }
 }
