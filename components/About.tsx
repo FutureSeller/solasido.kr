@@ -77,45 +77,49 @@ export default function About() {
         }
       </section>
       <section className={styles.About__experiences}>
-        <div className={styles.About__item}>
-          <h3 className={styles.About__subtitle}>WORK EXPERIENCE</h3>
-          <ol>
-            <li>
-              2020 - 2020<br />
-              고려대학교 디자인혁신센터<br />
-              디자이너<br />
-            </li>
-            <li>
-              2015 - 2018<br />
-              우아한 형제들 배민찬<br />
-              외주 디자이너<br />
-            </li>
-          </ol>
-          <h3 className={styles.About__subtitle}>AWARDS</h3>
-          <ol>
-            <li>
-              2015<br />
-              Adobe Design Achievement<br />
-              Awards<br />
-              Print Communications<br />
-              Category Semifinalist<br />
-            </li>
-            <li>
-              2011<br />
-              제3회 삼성모바일디스플레이<br />
-              OLED 아이디어 공모전<br />
-              광고 디자인 부문 Finalist<br />
-            </li>
-            <li>
-              2010<br />
-              한국차문화협회 차의 세계화전<br />
-              제2회 대한민국 차 패키지<br />
-              디자인 공모전<br />
-              패키지 디자인 특선 수상<br />
-            </li>
-          </ol>
+        <div className={classNames(styles.About__work, styles.About__item)}>
+          <div>
+            <h3 className={styles.About__subtitle}>WORK EXPERIENCE</h3>
+            <ol>
+              <li>
+                2020 - 2020<br />
+                고려대학교 디자인혁신센터<br />
+                디자이너<br />
+              </li>
+              <li>
+                2015 - 2018<br />
+                우아한 형제들 배민찬<br />
+                외주 디자이너<br />
+              </li>
+            </ol>
+          </div>
+          <div>
+            <h3 className={styles.About__subtitle}>AWARDS</h3>
+            <ol>
+              <li>
+                2015<br />
+                Adobe Design Achievement<br />
+                Awards<br />
+                Print Communications<br />
+                Category Semifinalist<br />
+              </li>
+              <li>
+                2011<br />
+                제3회 삼성모바일디스플레이<br />
+                OLED 아이디어 공모전<br />
+                광고 디자인 부문 Finalist<br />
+              </li>
+              <li>
+                2010<br />
+                한국차문화협회 차의 세계화전<br />
+                제2회 대한민국 차 패키지<br />
+                디자인 공모전<br />
+                패키지 디자인 특선 수상<br />
+              </li>
+            </ol>
+          </div>
         </div>
-        <div className={styles.About__item}>
+        <div>
           <h3 className={styles.About__subtitle}>OUTSOURCING</h3>
           <ol>
             <li>

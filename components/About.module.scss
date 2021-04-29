@@ -23,8 +23,8 @@
   }
 
   @include sm {
-    font-size: 10px;
-    line-height: 16px;
+    font-size: 12px;
+    line-height: 18px;
     padding-top: 206px;
   }
 }
@@ -42,6 +42,11 @@
   }
 
   @include sm {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  @include xs {
     font-size: 28px;
     line-height: 31px;
   }
@@ -76,6 +81,7 @@
   @include sm {
     font-size: 14px;
     line-height: 12px;
+    border-bottom: 1.5px solid $black;
   }
 }
 
@@ -140,12 +146,12 @@
   padding-top: 148px;
 
   @include md {
-    padding-top: 92px;
+    padding-top: 90px;
   }
 
   @include sm {
     justify-content: flex-start;
-    padding-top: 65px;
+    padding-top: 80px;
   }
 
   li {
@@ -167,7 +173,7 @@
       }
 
       @include sm {
-        padding-top: 12px;
+        padding-top: 12.5px;
       }
     }
   }
@@ -176,11 +182,10 @@
 .About__subtitle {
   display: inline-block;
   font-weight: 700;
-  padding-top: 60px;
   border-bottom: 2px solid $black;
 
   @include sm {
-    padding-top: 15px;
+    border-bottom: 1.5px solid $black;
   }
 }
 
@@ -199,4 +204,10 @@
     width: 50%;
     padding-right: 10px;
   }
+}
+
+.About__work {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
