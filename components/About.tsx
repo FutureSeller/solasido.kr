@@ -1,6 +1,9 @@
 import styles from './About.module.scss'
 
+import { useRef } from 'react'
 import classNames from 'classnames'
+
+import useOnScreen from '../hooks/useOnScreen'
 import Panel from './common/Panel'
 
 const introduction = {
@@ -48,8 +51,18 @@ const introduction = {
 }
 
 export default function About() {
+  const panelRef = useRef<HTMLHeadingElement | null>(null)
+  const isIntersecting = useOnScreen(panelRef)
+
   return (
-    <Panel className={styles.About} heading={<h2 className={styles.About__title}>ABOUT</h2>}>
+    <Panel
+      className={styles.About}
+      heading={
+        <h2 ref={panelRef} className={classNames(styles.About__title, {
+          [styles['About__title--insideOut']]: isIntersecting
+        })}>ABOUT</h2>
+      }
+    >
       <section className={styles.About__introduction}>
         <h3 className={styles.screen__text}>About Me</h3>
         {

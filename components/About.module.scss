@@ -1,5 +1,6 @@
 @import '../styles/responsive';
 @import '../styles/color';
+@import '../styles/animation';
 
 .screen__text {
   position: absolute;
@@ -35,6 +36,10 @@
   line-height: 110px;
   font-size: 100px;
   color: $red;
+
+  &--insideOut {
+    animation: insideOut 1.8s;
+  }
 
   @include md {
     font-size: 60px;
