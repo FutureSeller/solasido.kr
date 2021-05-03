@@ -22,6 +22,12 @@
   }
 }
 
+@mixin md-lt() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
 @mixin sm() {
   @media (max-width: 480px) {
     @content;
