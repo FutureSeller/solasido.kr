@@ -1,0 +1,51 @@
+@import '../styles/responsive';
+@import '../styles/color';
+@import '../styles/animation';
+
+.Project {
+  font-family: 'Noto Sans KR';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+  padding-top: 600px;
+
+  @include xl {
+    font-size: 14px;
+    line-height: 18px;
+    padding-top: 450px;
+  }
+
+  @include sm {
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 400px;
+  }
+}
+
+.Project__title {
+  font-family: 'Neue Display';
+  font-weight: 900;
+  line-height: 110px;
+  font-size: 100px;
+  color: $red;
+
+  &--insideOut {
+    animation: insideOut 1.8s;
+  }
+
+  @include md {
+    font-size: 60px;
+    line-height: 66px;
+  }
+
+  @include sm {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  @include xs {
+    font-size: 28px;
+    line-height: 31px;
+  }
+}
