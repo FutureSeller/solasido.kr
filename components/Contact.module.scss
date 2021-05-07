@@ -1,0 +1,201 @@
+@import '../styles/responsive';
+@import '../styles/color';
+@import '../styles/animation';
+
+.Contact {
+  font-family: 'Noto Sans KR';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: -0.05em;
+  margin-top: 400px;
+  padding-top: 130px;
+  padding-bottom: 90px;
+  background-color: $black;
+  color: $white;
+
+  @include md {
+    font-size: 14px;
+    line-height: 12px;
+    padding-bottom: 50px;
+  }
+
+  @include sm {
+    line-height: 10px;
+  }
+}
+
+.Contact__title {
+  font-family: 'Neue Display';
+  font-weight: 900;
+  line-height: 110px;
+  font-size: 100px;
+  color: $red;
+
+  &--insideOut {
+    animation: insideOut 1.8s;
+  }
+
+  @include md {
+    font-size: 60px;
+    line-height: 66px;
+  }
+
+  @include sm {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  @include xs {
+    font-size: 28px;
+    line-height: 31px;
+  }
+}
+
+.Contact__about {
+  display: flex;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  padding-top: 100px;
+
+  &-en {
+    line-height: 16px;
+  }
+
+  @include md {
+    padding-top: 70px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @include sm {
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+}
+
+.Contact__name {
+  display: inline-block;
+  padding-bottom: 4px;
+  border-bottom: 3px solid $white;
+  font-size: 24px;
+  line-height: 16px;
+
+  @include xl {
+    font-size: 24px;
+    line-height: 20px;
+  }
+
+  @include md {
+    font-size: 20px;
+    line-height: 18px;
+    border-bottom: 2.5px solid $white;
+  }
+
+  @include sm {
+    font-size: 14px;
+    line-height: 12px;
+    border-bottom: 1.5px solid $white;
+  }
+}
+
+.Contact__position {
+  font-size: 24px;
+  line-height: 36px;
+  padding-top: 34px;
+
+  @include md {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @include sm {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.Contact__information {
+  display: flex;
+  padding-top: 150px;
+
+  @include lg {
+    padding-top: 100px;
+  }
+
+  @include md {
+    flex-direction: column;
+    padding-top: 60px;
+  }
+
+  @include sm {
+    padding-top: 30px;
+  }
+}
+
+.Contact__subtitle {
+  font-family: 'Neue Display';
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 20px;
+  color: $red;
+
+  @include md {
+    padding-top: 40px;
+    font-size: 12px;
+    line-height: 13px;
+  }
+}
+
+.Contact__about > div:nth-of-type(1),
+.Contact__information > div:nth-of-type(1) {
+  width: 185px;
+  padding-right: 148px;
+
+  @include xl {
+    padding-right: 100px;
+  }
+
+  @include lg {
+    padding-right: 88px;
+  }
+
+  @include md {
+    padding-right: 44px;
+  }
+
+  @include sm {
+    padding-right: 0;
+  }
+}
+
+.Contact__about > div:nth-of-type(2),
+.Contact__information > div:nth-of-type(2) {
+  width: 230px;
+  padding-right: 148px;
+
+  @include xl {
+    padding-right: 100px;
+  }
+
+  @include lg {
+    padding-right: 88px;
+  }
+
+  @include md {
+    padding-right: 44px;
+  }
+
+  @include sm {
+    padding-right: 0;
+  }
+}
+
+.Contact__value {
+  padding-top: 16px;
+
+  @include md {
+    padding-top: 12px;
+  }
+}
