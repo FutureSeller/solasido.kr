@@ -2,6 +2,7 @@ import styles from './Contact.module.scss'
 
 import { useRef } from 'react'
 import classNames from 'classnames'
+import Link from 'next/link'
 
 import useOnScreen from '../hooks/useOnScreen'
 
@@ -39,15 +40,27 @@ export default function Contact() {
       <div className={styles.Contact__information}>
         <div>
           <div className={styles.Contact__subtitle}>Mail me at</div>
-          <div className={styles.Contact__value}>sol_asido_@naver.com</div>
+          <div className={styles.Contact__value}>
+            <Link href="mailto:sol_asido_@naver.com">
+              <a>sol_asido_@naver.com</a>
+            </Link>
+          </div>
         </div>
         <div>
           <div className={styles.Contact__subtitle}>About me</div>
-          <div className={styles.Contact__value}>www.linkedin.com/in/solasido</div>
+          <div className={styles.Contact__value}>
+            <Link href="https://www.linkedin.com/in/solasido" passHref>
+              <a>www.linkedin.com/in/solasido</a>
+            </Link>
+          </div>
         </div>
         <div>
           <div className={styles.Contact__subtitle}>Resume</div>
-          <div className={styles.Contact__value}>click here</div>
+          <div className={styles.Contact__value}>
+            <Link href="/assets/resume.pdf" passHref>
+              <a>click here</a>
+            </Link>
+          </div>
         </div>
       </div>
     </Panel>
