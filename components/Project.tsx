@@ -21,12 +21,12 @@ import { DeviceType, isSmallThanTabletViewPort } from '../utils/responsive'
 const thumbnails = [
   {
     src: "/images/thumbnail/01_lavida.jpg",
-    alt: "lavida",
-    description: "La vida"
+    alt: "LA VIDA",
+    description: "LA VIDA"
   },
   {
     src: "/images/thumbnail/02_hwayeon.jpg",
-    alt: "Hwayeon",
+    alt: "HWAYEON",
     description: "HWAYEON"
   },
   {
@@ -51,8 +51,8 @@ const thumbnails = [
   },
   {
     src: "/images/thumbnail/07_young.jpg",
-    alt: "제9회 젊은 의사포럼",
-    description: "제9회 젊은 의사포럼"
+    alt: "제9회 젊은 의사 포럼",
+    description: "제9회 젊은 의사 포럼"
   },
   {
     src: "/images/thumbnail/08_chemstree.jpg",
