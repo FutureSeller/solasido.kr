@@ -1,12 +1,12 @@
 import { useRef } from 'react'
 import styled from '@emotion/styled'
 
-import Container from './layout/Container'
-import Content from './layout/Content'
+import Container from './common/Container'
+import Content from './common/Content'
+import NameCard from './contact/NameCard'
+import ContactInfo from './contact/ContactInfo'
 import NeueDisplay from './typography/NeueDisplay'
 import SlideIn from './animation/SlideIn'
-import NameCard from './NameCard'
-import ContactInfo from './ContactInfo'
 
 import useOnScreen from '../hooks/useOnScreen'
 

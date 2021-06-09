@@ -1,8 +1,8 @@
 import styled from '@emotion/styled'
 
-import { responsive } from '../styles/responsive'
-import { colors } from '../styles/colors'
-import { notoSansKRBold } from '../styles/typography'
+import { responsive } from '../../styles/responsive'
+import { colors } from '../../styles/colors'
+import { notoSansKRBold } from '../../styles/typography'
 
 interface Props {
   name: string
@@ -52,6 +52,14 @@ const ContentFont = styled.div`
   line-height: 0.83;
   font-size: 24px;
   color: ${colors.white}
+
+  ${responsive.mdLte} {
+    font-size: 20px;
+  }
+
+  ${responsive.smLte} {
+    font-size: 14px;
+  }
 `
 
 const Name = styled.div`

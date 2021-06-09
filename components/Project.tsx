@@ -1,8 +1,8 @@
 import { useRef } from 'react'
 
-import Container from './layout/Container'
-import Heading from './layout/Heading'
-import Content from './layout/Content'
+import Container from './common/Container'
+import Heading from './common/Heading'
+import Content from './common/Content'
 import NeueDisplay from './typography/NeueDisplay'
 import SlideIn from './animation/SlideIn'
 import WorkListContainer from './project/WorkListContainer'

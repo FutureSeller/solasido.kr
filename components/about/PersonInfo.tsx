@@ -1,11 +1,11 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
-import { colors } from '../styles/colors'
-import { responsive } from '../styles/responsive'
-import { notoSansKR, notoSansKRBold } from '../styles/typography'
+import { colors } from '../../styles/colors'
+import { responsive } from '../../styles/responsive'
+import { notoSansKR, notoSansKRBold } from '../../styles/typography'
 
-import type { Person } from '../types/model'
+import type { Person } from '../../types/model'
 
 interface Props {
   person: Person

@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import styled from '@emotion/styled'
 
-import { responsive } from '../styles/responsive'
-import { colors } from '../styles/colors'
-import { neueDisplay12, neueDisplay18, notoSansKR } from '../styles/typography'
+import { responsive } from '../../styles/responsive'
+import { colors } from '../../styles/colors'
+import { neueDisplay12, neueDisplay18, notoSansKR } from '../../styles/typography'
 
 interface Props {
   title: string

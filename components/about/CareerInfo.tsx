@@ -1,10 +1,10 @@
 import styled from '@emotion/styled'
 
-import { colors } from '../styles/colors'
-import { responsive } from '../styles/responsive'
-import { notoSansKR } from '../styles/typography'
+import { colors } from '../../styles/colors'
+import { responsive } from '../../styles/responsive'
+import { notoSansKR } from '../../styles/typography'
 
-import type { Career } from '../types/model'
+import type { Career } from '../../types/model'
 
 interface Props {
   career: Career

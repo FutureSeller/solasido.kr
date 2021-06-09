@@ -1,9 +1,9 @@
 import { keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
 
-import Container from './layout/Container'
-import Heading from './layout/Heading'
-import Content from './layout/Content'
+import Container from './common/Container'
+import Heading from './common/Heading'
+import Content from './common/Content'
 import NeueDisplay from './typography/NeueDisplay'
 import NeueBold from './typography/NeueBold'
 import Blink from './animation/Blink'

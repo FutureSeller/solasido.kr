@@ -1,13 +1,13 @@
 import { useRef } from 'react'
 import styled from '@emotion/styled'
 
-import Container from './layout/Container'
-import Heading from './layout/Heading'
-import Content from './layout/Content'
+import Container from './common/Container'
+import Heading from './common/Heading'
+import Content from './common/Content'
+import PersonInfo from './about/PersonInfo'
+import CareerInfo from './about/CareerInfo'
 import NeueDisplay from './typography/NeueDisplay'
 import SlideIn from './animation/SlideIn'
-import PersonInfo from './PersonInfo'
-import CareerInfo from './CareerInfo'
 
 import useOnScreen from '../hooks/useOnScreen'
 

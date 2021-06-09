@@ -1,7 +1,7 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
-import AspectRatioImage from '../AspectRatioImage'
+import AspectRatioImage from '../common/AspectRatioImage'
 
 import { responsive } from '../../styles/responsive'
 import { notoSansKR } from '../../styles/typography'
