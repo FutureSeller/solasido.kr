@@ -1,0 +1,67 @@
+[
+  {
+    "src": "/images/lavida/thumbnail.jpg",
+    "alt": "LA VIDA",
+    "description": "LA VIDA"
+  },
+  {
+    "src": "/images/hwayeon/thumbnail.jpg",
+    "alt": "HWAYEON",
+    "description": "HWAYEON"
+  },
+  {
+    "src": "/images/korea-115/thumbnail.jpg",
+    "alt": "고려대학교 개교 115주년",
+    "description": "고려대학교 개교 115주년"
+  },
+  {
+    "src": "/images/korea-40/thumbnail.jpg",
+    "alt": "고려대학교 세종캠퍼스 설립 40주년",
+    "description": "고려대학교 세종캠퍼스 설립 40주년"
+  },
+  {
+    "src": "/images/korea-innovation/thumbnail.jpg",
+    "alt": "고려대학교 대학혁신지원사업단",
+    "description": "고려대학교 대학혁신지원사업단"
+  },
+  {
+    "src": "/images/deokso-farm/thumbnail.gif",
+    "alt": "고려대학교 덕소농장",
+    "description": "고려대학교 덕소농장"
+  },
+  {
+    "src": "/images/young-docs/thumbnail.jpg",
+    "alt": "제9회 젊은 의사 포럼",
+    "description": "제9회 젊은 의사 포럼"
+  },
+  {
+    "src": "/images/chemstree/thumbnail.jpg",
+    "alt": "CHEMSTREE",
+    "description": "CHEMSTREE"
+  },
+  {
+    "src": "/images/ovis/thumbnail.jpg",
+    "alt": "OVIS",
+    "description": "OVIS"
+  },
+  {
+    "src": "/images/welivearth/thumbnail.gif",
+    "alt": "WELIVEARTH",
+    "description": "WELIVEARTH"
+  },
+  {
+    "src": "/images/korean-pattern/thumbnail.jpg",
+    "alt": "한국전통문양",
+    "description": "한국전통문양"
+  },
+  {
+    "src": "/images/ed/thumbnail.jpg",
+    "alt": "대한민국 대학생 교육기부단",
+    "description": "대한민국 대학생 교육기부단"
+  },
+  {
+    "src": "/images/korean-folk/thumbnail.gif",
+    "alt": "한국민속촌",
+    "description": "한국민속촌"
+  }
+]
