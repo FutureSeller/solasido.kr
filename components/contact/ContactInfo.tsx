@@ -20,7 +20,7 @@ export default function ContactInfo({ title, link, value }: Props) {
       <ContentFont>
         <LinkWrapper>
           <Link href={link} passHref>
-            <a>{value}</a>
+            <a target="_blank" rel="noopener noreferrer">{value}</a>
           </Link>
         </LinkWrapper>
       </ContentFont>
