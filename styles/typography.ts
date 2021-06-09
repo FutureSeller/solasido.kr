@@ -44,7 +44,7 @@ const neueDisplay14 = css`
 
 const neueDisplay12 = css`
   ${neueDisplay}
-  font-size: 18px;
+  font-size: 12px;
 `
 
 const neueBold = css`

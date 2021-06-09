@@ -51,7 +51,7 @@ const ContentFont = styled.div`
   ${notoSansKRBold}
   line-height: 0.83;
   font-size: 24px;
-  color: ${colors.white}
+  color: ${colors.white};
 
   ${responsive.mdLte} {
     font-size: 20px;
