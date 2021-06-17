@@ -3,6 +3,7 @@ import Main from '../components/Main'
 import About from '../components/About'
 import Project from '../components/Project'
 import Contact from '../components/Contact'
+import Navigation from '../components/common/Navigation'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <meta name="twitter:description" content="SOLASIDO's Portfolio" />
       </Head>
       <main>
+        <Navigation />
         <Main />
         <About />
         <Project />

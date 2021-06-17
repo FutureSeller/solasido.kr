@@ -69,6 +69,13 @@ const neueBold14 = css`
   font-size: 14px;
 `
 
+const neue = css`
+  font-family: 'Neue';
+  font-weight: 900;
+  font-style: normal;
+  line-height: 1.3;
+`
+
 const notoSansKR = css`
   font-family: 'Noto Sans KR';
   font-weight: 500;
@@ -93,6 +100,7 @@ export {
   neueBold30,
   neueBold20,
   neueBold14,
+  neue,
   notoSansKR,
   notoSansKRBold,
 }
