@@ -3,6 +3,7 @@ import styled from '@emotion/styled'
 
 import Container from './common/Container'
 import Content from './common/Content'
+import SectionHeader from './common/SectionHeader'
 import NameCard from './contact/NameCard'
 import ContactInfo from './contact/ContactInfo'
 import NeueDisplay from './typography/NeueDisplay'
@@ -24,16 +25,14 @@ export default function Contact() {
       <Heading>
         <NeueDisplay>
           <SlideIn duration={1.8} isIntersecting={isIntersecting}>
-            <h2 ref={headingRef} style={{ color: colors.red }}>
-              Contact
-            </h2>
+            <SectionHeader title="contact" ref={headingRef} />
           </SlideIn>
         </NeueDisplay>
       </Heading>
       <Content>
         <NameCardWrapper>
-          <NameCard name="정한솔" strength="브랜드 아이덴티티" position="그래픽 디자이너"/>
-          <NameCard name="HANSOL CHUNG" strength="Brand Identity" position="Graphic Designer"/>
+          <NameCard name="정한솔" strength="브랜드 아이덴티티" position="그래픽 디자이너" />
+          <NameCard name="HANSOL CHUNG" strength="Brand Identity" position="Graphic Designer" />
         </NameCardWrapper>
         <ContactInfoWrapper>
           {
