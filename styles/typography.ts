@@ -70,7 +70,7 @@ const neueBold14 = css`
 `
 
 const neue = css`
-  font-family: 'Neue';
+  font-family: 'Neue Black';
   font-weight: 900;
   font-style: normal;
   line-height: 1.3;
