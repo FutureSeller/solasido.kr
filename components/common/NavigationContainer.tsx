@@ -5,6 +5,8 @@ import useDeviceType from '../../hooks/useDeviceType'
 import Navigation from './Navigation'
 import MobileNavigation from './MobileNavigation'
 
+import useIsMount from '../../hooks/useIsMount'
+
 import { DeviceType, isSmallThanMobileViewPort } from '../../utils/responsive'
 
 const isNavigationToBeHided = (scrollY: number, offset: number) => scrollY < offset
@@ -13,8 +15,9 @@ export default function NavigationContainer() {
   const { offsets, clientHeights } = useSectionYOffset()
   const scrollY = useScrollY()
   const deviceType = useDeviceType() ?? DeviceType.XXL
+  const isMount = useIsMount()
 
-  if (isNavigationToBeHided(scrollY, offsets[0])) {
+  if (!isMount || isNavigationToBeHided(scrollY, offsets[0])) {
     return null
   }
 

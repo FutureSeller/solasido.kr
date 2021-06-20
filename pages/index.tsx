@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
+
 import Main from '../components/Main'
 import About from '../components/About'
 import Project from '../components/Project'
