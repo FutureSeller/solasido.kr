@@ -11,9 +11,9 @@ export default forwardRef<HTMLHeadingElement, Props>(function SectionHeader({ ti
   return (
     <Container>
       <ScreenTextLink id={title}>{title}</ScreenTextLink>
-      <h2 ref={ref} style={{ color: colors.red }}>
+      <Heading ref={ref}>
         {title}
-      </h2>
+      </Heading>
     </Container>
   )
 })
@@ -26,6 +26,10 @@ const ScreenTextLink = styled.div`
   position: absolute;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
-  white-space: no-wrap;
+  white-space: nowrap;
   top: -100px;
+`
+
+const Heading = styled.h2`
+  color: ${colors.red};
 `
