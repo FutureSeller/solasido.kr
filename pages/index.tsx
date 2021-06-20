@@ -4,6 +4,7 @@ import About from '../components/About'
 import Project from '../components/Project'
 import Contact from '../components/Contact'
 import Navigation from '../components/common/Navigation'
+import { DeviceTypeContextProvider } from '../context/DeviceTypeContext'
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
         <meta name="twitter:description" content="SOLASIDO's Portfolio" />
       </Head>
       <main>
-        <Navigation />
+        <DeviceTypeContextProvider>
+          <Navigation />
+        </DeviceTypeContextProvider>
         <Main />
         <About />
         <Project />

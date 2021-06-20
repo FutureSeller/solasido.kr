@@ -1,10 +1,9 @@
-import { useContext } from 'react'
 import styled from '@emotion/styled'
 
 import WorkSublist from './WorkSublist'
 import WorkItem from './WorkItem'
 
-import { DeivceTypeContext } from '../../context/DeviceTypeContext'
+import useDeviceType from '../../hooks/useDeviceType'
 
 import { responsive } from '../../styles/responsive'
 
@@ -14,11 +13,11 @@ import { DeviceType, isSmallThanTabletViewPort } from '../../utils/responsive'
 import thumbnails from '../../public/data/thumbnails.json'
 
 export default function WorkListContainer() {
-  const deviceType = useContext(DeivceTypeContext) ?? DeviceType.XXL
+  const deviceType = useDeviceType() ?? DeviceType.XXL
 
   return (
     <Container>
-      { isSmallThanTabletViewPort(deviceType)
+      {isSmallThanTabletViewPort(deviceType)
         ? thumbnails.map(thumbnail => <WorkItem key={thumbnail.src} item={thumbnail} />)
         : getPartitionedThumbnails(thumbnails).map(workList => {
           if (Array.isArray(workList)) {
