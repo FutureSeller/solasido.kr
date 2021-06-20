@@ -70,7 +70,11 @@ const StrikeThrough = styled.div`
     }
 
     ${responsive.smLte} {
-      border-bottom: 10px solid ${colors.red};
+      border-bottom: 10.5px solid ${colors.red};
+    }
+
+    ${responsive.xsLte} {
+      border-bottom: 7px solid ${colors.red};
     }
   }
 `
