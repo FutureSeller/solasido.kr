@@ -48,6 +48,7 @@ export default function Contact() {
 
 const ContactInfoContainer = styled(Container)`
   background-color: ${colors.black};
+  margin-top: 400px;
   padding-bottom: 90px;
 
   ${responsive.mdLte} {
@@ -56,7 +57,6 @@ const ContactInfoContainer = styled(Container)`
 `
 
 const Heading = styled.div`
-  margin-top: 400px;
   padding-top: 130px;
 
   ${responsive.mdLte} {

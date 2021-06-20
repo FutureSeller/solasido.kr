@@ -21,7 +21,7 @@ export default function Project() {
       <Heading>
         <NeueDisplay>
           <SlideIn duration={1.8} isIntersecting={isIntersecting}>
-            <SectionHeader title="project" ref={headingRef} />
+            <SectionHeader title="projects" ref={headingRef} />
           </SlideIn>
         </NeueDisplay>
       </Heading>

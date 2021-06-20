@@ -14,6 +14,7 @@ import { colors } from '../styles/colors'
 export default function Main() {
   return (
     <Container>
+      <HidedTitle>Solasido's Portfolio</HidedTitle>
       <Heading isMainSection>
         <NeueDisplay>
           <Blink duration={1.8} delay={0.5}>
@@ -100,4 +101,11 @@ const Subject = styled.div`
     border-bottom: 2px solid ${colors.black};
     padding-top: 10px;
   }
+`
+
+const HidedTitle = styled.h1`
+  position: absolute;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: no-wrap;
 `
