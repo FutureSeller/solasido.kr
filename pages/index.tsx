@@ -1,8 +1,12 @@
 import Head from 'next/head'
+import dynamic from 'next/dynamic'
+
 import Main from '../components/Main'
 import About from '../components/About'
 import Project from '../components/Project'
 import Contact from '../components/Contact'
+import NavigationContainer from '../components/common/NavigationContainer'
+import { DeviceTypeContextProvider } from '../context/DeviceTypeContext'
 
 export default function Home() {
   return (
@@ -18,6 +22,9 @@ export default function Home() {
         <meta name="twitter:description" content="SOLASIDO's Portfolio" />
       </Head>
       <main>
+        <DeviceTypeContextProvider>
+          <NavigationContainer />
+        </DeviceTypeContextProvider>
         <Main />
         <About />
         <Project />

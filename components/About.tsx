@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import Container from './common/Container'
 import Heading from './common/Heading'
 import Content from './common/Content'
+import SectionHeader from './common/SectionHeader'
 import PersonInfo from './about/PersonInfo'
 import CareerInfo from './about/CareerInfo'
 import NeueDisplay from './typography/NeueDisplay'
@@ -12,7 +13,6 @@ import SlideIn from './animation/SlideIn'
 import useOnScreen from '../hooks/useOnScreen'
 
 import { responsive } from '../styles/responsive'
-import { colors } from '../styles/colors'
 
 import personJson from '../public/data/person.json'
 import careerJson from '../public/data/career.json'
@@ -27,9 +27,7 @@ export default function About() {
       <Heading>
         <NeueDisplay>
           <SlideIn duration={1.8} isIntersecting={isIntersecting}>
-            <h2 ref={headingRef} style={{ color: colors.red }}>
-              ABOUT
-            </h2>
+            <SectionHeader title="about" ref={headingRef} />
           </SlideIn>
         </NeueDisplay>
       </Heading>

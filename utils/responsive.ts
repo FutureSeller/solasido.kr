@@ -9,7 +9,7 @@ export enum DeviceType {
 
 export const getCurrentDeivceType = () => {
   const { innerWidth } = window
-  
+
   if (innerWidth <= 375) {
     return DeviceType.XS
   } else if (innerWidth <= 480) {
@@ -27,3 +27,6 @@ export const getCurrentDeivceType = () => {
 
 export const isSmallThanTabletViewPort = (deviceType: DeviceType) =>
   [DeviceType.LG, DeviceType.MD, DeviceType.SM, DeviceType.XS].includes(deviceType)
+
+export const isSmallThanMobileViewPort = (deviceType: DeviceType) =>
+  [DeviceType.SM, DeviceType.XS].includes(deviceType)
