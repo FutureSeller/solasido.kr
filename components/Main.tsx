@@ -58,6 +58,7 @@ const StrikeThrough = styled.div`
     top: 28%;
     content: '';
     border-bottom: 25px solid ${colors.red};
+    backface-visibility: hidden;
     animation: ${mimicStrikeThrough} 1s forwards;
     animation-delay: 1.5s;
 

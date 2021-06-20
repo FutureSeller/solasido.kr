@@ -12,6 +12,7 @@ const mimicBlink = keyframes`
 
 const Blink = styled.div<{ duration: number, delay: number }>`
   opacity: 0;
+  backface-visibility: hidden;
   animation: ${mimicBlink} ${({ duration }) => `${duration}s`} forwards;
   animation-delay: ${({ delay }) => `${delay}s`};
 `
