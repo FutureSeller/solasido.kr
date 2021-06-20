@@ -14,7 +14,7 @@ import { colors } from '../styles/colors'
 export default function Main() {
   return (
     <Container>
-      <HidedTitle>Solasido's Portfolio</HidedTitle>
+      <HidedTitle>Solasido&apos;s Portfolio</HidedTitle>
       <Heading isMainSection>
         <NeueDisplay>
           <Blink duration={1.8} delay={0.5}>
