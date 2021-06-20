@@ -18,6 +18,24 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
           />
+          <link
+            rel="preload"
+            href="/fonts/Neue-Black.woff2"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/Neue-Bold.woff2"
+            as="font"
+            crossOrigin=""
+          />
+          <link
+            rel="preload"
+            href="/fonts/NeueDisplay-Wide.woff2"
+            as="font"
+            crossOrigin=""
+          />
           <noscript>
             <link
               rel="stylesheet"
