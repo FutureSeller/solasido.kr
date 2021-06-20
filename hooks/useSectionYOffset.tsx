@@ -18,6 +18,7 @@ export default function useSectionYOffset() {
       Array.from(document.querySelectorAll('section'))
         .map(section => section.clientHeight)
         .map((s => (v: number) => s += v)(0))
+        .slice(1)
     )
 
     setOffsets([
