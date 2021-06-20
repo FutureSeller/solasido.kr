@@ -4,7 +4,7 @@ const neueDisplay = css`
   font-family: 'Neue Display';
   font-style: normal;
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.25;
 `
 
 const neueDisplay100 = css`

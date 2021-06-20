@@ -14,7 +14,7 @@ const mimicSlideIn = keyframes`
 
 const SlideIn = styled.div<{ duration: number, isIntersecting: boolean }>`
   opacity: 0;
-  animation: ${({ duration, isIntersecting }) => isIntersecting ? css`${mimicSlideIn} ${duration}s forwards` : null };
+  animation: ${({ duration, isIntersecting }) => isIntersecting ? css`${mimicSlideIn} ${duration}s forwards` : null};
 `
 
 export default SlideIn

@@ -107,5 +107,5 @@ const HidedTitle = styled.h1`
   position: absolute;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
-  white-space: no-wrap;
+  white-space: nowrap;
 `
