@@ -1,5 +1,6 @@
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
+import Link from 'next/link'
 
 import AspectRatioImage from '../common/AspectRatioImage'
 
@@ -15,16 +16,18 @@ interface Props {
 
 export default function WorkItem({ item, isLargeImage = false, isSublistItem = false }: Props) {
   return (
-    <Container isSublistItem={isSublistItem}>
-      <AspectRatioImage
-        src={item.src}
-        alt={item.alt}
-        isLargeImage={isLargeImage}
-      />
-      <ContentFont>
-        <Description>{item.description}</Description>
-      </ContentFont>
-    </Container>
+    <Link href={`/projects/${item.slug}`}>
+      <Container isSublistItem={isSublistItem}>
+        <AspectRatioImage
+          src={item.src}
+          alt={item.alt}
+          isLargeImage={isLargeImage}
+        />
+        <ContentFont>
+          <Description>{item.description}</Description>
+        </ContentFont>
+      </Container>
+    </Link>
   )
 }
 
