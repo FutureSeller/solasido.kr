@@ -42,12 +42,8 @@ const Container = styled.div`
   z-index: 1;
   width: 100%;
   background-color: white;
-  height: 80px;
+  height: 60px;
   border-bottom: 1px solid rgba(0, 0, 0, .2);
-
-  ${responsive.mdLte} {
-    height: 60px;
-  }
 `
 
 const SloganFont = styled.div`
