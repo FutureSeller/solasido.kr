@@ -15,16 +15,16 @@ export default function PersonInfo({ person }: Props) {
   const { lang, name, position, ma, ba, objectives } = person
 
   return (
-    <Wrapper lang={lang}>
-      <TitleFont>
-        <Name>{name}</Name>
+    <ContentFont>
+      <PersonInfoItems lang={lang}>
+        <Name>
+          <TitleFont>{name}</TitleFont>
+        </Name>
         <Position>
           {position.map((positionItem, idx) => (
-            <div key={`${lang}-position-${idx}`}>{positionItem}</div>
+            <TitleFont key={`${lang}-position-${idx}`}>{positionItem}</TitleFont>
           ))}
         </Position>
-      </TitleFont>
-      <ContentFont>
         <School lang={lang}>
           {ma.school?.map((schoolItem, idx) => (
             <div key={`${lang}-school-ma-${idx}`}>{schoolItem}</div>
@@ -44,12 +44,12 @@ export default function PersonInfo({ person }: Props) {
             <div key={`${lang}-objectives-${idx}`}>{objectivesItem}</div>
           ))}
         </Objective>
-      </ContentFont>
-    </Wrapper>
+      </PersonInfoItems>
+    </ContentFont>
   )
 }
 
-const Wrapper = styled.ol<{ lang: string }>`
+const PersonInfoItems = styled.ul<{ lang: string }>`
   ${({ lang }) => lang === 'ko'
     ? css`
         padding-right: 115px;
