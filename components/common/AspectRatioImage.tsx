@@ -2,16 +2,10 @@ import styled from '@emotion/styled'
 
 import Image from 'next/image'
 
-const ImageWrapper = styled.div<{ isLargeImage?: boolean }>`
-  position: relative;
-  width: 100%;
-  padding-top: ${({ isLargeImage }) => isLargeImage ? 'calc((401.95 / 562) * 100%)' : 'calc((166.94 / 273) * 100%)'}
-`
-
 interface Props {
   src: string
   alt: string
-  isLargeImage: boolean
+  isLargeImage?: boolean
 }
 
 export default function AspectRatioImage({ src, alt, isLargeImage }: Props) {
@@ -26,3 +20,9 @@ export default function AspectRatioImage({ src, alt, isLargeImage }: Props) {
     </ImageWrapper>
   )
 }
+
+const ImageWrapper = styled.div<{ isLargeImage?: boolean }>`
+  position: relative;
+  width: 100%;
+  padding-top: ${({ isLargeImage }) => isLargeImage ? 'calc((401.95 / 562) * 100%)' : 'calc((166.94 / 273) * 100%)'}
+`
