@@ -63,7 +63,7 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
             <ProjectItemList>
               <ProjectItem title="CLIENT" itemValue={project.client} />
               <ProjectItem title="TEAM" itemValue={project.team} />
-              <ProjectItem title="PERIOD" itemValue={`${project.startDate} ~ ${project.endDate}`} />
+              <ProjectItem title="PERIOD" itemValue={`${project.startDate} - ${project.endDate}`} />
               <ProjectItem title="ROLE" itemValue={project.role.join(', ')} />
             </ProjectItemList>
             {project.description.map((description, idx) => (
