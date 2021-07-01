@@ -106,7 +106,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
   return {
     paths: projectSlugs,
-    fallback: true,
+    fallback: false,
   }
 }
 
