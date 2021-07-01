@@ -9,7 +9,7 @@ const Content = styled.div`
   }
 
   ${responsive.smLte} {
-    padding: 0 40px;
+    padding: 0 20px;
   }
 
   ${responsive.xsLte} {

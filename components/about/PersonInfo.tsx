@@ -63,14 +63,15 @@ const Content = styled.div<{ lang: string }>`
         ${responsive.lgLte} {
           padding-right: 45px;
         }
+
+        ${responsive.smLte} {
+          width: 50%;
+          padding-right: 0;
+        }
       `
     : null
   }
-
-  ${responsive.smLte} {
-    width: 100%;
-    padding-right: 0;
-  }
+  
 `
 
 const TitleFont = styled.div`
