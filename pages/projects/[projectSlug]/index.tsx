@@ -221,7 +221,6 @@ const GobackToHome = styled.div`
   right: 150px;
   cursor: pointer;
   z-index: 2;
-  background-color: transparent;
 
   ${responsive.lgLte} {
     right: 80px;
