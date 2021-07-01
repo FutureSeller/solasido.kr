@@ -54,6 +54,10 @@ const ContactInfoContainer = styled(Container)`
   ${responsive.mdLte} {
     padding-bottom: 50px;
   }
+
+  ${responsive.smLte} {
+    margin-top: 200px;
+  }
 `
 
 const Heading = styled.div`
