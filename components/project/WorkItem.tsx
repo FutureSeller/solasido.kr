@@ -20,7 +20,7 @@ export default function WorkItem({ item, isLargeImage = false, isSublistItem = f
   return (
     <Link href={`/projects/${item.slug}`} passHref>
       <Container isSublistItem={isSublistItem}>
-        <StrikeThrough style={{ width: '100%', height: '100%', position: 'relative' }}>
+        <StrikeThrough>
           <AspectRatioImage
             src={item.src}
             alt={item.alt}
@@ -86,8 +86,6 @@ const mimicStrikeThrough = keyframes`
 
 const StrikeThrough = styled.div`
   position: relative;
-  width: 100%;
-  height: 100%;
 
   &:hover, &:active {
     &::before {
