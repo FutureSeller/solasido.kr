@@ -14,10 +14,7 @@
   {
     "slug": "hwayeon",
     "title": "HWAYEON",
-    "category": [
-      "Brand Identity Design",
-      "Package Design"
-    ],
+    "category": "Brand Identity",
     "summary": [
       "한국화학연구원 연구소 기업 캠스트리 수제 비누 브랜드",
       "화연 브랜드 디자인 및 패키지 디자인"
@@ -41,12 +38,9 @@
   {
     "slug": "korea-115",
     "title": "고려대학교 개교 115주년",
-    "category": [
-      "University Identity Design"
-    ],
+    "category": "University Identity",
     "summary": [
-      "고려대학교 개교 115주년을 기념하고, 개교기념일 및 각종 대내외 행사에서",
-      "홍보하기 위한 엠블럼 디자인"
+      "고려대학교 개교 115주년을 기념하고, 개교기념일 및 각종 대내외 행사에서 홍보하기 위한 엠블럼 디자인"
     ],
     "team": "고려대학교 디자인혁신센터",
     "client": "",
@@ -66,9 +60,7 @@
   {
     "slug": "korea-40",
     "title": "고려대학교 세종캠퍼스 설립 40주년",
-    "category": [
-      "University Identity Design"
-    ],
+    "category": "University Identity",
     "summary": [
       "고려대학교 세종캠퍼스 설립 40주년을 기념하고, 개교기념일 및 각종 대내외",
       "행사에서 홍보하기 위한 엠블럼 디자인"
@@ -92,9 +84,7 @@
   {
     "slug": "korea-innovation",
     "title": "고려대학교 대학혁신지원사업단",
-    "category": [
-      "University Identity Design"
-    ],
+    "category": "University Identity",
     "summary": [
       "고려대학교 대학혁신지원사업단의 사업 운영과 대내외 홍보를 위한 로고 및",
       "엠블럼 디자인"
@@ -118,9 +108,7 @@
   {
     "slug": "deokso-farm",
     "title": "고려대학교 부속 덕소농장",
-    "category": [
-      "University Identity Design"
-    ],
+    "category": "University Identity",
     "summary": [
       "고려대학교 부속 덕소농장 로고 디자인 및 허브비누, 허브소금, 쌀 패키지",
       "디자인 리뉴얼"
@@ -145,10 +133,7 @@
   {
     "slug": "young-docs",
     "title": "제9회 젊은의사포럼",
-    "category": [
-      "Event Identity Design",
-      "Graphic Design"
-    ],
+    "category": "Event Identity",
     "summary": [
       "젊은 의사 3단체 개최 제9회 젊은 의사 포럼 이벤트 아이덴티티 및 포스터,",
       "포토월, 부스 등 그래픽 디자인"
@@ -171,9 +156,7 @@
   {
     "slug": "chemstree",
     "title": "CHEMSTREE",
-    "category": [
-      "Corporate Identity Design"
-    ],
+    "category": "Corporate Identity",
     "summary": [
       "한국화학연구원 연구소 기업, 충남대학교 산학협력중개센터 가족회사",
       "캠스트리 아이덴티티 디자인"
@@ -196,9 +179,7 @@
   {
     "slug": "ovis",
     "title": "OVIS",
-    "category": [
-      "Brand Identity Design"
-    ],
+    "category": "Brand Identity",
     "summary": [
       "유닛 결성과 콜라보레이션 활동을 위한 아티스트 브랜드",
       "OVIS 브랜드 아이덴티티 디자인"
@@ -223,9 +204,7 @@
   {
     "slug": "welivearth",
     "title": "WELIVEARTH",
-    "category": [
-      "Campaign Identity Design"
-    ],
+    "category": "Campaign Identity",
     "summary": [
       "멸종 위기 동물을 보호하고 대중의 경각심을 일깨우기 위한",
       "캠페인 아이덴티티 디자인"
@@ -253,9 +232,7 @@
   {
     "slug": "korean-pattern",
     "title": "한국전통문양",
-    "category": [
-      "Cultural Identity Design"
-    ],
+    "category": "Cultural Identity",
     "summary": [
       "전통문양의 우수성을 홍보하고 발전 가능성을 보여주기 위한 한국전통문양",
       "아이덴티티와 봉투 디자인"
@@ -280,9 +257,7 @@
   {
     "slug": "ed",
     "title": "대한민국 대학생 교육기부단",
-    "category": [
-      "Brand Identity Design Renewal"
-    ],
+    "category": "Brand Identity",
     "summary": [
       "교육부, 한국과학창의재단 협력 단체 대한민국 대학생 교육기부단",
       "브랜드 디자인 리뉴얼"
@@ -306,9 +281,7 @@
   {
     "slug": "korean-folk",
     "title": "한국민속촌",
-    "category": [
-      "Brand Identity Design Renewal"
-    ],
+    "category": "Brand Identity",
     "summary": [
       "국내 유일 전통문화 테마파크 한국민속촌 리포지셔닝 및 브랜드 디자인",
       "리뉴얼 제안"

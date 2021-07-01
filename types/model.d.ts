@@ -38,7 +38,7 @@ export type Career = {
 export type Project = {
   slug: string
   title: string
-  category: string[]
+  category: string
   summary: string[]
   team: string
   client: string
