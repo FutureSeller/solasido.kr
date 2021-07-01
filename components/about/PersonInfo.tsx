@@ -15,41 +15,43 @@ export default function PersonInfo({ person }: Props) {
   const { lang, name, position, ma, ba, objectives } = person
 
   return (
-    <ContentFont>
-      <PersonInfoItems lang={lang}>
-        <Name>
-          <TitleFont>{name}</TitleFont>
-        </Name>
-        <Position>
-          {position.map((positionItem, idx) => (
-            <TitleFont key={`${lang}-position-${idx}`}>{positionItem}</TitleFont>
-          ))}
-        </Position>
-        <School lang={lang}>
-          {ma.school?.map((schoolItem, idx) => (
-            <div key={`${lang}-school-ma-${idx}`}>{schoolItem}</div>
-          ))}
-          <div>{ma.major}</div>
-          <div>{`${ma.startDate} - ${ma.endDate}`}</div>
-        </School>
-        <School lang={lang}>
-          {ba.school?.map((schoolItem, idx) => (
-            <div key={`${lang}-school-ba-${idx}`}>{schoolItem}</div>
-          ))}
-          <div>{ba.major}</div>
-          <div>{`${ba.startDate} - ${ba.endDate}`}</div>
-        </School>
-        <Objective lang={lang}>
-          {objectives.map((objectivesItem, idx) => (
-            <div key={`${lang}-objectives-${idx}`}>{objectivesItem}</div>
-          ))}
-        </Objective>
-      </PersonInfoItems>
-    </ContentFont>
+    <Content lang={lang}>
+      <ContentFont>
+        <ul>
+          <Name>
+            <TitleFont>{name}</TitleFont>
+          </Name>
+          <Position>
+            {position.map((positionItem, idx) => (
+              <TitleFont key={`${lang}-position-${idx}`}>{positionItem}</TitleFont>
+            ))}
+          </Position>
+          <School lang={lang}>
+            {ma.school?.map((schoolItem, idx) => (
+              <div key={`${lang}-school-ma-${idx}`}>{schoolItem}</div>
+            ))}
+            <div>{ma.major}</div>
+            <div>{`${ma.startDate} - ${ma.endDate}`}</div>
+          </School>
+          <School lang={lang}>
+            {ba.school?.map((schoolItem, idx) => (
+              <div key={`${lang}-school-ba-${idx}`}>{schoolItem}</div>
+            ))}
+            <div>{ba.major}</div>
+            <div>{`${ba.startDate} - ${ba.endDate}`}</div>
+          </School>
+          <Objective lang={lang}>
+            {objectives.map((objectivesItem, idx) => (
+              <div key={`${lang}-objectives-${idx}`}>{objectivesItem}</div>
+            ))}
+          </Objective>
+        </ul>
+      </ContentFont>
+    </Content>
   )
 }
 
-const PersonInfoItems = styled.ul<{ lang: string }>`
+const Content = styled.div<{ lang: string }>`
   ${({ lang }) => lang === 'ko'
     ? css`
         padding-right: 115px;
@@ -61,13 +63,13 @@ const PersonInfoItems = styled.ul<{ lang: string }>`
         ${responsive.lgLte} {
           padding-right: 45px;
         }
-
-        ${responsive.smLte} {
-          width: 50%;
-          padding-right: 10px;
-        }
       `
     : null
+  }
+
+  ${responsive.smLte} {
+    width: 100%;
+    padding-right: 0;
   }
 `
 

@@ -75,6 +75,7 @@ const CareerWrapper = styled.div`
 
   ${responsive.smLte} {
     justify-content: flex-start;
+    width: 100%;
     padding-top: 80px;
   }
 `
@@ -95,7 +96,7 @@ const WorkAwardPanel = styled.div`
 
   ${responsive.smLte} {
     width: 50%;
-    padding-right: 10px;
+    padding-right: 0;
   }
 
   > div:last-child {
