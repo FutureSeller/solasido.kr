@@ -5,7 +5,7 @@ const Heading = styled.div<{ isMainSection?: boolean }>`
   display: inline-block;
   padding-top: ${({ isMainSection }) => isMainSection ? '280px' : '600px'};
 
-  ${responsive.mdLte}} {
+  ${responsive.mdLte} {
     padding-top: ${({ isMainSection }) => isMainSection ? '380px' : '450px'};
   }
 
