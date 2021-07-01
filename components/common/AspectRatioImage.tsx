@@ -1,21 +1,23 @@
 import styled from '@emotion/styled'
 
 import Image from 'next/image'
+import type { ImageProps } from 'next/image'
 
 interface Props {
   src: string
   alt: string
   isLargeImage?: boolean
+  objectFit?: ImageProps['objectFit']
 }
 
-export default function AspectRatioImage({ src, alt, isLargeImage }: Props) {
+export default function AspectRatioImage({ src, alt, isLargeImage, objectFit = "cover" }: Props) {
   return (
     <ImageWrapper isLargeImage={isLargeImage}>
       <Image
         src={src}
         alt={alt}
         layout="fill"
-        objectFit="cover"
+        objectFit={objectFit}
       />
     </ImageWrapper>
   )

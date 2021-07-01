@@ -25,7 +25,8 @@ export default function ProjectItem({ title, itemValue }: Props) {
 
 const Wrapper = styled.li`
   ${notoSansKR}
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 400;
   padding-top: 28px;
 
   ${responsive.smLte} {

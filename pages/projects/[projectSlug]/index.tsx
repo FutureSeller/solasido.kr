@@ -10,7 +10,7 @@ import ProjectItem from '../../../components/project/ProjectItem'
 
 import { colors } from '../../../styles/colors'
 import { responsive } from '../../../styles/responsive'
-import { neueDisplay12, notoSansKR, notoSansKRBold } from '../../../styles/typography'
+import { neue, notoSansKR, notoSansKRBold } from '../../../styles/typography'
 
 import projectsJson from '../../../public/data/projects.json'
 
@@ -42,7 +42,7 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
         title={project.title}
         description={project.summary.join(',')}
       />
-      <Category>{project.category}</Category>
+      <Category>{project.category.toUpperCase()}</Category>
       <GobackToHome>
         <ImageLinkButton
           href="/#projects"
@@ -53,7 +53,7 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
       </GobackToHome>
       <Heading>
         <HeadingFont>
-          <Title>{project.title}</Title>
+          <TitleFont>{project.title}</TitleFont>
           <Summary>{project.summary.join(', ')}</Summary>
         </HeadingFont>
       </Heading>
@@ -63,7 +63,10 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
             <ProjectItemList>
               <ProjectItem title="CLIENT" itemValue={project.client} />
               <ProjectItem title="TEAM" itemValue={project.team} />
-              <ProjectItem title="PERIOD" itemValue={`${project.startDate} - ${project.endDate}`} />
+              <ProjectItem
+                title="PERIOD"
+                itemValue={`${project.startDate.replace('.', '. ')} - ${project.endDate.replace('.', '. ')}`}
+              />
               <ProjectItem title="ROLE" itemValue={project.role.join(', ')} />
             </ProjectItemList>
             {project.description.map((description, idx) => (
@@ -79,6 +82,7 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
                   <AspectRatioImage
                     src={`/images/${project.slug}/${filename}`}
                     alt={`${project.title}의 ${idx}번째 이미지`}
+                    objectFit="contain"
                   />
                 </li>
               ))}
@@ -168,7 +172,7 @@ const Container = styled.main`
 
 const Heading = styled.div`
   position: relative;
-  margin-top: 20px;
+  margin-top: 16px;
 `
 
 const Content = styled.div`
@@ -191,11 +195,11 @@ const Column = styled.div`
 
 const HeadingFont = styled.div`
   ${notoSansKRBold}
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.5;
 
   ${responsive.lgLte} {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   ${responsive.smLte} {
@@ -203,11 +207,12 @@ const HeadingFont = styled.div`
   }
 `
 
-const Title = styled.h1`
-  font-size: 40px;
+const TitleFont = styled.h1`
+  font-size: 50px;
 
   ${responsive.lgLte} {
-    font-size: 38px;
+    font-size: 42px;
+    line-height: 1.3;
   }
 
   ${responsive.smLte} {
@@ -216,7 +221,7 @@ const Title = styled.h1`
 `
 
 const GobackToHome = styled.div`
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 150px;
   cursor: pointer;
@@ -240,15 +245,18 @@ const GobackToHome = styled.div`
 `
 
 const Summary = styled.h2`
-  padding-top: 16px;
+  padding-top: 4px;
+
+  ${responsive.mdLte} {
+    padding-top: 16px;
+  }
 `
 
 const Category = styled.div`
-  ${neueDisplay12}
-  line-height: 1;
+  ${neue}
+  font-size: 12px;
   display: inline-block;
-
-  padding: 10px 20px;
+  padding: 16px 20px 10px;
   margin: 20px 0;
   color: white;
   background-color: ${colors.red};
@@ -262,8 +270,8 @@ const Category = styled.div`
 const ContentFont = styled.div`
   ${notoSansKR}
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 18px;
+  line-height: 1.6;
 
   ${responsive.smLte} {
     font-size: 12px;
@@ -280,6 +288,10 @@ const ProjectItemList = styled.ul`
 
 const Paragraph = styled.p`
   padding-bottom: 30px;
+  
+  ${responsive.smLte} {
+    padding-bottom: 16px;
+  }
 `
 
 const ScrollableArea = styled(Column)`
@@ -291,6 +303,7 @@ const ScrollableArea = styled(Column)`
   
   ${responsive.lgLte} {
     position: static;
+    margin-top: 70px;
   }
 `
 
