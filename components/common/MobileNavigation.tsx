@@ -6,6 +6,7 @@ import Menu from './Menu'
 
 import { colors } from '../../styles/colors'
 import { neue } from '../../styles/typography'
+import { zIndex } from '../../styles/zIndex'
 
 interface Props {
   scrollY: number
@@ -61,7 +62,7 @@ const Container = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: ${zIndex.navigation};
   background-color: white;
   width: 100%;
 `
