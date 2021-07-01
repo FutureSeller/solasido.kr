@@ -43,6 +43,14 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
         description={project.summary.join(',')}
       />
       <Category>{project.category}</Category>
+      <GobackToHome>
+        <ImageLinkButton
+          href="/#projects"
+          src="/assets/back.svg"
+          alt="다음 프로젝트로 이동합니다."
+          size={30}
+        />
+      </GobackToHome>
       <Heading>
         <HeadingFont>
           <Title>{project.title}</Title>
@@ -83,12 +91,14 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
           href={prevProjectSlug ? `/projects/${prevProjectSlug}` : null}
           src="/assets/arrow-left.svg"
           alt="이전 프로젝트로 이동합니다."
+          size={24}
         />
         <FooterFont>{project.title}</FooterFont>
         <ImageLinkButton
           href={nextProjectSlug ? `/projects/${nextProjectSlug}` : null}
           src="/assets/arrow-right.svg"
           alt="다음 프로젝트로 이동합니다."
+          size={24}
         />
       </Footer>
     </Container >
@@ -158,15 +168,16 @@ const Container = styled.main`
 
 const Heading = styled.div`
   position: relative;
+  margin-top: 20px;
 `
 
 const Content = styled.div`
   position: relative;
   min-height: 100vh;
-  margin-top: 60px;
+  margin-top: 80px;
 
   ${responsive.smLte} {
-    margin-top: 40px;
+    margin-top: 60px;
   }
 `
 
@@ -181,6 +192,7 @@ const Column = styled.div`
 const HeadingFont = styled.div`
   ${notoSansKRBold}
   font-size: 18px;
+  line-height: 1.5;
 
   ${responsive.lgLte} {
     font-size: 16px;
@@ -200,6 +212,31 @@ const Title = styled.h1`
 
   ${responsive.smLte} {
     font-size: 20px;
+  }
+`
+
+const GobackToHome = styled.div`
+  position: absolute;
+  top: 20px;
+  right: 150px;
+  cursor: pointer;
+  z-index: 2;
+  background-color: transparent;
+
+  ${responsive.lgLte} {
+    right: 80px;
+  }
+
+  ${responsive.mdLte} {
+    right: 60px;
+  }
+
+  ${responsive.smLte} {
+    right: 40px;
+  }
+
+  ${responsive.xsLte} {
+    right: 20px;
   }
 `
 
@@ -235,6 +272,10 @@ const ContentFont = styled.div`
 
 const ProjectItemList = styled.ul`
   padding-bottom: 50px;
+
+  > li:nth-of-type(1) {
+    padding-top: 0;
+  }
 `
 
 const Paragraph = styled.p`
@@ -262,10 +303,12 @@ const Footer = styled.footer`
 
   ${responsive.lgLte} {
     padding: 20px 0;
+    margin-top: 60px;
   }
 
   ${responsive.smLte} {
     padding: 14px 0;
+    margin-top: 40px;
   }
 `
 

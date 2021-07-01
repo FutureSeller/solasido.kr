@@ -8,18 +8,20 @@ interface Props {
   href: string | null
   src: string
   alt: string
+  size: number
 }
 
-export default function ImageLinkButton({ href, src, alt }: Props) {
+export default function ImageLinkButton({ href, src, alt, size }: Props) {
   return (
-    <Wrapper>
+    <Wrapper size={size}>
       {href && (
         <Link href={href} passHref>
           <a>
             <Image
               src={src}
               alt={alt}
-              layout="fill" />
+              layout="fill"
+            />
           </a>
         </Link>
       )}
@@ -27,11 +29,13 @@ export default function ImageLinkButton({ href, src, alt }: Props) {
   )
 }
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<{ size: number }>`
   position: relative;
-  width: 24px;
+  width: ${({ size }) => size ? `${size}px` : '24px'};
+  height: ${({ size }) => size ? `${size}px` : '24px'};
 
   ${responsive.smLte} {
-    width: 18px;
+    width: ${({ size }) => size ? `${size - 6}px` : '18px'};
+    height: ${({ size }) => size ? `${size - 6}px` : '18px'};
   }
 `
