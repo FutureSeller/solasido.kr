@@ -1,17 +1,16 @@
 import fs from 'fs'
 import path from 'path'
+import { useEffect } from 'react'
 import styled from '@emotion/styled'
-import Image from 'next/image'
-import Link from 'next/link'
 
 import Meta from '../../../components/common/Meta'
-import Container from '../../../components/common/Container'
-import Content from '../../../components/common/Content'
 import AspectRatioImage from '../../../components/common/AspectRatioImage'
+import ImageLinkButton from '../../../components/common/ImageLinkButton'
+import ProjectItem from '../../../components/project/ProjectItem'
 
 import { colors } from '../../../styles/colors'
 import { responsive } from '../../../styles/responsive'
-import { notoSansKR, notoSansKRBold } from '../../../styles/typography'
+import { neueDisplay12, notoSansKR, notoSansKRBold } from '../../../styles/typography'
 
 import projectsJson from '../../../public/data/projects.json'
 
@@ -26,78 +25,73 @@ interface Props {
 }
 
 export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug, images }: Props) {
+  useEffect(() => {
+    if (!window) {
+      return
+    }
+
+    const $element = document.getElementById('projectItems')
+    if ($element) {
+      $element.scrollTop = 0
+    }
+  }, [project.slug])
+
   return (
     <Container>
-      <Meta title={project.title} description={project.summary.join(',')} />
+      <Meta
+        title={project.title}
+        description={project.summary.join(',')}
+      />
+      <Category>{project.category}</Category>
+      <Heading>
+        <HeadingFont>
+          <Title>{project.title}</Title>
+          <Summary>{project.summary.join(', ')}</Summary>
+        </HeadingFont>
+      </Heading>
       <Content>
-        <BackToProjectsButton>
-          <Link href="/#projects" passHref>
-            All Projects
-          </Link>
-        </BackToProjectsButton>
-        <h1>{project.title}</h1>
-        <ul>
-          {project.category.map(cat => (<li>{cat}</li>))}
-        </ul>
-        <div>
-          {project.summary.map(sum => (<div>{sum}</div>))}
-        </div>
         <ContentFont>
-          <div style={{ position: 'relative', minHeight: '100vh' }}>
-            <div style={{ width: '45%' }}>
-              <ul>
-                <li>{project.client}</li>
-                <li>{project.team}</li>
-                <li>{project.startDate} ~ {project.endDate}</li>
-                <li>{project.role.join(', ')}</li>
-              </ul>
-              {project.description.map(desc => (<p>{desc}</p>))}
-            </div>
-            <div style={{
-              width: '45%',
-              overflow: 'scroll',
-              position: 'absolute',
-              left: '50%',
-              top: 0,
-              right: 0,
-              bottom: 0
-            }}>
-              <ul>
-                {images.map((filename, idx) => (
-                  <li style={{ marginBottom: 20 }}>
-                    <AspectRatioImage
-                      src={`/images/${project.slug}/${filename}`}
-                      alt={`${project.title}의 ${idx}번째 이미지`}
-                    />
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <Column>
+            <ProjectItemList>
+              <ProjectItem title="CLIENT" itemValue={project.client} />
+              <ProjectItem title="TEAM" itemValue={project.team} />
+              <ProjectItem title="PERIOD" itemValue={`${project.startDate} ~ ${project.endDate}`} />
+              <ProjectItem title="ROLE" itemValue={project.role.join(', ')} />
+            </ProjectItemList>
+            {project.description.map((description, idx) => (
+              <Paragraph key={`${project.title}의 ${idx}번째 문단입니다.`}>
+                {description}
+              </Paragraph>
+            ))}
+          </Column>
+          <ScrollableArea id="projectItems">
+            <ul>
+              {images.map((filename, idx) => (
+                <li key={filename} style={{ marginBottom: 20 }}>
+                  <AspectRatioImage
+                    src={`/images/${project.slug}/${filename}`}
+                    alt={`${project.title}의 ${idx}번째 이미지`}
+                  />
+                </li>
+              ))}
+            </ul>
+          </ScrollableArea>
         </ContentFont>
-        <Footer>
-          <div style={{ width: 24, position: 'relative' }}>
-            {prevProjectSlug && (
-              <Image
-                src={`/assets/arrow-left.svg`}
-                alt="이전 프로젝트로 이동합니다."
-                layout="fill"
-              />
-            )}
-          </div>
-          <div>{project.title}</div>
-          <div style={{ width: 24, position: 'relative' }}>
-            {nextProjectSlug && (
-              <Image
-                src={`/assets/arrow-right.svg`}
-                alt="다음 프로젝트로 이동합니다."
-                layout="fill"
-              />
-            )}
-          </div>
-        </Footer>
       </Content>
-    </Container>
+      <Footer>
+        <ImageLinkButton
+          href={prevProjectSlug ? `/projects/${prevProjectSlug}` : null}
+          src="/assets/arrow-left.svg"
+          alt="이전 프로젝트로 이동합니다."
+        />
+        <FooterFont>{project.title}</FooterFont>
+        <ImageLinkButton
+          href={nextProjectSlug ? `/projects/${nextProjectSlug}` : null}
+          src="/assets/arrow-right.svg"
+          alt="다음 프로젝트로 이동합니다."
+        />
+      </Footer>
+    </Container >
   )
 }
 
@@ -142,11 +136,91 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
   }
 }
 
-const BackToProjectsButton = styled.button`
-  border-radius: 5px;
+const Container = styled.main`
+  padding: 0 150px;
+
+  ${responsive.lgLte} {
+    padding: 0 80px;
+  }
+
+  ${responsive.mdLte} {
+    padding: 0 60px;
+  }
+
+  ${responsive.smLte} {
+    padding: 0 40px;
+  }
+
+  ${responsive.xsLte} {
+    padding: 0 20px;
+  }
+`
+
+const Heading = styled.div`
+  position: relative;
+`
+
+const Content = styled.div`
+  position: relative;
+  min-height: 100vh;
+  margin-top: 60px;
+
+  ${responsive.smLte} {
+    margin-top: 40px;
+  }
+`
+
+const Column = styled.div`
+  width: 45%;
+
+  ${responsive.lgLte} {
+    width: 100%;
+  }
+`
+
+const HeadingFont = styled.div`
+  ${notoSansKRBold}
+  font-size: 18px;
+
+  ${responsive.lgLte} {
+    font-size: 16px;
+  }
+
+  ${responsive.smLte} {
+    font-size: 14px;
+  }
+`
+
+const Title = styled.h1`
+  font-size: 40px;
+
+  ${responsive.lgLte} {
+    font-size: 38px;
+  }
+
+  ${responsive.smLte} {
+    font-size: 20px;
+  }
+`
+
+const Summary = styled.h2`
+  padding-top: 16px;
+`
+
+const Category = styled.div`
+  ${neueDisplay12}
+  line-height: 1;
+  display: inline-block;
+
   padding: 10px 20px;
+  margin: 20px 0;
   color: white;
   background-color: ${colors.red};
+  border: none;
+
+  ${responsive.smLte} {
+    padding: 8px;
+  }
 `
 
 const ContentFont = styled.div`
@@ -159,10 +233,51 @@ const ContentFont = styled.div`
   }
 `
 
+const ProjectItemList = styled.ul`
+  padding-bottom: 50px;
+`
+
+const Paragraph = styled.p`
+  padding-bottom: 30px;
+`
+
+const ScrollableArea = styled(Column)`
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: scroll;
+  
+  ${responsive.lgLte} {
+    position: static;
+  }
+`
+
 const Footer = styled.footer`
   display: flex;
   justify-content: space-between;
   padding: 30px 0;
   margin-top: 80px;
   border-top: 1px solid ${colors.black};
+
+  ${responsive.lgLte} {
+    padding: 20px 0;
+  }
+
+  ${responsive.smLte} {
+    padding: 14px 0;
+  }
+`
+
+const FooterFont = styled.div`
+  ${notoSansKR}
+  font-size: 18px;
+
+  ${responsive.mdLte} {
+    font-size: 16px;
+  }
+
+  ${responsive.smLte} {
+    font-size: 12px;
+  }
 `
