@@ -261,6 +261,7 @@ const Category = styled.div`
 
 const ContentFont = styled.div`
   ${notoSansKR}
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
 
