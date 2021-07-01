@@ -11,6 +11,7 @@ import ProjectItem from '../../../components/project/ProjectItem'
 import { colors } from '../../../styles/colors'
 import { responsive } from '../../../styles/responsive'
 import { neue, notoSansKR, notoSansKRBold } from '../../../styles/typography'
+import { zIndex } from '../../../styles/zIndex'
 
 import projectsJson from '../../../public/data/projects.json'
 
@@ -225,7 +226,7 @@ const GobackToHome = styled.div`
   top: 20px;
   right: 150px;
   cursor: pointer;
-  z-index: 2;
+  z-index: ${zIndex.navigation};
 
   ${responsive.lgLte} {
     right: 80px;
