@@ -16,7 +16,7 @@ interface Props {
 
 export default function WorkItem({ item, isLargeImage = false, isSublistItem = false }: Props) {
   return (
-    <Link href={`/projects/${item.slug}`}>
+    <Link href={`/projects/${item.slug}`} passHref>
       <Container isSublistItem={isSublistItem}>
         <AspectRatioImage
           src={item.src}
