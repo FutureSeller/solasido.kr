@@ -300,7 +300,7 @@ const ScrollableArea = styled(Column)`
   top: 0;
   right: 0;
   bottom: 0;
-  overflow: scroll;
+  overflow-y: scroll;
   
   ${responsive.lgLte} {
     position: static;
