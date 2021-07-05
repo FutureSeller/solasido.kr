@@ -329,6 +329,7 @@ const Footer = styled.footer`
 const FooterFont = styled.div`
   ${notoSansKR}
   font-size: 18px;
+  line-height: 1.5;
 
   ${responsive.mdLte} {
     font-size: 16px;
