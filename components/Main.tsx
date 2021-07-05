@@ -55,14 +55,14 @@ const StrikeThrough = styled.div`
   &::before {
     position: absolute;
     left: -60px;
-    top: 28%;
+    top: 30%;
     content: '';
     border-bottom: 25px solid ${colors.red};
     animation: ${mimicStrikeThrough} 1s forwards;
     animation-delay: 1.5s;
 
     ${responsive.lgLte} {
-      border-bottom: 20px solid ${colors.red};
+      border-bottom: 22px solid ${colors.red};
     }
 
     ${responsive.mdLte} {
