@@ -1,12 +1,14 @@
 import fs from 'fs'
 import path from 'path'
 import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 import styled from '@emotion/styled'
 
 import Meta from '../../../components/common/Meta'
 import AspectRatioImage from '../../../components/common/AspectRatioImage'
 import ImageLinkButton from '../../../components/common/ImageLinkButton'
 import ProjectItem from '../../../components/project/ProjectItem'
+import Paging from '../../../components/animation/Paging'
 
 import { colors } from '../../../styles/colors'
 import { responsive } from '../../../styles/responsive'
@@ -38,75 +40,77 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
   }, [project.slug])
 
   return (
-    <Container>
-      <Meta
-        title={project.title}
-        description={project.summary.join(',')}
-      />
-      <Category>{project.category.toUpperCase()}</Category>
-      <GobackToHome>
-        <ImageLinkButton
-          href="/#projects"
-          src="/assets/back.svg"
-          alt="다음 프로젝트로 이동합니다."
-          size={30}
+    <Paging>
+      <Container>
+        <Meta
+          title={project.title}
+          description={project.summary.join(',')}
         />
-      </GobackToHome>
-      <Heading>
-        <HeadingFont>
-          <TitleFont>{project.title}</TitleFont>
-          <Summary>{project.summary.join(', ')}</Summary>
-        </HeadingFont>
-      </Heading>
-      <Content>
-        <ContentFont>
-          <Column>
-            <ProjectItemList>
-              <ProjectItem title="CLIENT" itemValue={project.client} />
-              <ProjectItem title="TEAM" itemValue={project.team} />
-              <ProjectItem
-                title="PERIOD"
-                itemValue={`${project.startDate.replace('.', '. ')} - ${project.endDate.replace('.', '. ')}`}
-              />
-              <ProjectItem title="ROLE" itemValue={project.role.join(', ')} />
-            </ProjectItemList>
-            {project.description.map((description, idx) => (
-              <Paragraph key={`${project.title}의 ${idx}번째 문단입니다.`}>
-                {description}
-              </Paragraph>
-            ))}
-          </Column>
-          <ScrollableArea id="projectItems">
-            <ul>
-              {images.map((filename, idx) => (
-                <li key={filename} style={{ marginBottom: 20 }}>
-                  <AspectRatioImage
-                    src={`/images/${project.slug}/${filename}`}
-                    alt={`${project.title}의 ${idx}번째 이미지`}
-                    objectFit="contain"
-                  />
-                </li>
+        <Category>{project.category.toUpperCase()}</Category>
+        <GobackToHome>
+          <ImageLinkButton
+            href="/#projects"
+            src="/assets/back.svg"
+            alt="다음 프로젝트로 이동합니다."
+            size={30}
+          />
+        </GobackToHome>
+        <Heading>
+          <HeadingFont>
+            <TitleFont>{project.title}</TitleFont>
+            <Summary>{project.summary.join(', ')}</Summary>
+          </HeadingFont>
+        </Heading>
+        <Content>
+          <ContentFont>
+            <Column>
+              <ProjectItemList>
+                <ProjectItem title="CLIENT" itemValue={project.client} />
+                <ProjectItem title="TEAM" itemValue={project.team} />
+                <ProjectItem
+                  title="PERIOD"
+                  itemValue={`${project.startDate.replace('.', '. ')} - ${project.endDate.replace('.', '. ')}`}
+                />
+                <ProjectItem title="ROLE" itemValue={project.role.join(', ')} />
+              </ProjectItemList>
+              {project.description.map((description, idx) => (
+                <Paragraph key={`${project.title}의 ${idx}번째 문단입니다.`}>
+                  {description}
+                </Paragraph>
               ))}
-            </ul>
-          </ScrollableArea>
-        </ContentFont>
-      </Content>
-      <Footer>
-        <ImageLinkButton
-          href={prevProjectSlug ? `/projects/${prevProjectSlug}` : null}
-          src="/assets/arrow-left.svg"
-          alt="이전 프로젝트로 이동합니다."
-          size={24}
-        />
-        <FooterFont>{project.title}</FooterFont>
-        <ImageLinkButton
-          href={nextProjectSlug ? `/projects/${nextProjectSlug}` : null}
-          src="/assets/arrow-right.svg"
-          alt="다음 프로젝트로 이동합니다."
-          size={24}
-        />
-      </Footer>
-    </Container >
+            </Column>
+            <ScrollableArea id="projectItems">
+              <ul>
+                {images.map((filename, idx) => (
+                  <li key={filename} style={{ marginBottom: 20 }}>
+                    <AspectRatioImage
+                      src={`/images/${project.slug}/${filename}`}
+                      alt={`${project.title}의 ${idx}번째 이미지`}
+                      objectFit="contain"
+                    />
+                  </li>
+                ))}
+              </ul>
+            </ScrollableArea>
+          </ContentFont>
+        </Content>
+        <Footer>
+          <ImageLinkButton
+            href={prevProjectSlug ? `/projects/${prevProjectSlug}` : null}
+            src="/assets/arrow-left.svg"
+            alt="이전 프로젝트로 이동합니다."
+            size={24}
+          />
+          <FooterFont>{project.title}</FooterFont>
+          <ImageLinkButton
+            href={nextProjectSlug ? `/projects/${nextProjectSlug}` : null}
+            src="/assets/arrow-right.svg"
+            alt="다음 프로젝트로 이동합니다."
+            size={24}
+          />
+        </Footer>
+      </Container>
+    </Paging>
   )
 }
 
