@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
 
 import Meta from '../../../components/common/Meta'
@@ -8,6 +8,7 @@ import AspectRatioImage from '../../../components/common/AspectRatioImage'
 import ImageLinkButton from '../../../components/common/ImageLinkButton'
 import ProjectItem from '../../../components/project/ProjectItem'
 import Paging from '../../../components/animation/Paging'
+import Modal from '../../../components/common/Modal'
 
 import { colors } from '../../../styles/colors'
 import { responsive } from '../../../styles/responsive'
@@ -27,6 +28,8 @@ interface Props {
 }
 
 export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug, images }: Props) {
+  const [showModal, setShowModal] = useState(false)
+
   useEffect(() => {
     if (!window) {
       return
@@ -41,6 +44,13 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
   return (
     <Paging slug={project.slug}>
       <Container>
+        <Modal
+          title={project.title}
+          show={showModal}
+          onClose={() => setShowModal(false)}
+        >
+          <div>Hello world</div>
+        </Modal>
         <Meta
           title={project.title}
           description={project.summary.join(',')}
@@ -81,13 +91,23 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
             <ScrollableArea id="projectItems">
               <ul>
                 {images.map(({ src, blurDataURL }, idx) => (
-                  <li key={src} style={{ marginBottom: 20 }}>
+                  <li key={src} style={{ marginBottom: 20, position: 'relative' }}>
                     <AspectRatioImage
                       src={src}
                       alt={`${project.title}의 ${idx}번째 이미지`}
                       objectFit="contain"
                       blurDataURL={blurDataURL}
                     />
+                    <button
+                      style={{
+                        position: 'absolute',
+                        left: 40,
+                        bottom: 10,
+                      }}
+                      onClick={() => setShowModal(true)}
+                    >
+                      Click me
+                    </button>
                   </li>
                 ))}
               </ul>

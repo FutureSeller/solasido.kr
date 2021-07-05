@@ -15,6 +15,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-slick": "^0.28.1",
     "react-transition-group": "^4.4.2",
     "sharp": "^0.28.3"
   },
@@ -22,6 +23,7 @@
     "@types/lodash": "^4.14.168",
     "@types/node": "^14.14.37",
     "@types/react": "latest",
+    "@types/react-dom": "latest",
     "@types/react-transition-group": "^4.4.1",
     "eslint": "^7.28.0",
     "eslint-config-next": "^11.0.0",
