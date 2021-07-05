@@ -14,12 +14,14 @@
     "lodash": "^4.17.21",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-transition-group": "^4.4.2"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.168",
     "@types/node": "^14.14.37",
     "@types/react": "latest",
+    "@types/react-transition-group": "^4.4.1",
     "eslint": "^7.28.0",
     "eslint-config-next": "^11.0.0",
     "prettier": "^2.2.1",
