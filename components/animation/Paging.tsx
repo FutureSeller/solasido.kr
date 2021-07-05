@@ -1,13 +1,12 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { Transition, TransitionGroup } from 'react-transition-group'
-import { TransitionStatus } from 'react-transition-group'
+import { Transition, TransitionGroup, TransitionStatus } from 'react-transition-group'
 
 interface Props {
   children: React.ReactNode
 }
 
-const TIMEOUT = 400
+const TIMEOUT = 500
 const TRANSITION_STYLES: { [key in TransitionStatus]: any } = {
   entering: {
     position: `absolute`,
@@ -19,7 +18,11 @@ const TRANSITION_STYLES: { [key in TransitionStatus]: any } = {
     opacity: 1,
     transform: `translateX(0px)`,
   },
-  exiting: {},
+  exiting: {
+    transition: `opacity ${TIMEOUT}ms ease-in-out, transform ${TIMEOUT}ms ease-in-out`,
+    opacity: 0,
+    transform: `translateX(-50px)`,
+  },
   exited: {},
   unmounted: {}
 }
@@ -28,7 +31,7 @@ export default function Paging({ children }: Props) {
   const router = useRouter()
 
   return (
-    <TransitionGroup>
+    <TransitionGroup style={{ position: 'relative' }}>
       <Transition
         key={router.asPath}
         timeout={{

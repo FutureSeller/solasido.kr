@@ -15,7 +15,7 @@ export default function ImageLinkButton({ href, src, alt, size }: Props) {
   return (
     <Wrapper size={size}>
       {href && (
-        <Link href={href} passHref>
+        <Link href={href} scroll={false} passHref>
           <a>
             <Image
               src={src}

@@ -1,7 +1,6 @@
 import fs from 'fs'
 import path from 'path'
 import { useEffect } from 'react'
-import { useRouter } from 'next/router'
 import styled from '@emotion/styled'
 
 import Meta from '../../../components/common/Meta'
