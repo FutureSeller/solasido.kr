@@ -3,17 +3,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { responsive } from '../../styles/responsive'
-
+import type { LinkProps } from 'next/link'
 interface Props {
-  href: string | null
+  href: LinkProps['href'] | null
   src: string
   alt: string
   size: number
+  handleClick?: () => void
 }
 
-export default function ImageLinkButton({ href, src, alt, size }: Props) {
+export default function ImageLinkButton({ href, src, alt, size, handleClick }: Props) {
   return (
-    <Wrapper size={size}>
+    <Wrapper size={size} onClick={handleClick}>
       {href && (
         <Link href={href} passHref>
           <a>

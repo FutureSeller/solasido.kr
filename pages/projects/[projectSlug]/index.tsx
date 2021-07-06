@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
 
 import Meta from '../../../components/common/Meta'
@@ -27,6 +27,8 @@ interface Props {
 }
 
 export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug, images }: Props) {
+  const [direction, setDirection] = useState<'prev' | 'next'>('prev')
+
   useEffect(() => {
     if (!window) {
       return
@@ -39,7 +41,7 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
   }, [project.slug])
 
   return (
-    <Paging>
+    <Paging direction={direction}>
       <Container>
         <Meta
           title={project.title}
@@ -99,6 +101,7 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
             src="/assets/arrow-left.svg"
             alt="이전 프로젝트로 이동합니다."
             size={24}
+            handleClick={() => setDirection('prev')}
           />
           <FooterFont>{project.title}</FooterFont>
           <ImageLinkButton
@@ -106,6 +109,7 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
             src="/assets/arrow-right.svg"
             alt="다음 프로젝트로 이동합니다."
             size={24}
+            handleClick={() => setDirection('next')}
           />
         </Footer>
       </Container>
