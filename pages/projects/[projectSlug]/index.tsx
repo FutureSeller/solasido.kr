@@ -16,14 +16,14 @@ import { zIndex } from '../../../styles/zIndex'
 
 import projectsJson from '../../../public/data/projects.json'
 
-import type { Project } from '../../../types/model'
+import type { Project, Image } from '../../../types/model'
 import type { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next'
 
 interface Props {
   project: Project
   prevProjectSlug: string | null
   nextProjectSlug: string | null
-  images: string[]
+  images: Omit<Image, 'alt'>[]
 }
 
 export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug, images }: Props) {
@@ -80,12 +80,13 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
             </Column>
             <ScrollableArea id="projectItems">
               <ul>
-                {images.map((filename, idx) => (
-                  <li key={filename} style={{ marginBottom: 20 }}>
+                {images.map(({ src, blurDataURL }, idx) => (
+                  <li key={src} style={{ marginBottom: 20 }}>
                     <AspectRatioImage
-                      src={`/images/${project.slug}/${filename}`}
+                      src={src}
                       alt={`${project.title}의 ${idx}번째 이미지`}
                       objectFit="contain"
+                      blurDataURL={blurDataURL}
                     />
                   </li>
                 ))}
@@ -137,9 +138,9 @@ export const getStaticProps: GetStaticProps = async (context: GetStaticPropsCont
     }
   }
 
-  const images = fs
-    .readdirSync(path.join(process.cwd(), `/public/images/${context.params?.projectSlug}/`))
-    .filter(filename => !filename.includes('thumbnail'))
+  const images = JSON.parse(
+    fs.readFileSync(path.join(process.cwd(), `/public/images/${context.params?.projectSlug}/imageMeta.json`), 'utf-8')
+  )
 
   const prevProjectSlug = projectIndex === 0 ? null : projects[projectIndex - 1].slug
   const nextProjectSlug = projectIndex === projects.length - 1 ? null : projects[projectIndex + 1].slug

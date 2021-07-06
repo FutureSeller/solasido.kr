@@ -24,6 +24,7 @@ export default function WorkItem({ item, isLargeImage = false, isSublistItem = f
           <AspectRatioImage
             src={item.src}
             alt={item.alt}
+            blurDataURL={item.blurDataURL}
             isLargeImage={isLargeImage}
           />
         </StrikeThrough>

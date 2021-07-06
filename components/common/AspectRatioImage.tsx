@@ -8,9 +8,10 @@ interface Props {
   alt: string
   isLargeImage?: boolean
   objectFit?: ImageProps['objectFit']
+  blurDataURL: string
 }
 
-export default function AspectRatioImage({ src, alt, isLargeImage, objectFit = "cover" }: Props) {
+export default function AspectRatioImage({ src, alt, isLargeImage, blurDataURL, objectFit = "cover" }: Props) {
   return (
     <ImageWrapper isLargeImage={isLargeImage}>
       <Image
@@ -18,6 +19,8 @@ export default function AspectRatioImage({ src, alt, isLargeImage, objectFit = "
         alt={alt}
         layout="fill"
         objectFit={objectFit}
+        placeholder="blur"
+        blurDataURL={blurDataURL}
       />
     </ImageWrapper>
   )
