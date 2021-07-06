@@ -3,7 +3,6 @@ import { Transition, TransitionGroup, TransitionStatus } from 'react-transition-
 
 interface Props {
   slug: string
-  direction: 'prev' | 'next'
   children: React.ReactNode
 }
 
@@ -14,31 +13,18 @@ const TRANSITION_STYLES: { [key in TransitionStatus]: any } = {
     opacity: 0,
   },
   entered: {
-    transition: `opacity ${TIMEOUT}ms ease-in-out, transform ${TIMEOUT}ms ease-in-out`,
+    transition: `opacity ${TIMEOUT}ms ease-in-out`,
     opacity: 1,
   },
   exiting: {
-    transition: `opacity ${TIMEOUT}ms ease-in-out, transform ${TIMEOUT}ms ease-in-out`,
+    transition: `opacity ${TIMEOUT}ms ease-in-out`,
     opacity: 0,
   },
   exited: {},
   unmounted: {}
 }
 
-const TRNASFORM_VALUE: { [key: string]: any } = {
-  prev: {
-    entering: 'translateX(50px)',
-    exiting: 'none',
-    entered: 'none',
-  },
-  next: {
-    entering: 'translateX(-50px)',
-    exiting: 'none',
-    entered: 'none',
-  },
-}
-
-export default function Paging({ slug, direction, children }: Props) {
+export default function Paging({ slug, children }: Props) {
   return (
     <TransitionGroup style={{ position: 'relative' }}>
       <Transition
@@ -49,10 +35,7 @@ export default function Paging({ slug, direction, children }: Props) {
         }}
       >
         {status => (
-          <div style={{
-            ...TRANSITION_STYLES[status],
-            transform: TRNASFORM_VALUE[direction][status],
-          }}>
+          <div style={{ ...TRANSITION_STYLES[status] }}>
             {children}
           </div>
         )}

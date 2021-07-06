@@ -9,12 +9,11 @@ interface Props {
   src: string
   alt: string
   size: number
-  handleClick?: () => void
 }
 
-export default function ImageLinkButton({ href, src, alt, size, handleClick }: Props) {
+export default function ImageLinkButton({ href, src, alt, size }: Props) {
   return (
-    <Wrapper size={size} onClick={handleClick}>
+    <Wrapper size={size}>
       {href && (
         <Link href={href} passHref>
           <a>
