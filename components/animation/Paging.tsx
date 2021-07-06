@@ -28,13 +28,13 @@ const TRANSITION_STYLES: { [key in TransitionStatus]: any } = {
 const TRNASFORM_VALUE: { [key: string]: any } = {
   prev: {
     entering: 'translateX(50px)',
-    exiting: 'translateX(-50px)',
-    entered: 'translateX(0px)',
+    exiting: 'none',
+    entered: 'none',
   },
   next: {
     entering: 'translateX(-50px)',
-    exiting: 'translateX(50px)',
-    entered: 'translateX(0px)',
+    exiting: 'none',
+    entered: 'none',
   },
 }
 
