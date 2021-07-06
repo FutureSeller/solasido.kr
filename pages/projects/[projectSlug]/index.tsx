@@ -41,7 +41,7 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
   }, [project.slug])
 
   return (
-    <Paging direction={direction}>
+    <Paging slug={project.slug} direction={direction}>
       <Container>
         <Meta
           title={project.title}

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
+import React from 'react'
 import { Transition, TransitionGroup, TransitionStatus } from 'react-transition-group'
 
 interface Props {
-  children: React.ReactNode
+  slug: string
   direction: 'prev' | 'next'
+  children: React.ReactNode
 }
 
 const TIMEOUT = 500
@@ -38,13 +38,11 @@ const TRNASFORM_VALUE: { [key: string]: any } = {
   },
 }
 
-export default function Paging({ children, direction }: Props) {
-  const router = useRouter()
-
+export default function Paging({ slug, direction, children }: Props) {
   return (
     <TransitionGroup style={{ position: 'relative' }}>
       <Transition
-        key={router.asPath}
+        key={slug}
         timeout={{
           enter: TIMEOUT,
           exit: TIMEOUT
