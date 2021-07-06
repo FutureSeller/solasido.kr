@@ -1,6 +1,7 @@
 export type Image = {
   src: string
   alt: string
+  blurDataURL: string
 }
 
 export type Thumbnail = Image & {

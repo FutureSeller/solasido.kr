@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "node scripts/blur.js && next dev",
+    "build": "node scripts/blur.js && next build",
     "start": "next start"
   },
   "dependencies": {
@@ -15,7 +15,8 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-transition-group": "^4.4.2"
+    "react-transition-group": "^4.4.2",
+    "sharp": "^0.28.3"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.168",

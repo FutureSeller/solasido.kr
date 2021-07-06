@@ -15,7 +15,7 @@ export default function useOnScreen(ref: RefObject<HTMLHeadingElement>) {
     if (ref.current) {
       observer.observe(ref.current)
     }
-    
+
     return () => { observer.disconnect() }
   }, [])
 
