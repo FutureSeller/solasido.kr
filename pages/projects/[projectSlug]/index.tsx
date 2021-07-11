@@ -1,13 +1,15 @@
 import fs from 'fs'
 import path from 'path'
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
 
 import Meta from '../../../components/common/Meta'
 import AspectRatioImage from '../../../components/common/AspectRatioImage'
 import ImageLinkButton from '../../../components/common/ImageLinkButton'
+import StyledSlider from '../../../components/common/StyledSlider'
 import ProjectItem from '../../../components/project/ProjectItem'
 import Paging from '../../../components/animation/Paging'
+import Modal from '../../../components/common/Modal'
 
 import { colors } from '../../../styles/colors'
 import { responsive } from '../../../styles/responsive'
@@ -27,6 +29,9 @@ interface Props {
 }
 
 export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug, images }: Props) {
+  const [showModal, setShowModal] = useState(false)
+  const [initialSlide, setInitialSlide] = useState(0)
+
   useEffect(() => {
     if (!window) {
       return
@@ -41,6 +46,23 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
   return (
     <Paging slug={project.slug}>
       <Container>
+        <Modal
+          title={project.title}
+          show={showModal}
+          onClose={() => setShowModal(false)}
+        >
+          <StyledSlider initialSlide={initialSlide}>
+            {images.map(({ src, blurDataURL }, idx) => (
+              <AspectRatioImage
+                key={`modal-${project.title}-${idx}`}
+                src={src}
+                alt={`${project.title}의 ${idx}번째 이미지`}
+                objectFit="contain"
+                blurDataURL={blurDataURL}
+              />
+            ))}
+          </StyledSlider>
+        </Modal>
         <Meta
           title={project.title}
           description={project.summary.join(',')}
@@ -81,12 +103,18 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
             <ScrollableArea id="projectItems">
               <ul>
                 {images.map(({ src, blurDataURL }, idx) => (
-                  <li key={src} style={{ marginBottom: 20 }}>
+                  <li key={src} style={{ marginBottom: 20, position: 'relative' }}>
                     <AspectRatioImage
                       src={src}
                       alt={`${project.title}의 ${idx}번째 이미지`}
                       objectFit="contain"
                       blurDataURL={blurDataURL}
+                    />
+                    <ModalClick 
+                      onClick={() => {
+                        setInitialSlide(idx)
+                        setShowModal(true)
+                      }}
                     />
                   </li>
                 ))}
@@ -341,5 +369,21 @@ const FooterFont = styled.div`
 
   ${responsive.smLte} {
     font-size: 12px;
+  }
+`
+
+const ModalClick = styled.div`
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    ${responsive.lgLte} {
+      display: none;
+    }
   }
 `
