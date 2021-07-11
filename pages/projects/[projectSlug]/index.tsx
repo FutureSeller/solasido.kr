@@ -6,6 +6,7 @@ import styled from '@emotion/styled'
 import Meta from '../../../components/common/Meta'
 import AspectRatioImage from '../../../components/common/AspectRatioImage'
 import ImageLinkButton from '../../../components/common/ImageLinkButton'
+import StyledSlider from '../../../components/common/StyledSlider'
 import ProjectItem from '../../../components/project/ProjectItem'
 import Paging from '../../../components/animation/Paging'
 import Modal from '../../../components/common/Modal'
@@ -29,6 +30,7 @@ interface Props {
 
 export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug, images }: Props) {
   const [showModal, setShowModal] = useState(false)
+  const [initialSlide, setInitialSlide] = useState(0)
 
   useEffect(() => {
     if (!window) {
@@ -49,7 +51,17 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
           show={showModal}
           onClose={() => setShowModal(false)}
         >
-          <div>Hello world</div>
+          <StyledSlider initialSlide={initialSlide}>
+            {images.map(({ src, blurDataURL }, idx) => (
+              <AspectRatioImage
+                key={`modal-${project.title}-${idx}`}
+                src={src}
+                alt={`${project.title}의 ${idx}번째 이미지`}
+                objectFit="contain"
+                blurDataURL={blurDataURL}
+              />
+            ))}
+          </StyledSlider>
         </Modal>
         <Meta
           title={project.title}
@@ -98,16 +110,12 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
                       objectFit="contain"
                       blurDataURL={blurDataURL}
                     />
-                    <button
-                      style={{
-                        position: 'absolute',
-                        left: 40,
-                        bottom: 10,
+                    <ModalClick 
+                      onClick={() => {
+                        setInitialSlide(idx)
+                        setShowModal(true)
                       }}
-                      onClick={() => setShowModal(true)}
-                    >
-                      Click me
-                    </button>
+                    />
                   </li>
                 ))}
               </ul>
@@ -361,5 +369,21 @@ const FooterFont = styled.div`
 
   ${responsive.smLte} {
     font-size: 12px;
+  }
+`
+
+const ModalClick = styled.div`
+  &::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    ${responsive.lgLte} {
+      display: none;
+    }
   }
 `

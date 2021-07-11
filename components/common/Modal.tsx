@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import ReactDOM from 'react-dom'
 import styled from '@emotion/styled'
+import Image from 'next/image'
 
 import useIsMount from '../../hooks/useIsMount'
 import useEventListener from '../../hooks/useEventListener'
@@ -41,10 +42,19 @@ export default function Modal({ title, show, onClose, children }: Props) {
 
     return $element ? ReactDOM.createPortal(
       <StyledModalOverlay>
-        <header style={{ textAlign: 'center' }}>
-          <h1>{title}</h1>
-        </header>
-        {children}
+        <Header>
+          <h1 style={{ borderBottom: '1px solid black'}}>{title}</h1>
+          <MenuButton onClick={onClose}>
+            <Image
+              src="/assets/close.svg"
+              alt="close-menu"
+              layout="fill"
+            />
+          </MenuButton>
+        </Header>
+        <Content>
+          {children}
+        </Content>
       </StyledModalOverlay>,
       $element
     ) : null
@@ -62,4 +72,27 @@ const StyledModalOverlay = styled.div`
   background-color: ${colors.white};
   z-index: ${zIndex.modal};
   overflow: hidden;
+`
+
+const Header = styled.header`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 22px;
+`
+
+const Content = styled.div`
+  display: flex;
+  align-items: center;
+  height: calc(100% - 120px);
+`
+
+const MenuButton = styled.div`
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 3%;
+  top: 20px;
+  cursor: pointer;
 `
