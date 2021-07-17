@@ -128,6 +128,7 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
             src="/assets/arrow-left.svg"
             alt="이전 프로젝트로 이동합니다."
             size={24}
+            rel="prev"
           />
           <FooterFont>{project.title}</FooterFont>
           <ImageLinkButton
@@ -135,6 +136,7 @@ export default function ProjectPage({ project, prevProjectSlug, nextProjectSlug,
             src="/assets/arrow-right.svg"
             alt="다음 프로젝트로 이동합니다."
             size={24}
+            rel="next"
           />
         </Footer>
       </Container>

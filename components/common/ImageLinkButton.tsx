@@ -9,14 +9,15 @@ interface Props {
   src: string
   alt: string
   size: number
+  rel?: string
 }
 
-export default function ImageLinkButton({ href, src, alt, size }: Props) {
+export default function ImageLinkButton({ href, src, alt, size, rel }: Props) {
   return (
     <Wrapper size={size}>
       {href && (
         <Link href={href} passHref>
-          <a>
+          <a rel={rel}>
             <Image
               src={src}
               alt={alt}
