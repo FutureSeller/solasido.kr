@@ -30,14 +30,6 @@ const Wrapper = styled(Slider)`
     padding: 0 10%;
   }
 
-  &.slick-prev {
-    left: 30px !important;
-  }
-
-  &.slick-next {
-    left: 30px !important;
-  }
-
   .slick-prev, 
   .slick-next {
     position: absolute;
