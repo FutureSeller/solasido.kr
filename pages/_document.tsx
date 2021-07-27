@@ -12,11 +12,11 @@ export default class MyDocument extends Document {
           <link
             rel="preload"
             as="style"
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
           />
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
           />
           <link
             rel="preload"
@@ -39,7 +39,7 @@ export default class MyDocument extends Document {
           <noscript>
             <link
               rel="stylesheet"
-              href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+              href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
             />
           </noscript>
         </Head>
