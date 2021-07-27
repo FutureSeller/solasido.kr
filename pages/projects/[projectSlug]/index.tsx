@@ -304,9 +304,13 @@ const Category = styled.div`
 
 const ContentFont = styled.div`
   ${notoSansKR}
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.6;
+
+  ${responsive.lgLte} {
+    font-weight: 400;
+  }
 
   ${responsive.smLte} {
     font-size: 12px;
