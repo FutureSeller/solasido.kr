@@ -24,6 +24,7 @@ export default function Typing({ duration, delay, children }: Props) {
         return
       }
       style.whiteSpace = 'normal'
+      style.overflow = 'visible'
     }
 
     typingDiv.addEventListener('animationend', handleAnimationEnd)

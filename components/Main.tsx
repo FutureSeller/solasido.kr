@@ -24,7 +24,7 @@ export default function Main() {
 }
 
 const MainContainer = styled(Container)`
-position: relative;
+  position: relative;
   height: 100vh;
   background-color: ${colors.black};
   color: ${colors.white};
@@ -37,10 +37,8 @@ const HidedTitle = styled.h1`
   white-space: nowrap;
 `
 
-
 const Content = styled.div`
   position: absolute;
-  display: inline-block;
   top: 50%;
 `
 
