@@ -1,7 +1,7 @@
+import { useEffect } from 'react'
 import { keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
 
-import Container from './common/Container'
 import NeueDisplay from './typography/NeueDisplay'
 import Typing from './animation/Typing'
 
@@ -9,8 +9,14 @@ import { responsive } from '../styles/responsive'
 import { colors } from '../styles/colors'
 
 export default function Main() {
+  useEffect(() => {
+    // !HACK: https://css-tricks.com/the-trick-to-viewport-units-on-mobile
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }, [])
+
   return (
-    <MainContainer>
+    <Container>
       <HidedTitle>Solasido&apos;s Portfolio</HidedTitle>
       <Content>
         <NeueDisplay>
@@ -19,15 +25,26 @@ export default function Main() {
           <StrikeThrough />
         </NeueDisplay>
       </Content>
-    </MainContainer>
+    </Container>
   )
 }
 
-const MainContainer = styled(Container)`
+const Container = styled.section`
   position: relative;
-  height: 100vh;
+
   background-color: ${colors.black};
   color: ${colors.white};
+
+  width: 100%;
+  padding: 500px 60px;
+
+  ${responsive.mdLte} {
+    padding: 400px 30px;
+  }
+
+  ${responsive.smLte} {
+    padding: 400px 20px;
+  }
 `
 
 const HidedTitle = styled.h1`
@@ -38,8 +55,7 @@ const HidedTitle = styled.h1`
 `
 
 const Content = styled.div`
-  position: absolute;
-  top: 50%;
+  display: inline-block;
 `
 
 const mimicStrikeThrough = keyframes`
