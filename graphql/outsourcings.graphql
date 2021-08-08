@@ -1,0 +1,8 @@
+query Outsourcings {
+  outsourcings(sort: "startYear:desc") {
+    title
+    description
+    startYear
+    endYear
+  }
+}

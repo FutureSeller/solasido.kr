@@ -1,0 +1,8 @@
+query Careers {
+  careers(sort: "startYear:desc") {
+    company
+    position
+    startYear
+    endYear
+  }
+}

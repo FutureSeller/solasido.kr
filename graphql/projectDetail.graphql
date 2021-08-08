@@ -1,0 +1,49 @@
+query ProjectDetail($id: ID!) {
+  project(id: $id) {
+    id
+    slug
+    title
+    summary
+    description
+    scope
+    link
+    color
+    backgroundColor
+    fixedTitleColor
+    stickyTitleColor
+    startDate
+    endDate
+    work {
+      type
+      value
+    }
+    mainCoverImage {
+      alt
+      placeholder
+      source {
+        url
+      }
+    }
+    projectDetails {
+      id
+      color
+      backgroundColor
+      content {
+        __typename
+        ... on ComponentCommonImage {
+          alt
+          placeholder
+          source {
+            width
+            height
+            url
+          }
+        }
+        ... on ComponentProjectExplanation {
+          description
+          isRight
+        }
+      }
+    }
+  }
+}

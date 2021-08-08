@@ -1,0 +1,20 @@
+overwrite: true
+schema: 'https://admin.commonfox0405.com/graphql'
+documents: 'graphql/**/*.graphql'
+generates:
+  __generated__/graphql.tsx:
+    config:
+      defaultScalarType: unknown
+      scalars:
+        DateTime: string
+      avoidOptionals:
+        field: true
+        inputValue: true
+        defaultValue: true
+      nameingConvention:
+        enumValues: change-case-all#upperCase
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
+      - 'fragment-matcher'

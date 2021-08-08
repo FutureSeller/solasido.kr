@@ -1,0 +1,9 @@
+query Awards {
+  awards(sort: "startYear:desc") {
+    title
+    category
+    prize
+    startYear
+    endYear
+  }
+}

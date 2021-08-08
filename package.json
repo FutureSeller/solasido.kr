@@ -6,17 +6,63 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "commitlint": "commitlint",
+    "commit": "cz",
+    "generate:schema": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
-    "next": "11.0.1",
+    "@apollo/client": "^3.4.16",
+    "@chakra-ui/react": "^1.6.8",
+    "@chakra-ui/react-utils": "^1.1.2",
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@fontsource/open-sans": "^4.5.1",
+    "@yarnpkg/pnpify": "^3.0.1-rc.5",
+    "framer-motion": "^4",
+    "graphql": "^15.6.1",
+    "lodash": "^4.17.21",
+    "next": "11.1",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
+    "@emotion/eslint-plugin": "^11.2.0",
+    "@graphql-codegen/cli": "2.2.1",
+    "@graphql-codegen/fragment-matcher": "^3.1.0",
+    "@graphql-codegen/introspection": "2.1.0",
+    "@graphql-codegen/typescript": "2.2.4",
+    "@graphql-codegen/typescript-operations": "2.1.8",
+    "@graphql-codegen/typescript-react-apollo": "3.1.6",
+    "@types/lodash": "^4.14.175",
+    "@types/node": "^16.9.3",
     "@types/react": "17.0.15",
+    "commitizen": "^4.2.4",
     "eslint": "7.32.0",
     "eslint-config-next": "11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-processor-styled-components": "^1.10.0",
     "typescript": "4.3.5"
+  },
+  "lint-staged": {
+    "./**/*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   }
 }

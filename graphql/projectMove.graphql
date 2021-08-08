@@ -1,0 +1,10 @@
+query ProjectMove($id: ID!) {
+  next: projects(sort: "id:desc", where: { id_lt: $id }, limit: 1) {
+    slug
+    title
+  }
+  prev: projects(where: { id_gt: $id }, limit: 1) {
+    slug
+    title
+  }
+}

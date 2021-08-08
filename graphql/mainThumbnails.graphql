@@ -1,0 +1,16 @@
+query IndexPage_MainThumbnail {
+  mainThumbnail {
+    projectThumbnail {
+      slug
+      title
+      summary
+      thumbnail {
+        source {
+          url
+        }
+        placeholder
+        alt
+      }
+    }
+  }
+}

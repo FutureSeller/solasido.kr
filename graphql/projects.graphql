@@ -1,0 +1,20 @@
+query Projects {
+  projects(sort: "id:desc") {
+    ...Projects_Thumbnails
+  }
+}
+
+fragment Projects_Thumbnails on Project {
+  slug
+  title
+  summary
+  thumbnail {
+    source {
+      url
+      width
+      height
+    }
+    alt
+    placeholder
+  }
+}

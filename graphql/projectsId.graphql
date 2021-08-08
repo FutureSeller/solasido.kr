@@ -1,0 +1,11 @@
+query ProjectId($slug: String!) {
+  projects(where: { slug: $slug }) {
+    id
+  }
+}
+
+query ProjectSlugs {
+  projects {
+    slug
+  }
+}
