@@ -5,6 +5,8 @@ import Image from 'next/image'
 
 import ClipBox from '../ClipBox'
 
+import useEventListener from '../../hooks/useEventListener'
+
 import { responsive } from '../../styles/responsive'
 
 interface Props {
@@ -20,23 +22,13 @@ export default function CoverSection({ title, src, alt, placeholder, fixedTitleC
   const ref = useRef<HTMLDivElement | null>(null)
   const [height, setHeight] = useState(0)
 
-  useEffect(() => {
-    if (!window) {
-      return
-    }
+  const handleResize = () => setHeight(ref.current?.offsetHeight ?? 0)
 
-    const handleResize = () => {
-      setHeight(ref.current?.offsetHeight ?? 0)
-    }
-
-    handleResize()
-
-    window.addEventListener('resize', handleResize)
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
+  useEventListener({
+    type: 'resize',
+    listener: handleResize,
+    handleBeforeListen: handleResize,
+  })
 
   return (
     <Box position="relative">
