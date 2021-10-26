@@ -29,7 +29,7 @@ import type {
 } from '../../../__generated__/graphql'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 
-export default function Work({ project }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { data } = useProjectSlugPage_ProjectLinkQuery({
     variables: {
       id: project?.id ?? '',

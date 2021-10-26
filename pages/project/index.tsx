@@ -13,7 +13,7 @@ import { initializeApollo } from '../../apollo/client'
 import { ProjectPage_ProjectsDocument } from '../../__generated__/graphql'
 import type { ProjectPage_ProjectsQuery } from '../../__generated__/graphql'
 
-export default function Projects() {
+export default function ProjectsPage() {
   return (
     <>
       <Meta title="Projects | SOLASIDO" description="SOLASIDO의 작업 목록" />

@@ -15,7 +15,7 @@ import { IndexPage_MainThumbnailDocument } from '../__generated__/graphql'
 import type { IndexPage_MainThumbnailQuery } from '../__generated__/graphql'
 import type { InferGetStaticPropsType } from 'next'
 
-export default function Home({ covers }: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function IndexPage({ covers }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Box as="main" height="100vh" width="100%" backgroundColor="black">
       <Meta title="Home | SOLASIDO" description="SOLASIDO's Portfolio" />

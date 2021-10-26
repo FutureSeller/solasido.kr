@@ -12,7 +12,7 @@ import theme from '../styles/theme'
 
 import type { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   const apolloClient = useApollo({
     initialState: pageProps.initialApolloState,
   })
@@ -41,4 +41,4 @@ function MyApp({ Component, pageProps }: AppProps) {
     </ApolloProvider>
   )
 }
-export default MyApp
+export default App

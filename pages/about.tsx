@@ -25,7 +25,7 @@ import type {
   AboutPage_OutsourcingsQuery,
 } from '../__generated__/graphql'
 
-export default function About() {
+export default function AboutPage() {
   return (
     <ChakraBox as="main" height="100%">
       <Meta title="About | SOLASIDO" description="brief introduce SOLASIDO" />
