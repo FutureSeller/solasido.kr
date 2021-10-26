@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="82px" height="53px" viewBox="0 0 82 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
-    <title>Group 7 Copy</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Website-Flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
-        <g id="[D]-6.1_Case-Study_Fort-Point" transform="translate(-853.000000, -8890.000000)" stroke="#FFFFFF" stroke-width="2.4000001">
-            <g id="Group-7-Copy" transform="translate(855.000000, 8892.000000)">
-                <path d="M0,24.6098489 L78.4609148,24.6098489" id="Stroke-1"></path>
-                <path d="M53.948243,49.2196108 L78.606329,24.6099794" id="Stroke-3"></path>
-                <path d="M53.948243,4.35045103e-05 L78.606329,24.6096749" id="Stroke-5"></path>
-            </g>
-        </g>
-    </g>
+<svg width="82" height="53" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#FFF" stroke-width="2.4" fill="none" fill-rule="evenodd" stroke-linecap="round">
+    <path d="M2 26.61h78.46M55.948 51.22l24.658-24.61M55.948 2l24.658 24.61" />
+  </g>
 </svg>
