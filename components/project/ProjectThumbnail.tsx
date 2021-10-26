@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 import { responsive } from '../../styles/responsive'
 
-import type { Projects_ThumbnailsFragment, Maybe } from '../../__generated__/graphql'
+import type { Projects_ThumbnailsFragment } from '../../__generated__/graphql'
 
 interface Props {
   figure: Projects_ThumbnailsFragment
@@ -17,7 +17,7 @@ export default function ProjectThumbnail({ figure }: Props) {
   return (
     <Link href={`/project/${slug}`} key={title} passHref prefetch={false}>
       <a>
-        <Figure isLargeImage={thumbnail?.source?.height! > thumbnail?.source?.width!}>
+        <Figure isPortrait={thumbnail?.source?.height! > thumbnail?.source?.width!}>
           <HoverImage
             src={thumbnail?.source?.url!}
             layout="fill"
@@ -74,13 +74,13 @@ const StyledBox = styled(Box)`
   }
 `
 
-const Figure = styled.figure<{ isLargeImage?: boolean }>`
+const Figure = styled.figure<{ isPortrait?: boolean }>`
   position: relative;
   display: inline-block;
   width: 100%;
   margin: 0;
   margin-bottom: 16px;
-  padding-top: ${({ isLargeImage }) => (isLargeImage ? '124.8%' : '66.6%')};
+  padding-top: ${({ isPortrait }) => (isPortrait ? '124.8%' : '66.6%')};
 `
 
 const HoverImage = styled(Image)`

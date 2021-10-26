@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { Box as ChakraBox, Flex, Text } from '@chakra-ui/react'
+import { Box as ChakraBox, Flex } from '@chakra-ui/react'
 
 import DeviceContextProvider from '../contexts/DeviceProvider'
 

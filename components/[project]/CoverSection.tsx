@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useRef } from 'react'
 import styled from '@emotion/styled'
 import { Box } from '@chakra-ui/react'
 import Image from 'next/image'
