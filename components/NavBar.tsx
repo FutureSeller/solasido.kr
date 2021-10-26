@@ -1,8 +1,10 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import styled from '@emotion/styled'
 import { motion } from 'framer-motion'
 import { Drawer, DrawerBody, DrawerOverlay, DrawerContent, Flex, useDisclosure } from '@chakra-ui/react'
+
+import useEventListener from '../hooks/useEventListener'
 
 import NavButton from './NavButton'
 import NavListItem from './NavListItem'
@@ -24,42 +26,32 @@ interface Props {
 }
 
 export default function NavBar({ color, backgroundColor = 'inherit', alwaysVisible = false }: Props) {
-  const [isScrollUp, setIsScrollUp] = useState(false)
+  const [isScrollUp, setIsScrollUp] = useState(alwaysVisible)
   const { isOpen, onClose, onToggle } = useDisclosure()
   const [lastScrollY, setLastScrollY] = useState(0)
 
-  const animateProps = alwaysVisible
-    ? null
-    : {
-        initial: { opacity: 0, y: INITIAL_Y_POSITION },
-        animate: { opacity: isScrollUp ? 1 : 0, y: isScrollUp ? 0 : INITIAL_Y_POSITION },
-        transition: { duration: 0.2 },
-      }
+  const animateProps = {
+    initial: { opacity: isScrollUp ? 1 : 0, y: isScrollUp ? 0 : INITIAL_Y_POSITION },
+    animate: { opacity: isScrollUp ? 1 : 0, y: isScrollUp ? 0 : INITIAL_Y_POSITION },
+    transition: { duration: 0.2 },
+  }
 
-  useEffect(() => {
-    if (!window) {
+  const handleScroll = () => {
+    const scrollY = window?.pageYOffset ?? -1
+    if (scrollY < 0) {
       return
     }
 
-    const handleScroll = () => {
-      const scrollY = window.pageYOffset
-      if (scrollY < 0) {
-        return
-      }
+    const isScrollingUp = scrollY < lastScrollY
 
-      const isScrollingUp = scrollY < lastScrollY
+    setIsScrollUp(isScrollingUp)
+    setLastScrollY(scrollY)
+  }
 
-      setIsScrollUp(isScrollingUp)
-      setLastScrollY(scrollY)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-    // eslint-disable-next-line
-  }, [lastScrollY])
+  useEventListener({
+    type: 'scroll',
+    listener: handleScroll,
+  })
 
   return (
     <StyledHeader backgroundColor={backgroundColor} {...animateProps}>

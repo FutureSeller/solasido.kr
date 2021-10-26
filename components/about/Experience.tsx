@@ -18,7 +18,7 @@ export default function Experience() {
         </Heading>
       </ContentBox>
       <ContentBox>
-        <A>
+        <StyledFlex>
           <SubTitle as="h3">Work</SubTitle>
           <Flex as="ul" width="100%" flexWrap="wrap">
             {careersData?.careers?.map(career => (
@@ -31,10 +31,10 @@ export default function Experience() {
               </StyledLiBox>
             ))}
           </Flex>
-        </A>
+        </StyledFlex>
       </ContentBox>
       <ContentBox>
-        <A>
+        <StyledFlex>
           <SubTitle as="h3">Outsourcing</SubTitle>
           <Flex as="ul" width="100%" flexWrap="wrap">
             {outsourcingsData?.outsourcings?.map(outsourcing => (
@@ -47,10 +47,10 @@ export default function Experience() {
               </StyledLiBox>
             ))}
           </Flex>
-        </A>
+        </StyledFlex>
       </ContentBox>
       <ContentBox>
-        <A>
+        <StyledFlex>
           <SubTitle as="h3">Awards</SubTitle>
           <Flex as="ul" width="100%" flexWrap="wrap">
             {awardsData?.awards?.map(award => (
@@ -62,7 +62,7 @@ export default function Experience() {
               </StyledLiBox>
             ))}
           </Flex>
-        </A>
+        </StyledFlex>
       </ContentBox>
     </Box>
   )
@@ -195,7 +195,7 @@ const SubTitle = styled(Box)`
   }
 `
 
-const A = styled(Flex)`
+const StyledFlex = styled(Flex)`
   width: 100%;
   padding: 24px 0;
 
