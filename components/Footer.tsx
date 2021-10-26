@@ -1,6 +1,7 @@
 import styled from '@emotion/styled'
 import { Box, Flex } from '@chakra-ui/react'
-import Link from 'next/link'
+
+import ExternalLink from './ExternalLink'
 
 import { responsive } from '../styles/responsive'
 
@@ -15,18 +16,10 @@ export default function Footer({ color = 'black', backgroundColor = 'white' }: P
       <StyledBox color={color}>solasido</StyledBox>
       <StyledHStack as="ul" color={color} fontWeight="700">
         <li>
-          <Link href="mailto:sol_asido_@naver.com" passHref>
-            <a target="_blank" rel="noopener noreferrer">
-              E-Mail
-            </a>
-          </Link>
+          <ExternalLink href="mailto:sol_asido_@naver.com">E-Mail</ExternalLink>
         </li>
         <li>
-          <Link href="https://www.linkedin.com/in/solasido" passHref>
-            <a target="_blank" rel="noopener noreferrer author">
-              LinkedIn
-            </a>
-          </Link>
+          <ExternalLink href="https://www.linkedin.com/in/solasido">LinkedIn</ExternalLink>
         </li>
       </StyledHStack>
     </StyledFlex>
