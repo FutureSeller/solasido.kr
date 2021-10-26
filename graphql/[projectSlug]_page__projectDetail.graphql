@@ -1,4 +1,4 @@
-query ProjectDetail($id: ID!) {
+query ProjectSlugPage_ProjectDetail($id: ID!) {
   project(id: $id) {
     id
     slug

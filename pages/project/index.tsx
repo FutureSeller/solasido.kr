@@ -10,8 +10,8 @@ import PageTitle from '../../components/PageTitle'
 import ProjectThumbnailList from '../../components/project/ProjectThumbnailList'
 
 import { initializeApollo } from '../../apollo/client'
-import { ProjectsDocument } from '../../__generated__/graphql'
-import type { ProjectsQuery } from '../../__generated__/graphql'
+import { ProjectPage_ProjectsDocument } from '../../__generated__/graphql'
+import type { ProjectPage_ProjectsQuery } from '../../__generated__/graphql'
 
 export default function Projects() {
   return (
@@ -40,8 +40,8 @@ const Main = styled.main`
 export const getStaticProps = async () => {
   const apolloClient = initializeApollo({})
 
-  await apolloClient.query<ProjectsQuery>({
-    query: ProjectsDocument,
+  await apolloClient.query<ProjectPage_ProjectsQuery>({
+    query: ProjectPage_ProjectsDocument,
   })
 
   return {

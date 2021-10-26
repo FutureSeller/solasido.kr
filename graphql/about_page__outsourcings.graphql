@@ -1,4 +1,4 @@
-query Outsourcings {
+query AboutPage_Outsourcings {
   outsourcings(sort: "startYear:desc") {
     title
     description

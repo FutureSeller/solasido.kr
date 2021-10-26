@@ -15,24 +15,24 @@ import { customTheme } from '../../../styles/theme'
 
 import { initializeApollo } from '../../../apollo/client'
 import {
-  ProjectIdDocument,
-  ProjectDetailDocument,
-  ProjectSlugsDocument,
-  ProjectMoveDocument,
-  useProjectMoveQuery,
+  ProjectSlugPage_ProjectIdDocument,
+  ProjectSlugPage_ProjectDetailDocument,
+  ProjectSlugPage_ProjectSlugsDocument,
+  ProjectSlugPage_ProjectLinkDocument,
+  useProjectSlugPage_ProjectLinkQuery,
 } from '../../../__generated__/graphql'
 import type {
-  ProjectIdQuery,
-  ProjectDetailQuery,
-  ProjectSlugsQuery,
-  ProjectMoveQuery,
+  ProjectSlugPage_ProjectIdQuery,
+  ProjectSlugPage_ProjectDetailQuery,
+  ProjectSlugPage_ProjectSlugsQuery,
+  ProjectSlugPage_ProjectLinkQuery,
 } from '../../../__generated__/graphql'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 
 export default function Work({ project }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const { data } = useProjectMoveQuery({
+  const { data } = useProjectSlugPage_ProjectLinkQuery({
     variables: {
-      id: project?.id ?? '100000',
+      id: project?.id ?? '',
     },
   })
   const [next] = data?.next ?? []
@@ -227,8 +227,8 @@ const VerticalLine = styled.div`
 export const getStaticPaths = async () => {
   const apolloClient = initializeApollo({})
 
-  const { data } = await apolloClient.query<ProjectSlugsQuery>({
-    query: ProjectSlugsDocument,
+  const { data } = await apolloClient.query<ProjectSlugPage_ProjectSlugsQuery>({
+    query: ProjectSlugPage_ProjectSlugsDocument,
   })
 
   const paths = data.projects?.map(project => {
@@ -249,54 +249,56 @@ export const getStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps<{ project: ProjectDetailQuery['project'] }, { projectSlug: string }> =
-  async ({ params }) => {
-    if (params?.projectSlug == null) {
-      return {
-        notFound: true,
-      }
-    }
-
-    const apolloClient = initializeApollo({})
-
-    const { data } = await apolloClient.query<ProjectIdQuery>({
-      query: ProjectIdDocument,
-      variables: {
-        slug: params.projectSlug,
-      },
-    })
-
-    const [project] = data.projects ?? []
-    if (project == null) {
-      return {
-        notFound: true,
-      }
-    }
-
-    const { data: projectDetail } = await apolloClient.query<ProjectDetailQuery>({
-      query: ProjectDetailDocument,
-      variables: {
-        id: project?.id,
-      },
-    })
-
-    if (projectDetail?.project == null) {
-      return {
-        notFound: true,
-      }
-    }
-
-    await apolloClient.query<ProjectMoveQuery>({
-      query: ProjectMoveDocument,
-      variables: {
-        id: project?.id,
-      },
-    })
-
+export const getStaticProps: GetStaticProps<
+  { project: ProjectSlugPage_ProjectDetailQuery['project'] },
+  { projectSlug: string }
+> = async ({ params }) => {
+  if (params?.projectSlug == null) {
     return {
-      props: {
-        initialApolloState: apolloClient.cache.extract(),
-        project: projectDetail.project,
-      },
+      notFound: true,
     }
   }
+
+  const apolloClient = initializeApollo({})
+
+  const { data } = await apolloClient.query<ProjectSlugPage_ProjectIdQuery>({
+    query: ProjectSlugPage_ProjectIdDocument,
+    variables: {
+      slug: params.projectSlug,
+    },
+  })
+
+  const [project] = data.projects ?? []
+  if (project == null) {
+    return {
+      notFound: true,
+    }
+  }
+
+  const { data: projectDetail } = await apolloClient.query<ProjectSlugPage_ProjectDetailQuery>({
+    query: ProjectSlugPage_ProjectDetailDocument,
+    variables: {
+      id: project?.id,
+    },
+  })
+
+  if (projectDetail?.project == null) {
+    return {
+      notFound: true,
+    }
+  }
+
+  await apolloClient.query<ProjectSlugPage_ProjectLinkQuery>({
+    query: ProjectSlugPage_ProjectLinkDocument,
+    variables: {
+      id: project?.id,
+    },
+  })
+
+  return {
+    props: {
+      initialApolloState: apolloClient.cache.extract(),
+      project: projectDetail.project,
+    },
+  }
+}

@@ -3,12 +3,16 @@ import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 
 import { responsive } from '../../styles/responsive'
 
-import { useAwardsQuery, useCareersQuery, useOutsourcingsQuery } from '../../__generated__/graphql'
+import {
+  useAboutPage_AwardsQuery,
+  useAboutPage_CareersQuery,
+  useAboutPage_OutsourcingsQuery,
+} from '../../__generated__/graphql'
 
 export default function Experience() {
-  const { data: awardsData } = useAwardsQuery()
-  const { data: careersData } = useCareersQuery()
-  const { data: outsourcingsData } = useOutsourcingsQuery()
+  const { data: awardsData } = useAboutPage_AwardsQuery()
+  const { data: careersData } = useAboutPage_CareersQuery()
+  const { data: outsourcingsData } = useAboutPage_OutsourcingsQuery()
 
   return (
     <Box as="section">

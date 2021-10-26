@@ -6,11 +6,11 @@ import ProjectThumbnail from './ProjectThumbnail'
 
 import { isSmallThanTabletViewPort, DeviceType } from '../../styles/responsive'
 
-import { useProjectsQuery } from '../../__generated__/graphql'
+import { useProjectPage_ProjectsQuery } from '../../__generated__/graphql'
 
 export default function ProjectThumbnailList() {
   const deviceType = useDevice() ?? DeviceType.XXL
-  const { data } = useProjectsQuery()
+  const { data } = useProjectPage_ProjectsQuery()
 
   const figures = data?.projects ?? []
 

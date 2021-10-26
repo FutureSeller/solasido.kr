@@ -1,4 +1,4 @@
-query Careers {
+query AboutPage_Careers {
   careers(sort: "startYear:desc") {
     company
     position

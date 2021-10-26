@@ -1,4 +1,4 @@
-query ProjectMove($id: ID!) {
+query ProjectSlugPage_ProjectLink($id: ID!) {
   next: projects(sort: "id:desc", where: { id_lt: $id }, limit: 1) {
     slug
     title

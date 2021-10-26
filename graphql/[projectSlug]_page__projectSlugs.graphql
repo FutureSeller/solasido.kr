@@ -1,0 +1,5 @@
+query ProjectSlugPage_ProjectSlugs {
+  projects {
+    slug
+  }
+}

@@ -1,4 +1,4 @@
-query Awards {
+query AboutPage_Awards {
   awards(sort: "startYear:desc") {
     title
     category

@@ -4,10 +4,10 @@ import Link from 'next/link'
 
 import { responsive } from '../../styles/responsive'
 
-import type { ProjectDetailQuery } from '../../__generated__/graphql'
+import type { ProjectSlugPage_ProjectDetailQuery } from '../../__generated__/graphql'
 
 interface Props {
-  project: ProjectDetailQuery['project']
+  project: ProjectSlugPage_ProjectDetailQuery['project']
 }
 
 export default function ExplainSection({ project }: Props) {

@@ -14,8 +14,16 @@ import Experience from '../components/about/Experience'
 
 import { responsive } from '../styles/responsive'
 import { initializeApollo } from '../apollo/client'
-import { AwardsDocument, CareersDocument, OutsourcingsDocument } from '../__generated__/graphql'
-import type { AwardsQuery, CareersQuery, OutsourcingsQuery } from '../__generated__/graphql'
+import {
+  AboutPage_AwardsDocument,
+  AboutPage_CareersDocument,
+  AboutPage_OutsourcingsDocument,
+} from '../__generated__/graphql'
+import type {
+  AboutPage_AwardsQuery,
+  AboutPage_CareersQuery,
+  AboutPage_OutsourcingsQuery,
+} from '../__generated__/graphql'
 
 export default function About() {
   return (
@@ -76,16 +84,16 @@ const Box = styled.div`
 export const getStaticProps = async () => {
   const apolloClient = initializeApollo({})
 
-  await apolloClient.query<AwardsQuery>({
-    query: AwardsDocument,
+  await apolloClient.query<AboutPage_AwardsQuery>({
+    query: AboutPage_AwardsDocument,
   })
 
-  await apolloClient.query<CareersQuery>({
-    query: CareersDocument,
+  await apolloClient.query<AboutPage_CareersQuery>({
+    query: AboutPage_CareersDocument,
   })
 
-  await apolloClient.query<OutsourcingsQuery>({
-    query: OutsourcingsDocument,
+  await apolloClient.query<AboutPage_OutsourcingsQuery>({
+    query: AboutPage_OutsourcingsDocument,
   })
 
   return {

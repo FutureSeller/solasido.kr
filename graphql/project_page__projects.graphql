@@ -1,4 +1,4 @@
-query Projects {
+query ProjectPage_Projects {
   projects(sort: "id:desc") {
     ...Projects_Thumbnails
   }
