@@ -26,15 +26,17 @@ interface Props {
 }
 
 export default function NavBar({ color, backgroundColor = 'inherit', alwaysVisible = false }: Props) {
-  const [isScrollUp, setIsScrollUp] = useState(alwaysVisible)
+  const [isScrollUp, setIsScrollUp] = useState(false)
   const { isOpen, onClose, onToggle } = useDisclosure()
   const [lastScrollY, setLastScrollY] = useState(0)
 
-  const animateProps = {
-    initial: { opacity: isScrollUp ? 1 : 0, y: isScrollUp ? 0 : INITIAL_Y_POSITION },
-    animate: { opacity: isScrollUp ? 1 : 0, y: isScrollUp ? 0 : INITIAL_Y_POSITION },
-    transition: { duration: 0.2 },
-  }
+  const animateProps = alwaysVisible
+    ? null
+    : {
+        initial: { opacity: 0, y: INITIAL_Y_POSITION },
+        animate: { opacity: isScrollUp ? 1 : 0, y: isScrollUp ? 0 : INITIAL_Y_POSITION },
+        transition: { duration: 0.2 },
+      }
 
   const handleScroll = () => {
     const scrollY = window?.pageYOffset ?? -1
