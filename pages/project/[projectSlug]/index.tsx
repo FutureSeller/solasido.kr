@@ -63,12 +63,14 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
                   textAlign="center"
                   fontSize={0}
                   margin="8px 0"
+                  width="100%"
+                  paddingTop={`${(detail.source?.height! * 100) / detail.source?.width!}%`}
                 >
                   <Image
                     key={detail.source?.url!}
                     src={detail.source?.url!}
-                    width={detail.source?.width!}
-                    height={detail.source?.height!}
+                    layout="fill"
+                    objectFit={detail.source?.width! < 3000 ? 'scale-down' : 'cover'}
                     alt={detail.alt}
                     placeholder="blur"
                     blurDataURL={detail.placeholder}
