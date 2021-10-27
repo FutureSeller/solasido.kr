@@ -41,7 +41,11 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
 
   return (
     <>
-      <Meta title={project?.title ?? 'SOLASIDO'} description={project?.summary ?? 'Project Details'} />
+      <Meta
+        title={project?.title ?? 'SOLASIDO'}
+        description={project?.summary ?? 'Project Details'}
+        imageUrl={project?.mainCoverImage?.source?.url}
+      />
       <Box as="main" position="relative" width="100%" height="100vh" minHeight="100vh">
         <NavBar color={customTheme.colors.primary} />
         <CoverSection
