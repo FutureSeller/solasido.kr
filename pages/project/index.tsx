@@ -16,7 +16,7 @@ import type { ProjectPage_ProjectsQuery } from '../../__generated__/graphql'
 export default function ProjectsPage() {
   return (
     <>
-      <Meta title="Projects | SOLASIDO" description="SOLASIDO의 작업 목록" />
+      <Meta title="Projects | SOLASIDO" description="Design brands and user experiences." />
       <Main>
         <NavBar color="black" backgroundColor="white" alwaysVisible />
         <ContentBox>

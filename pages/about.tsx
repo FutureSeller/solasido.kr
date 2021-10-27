@@ -28,7 +28,7 @@ import type {
 export default function AboutPage() {
   return (
     <ChakraBox as="main" height="100%">
-      <Meta title="About | SOLASIDO" description="brief introduce SOLASIDO" />
+      <Meta title="About | SOLASIDO" description="Better Design, Better Life." />
       <NavBar color="white" backgroundColor="black" alwaysVisible />
       <ContentBox as="section" backgroundColor="black" color="white">
         <PageTitle>About</PageTitle>
