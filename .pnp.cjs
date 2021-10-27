@@ -53,6 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@graphql-codegen/typescript-react-apollo", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:3.1.6"],
             ["@types/lodash", "npm:4.14.175"],
             ["@types/node", "npm:16.9.3"],
+            ["@types/nprogress", "npm:0.2.0"],
             ["@types/react", "npm:17.0.15"],
             ["@yarnpkg/pnpify", "npm:3.0.1"],
             ["commitizen", "npm:4.2.4"],
@@ -65,6 +66,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:11.1.2"],
             ["lodash", "npm:4.17.21"],
             ["next", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:11.1.0"],
+            ["nprogress", "npm:0.2.0"],
             ["prettier", "npm:2.4.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:17.0.2"],
@@ -5025,6 +5027,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-normalize-package-data-npm-2.4.1-c31c56ae6a-e87bccbf11.zip/node_modules/@types/normalize-package-data/",
           "packageDependencies": [
             ["@types/normalize-package-data", "npm:2.4.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/nprogress", [
+        ["npm:0.2.0", {
+          "packageLocation": "./.yarn/cache/@types-nprogress-npm-0.2.0-cd184ad8ed-5613847750.zip/node_modules/@types/nprogress/",
+          "packageDependencies": [
+            ["@types/nprogress", "npm:0.2.0"]
           ],
           "linkType": "HARD",
         }]
@@ -11683,6 +11694,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@graphql-codegen/typescript-react-apollo", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:3.1.6"],
             ["@types/lodash", "npm:4.14.175"],
             ["@types/node", "npm:16.9.3"],
+            ["@types/nprogress", "npm:0.2.0"],
             ["@types/react", "npm:17.0.15"],
             ["@yarnpkg/pnpify", "npm:3.0.1"],
             ["commitizen", "npm:4.2.4"],
@@ -11695,6 +11707,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lint-staged", "npm:11.1.2"],
             ["lodash", "npm:4.17.21"],
             ["next", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:11.1.0"],
+            ["nprogress", "npm:0.2.0"],
             ["prettier", "npm:2.4.1"],
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:17.0.2"],
@@ -12046,6 +12059,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["console-control-strings", "npm:1.1.0"],
             ["gauge", "npm:2.7.4"],
             ["set-blocking", "npm:2.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["nprogress", [
+        ["npm:0.2.0", {
+          "packageLocation": "./.yarn/cache/nprogress-npm-0.2.0-c1c0973624-66b7bec5d5.zip/node_modules/nprogress/",
+          "packageDependencies": [
+            ["nprogress", "npm:0.2.0"]
           ],
           "linkType": "HARD",
         }]
