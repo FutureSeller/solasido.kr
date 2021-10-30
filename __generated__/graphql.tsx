@@ -2429,7 +2429,7 @@ export const ProjectSlugPage_ProjectLinkDocument = gql`
     slug
     title
   }
-  prev: projects(where: {order_gt: $order}, limit: 1) {
+  prev: projects(sort: "order:asc", where: {order_gt: $order}, limit: 1) {
     slug
     title
   }
