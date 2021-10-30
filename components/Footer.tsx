@@ -27,38 +27,19 @@ export default function Footer({ color = 'black', backgroundColor = 'white' }: P
 }
 
 const StyledFlex = styled(Flex)`
-  padding: 26px 55px 20px;
+  padding: 16px 55px 10px;
 
   ${responsive.mdLte} {
-    padding: 26px 24px 20px;
+    padding: 16px 24px 10px;
   }
 `
 
 const StyledBox = styled(Box)`
-  font-size: 22px;
   font-family: ${({ theme }) => theme.fonts.neueDisplay};
   line-height: 1.5;
-
-  ${responsive.lgLte} {
-    font-size: 18px;
-  }
-
-  ${responsive.smLte} {
-    font-size: 14px;
-  }
 `
 
 const StyledHStack = styled(Flex)`
-  font-size: 22px;
-
-  ${responsive.lgLte} {
-    font-size: 18px;
-  }
-
-  ${responsive.smLte} {
-    font-size: 14px;
-  }
-
   & > :not(style) ~ :not(style) {
     margin-inline-start: 24px;
 
