@@ -425,7 +425,7 @@ export type MainThumbnails = {
   updated_at: Scalars['DateTime'];
 };
 
-export type Morph = Award | AwardAggregator | AwardAggregatorAvg | AwardAggregatorMax | AwardAggregatorMin | AwardAggregatorSum | AwardConnection | AwardConnectionCategory | AwardConnectionCreated_At | AwardConnectionEndYear | AwardConnectionId | AwardConnectionPrize | AwardConnectionPublished_At | AwardConnectionStartYear | AwardConnectionTitle | AwardConnectionUpdated_At | AwardGroupBy | Career | CareerAggregator | CareerAggregatorAvg | CareerAggregatorMax | CareerAggregatorMin | CareerAggregatorSum | CareerConnection | CareerConnectionCompany | CareerConnectionCreated_At | CareerConnectionEndYear | CareerConnectionId | CareerConnectionPosition | CareerConnectionPublished_At | CareerConnectionStartYear | CareerConnectionUpdated_At | CareerGroupBy | ComponentCommonImage | ComponentMainProjectThumbnail | ComponentProjectClient | ComponentProjectExplanation | ComponentProjectTeam | I18NLocale | MainThumbnails | Outsourcing | OutsourcingAggregator | OutsourcingAggregatorAvg | OutsourcingAggregatorMax | OutsourcingAggregatorMin | OutsourcingAggregatorSum | OutsourcingConnection | OutsourcingConnectionCreated_At | OutsourcingConnectionDescription | OutsourcingConnectionEndYear | OutsourcingConnectionId | OutsourcingConnectionPublished_At | OutsourcingConnectionStartYear | OutsourcingConnectionTitle | OutsourcingConnectionUpdated_At | OutsourcingGroupBy | Project | ProjectAggregator | ProjectConnection | ProjectConnectionBackgroundColor | ProjectConnectionColor | ProjectConnectionCreated_At | ProjectConnectionDescription | ProjectConnectionEndDate | ProjectConnectionFixedTitleColor | ProjectConnectionId | ProjectConnectionLink | ProjectConnectionMainCoverImage | ProjectConnectionPublished_At | ProjectConnectionScope | ProjectConnectionSlug | ProjectConnectionStartDate | ProjectConnectionStickyTitleColor | ProjectConnectionSummary | ProjectConnectionThumbnail | ProjectConnectionTitle | ProjectConnectionUpdated_At | ProjectConnectionWork | ProjectDetail | ProjectDetailAggregator | ProjectDetailConnection | ProjectDetailConnectionBackgroundColor | ProjectDetailConnectionColor | ProjectDetailConnectionCreated_At | ProjectDetailConnectionId | ProjectDetailConnectionProject | ProjectDetailConnectionPublished_At | ProjectDetailConnectionUpdated_At | ProjectDetailGroupBy | ProjectGroupBy | UploadFile | UploadFileAggregator | UploadFileAggregatorAvg | UploadFileAggregatorMax | UploadFileAggregatorMin | UploadFileAggregatorSum | UploadFileConnection | UploadFileConnectionAlternativeText | UploadFileConnectionCaption | UploadFileConnectionCreated_At | UploadFileConnectionExt | UploadFileConnectionFormats | UploadFileConnectionHash | UploadFileConnectionHeight | UploadFileConnectionId | UploadFileConnectionMime | UploadFileConnectionName | UploadFileConnectionPreviewUrl | UploadFileConnectionProvider | UploadFileConnectionProvider_Metadata | UploadFileConnectionSize | UploadFileConnectionUpdated_At | UploadFileConnectionUrl | UploadFileConnectionWidth | UploadFileGroupBy | UserPermissionsPasswordPayload | UsersPermissionsLoginPayload | UsersPermissionsMe | UsersPermissionsMeRole | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsRoleAggregator | UsersPermissionsRoleConnection | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionId | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionType | UsersPermissionsRoleGroupBy | UsersPermissionsUser | UsersPermissionsUserAggregator | UsersPermissionsUserConnection | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionCreated_At | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionId | UsersPermissionsUserConnectionProvider | UsersPermissionsUserConnectionRole | UsersPermissionsUserConnectionUpdated_At | UsersPermissionsUserConnectionUsername | UsersPermissionsUserGroupBy | Work | WorkAggregator | WorkConnection | WorkConnectionCreated_At | WorkConnectionId | WorkConnectionPublished_At | WorkConnectionType | WorkConnectionUpdated_At | WorkConnectionValue | WorkGroupBy | CreateAwardPayload | CreateCareerPayload | CreateOutsourcingPayload | CreateProjectDetailPayload | CreateProjectPayload | CreateRolePayload | CreateUserPayload | CreateWorkPayload | DeleteAwardPayload | DeleteCareerPayload | DeleteFilePayload | DeleteMainThumbnailPayload | DeleteOutsourcingPayload | DeleteProjectDetailPayload | DeleteProjectPayload | DeleteRolePayload | DeleteUserPayload | DeleteWorkPayload | UpdateAwardPayload | UpdateCareerPayload | UpdateMainThumbnailPayload | UpdateOutsourcingPayload | UpdateProjectDetailPayload | UpdateProjectPayload | UpdateRolePayload | UpdateUserPayload | UpdateWorkPayload;
+export type Morph = Award | AwardAggregator | AwardAggregatorAvg | AwardAggregatorMax | AwardAggregatorMin | AwardAggregatorSum | AwardConnection | AwardConnectionCategory | AwardConnectionCreated_At | AwardConnectionEndYear | AwardConnectionId | AwardConnectionPrize | AwardConnectionPublished_At | AwardConnectionStartYear | AwardConnectionTitle | AwardConnectionUpdated_At | AwardGroupBy | Career | CareerAggregator | CareerAggregatorAvg | CareerAggregatorMax | CareerAggregatorMin | CareerAggregatorSum | CareerConnection | CareerConnectionCompany | CareerConnectionCreated_At | CareerConnectionEndYear | CareerConnectionId | CareerConnectionPosition | CareerConnectionPublished_At | CareerConnectionStartYear | CareerConnectionUpdated_At | CareerGroupBy | ComponentCommonImage | ComponentMainProjectThumbnail | ComponentProjectClient | ComponentProjectExplanation | ComponentProjectTeam | I18NLocale | MainThumbnails | Outsourcing | OutsourcingAggregator | OutsourcingAggregatorAvg | OutsourcingAggregatorMax | OutsourcingAggregatorMin | OutsourcingAggregatorSum | OutsourcingConnection | OutsourcingConnectionCreated_At | OutsourcingConnectionDescription | OutsourcingConnectionEndYear | OutsourcingConnectionId | OutsourcingConnectionPublished_At | OutsourcingConnectionStartYear | OutsourcingConnectionTitle | OutsourcingConnectionUpdated_At | OutsourcingGroupBy | Project | ProjectAggregator | ProjectAggregatorAvg | ProjectAggregatorMax | ProjectAggregatorMin | ProjectAggregatorSum | ProjectConnection | ProjectConnectionBackgroundColor | ProjectConnectionColor | ProjectConnectionCreated_At | ProjectConnectionDescription | ProjectConnectionEndDate | ProjectConnectionFixedTitleColor | ProjectConnectionId | ProjectConnectionLink | ProjectConnectionMainCoverImage | ProjectConnectionOrder | ProjectConnectionPublished_At | ProjectConnectionScope | ProjectConnectionSlug | ProjectConnectionStartDate | ProjectConnectionStickyTitleColor | ProjectConnectionSummary | ProjectConnectionThumbnail | ProjectConnectionTitle | ProjectConnectionUpdated_At | ProjectConnectionWork | ProjectDetail | ProjectDetailAggregator | ProjectDetailConnection | ProjectDetailConnectionBackgroundColor | ProjectDetailConnectionColor | ProjectDetailConnectionCreated_At | ProjectDetailConnectionId | ProjectDetailConnectionProject | ProjectDetailConnectionPublished_At | ProjectDetailConnectionUpdated_At | ProjectDetailGroupBy | ProjectGroupBy | UploadFile | UploadFileAggregator | UploadFileAggregatorAvg | UploadFileAggregatorMax | UploadFileAggregatorMin | UploadFileAggregatorSum | UploadFileConnection | UploadFileConnectionAlternativeText | UploadFileConnectionCaption | UploadFileConnectionCreated_At | UploadFileConnectionExt | UploadFileConnectionFormats | UploadFileConnectionHash | UploadFileConnectionHeight | UploadFileConnectionId | UploadFileConnectionMime | UploadFileConnectionName | UploadFileConnectionPreviewUrl | UploadFileConnectionProvider | UploadFileConnectionProvider_Metadata | UploadFileConnectionSize | UploadFileConnectionUpdated_At | UploadFileConnectionUrl | UploadFileConnectionWidth | UploadFileGroupBy | UserPermissionsPasswordPayload | UsersPermissionsLoginPayload | UsersPermissionsMe | UsersPermissionsMeRole | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsRoleAggregator | UsersPermissionsRoleConnection | UsersPermissionsRoleConnectionDescription | UsersPermissionsRoleConnectionId | UsersPermissionsRoleConnectionName | UsersPermissionsRoleConnectionType | UsersPermissionsRoleGroupBy | UsersPermissionsUser | UsersPermissionsUserAggregator | UsersPermissionsUserConnection | UsersPermissionsUserConnectionBlocked | UsersPermissionsUserConnectionConfirmed | UsersPermissionsUserConnectionCreated_At | UsersPermissionsUserConnectionEmail | UsersPermissionsUserConnectionId | UsersPermissionsUserConnectionProvider | UsersPermissionsUserConnectionRole | UsersPermissionsUserConnectionUpdated_At | UsersPermissionsUserConnectionUsername | UsersPermissionsUserGroupBy | Work | WorkAggregator | WorkConnection | WorkConnectionCreated_At | WorkConnectionId | WorkConnectionPublished_At | WorkConnectionType | WorkConnectionUpdated_At | WorkConnectionValue | WorkGroupBy | CreateAwardPayload | CreateCareerPayload | CreateOutsourcingPayload | CreateProjectDetailPayload | CreateProjectPayload | CreateRolePayload | CreateUserPayload | CreateWorkPayload | DeleteAwardPayload | DeleteCareerPayload | DeleteFilePayload | DeleteMainThumbnailPayload | DeleteOutsourcingPayload | DeleteProjectDetailPayload | DeleteProjectPayload | DeleteRolePayload | DeleteUserPayload | DeleteWorkPayload | UpdateAwardPayload | UpdateCareerPayload | UpdateMainThumbnailPayload | UpdateOutsourcingPayload | UpdateProjectDetailPayload | UpdateProjectPayload | UpdateRolePayload | UpdateUserPayload | UpdateWorkPayload;
 
 export type Mutation = {
   __typename?: 'Mutation';
@@ -789,6 +789,7 @@ export type Project = {
   id: Scalars['ID'];
   link: Maybe<Scalars['String']>;
   mainCoverImage: Maybe<ComponentCommonImage>;
+  order: Scalars['Int'];
   projectDetails: Maybe<Array<Maybe<ProjectDetail>>>;
   published_at: Maybe<Scalars['DateTime']>;
   scope: Scalars['String'];
@@ -812,8 +813,32 @@ export type ProjectProjectDetailsArgs = {
 
 export type ProjectAggregator = {
   __typename?: 'ProjectAggregator';
+  avg: Maybe<ProjectAggregatorAvg>;
   count: Maybe<Scalars['Int']>;
+  max: Maybe<ProjectAggregatorMax>;
+  min: Maybe<ProjectAggregatorMin>;
+  sum: Maybe<ProjectAggregatorSum>;
   totalCount: Maybe<Scalars['Int']>;
+};
+
+export type ProjectAggregatorAvg = {
+  __typename?: 'ProjectAggregatorAvg';
+  order: Maybe<Scalars['Float']>;
+};
+
+export type ProjectAggregatorMax = {
+  __typename?: 'ProjectAggregatorMax';
+  order: Maybe<Scalars['Float']>;
+};
+
+export type ProjectAggregatorMin = {
+  __typename?: 'ProjectAggregatorMin';
+  order: Maybe<Scalars['Float']>;
+};
+
+export type ProjectAggregatorSum = {
+  __typename?: 'ProjectAggregatorSum';
+  order: Maybe<Scalars['Float']>;
 };
 
 export type ProjectConnection = {
@@ -875,6 +900,12 @@ export type ProjectConnectionMainCoverImage = {
   __typename?: 'ProjectConnectionMainCoverImage';
   connection: Maybe<ProjectConnection>;
   key: Maybe<Scalars['ID']>;
+};
+
+export type ProjectConnectionOrder = {
+  __typename?: 'ProjectConnectionOrder';
+  connection: Maybe<ProjectConnection>;
+  key: Maybe<Scalars['Int']>;
 };
 
 export type ProjectConnectionPublished_At = {
@@ -1038,6 +1069,7 @@ export type ProjectGroupBy = {
   id: Maybe<Array<Maybe<ProjectConnectionId>>>;
   link: Maybe<Array<Maybe<ProjectConnectionLink>>>;
   mainCoverImage: Maybe<Array<Maybe<ProjectConnectionMainCoverImage>>>;
+  order: Maybe<Array<Maybe<ProjectConnectionOrder>>>;
   published_at: Maybe<Array<Maybe<ProjectConnectionPublished_At>>>;
   scope: Maybe<Array<Maybe<ProjectConnectionScope>>>;
   slug: Maybe<Array<Maybe<ProjectConnectionSlug>>>;
@@ -1059,6 +1091,7 @@ export type ProjectInput = {
   fixedTitleColor: Maybe<Scalars['String']>;
   link: Maybe<Scalars['String']>;
   mainCoverImage: ComponentCommonImageInput;
+  order: Scalars['Int'];
   projectDetails: Maybe<Array<Maybe<Scalars['ID']>>>;
   published_at: Maybe<Scalars['DateTime']>;
   scope: Scalars['String'];
@@ -2106,6 +2139,7 @@ export type EditProjectInput = {
   fixedTitleColor: Maybe<Scalars['String']>;
   link: Maybe<Scalars['String']>;
   mainCoverImage: Maybe<EditComponentCommonImageInput>;
+  order: Maybe<Scalars['Int']>;
   projectDetails: Maybe<Array<Maybe<Scalars['ID']>>>;
   published_at: Maybe<Scalars['DateTime']>;
   scope: Maybe<Scalars['String']>;
@@ -2245,10 +2279,10 @@ export type ProjectSlugPage_ProjectDetailQueryVariables = Exact<{
 }>;
 
 
-export type ProjectSlugPage_ProjectDetailQuery = { __typename?: 'Query', project: { __typename?: 'Project', id: string, slug: string, title: string, summary: string, description: string, scope: string, link: string | null, color: string, backgroundColor: string, fixedTitleColor: string, stickyTitleColor: string, startDate: string, endDate: string, work: { __typename?: 'Work', type: Enum_Work_Type, value: string | null } | null, mainCoverImage: { __typename?: 'ComponentCommonImage', alt: string, placeholder: string, source: { __typename?: 'UploadFile', url: string } | null } | null, projectDetails: Array<{ __typename?: 'ProjectDetail', id: string, color: string, backgroundColor: string, content: Array<{ __typename: 'ComponentCommonImage', alt: string, placeholder: string, source: { __typename?: 'UploadFile', width: number | null, height: number | null, url: string } | null } | { __typename: 'ComponentProjectExplanation', description: string, isRight: boolean | null } | null> | null } | null> | null } | null };
+export type ProjectSlugPage_ProjectDetailQuery = { __typename?: 'Query', project: { __typename?: 'Project', id: string, slug: string, title: string, summary: string, description: string, scope: string, link: string | null, color: string, backgroundColor: string, fixedTitleColor: string, stickyTitleColor: string, startDate: string, endDate: string, order: number, work: { __typename?: 'Work', type: Enum_Work_Type, value: string | null } | null, mainCoverImage: { __typename?: 'ComponentCommonImage', alt: string, placeholder: string, source: { __typename?: 'UploadFile', url: string } | null } | null, projectDetails: Array<{ __typename?: 'ProjectDetail', id: string, color: string, backgroundColor: string, content: Array<{ __typename: 'ComponentCommonImage', alt: string, placeholder: string, source: { __typename?: 'UploadFile', width: number | null, height: number | null, url: string } | null } | { __typename: 'ComponentProjectExplanation', description: string, isRight: boolean | null } | null> | null } | null> | null } | null };
 
 export type ProjectSlugPage_ProjectLinkQueryVariables = Exact<{
-  id: Scalars['ID'];
+  order: Scalars['Int'];
 }>;
 
 
@@ -2264,7 +2298,7 @@ export type ProjectSlugPage_ProjectIdQueryVariables = Exact<{
 }>;
 
 
-export type ProjectSlugPage_ProjectIdQuery = { __typename?: 'Query', projects: Array<{ __typename?: 'Project', id: string } | null> | null };
+export type ProjectSlugPage_ProjectIdQuery = { __typename?: 'Query', projects: Array<{ __typename?: 'Project', id: string, order: number } | null> | null };
 
 export type AboutPage_AwardsQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -2325,6 +2359,7 @@ export const ProjectSlugPage_ProjectDetailDocument = gql`
     stickyTitleColor
     startDate
     endDate
+    order
     work {
       type
       value
@@ -2389,12 +2424,12 @@ export type ProjectSlugPage_ProjectDetailQueryHookResult = ReturnType<typeof use
 export type ProjectSlugPage_ProjectDetailLazyQueryHookResult = ReturnType<typeof useProjectSlugPage_ProjectDetailLazyQuery>;
 export type ProjectSlugPage_ProjectDetailQueryResult = Apollo.QueryResult<ProjectSlugPage_ProjectDetailQuery, ProjectSlugPage_ProjectDetailQueryVariables>;
 export const ProjectSlugPage_ProjectLinkDocument = gql`
-    query ProjectSlugPage_ProjectLink($id: ID!) {
-  next: projects(sort: "id:desc", where: {id_lt: $id}, limit: 1) {
+    query ProjectSlugPage_ProjectLink($order: Int!) {
+  next: projects(sort: "order:desc", where: {order_lt: $order}, limit: 1) {
     slug
     title
   }
-  prev: projects(where: {id_gt: $id}, limit: 1) {
+  prev: projects(where: {order_gt: $order}, limit: 1) {
     slug
     title
   }
@@ -2413,7 +2448,7 @@ export const ProjectSlugPage_ProjectLinkDocument = gql`
  * @example
  * const { data, loading, error } = useProjectSlugPage_ProjectLinkQuery({
  *   variables: {
- *      id: // value for 'id'
+ *      order: // value for 'order'
  *   },
  * });
  */
@@ -2466,6 +2501,7 @@ export const ProjectSlugPage_ProjectIdDocument = gql`
     query ProjectSlugPage_ProjectId($slug: String!) {
   projects(where: {slug: $slug}) {
     id
+    order
   }
 }
     `;
@@ -2656,7 +2692,7 @@ export type IndexPage_MainThumbnailLazyQueryHookResult = ReturnType<typeof useIn
 export type IndexPage_MainThumbnailQueryResult = Apollo.QueryResult<IndexPage_MainThumbnailQuery, IndexPage_MainThumbnailQueryVariables>;
 export const ProjectPage_ProjectsDocument = gql`
     query ProjectPage_Projects {
-  projects(sort: "id:desc") {
+  projects(sort: "order:desc") {
     ...Projects_Thumbnails
   }
 }
@@ -2755,6 +2791,10 @@ export type ProjectPage_ProjectsQueryResult = Apollo.QueryResult<ProjectPage_Pro
       "OutsourcingGroupBy",
       "Project",
       "ProjectAggregator",
+      "ProjectAggregatorAvg",
+      "ProjectAggregatorMax",
+      "ProjectAggregatorMin",
+      "ProjectAggregatorSum",
       "ProjectConnection",
       "ProjectConnectionBackgroundColor",
       "ProjectConnectionColor",
@@ -2765,6 +2805,7 @@ export type ProjectPage_ProjectsQueryResult = Apollo.QueryResult<ProjectPage_Pro
       "ProjectConnectionId",
       "ProjectConnectionLink",
       "ProjectConnectionMainCoverImage",
+      "ProjectConnectionOrder",
       "ProjectConnectionPublished_at",
       "ProjectConnectionScope",
       "ProjectConnectionSlug",

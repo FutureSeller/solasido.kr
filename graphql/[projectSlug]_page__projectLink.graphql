@@ -1,9 +1,9 @@
-query ProjectSlugPage_ProjectLink($id: ID!) {
-  next: projects(sort: "id:desc", where: { id_lt: $id }, limit: 1) {
+query ProjectSlugPage_ProjectLink($order: Int!) {
+  next: projects(sort: "order:desc", where: { order_lt: $order }, limit: 1) {
     slug
     title
   }
-  prev: projects(where: { id_gt: $id }, limit: 1) {
+  prev: projects(where: { order_gt: $order }, limit: 1) {
     slug
     title
   }
