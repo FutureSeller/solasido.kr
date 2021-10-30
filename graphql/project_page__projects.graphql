@@ -1,5 +1,5 @@
 query ProjectPage_Projects {
-  projects(sort: "id:desc") {
+  projects(sort: "order:desc") {
     ...Projects_Thumbnails
   }
 }

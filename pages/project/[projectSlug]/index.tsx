@@ -32,7 +32,7 @@ import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { data } = useProjectSlugPage_ProjectLinkQuery({
     variables: {
-      id: project?.id ?? '',
+      order: project?.order ?? -1,
     },
   })
   const [next] = data?.next ?? []
@@ -297,7 +297,7 @@ export const getStaticProps: GetStaticProps<
   await apolloClient.query<ProjectSlugPage_ProjectLinkQuery>({
     query: ProjectSlugPage_ProjectLinkDocument,
     variables: {
-      id: project?.id,
+      order: project?.order,
     },
   })
 

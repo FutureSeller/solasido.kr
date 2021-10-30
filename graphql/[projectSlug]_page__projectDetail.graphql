@@ -13,6 +13,7 @@ query ProjectSlugPage_ProjectDetail($id: ID!) {
     stickyTitleColor
     startDate
     endDate
+    order
     work {
       type
       value

@@ -1,5 +1,6 @@
 query ProjectSlugPage_ProjectId($slug: String!) {
   projects(where: { slug: $slug }) {
     id
+    order
   }
 }
