@@ -47,6 +47,6 @@ const StyledA = styled.a<{ isActive?: boolean }>`
   color: ${({ isActive, theme }) => (isActive ? theme.colors.black : theme.colors.gray.dark)};
 
   &:hover {
-    color: var(--chakra-colors-primary);
+    color: ${({ theme }) => theme.colors.primary};
   }
 `
