@@ -2320,6 +2320,11 @@ export type IndexPage_MainThumbnailQueryVariables = Exact<{ [key: string]: never
 
 export type IndexPage_MainThumbnailQuery = { __typename?: 'Query', mainThumbnail: { __typename?: 'MainThumbnails', projectThumbnail: Array<{ __typename?: 'ComponentMainProjectThumbnail', slug: string, title: string, summary: string, thumbnail: { __typename?: 'ComponentCommonImage', placeholder: string, alt: string, source: { __typename?: 'UploadFile', url: string } | null } | null } | null> | null } | null };
 
+export type IndexPage_ProjectCountQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type IndexPage_ProjectCountQuery = { __typename?: 'Query', projectsConnection: { __typename?: 'ProjectConnection', aggregate: { __typename?: 'ProjectAggregator', totalCount: number | null } | null } | null };
+
 export type ProjectPage_ProjectsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -2690,6 +2695,42 @@ export function useIndexPage_MainThumbnailLazyQuery(baseOptions?: Apollo.LazyQue
 export type IndexPage_MainThumbnailQueryHookResult = ReturnType<typeof useIndexPage_MainThumbnailQuery>;
 export type IndexPage_MainThumbnailLazyQueryHookResult = ReturnType<typeof useIndexPage_MainThumbnailLazyQuery>;
 export type IndexPage_MainThumbnailQueryResult = Apollo.QueryResult<IndexPage_MainThumbnailQuery, IndexPage_MainThumbnailQueryVariables>;
+export const IndexPage_ProjectCountDocument = gql`
+    query IndexPage_ProjectCount {
+  projectsConnection {
+    aggregate {
+      totalCount
+    }
+  }
+}
+    `;
+
+/**
+ * __useIndexPage_ProjectCountQuery__
+ *
+ * To run a query within a React component, call `useIndexPage_ProjectCountQuery` and pass it any options that fit your needs.
+ * When your component renders, `useIndexPage_ProjectCountQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useIndexPage_ProjectCountQuery({
+ *   variables: {
+ *   },
+ * });
+ */
+export function useIndexPage_ProjectCountQuery(baseOptions?: Apollo.QueryHookOptions<IndexPage_ProjectCountQuery, IndexPage_ProjectCountQueryVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<IndexPage_ProjectCountQuery, IndexPage_ProjectCountQueryVariables>(IndexPage_ProjectCountDocument, options);
+      }
+export function useIndexPage_ProjectCountLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<IndexPage_ProjectCountQuery, IndexPage_ProjectCountQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<IndexPage_ProjectCountQuery, IndexPage_ProjectCountQueryVariables>(IndexPage_ProjectCountDocument, options);
+        }
+export type IndexPage_ProjectCountQueryHookResult = ReturnType<typeof useIndexPage_ProjectCountQuery>;
+export type IndexPage_ProjectCountLazyQueryHookResult = ReturnType<typeof useIndexPage_ProjectCountLazyQuery>;
+export type IndexPage_ProjectCountQueryResult = Apollo.QueryResult<IndexPage_ProjectCountQuery, IndexPage_ProjectCountQueryVariables>;
 export const ProjectPage_ProjectsDocument = gql`
     query ProjectPage_Projects {
   projects(sort: "order:desc") {

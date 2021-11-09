@@ -1,0 +1,7 @@
+query IndexPage_ProjectCount {
+  projectsConnection {
+    aggregate {
+      totalCount
+    }
+  }
+}
