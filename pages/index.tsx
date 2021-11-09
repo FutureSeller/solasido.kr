@@ -11,11 +11,16 @@ import Footer from '../components/Footer'
 
 import { responsive } from '../styles/responsive'
 import { initializeApollo } from '../apollo/client'
-import { IndexPage_MainThumbnailDocument } from '../__generated__/graphql'
-import type { IndexPage_MainThumbnailQuery } from '../__generated__/graphql'
+
+import { useIndexPage_ProjectCountQuery } from '../__generated__/graphql'
+
+import { IndexPage_MainThumbnailDocument, IndexPage_ProjectCountDocument } from '../__generated__/graphql'
+import type { IndexPage_MainThumbnailQuery, IndexPage_ProjectCountQuery } from '../__generated__/graphql'
 import type { InferGetStaticPropsType } from 'next'
 
 export default function IndexPage({ covers }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const { data } = useIndexPage_ProjectCountQuery()
+
   return (
     <Box as="main" height="100vh" width="100%" backgroundColor="black">
       <Meta title="Home | SOLASIDO" description="SOLASIDO's Portfolio" />
@@ -44,7 +49,7 @@ export default function IndexPage({ covers }: InferGetStaticPropsType<typeof get
         color="white"
       >
         <ProjectCountBox>
-          All Projects<sup>15</sup>
+          All Projects<sup>{data?.projectsConnection?.aggregate?.totalCount}</sup>
         </ProjectCountBox>
         <Link href="/project" passHref>
           <a aria-label="Projects 페이지로 이동">
@@ -114,6 +119,10 @@ export const getStaticProps = async () => {
 
   const { data } = await apolloClient.query<IndexPage_MainThumbnailQuery>({
     query: IndexPage_MainThumbnailDocument,
+  })
+
+  await apolloClient.query<IndexPage_ProjectCountQuery>({
+    query: IndexPage_ProjectCountDocument,
   })
 
   return {
