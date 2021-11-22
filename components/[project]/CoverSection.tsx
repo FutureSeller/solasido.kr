@@ -34,15 +34,17 @@ export default function CoverSection({ title, src, alt, placeholder, fixedTitleC
     <Box position="relative">
       <Box ref={ref} position="relative" zIndex="bloatTitle" minHeight="100vh" paddingTop="100%" overflow="hidden">
         <ClipBox>
-          <Image
-            key={src}
-            src={src}
-            layout="fill"
-            objectFit="cover"
-            alt={alt}
-            placeholder="blur"
-            blurDataURL={placeholder}
-          />
+          <Box position="relative" width="100%" height="100%">
+            <Image
+              key={src}
+              src={src}
+              layout="fill"
+              objectFit="cover"
+              alt={alt}
+              placeholder="blur"
+              blurDataURL={placeholder}
+            />
+          </Box>
           <FixedTitleBox>
             <StyledHeadingBox color={fixedTitleColor}>{title}</StyledHeadingBox>
           </FixedTitleBox>
