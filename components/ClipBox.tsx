@@ -7,7 +7,7 @@ const ClipBox = styled(Box)`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => theme.colors.black};
+  background-color: transparent;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 `
 

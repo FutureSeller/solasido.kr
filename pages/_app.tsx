@@ -37,6 +37,15 @@ function App({ Component, pageProps }: AppProps) {
             font-display: swap;
           }
 
+          html {
+            height: -webkit-fill-available;
+          }
+
+          body {
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+          }
+
           ul,
           ol {
             list-style: none;

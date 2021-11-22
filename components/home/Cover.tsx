@@ -9,7 +9,7 @@ import { responsive } from '../../styles/responsive'
 
 import type { ImageProps } from 'next/image'
 
-const INVISIBLE = '0'
+const INVISIBLE = '0.9'
 const VISIBLE = '1'
 
 interface Props {
@@ -22,18 +22,18 @@ interface Props {
 }
 
 export default function Cover({ title, summary, src, alt, placeholder, objectPosition = 'center' }: Props) {
-  const imageBoxRef = useRef<HTMLDivElement | null>(null)
+  const clipBoxRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
-    if (!imageBoxRef.current) {
+    if (!clipBoxRef.current) {
       return
     }
-    const boxRef = imageBoxRef.current
+    const boxRef = clipBoxRef.current
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
-        boxRef.style.zIndex = VISIBLE
+        boxRef.style.opacity = VISIBLE
       } else {
-        boxRef.style.zIndex = INVISIBLE
+        boxRef.style.opacity = INVISIBLE
       }
     })
 
@@ -45,15 +45,15 @@ export default function Cover({ title, summary, src, alt, placeholder, objectPos
   }, [])
 
   return (
-    <Box position="relative" width="100%" height="100%">
-      <ClipBox>
+    <Box position="relative" width="100%" height="100%" overflow="hidden" zIndex="hide">
+      <ClipBox ref={clipBoxRef}>
         <TitleBox>
           <Heading as="h2">
             <Title>{title}</Title>
           </Heading>
           <StyledText>{summary}</StyledText>
         </TitleBox>
-        <Box ref={imageBoxRef} position="relative" width="100%" height="100%" overflow="hidden">
+        <Box position="relative" width="100%" height="100%" zIndex="hide">
           <Image
             src={src}
             alt={alt}
@@ -77,14 +77,13 @@ const TitleBox = styled(Box)`
   text-align: center;
   color: white;
   z-index: ${({ theme }) => theme.zIndices.bloatTitle};
-
   transform: translate(-50%, -50%) translateZ(0);
 
   ${responsive.mdLte} {
     left: 0;
     padding: 0 24px;
     text-align: left;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateZ(0);
   }
 `
 
