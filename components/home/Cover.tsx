@@ -1,3 +1,4 @@
+import { useRef, useEffect } from 'react'
 import Image from 'next/image'
 import styled from '@emotion/styled'
 import { Box, Heading, Text } from '@chakra-ui/react'
@@ -7,6 +8,9 @@ import ClipBox from '../ClipBox'
 import { responsive } from '../../styles/responsive'
 
 import type { ImageProps } from 'next/image'
+
+const INVISIBLE = '0'
+const VISIBLE = '1'
 
 interface Props {
   title: string
@@ -18,34 +22,63 @@ interface Props {
 }
 
 export default function Cover({ title, summary, src, alt, placeholder, objectPosition = 'center' }: Props) {
+  const imageBoxRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    if (!imageBoxRef.current) {
+      return
+    }
+    const boxRef = imageBoxRef.current
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        boxRef.style.zIndex = VISIBLE
+      } else {
+        boxRef.style.zIndex = INVISIBLE
+      }
+    })
+
+    observer.observe(boxRef)
+
+    return () => {
+      observer.disconnect()
+    }
+  }, [])
+
   return (
-    <Box position="relative" width="100%" height="100%" overflow="hidden">
+    <Box position="relative" width="100%" height="100%">
       <ClipBox>
-        <TitleBox position="fixed" width="100%" margin="0" zIndex="bloatTitle" color="white">
+        <TitleBox>
           <Heading as="h2">
             <Title>{title}</Title>
           </Heading>
           <StyledText>{summary}</StyledText>
         </TitleBox>
-        <Image
-          src={src}
-          alt={alt}
-          layout="fill"
-          objectFit="cover"
-          placeholder="blur"
-          blurDataURL={placeholder}
-          objectPosition={objectPosition}
-        />
+        <Box ref={imageBoxRef} position="relative" width="100%" height="100%" overflow="hidden">
+          <Image
+            src={src}
+            alt={alt}
+            layout="fill"
+            objectFit="cover"
+            placeholder="blur"
+            blurDataURL={placeholder}
+            objectPosition={objectPosition}
+          />
+        </Box>
       </ClipBox>
     </Box>
   )
 }
 
 const TitleBox = styled(Box)`
+  position: fixed;
+  width: 100%;
   top: 50%;
   left: 50%;
   text-align: center;
-  transform: translate(-50%, -50%);
+  color: white;
+  z-index: ${({ theme }) => theme.zIndices.bloatTitle};
+
+  transform: translate(-50%, -50%) translateZ(0);
 
   ${responsive.mdLte} {
     left: 0;
