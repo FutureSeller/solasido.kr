@@ -48,7 +48,7 @@ export default function ExplainSection({ project }: Props) {
             </Box>
             <Box>
               <Heading as="h3">
-                <CategoryTitle>{project?.work?.type}</CategoryTitle>
+                <CategoryTitle>{project?.work?.type.replace('_', ' ')}</CategoryTitle>
               </Heading>
               {project?.work?.value}
             </Box>

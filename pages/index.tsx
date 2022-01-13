@@ -27,7 +27,7 @@ export default function IndexPage({ covers }: InferGetStaticPropsType<typeof get
       <VisuallyHidden>
         <Heading as="h1">Solasido&apos;s Portfolio</Heading>
       </VisuallyHidden>
-      <NavBar color="white" backgroundColor="black" alwaysVisible />
+      <NavBar color="white" backgroundColor="black" />
       <Slogan />
       {covers?.map(cover => (
         <Cover
