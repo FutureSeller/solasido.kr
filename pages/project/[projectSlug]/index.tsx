@@ -1,3 +1,4 @@
+import {useRef, useEffect} from 'react'
 import styled from '@emotion/styled'
 import { Box, Flex, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
@@ -29,6 +30,8 @@ import type {
 } from '../../../__generated__/graphql'
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 
+const isVideoUrl = (url: string) => url.endsWith('.mp4')
+
 export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { data } = useProjectSlugPage_ProjectLinkQuery({
     variables: {
@@ -38,6 +41,26 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
   const [next] = data?.next ?? []
   const [prev] = data?.prev ?? []
   const [projectDetail] = project?.projectDetails ?? []
+  
+  // TODO: Video 관련 로직을 따로 분리해야한다.
+  const videoRef = useRef<HTMLVideoElement>(null)
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video) {
+      return
+    }
+
+    const handleMove = () => {
+      if(video.currentTime >= video.duration - 0.5) {
+        video.currentTime = 0.0;
+    }
+    }
+    video.addEventListener('timeupdate', handleMove);
+
+    return () => {
+      video.removeEventListener('timeupdate', handleMove)
+    }
+  }, [])
 
   return (
     <>
@@ -60,6 +83,21 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
         <Box overflow="hidden">
           {projectDetail?.content?.map((detail, index) => {
             if (detail?.__typename === 'ComponentCommonImage') {
+              const url = detail.source?.url
+
+              if (!url) {
+                return null
+              }
+
+              // TODO: Video 관련 로직을 따로 분리해야한다.
+              if (isVideoUrl(url)) {
+                return (
+                  <Box key={`${detail.__typename}-${index}`} margin="8px 0" width="100%">
+                    <video ref={videoRef} src={url} muted autoPlay playsInline />
+                  </Box>
+                )
+              }
+
               return (
                 <Box
                   key={`${detail.__typename}-${index}`}
