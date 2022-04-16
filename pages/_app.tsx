@@ -62,6 +62,14 @@ function App({ Component, pageProps }: AppProps) {
           }
 
           @font-face {
+            font-family: 'SUIT Medium';
+            src: url('/fonts/SUIT-Medium.woff2') format('woff2');
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+          }
+
+          @font-face {
             font-family: 'SUIT Regular';
             src: url('/fonts/SUIT-Regular.woff2') format('woff2');
             font-style: normal;

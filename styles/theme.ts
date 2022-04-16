@@ -16,6 +16,7 @@ export const customTheme = {
     // TODO: 나중에 neueDisplay는 지워져야 함
     neueDisplay: 'Neue Display, sans-serif',
     suitBold: 'SUIT Bold, sans-serif',
+    suitMeidum: 'SUIT Medium, sans-serif',
     suitRegular: 'SUIT Regular, sans-serif',
     gorditaBold: 'Gordita Bold, sans-serif',
     gorditaRegular: 'Gordita Regular, sans-serif',
