@@ -37,6 +37,46 @@ function App({ Component, pageProps }: AppProps) {
             font-display: swap;
           }
 
+          @font-face {
+            font-family: 'Gordita Bold';
+            src: url('/fonts/gordita-bold-webfont.woff2') format('woff2');
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+          }
+
+          @font-face {
+            font-family: 'Gordita Regular';
+            src: url('/fonts/gordita-regular-webfont.woff2') format('woff2');
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+          }
+
+          @font-face {
+            font-family: 'SUIT Bold';
+            src: url('/fonts/SUIT-Bold.woff2') format('woff2');
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+          }
+
+          @font-face {
+            font-family: 'SUIT Medium';
+            src: url('/fonts/SUIT-Medium.woff2') format('woff2');
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+          }
+
+          @font-face {
+            font-family: 'SUIT Regular';
+            src: url('/fonts/SUIT-Regular.woff2') format('woff2');
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+          }
+
           html {
             height: -webkit-fill-available;
           }
