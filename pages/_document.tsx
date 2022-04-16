@@ -30,6 +30,7 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <link rel="preload" href="/fonts/SUIT-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="preload" href="/fonts/SUIT-Medium.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
           <link rel="preload" href="/fonts/SUIT-Bold.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         </Head>
         <body>
