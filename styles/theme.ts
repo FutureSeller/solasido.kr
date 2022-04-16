@@ -11,8 +11,14 @@ export const customTheme = {
     },
   },
   fonts: {
+    // TODO: 나중에 SUIT Regular로 body를 바꿔야함
     body: "'Open Sans', sans-serif",
+    // TODO: 나중에 neueDisplay는 지워져야 함
     neueDisplay: 'Neue Display, sans-serif',
+    suitBold: 'SUIT Bold, sans-serif',
+    suitRegular: 'SUIT Regular, sans-serif',
+    gorditaBold: 'Gordita Bold, sans-serif',
+    gorditaRegular: 'Gordita Regular, sans-serif',
   },
   fontSizes: {
     14: '14px',
