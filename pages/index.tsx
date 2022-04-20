@@ -13,7 +13,7 @@ import { responsive } from '../styles/responsive'
 import type { InferGetStaticPropsType } from 'next'
 
 export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const [page, setPage] = useState(0)
+  const [page, setPage] = useState(-1)
 
   const rafRef = useRef<ReturnType<typeof requestAnimationFrame>>()
   const previousTimeRef = useRef(0)
