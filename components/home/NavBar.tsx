@@ -47,8 +47,12 @@ const StyledHeader = styled(motion.header)`
   width: 100%;
   padding: 22px 24px 18px;
 
+  @media (min-width: 768px) {
+    padding: 22px 55px 18px;
+  }
+
   @media (min-width: 1920px) {
-    padding: 33px 60px 23px;
+    padding: 33px 55px 23px;
   }
 `
 
