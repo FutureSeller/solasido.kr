@@ -1,71 +1,86 @@
+import { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Box, Flex, Heading, VisuallyHidden } from '@chakra-ui/react'
+import fs from 'fs'
 
 import Meta from '../components/Meta'
-import NavBar from '../components/NavBar'
-import Slogan from '../components/home/Slogan'
-import Cover from '../components/home/Cover'
-import Footer from '../components/Footer'
-
+import NavBar from '../components/home/NavBar'
+import Footer from '../components/home/Footer'
 import { responsive } from '../styles/responsive'
-import { initializeApollo } from '../apollo/client'
 
-import { useIndexPage_ProjectCountQuery } from '../__generated__/graphql'
-
-import { IndexPage_MainThumbnailDocument, IndexPage_ProjectCountDocument } from '../__generated__/graphql'
-import type { IndexPage_MainThumbnailQuery, IndexPage_ProjectCountQuery } from '../__generated__/graphql'
 import type { InferGetStaticPropsType } from 'next'
 
-export default function IndexPage({ covers }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const { data } = useIndexPage_ProjectCountQuery()
+export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const [page, setPage] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPage(page => (page + 1) % imageUrls.length)
+    }, 1000)
+
+    return () => {
+      clearInterval(interval)
+    }
+    // eslint-disable-next-line
+  }, [])
 
   return (
-    <Box as="main" height="100vh" width="100%" backgroundColor="black">
+    <>
       <Meta title="Home | SOLASIDO" description="SOLASIDO's Portfolio" />
-      <VisuallyHidden>
-        <Heading as="h1">Solasido&apos;s Portfolio</Heading>
-      </VisuallyHidden>
-      <NavBar color="white" backgroundColor="black" />
-      <Slogan />
-      {covers?.map(cover => (
-        <Cover
-          key={cover?.slug}
-          title={cover?.title!}
-          summary={cover?.summary!}
-          src={cover?.thumbnail?.source?.url!}
-          alt={cover?.thumbnail?.alt!}
-          placeholder={cover?.thumbnail?.placeholder!}
-        />
-      ))}
-      <StyledFlex
-        as="footer"
-        position="relative"
-        alignItems="center"
-        justifyContent="space-between"
-        width="100%"
-        backgroundColor="black"
-        color="white"
-      >
-        <ProjectCountBox>
-          All Projects<sup>{data?.projectsConnection?.aggregate?.totalCount}</sup>
-        </ProjectCountBox>
-        <Link href="/project" passHref>
-          <a aria-label="Projects 페이지로 이동">
-            <Img
-              src="/assets/right-arrow.svg"
-              whileHover={{
-                x: 10,
-                transition: { duration: 0.1 },
-              }}
-              alt="Projects 페이지로 이동"
-            />
-          </a>
-        </Link>
-      </StyledFlex>
-      <Footer />
-    </Box>
+      <NavBar />
+      <Box as="main" display="flex" flexDirection="column" width="100%" height="100%" backgroundColor="black">
+        <VisuallyHidden>
+          <Heading as="h1">Solasido&apos;s Portfolio</Heading>
+        </VisuallyHidden>
+        <Box position="relative" flex="1">
+          <StyledSlogan>{`Better Design,\nBetter Life.`}</StyledSlogan>
+          <Box
+            position="absolute"
+            top="0"
+            width="100%"
+            height="100%"
+            background={`url(${imageUrls[page]}) no-repeat center`}
+            _after={{
+              display: 'block',
+              content: '""',
+              background: 'rgba(0,0,0,0.7)',
+              zIndex: 1,
+              height: '100%',
+              width: '100%',
+            }}
+          />
+        </Box>
+      </Box>
+      <Box>
+        <StyledFlex
+          position="relative"
+          alignItems="center"
+          justifyContent="space-between"
+          width="100%"
+          backgroundColor="black"
+          color="white"
+        >
+          <ProjectCountBox>
+            All Projects<sup>{imageUrls.length}</sup>
+          </ProjectCountBox>
+          <Link href="/project" passHref>
+            <a aria-label="Projects 페이지로 이동">
+              <Img
+                src="/assets/right-arrow.svg"
+                whileHover={{
+                  x: 10,
+                  transition: { duration: 0.1 },
+                }}
+                alt="Projects 페이지로 이동"
+              />
+            </a>
+          </Link>
+        </StyledFlex>
+        <Footer />
+      </Box>
+    </>
   )
 }
 
@@ -81,25 +96,36 @@ const StyledFlex = styled(Flex)`
   }
 `
 
-const ProjectCountBox = styled(motion(Box))`
+const StyledSlogan = styled(Box)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  color: white;
+  z-index: 2;
+  text-align: center;
+  font-family: Gordita Bold;
+  font-size: 32px;
+  line-height: 1.37;
+  white-space: pre-wrap;
+
+  @media (min-width: 376px) {
+    font-size: 54px;
+  }
+
+  @media (min-width: 769px) {
+    font-size: 70px;
+  }
+`
+
+const ProjectCountBox = styled(Box)`
   margin: 0;
-  font-size: 2.5vw;
+  font-size: 24px;
   cursor: not-allowed;
 
-  ${responsive.xlLte} {
-    font-size: 3vw;
-  }
-
-  ${responsive.lgLte} {
-    font-size: 3.5vw;
-  }
-
-  ${responsive.mdLte} {
-    font-size: 4vw;
-  }
-
-  ${responsive.smLte} {
-    font-size: 5vw;
+  @media (min-width: 769px) {
+    font-size: 48px;
   }
 `
 const Img = styled(motion.img)`
@@ -115,19 +141,25 @@ const Img = styled(motion.img)`
 `
 
 export const getStaticProps = async () => {
-  const apolloClient = initializeApollo({})
+  const baseDir = '/images/main'
+  const mainImageUrls = fs.readdirSync(`./public${baseDir}`)
 
-  const { data } = await apolloClient.query<IndexPage_MainThumbnailQuery>({
-    query: IndexPage_MainThumbnailDocument,
-  })
+  mainImageUrls.sort((prev, cur) => {
+    const prevIndex = parseInt(prev.split('_')[0], 10)
+    const curIndex = parseInt(cur.split('_')[0], 10)
 
-  await apolloClient.query<IndexPage_ProjectCountQuery>({
-    query: IndexPage_ProjectCountDocument,
+    if (prevIndex - curIndex > 0) {
+      return -1
+    }
+    if (prevIndex - curIndex < 0) {
+      return 1
+    }
+    return 0
   })
 
   return {
     props: {
-      covers: data.mainThumbnail?.projectThumbnail,
+      imageUrls: mainImageUrls.map(imageUrl => `${baseDir}/${imageUrl}`),
     },
   }
 }
