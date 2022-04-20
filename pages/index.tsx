@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import styled from '@emotion/styled'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -15,14 +15,24 @@ import type { InferGetStaticPropsType } from 'next'
 export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [page, setPage] = useState(0)
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setPage(page => (page + 1) % imageUrls.length)
-    }, 1000)
+  const requestRef = useRef()
+  const previousTimeRef = useRef()
 
-    return () => {
-      clearInterval(interval)
+  const animate = time => {
+    if (previousTimeRef.current != undefined) {
+      const deltaTime = time - previousTimeRef.current
+      setPage(prevCount => ((prevCount + deltaTime * 0.001) % 100) % imageUrls.length)
     }
+    previousTimeRef.current = time
+    requestRef.current = requestAnimationFrame(animate)
+  }
+
+  useEffect(() => {
+    requestRef.current = requestAnimationFrame(animate)
+    return () => {
+      cancelAnimationFrame(requestRef.current)
+    }
+
     // eslint-disable-next-line
   }, [])
 
@@ -41,7 +51,7 @@ export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof 
             top="0"
             width="100%"
             height="100%"
-            background={`url(${imageUrls[page]}) no-repeat center`}
+            background={`url(${imageUrls[Math.round(page)]}) no-repeat center`}
             _after={{
               display: 'block',
               content: '""',
@@ -110,21 +120,21 @@ const StyledSlogan = styled(Box)`
   line-height: 1.37;
   white-space: pre-wrap;
 
-  @media (min-width: 376px) {
+  @media (min-width: 768px) {
     font-size: 54px;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 1920px) {
     font-size: 70px;
   }
 `
 
 const ProjectCountBox = styled(Box)`
   margin: 0;
-  font-size: 24px;
+  font-size: 33px;
   cursor: not-allowed;
 
-  @media (min-width: 769px) {
+  @media (min-width: 1920px) {
     font-size: 48px;
   }
 `

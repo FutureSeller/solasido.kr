@@ -47,11 +47,7 @@ const StyledHeader = styled(motion.header)`
   width: 100%;
   padding: 22px 24px 18px;
 
-  @media (min-width: 376px) {
-    padding: 23px 24px 16px;
-  }
-
-  @media (min-width: 769px) {
+  @media (min-width: 1920px) {
     padding: 33px 60px 23px;
   }
 `
@@ -62,7 +58,7 @@ const StyledBox = styled(Box)`
   width: 135px;
   height: 20px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 1920px) {
     width: 188px;
     height: 28px;
   }
@@ -73,12 +69,12 @@ const StyledNavButton = styled(NavButton)`
   height: 24px;
   color: ${customTheme.colors.primary};
 
-  @media (min-width: 376px) {
+  @media (min-width: 768px) {
     width: 28px;
     height: 28px;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 1920px) {
     width: 34px;
     height: 34px;
   }
