@@ -13,7 +13,7 @@ interface Props {
 export default function Footer({ color = 'black', backgroundColor = 'white' }: Props) {
   return (
     <StyledFlex as="footer" justifyContent="space-between" backgroundColor={backgroundColor}>
-      <Box color={color}>© 2022 SOLASIDO All rights reserved.</Box>
+      <StyledBox color={color}>© 2022 SOLASIDO All rights reserved.</StyledBox>
       <StyledHStack as="ul" color={color} fontWeight="700">
         <li>
           <ExternalLink href="mailto:sol_asido_@naver.com">E-Mail</ExternalLink>
@@ -38,6 +38,12 @@ const StyledFlex = styled(Flex)`
 
   @media (max-width: 768px) {
     padding: 16px 24px 10px;
+  }
+`
+
+const StyledBox = styled(Box)`
+  @media (max-width: 768px) {
+    margin-bottom: 14px;
   }
 `
 
