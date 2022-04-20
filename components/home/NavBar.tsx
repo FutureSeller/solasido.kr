@@ -59,8 +59,13 @@ const StyledHeader = styled(motion.header)`
 const StyledBox = styled(Box)`
   position: relative;
   display: inline-block;
-  width: 135px;
-  height: 20px;
+  width: 108px;
+  height: 16px;
+
+  @media (min-width: 768px) {
+    width: 135px;
+    height: 20px;
+  }
 
   @media (min-width: 1920px) {
     width: 188px;

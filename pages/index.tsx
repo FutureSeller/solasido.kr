@@ -8,7 +8,6 @@ import fs from 'fs'
 import Meta from '../components/Meta'
 import NavBar from '../components/home/NavBar'
 import Footer from '../components/home/Footer'
-import { responsive } from '../styles/responsive'
 
 import type { InferGetStaticPropsType } from 'next'
 
@@ -90,14 +89,10 @@ export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof 
 }
 
 const StyledFlex = styled(Flex)`
-  padding: 40px 55px;
+  padding: 20px 24px;
 
-  ${responsive.mdLte} {
-    padding: 30px 24px;
-  }
-
-  ${responsive.smLte} {
-    padding: 20px 24px;
+  @media (min-width: 768px) {
+    padding: 24px 55px;
   }
 `
 
@@ -126,7 +121,7 @@ const StyledSlogan = styled(Box)`
 
 const ProjectCountBox = styled(Box)`
   margin: 0;
-  font-size: 33px;
+  font-size: 24px;
   cursor: not-allowed;
 
   @media (min-width: 1920px) {
@@ -134,15 +129,8 @@ const ProjectCountBox = styled(Box)`
   }
 `
 const Img = styled(motion.img)`
-  width: 5vw;
-
-  ${responsive.mdLte} {
-    width: 6vw;
-  }
-
-  ${responsive.smLte} {
-    width: 7vw;
-  }
+  width: 65px;
+  height: 40px;
 `
 
 export const getStaticProps = async () => {
