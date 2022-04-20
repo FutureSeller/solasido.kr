@@ -1,8 +1,8 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { Box, Flex, Heading, VisuallyHidden } from '@chakra-ui/react'
+import { Box, Flex, Heading, VisuallyHidden, Fade } from '@chakra-ui/react'
 import fs from 'fs'
 
 import Meta from '../components/Meta'
@@ -15,25 +15,13 @@ import type { InferGetStaticPropsType } from 'next'
 export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [page, setPage] = useState(0)
 
-  const rafRef = useRef<ReturnType<typeof requestAnimationFrame>>()
-  const previousTimeRef = useRef(0)
-
-  const animate = (time: number) => {
-    if (previousTimeRef.current != undefined) {
-      const deltaTime = time - previousTimeRef.current
-      setPage(prevCount => ((prevCount + deltaTime * 0.001) % 100) % imageUrls.length)
-    }
-    previousTimeRef.current = time
-    rafRef.current = requestAnimationFrame(animate)
-  }
-
   useEffect(() => {
-    rafRef.current = requestAnimationFrame(animate)
-
-    const rafCurrent = rafRef.current
+    const interval = setInterval(() => {
+      setPage(page => (page + 1) % imageUrls.length)
+    }, 1000)
 
     return () => {
-      cancelAnimationFrame(rafCurrent)
+      clearInterval(interval)
     }
     // eslint-disable-next-line
   }, [])
@@ -48,21 +36,26 @@ export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof 
         </VisuallyHidden>
         <Box position="relative" flex="1">
           <StyledSlogan>{`Better Design,\nBetter Life.`}</StyledSlogan>
-          <Box
-            position="absolute"
-            top="0"
-            width="100%"
-            height="100%"
-            background={`url(${imageUrls[Math.round(page)]}) no-repeat center`}
-            _after={{
-              display: 'block',
-              content: '""',
-              background: 'rgba(0,0,0,0.7)',
-              zIndex: 1,
-              height: '100%',
-              width: '100%',
-            }}
-          />
+          {imageUrls.map((imgUrl, index) => (
+            <Fade key={imgUrl} in={index === page}>
+              <Box
+                position="absolute"
+                top="0"
+                width="100%"
+                height="100%"
+                background={`url(${imgUrl}) no-repeat center`}
+                transition=""
+                _after={{
+                  display: 'block',
+                  content: '""',
+                  background: 'rgba(0,0,0,0.7)',
+                  zIndex: 1,
+                  height: '100%',
+                  width: '100%',
+                }}
+              />
+            </Fade>
+          ))}
         </Box>
       </Box>
       <Box>
