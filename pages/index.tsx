@@ -15,24 +15,26 @@ import type { InferGetStaticPropsType } from 'next'
 export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [page, setPage] = useState(0)
 
-  const requestRef = useRef()
-  const previousTimeRef = useRef()
+  const rafRef = useRef<ReturnType<typeof requestAnimationFrame>>()
+  const previousTimeRef = useRef(0)
 
-  const animate = time => {
+  const animate = (time: number) => {
     if (previousTimeRef.current != undefined) {
       const deltaTime = time - previousTimeRef.current
       setPage(prevCount => ((prevCount + deltaTime * 0.001) % 100) % imageUrls.length)
     }
     previousTimeRef.current = time
-    requestRef.current = requestAnimationFrame(animate)
+    rafRef.current = requestAnimationFrame(animate)
   }
 
   useEffect(() => {
-    requestRef.current = requestAnimationFrame(animate)
-    return () => {
-      cancelAnimationFrame(requestRef.current)
-    }
+    rafRef.current = requestAnimationFrame(animate)
 
+    const rafCurrent = rafRef.current
+
+    return () => {
+      cancelAnimationFrame(rafCurrent)
+    }
     // eslint-disable-next-line
   }, [])
 
