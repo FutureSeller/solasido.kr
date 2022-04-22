@@ -9,6 +9,8 @@ import ContentBox from '../components/ContentBox'
 import Footer from '../components/Footer'
 import PageTitle from '../components/PageTitle'
 
+import Marquee from '../components/Marquee'
+
 import Description from '../components/about/Description'
 import Experience from '../components/about/Experience'
 
@@ -38,6 +40,21 @@ export default function AboutPage() {
         </Stack>
         <Description />
       </ContentBox>
+      <Marquee speed={400}>
+        <StyledMotionDiv fontSize="120px" whiteSpace="nowrap" background="#000" color="white">
+          BRAND DESIGNER + VISUAL DESIGNER +&nbsp;
+        </StyledMotionDiv>
+      </Marquee>
+      <Marquee speed={300} direction="right">
+        <StyledMotionDiv fontSize="120px" whiteSpace="nowrap" background="#000" color="white">
+          SEOUL BASED DESIGNER&nbsp;
+        </StyledMotionDiv>
+      </Marquee>
+      <Marquee speed={400}>
+        <StyledMotionDiv fontSize="120px" whiteSpace="nowrap" background="#000" color="white">
+          FOCUS ON - BASIC - CLEARNESS - IDENTITY - &nbsp;
+        </StyledMotionDiv>
+      </Marquee>
       <DeviceContextProvider>
         <Experience />
       </DeviceContextProvider>
@@ -45,6 +62,14 @@ export default function AboutPage() {
     </ChakraBox>
   )
 }
+
+const StyledMotionDiv = styled(ChakraBox)`
+  display: inline-block;
+  font-family: Gordita Bold;
+  font-size: 120px;
+  color: #000;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+`
 
 const Stack = styled(Flex)`
   margin-bottom: 6vw;
