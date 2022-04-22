@@ -20,7 +20,7 @@ export default function ProjectsPage() {
       <Main>
         <NavBar />
         <StyledContentBox>
-          <StyledPageHeader as="h1">{`ARCHIVE OF WORK\n2012 → 2022`}</StyledPageHeader>
+          <StyledPageHeader as="h1">{`ARCHIVE OF WORK\n2012 \u2794 ${new Date().getFullYear()}`}</StyledPageHeader>
           <DeviceProviderProvider>
             <ProjectThumbnailList />
           </DeviceProviderProvider>
