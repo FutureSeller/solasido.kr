@@ -1,213 +1,192 @@
 import styled from '@emotion/styled'
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import { Box, Text } from '@chakra-ui/react'
 
-import { responsive } from '../../styles/responsive'
+const AWARDS = [
+  {
+    title: 'Adobe Design Achievement Awards',
+    category: 'Print Communications Category',
+    prize: 'Semi Finalist',
+    startYear: 2015,
+  },
+  {
+    title: '제3회 삼성모바일디스플레이',
+    category: 'OLED 아이디어 공모전',
+    prize: '광고 디자인 부문 Finalist',
+    startYear: 2011,
+  },
+  {
+    title: '한국차문화협회 차의 세계화전',
+    category: '제2회 대한민국 차 패키지디자인 공모전',
+    prize: '패키지 디자인 특선',
+    startYear: 2010,
+  },
+]
 
-import {
-  useAboutPage_AwardsQuery,
-  useAboutPage_CareersQuery,
-  useAboutPage_OutsourcingsQuery,
-} from '../../__generated__/graphql'
+const FREELANCE = [
+  {
+    title: 'InkTec',
+    description: 'Amazon 입점 상세페이지 디자인',
+    startYear: 2021,
+    endYear: null,
+  },
+  {
+    title: 'HWAYEON',
+    description: '브랜드 디자인, 패키지 디자인',
+    startYear: 2020,
+    endYear: null,
+  },
+  {
+    title: '제9회 젊은 의사 포럼',
+    description: '행사 아이덴티티, 그래픽 디자인',
+    startYear: 2019,
+    endYear: null,
+  },
+  {
+    title: '서울특별시 사회적경제지원센터',
+    description: '위메프 입점 제품, 상세페이지 및 배너 디자인',
+    startYear: 2018,
+    endYear: null,
+  },
+  {
+    title: 'CHEMSTREE',
+    description: '브랜드 디자인',
+    startYear: 2017,
+    endYear: null,
+  },
+  {
+    title: 'OVIS',
+    description: '브랜드 디자인',
+    startYear: 2015,
+    endYear: 2016,
+  },
+  {
+    title: '대한민국 대학생 교육기부단',
+    description: '브랜드 디자인 리뉴얼',
+    startYear: 2012,
+    endYear: null,
+  },
+]
 
 export default function Experience() {
-  const { data: awardsData } = useAboutPage_AwardsQuery()
-  const { data: careersData } = useAboutPage_CareersQuery()
-  const { data: outsourcingsData } = useAboutPage_OutsourcingsQuery()
-
   return (
-    <Box as="section">
-      <ContentBox>
-        <Heading as="h2">
-          <Title>Experience</Title>
-        </Heading>
+    <Box as="section" background="#fff">
+      <ContentBox as="article">
+        <Title>IN-HOUSE</Title>
+        <ExperienceList as="ul">
+          <ExperienceItem as="li">
+            <DateBox>{`2021 \u2794 NOW`}</DateBox>
+            <StyledText>주식회사 하이앤디</StyledText>
+            <StyledText>브랜드 디자이너</StyledText>
+          </ExperienceItem>
+          <ExperienceItem as="li">
+            <DateBox>2020</DateBox>
+            <StyledText>고려대학교 디자인혁신센터</StyledText>
+            <StyledText>브랜드 디자이너</StyledText>
+          </ExperienceItem>
+        </ExperienceList>
       </ContentBox>
       <ContentBox>
-        <StyledFlex>
-          <SubTitle as="h3">Work</SubTitle>
-          <Flex as="ul" width="100%" flexWrap="wrap">
-            {careersData?.careers?.map(career => (
-              <StyledLiBox as="li" key={career?.company}>
-                <StyledDateBox>
-                  {career?.startYear} - {career?.endYear ?? 'NOW'}
-                </StyledDateBox>
-                <StyledText>{career?.company}</StyledText>
-                <StyledText>{career?.position}</StyledText>
-              </StyledLiBox>
-            ))}
-          </Flex>
-        </StyledFlex>
+        <Title as="h2">FREELANCE</Title>
+        <ExperienceList as="ul" flexWrap="wrap">
+          {FREELANCE.map(freelanceItem => (
+            <ExperienceItem as="li" key={freelanceItem.title}>
+              <DateBox>
+                {freelanceItem.startYear} {freelanceItem.endYear && `\u2794 ${freelanceItem.endYear}`}
+              </DateBox>
+              <StyledText>{freelanceItem.title}</StyledText>
+              <StyledText>{freelanceItem.description}</StyledText>
+            </ExperienceItem>
+          ))}
+        </ExperienceList>
       </ContentBox>
       <ContentBox>
-        <StyledFlex>
-          <SubTitle as="h3">Outsourcing</SubTitle>
-          <Flex as="ul" width="100%" flexWrap="wrap">
-            {outsourcingsData?.outsourcings?.map(outsourcing => (
-              <StyledLiBox as="li" key={outsourcing?.title}>
-                <StyledDateBox>
-                  {outsourcing?.startYear} {outsourcing?.endYear && `- ${outsourcing?.endYear}`}
-                </StyledDateBox>
-                <StyledText>{outsourcing?.title}</StyledText>
-                <StyledText>{outsourcing?.description}</StyledText>
-              </StyledLiBox>
-            ))}
-          </Flex>
-        </StyledFlex>
-      </ContentBox>
-      <ContentBox>
-        <StyledFlex>
-          <SubTitle as="h3">Awards</SubTitle>
-          <Flex as="ul" width="100%" flexWrap="wrap">
-            {awardsData?.awards?.map(award => (
-              <StyledLiBox as="li" key={award?.title}>
-                <StyledDateBox>{award?.startYear}</StyledDateBox>
-                <StyledText>{award?.title}</StyledText>
-                <StyledText>{award?.category}</StyledText>
-                <StyledText>{award?.prize}</StyledText>
-              </StyledLiBox>
-            ))}
-          </Flex>
-        </StyledFlex>
+        <Title as="h2">AWARDS</Title>
+        <ExperienceList as="ul" widthflexWrap="wrap">
+          {AWARDS.map(award => (
+            <ExperienceItem as="li" key={award.title}>
+              <DateBox>{award.startYear}</DateBox>
+              <StyledText>{award.title}</StyledText>
+              <StyledText>{award.category}</StyledText>
+              <StyledText>{award.prize}</StyledText>
+            </ExperienceItem>
+          ))}
+        </ExperienceList>
       </ContentBox>
     </Box>
   )
 }
 
+const Title = styled(Box)`
+  min-width: 160px;
+  font-family: Gordita Bold;
+  font-weight: 700;
+  font-size: 14px;
+  border-right: 2px solid black;
+  padding-left: 24px;
+  padding-right: 38px;
+  padding-top: 20px;
+
+  @media (min-width: 768px) {
+    min-width: 185px;
+    font-size: 18px;
+  }
+
+  @media (min-width: 1920px) {
+    min-width: 220px;
+    font-size: 23px;
+  }
+`
+
 const ContentBox = styled(Box)`
-  padding-left: 55px;
-  border-top: 1px solid black;
+  display: flex;
 
-  ${responsive.mdLte} {
-    padding-left: 24px;
+  &:nth-of-type(n-1) {
+    border-bottom: 2px solid black;
   }
 `
 
-const Title = styled(Text)`
-  padding: 24px 0;
-  font-weight: 700;
-  font-size: 1.6vw;
+const ExperienceList = styled(Box)`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
-  ${responsive.xlLte} {
-    font-size: 2vw;
+  & > :not(:last-of-type) {
+    border-bottom: 2px solid black;
   }
 
-  ${responsive.mdLte} {
-    padding: 18px 0;
-    font-size: 3vw;
-  }
-
-  ${responsive.smLte} {
-    padding: 12px 0;
-    font-size: 4vw;
+  @media (min-width: 1920px) {
+    flex-direction: row;
   }
 `
 
-const StyledDateBox = styled(Box)`
-  font-weight: 700;
-  font-size: 1.4vw;
+const ExperienceItem = styled(Box)`
+  width: 100%;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 14px;
 
-  ${responsive.xlLte} {
-    font-size: 1.8vw;
+  @media (min-width: 768px) {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-bottom: 15px;
   }
 
-  ${responsive.mdLte} {
-    font-size: 2.8vw;
-  }
+  @media (min-width: 1920px) {
+    width: 33.3%;
 
-  ${responsive.smLte} {
-    font-size: 3.8vw;
-  }
-`
-
-const StyledLiBox = styled(Box)`
-  width: 33.3%;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid black;
-
-  & > * {
-    margin-bottom: 8px;
-
-    ${responsive.mdLte} {
-      margin-bottom: 6px;
-    }
-
-    ${responsive.smLte} {
-      margin-bottom: 4px;
-    }
-  }
-
-  ${responsive.mdGte} {
     &:nth-last-of-type(-n + 3):nth-of-type(3n + 1),
     &:nth-last-of-type(-n + 3):nth-of-type(3n + 1) ~ li {
-      margin: 0;
-      padding: 0;
       border: none;
     }
   }
+`
 
-  ${responsive.mdLte} {
-    width: 100%;
-    padding-bottom: 10px;
-    margin-bottom: 18px;
-  }
-
-  ${responsive.smLte} {
-    margin-bottom: 12px;
-    padding-bottom: 12px;
-
-    &:last-of-type {
-      margin: 0;
-      padding: 0;
-      border: none;
-    }
-  }
+const DateBox = styled(Box)`
+  font-family: Gordita Bold;
+  margin-bottom: 5px;
 `
 
 const StyledText = styled(Text)`
-  font-size: 1.2vw;
-
-  ${responsive.xlLte} {
-    font-size: 1.6vw;
-  }
-
-  ${responsive.mdLte} {
-    font-size: 2.6vw;
-  }
-
-  ${responsive.smLte} {
-    font-size: 3.6vw;
-  }
-`
-
-const SubTitle = styled(Box)`
-  width: 30%;
-  font-weight: 700;
-  font-size: 1.6vw;
-
-  ${responsive.xlLte} {
-    font-size: 2vw;
-  }
-
-  ${responsive.mdLte} {
-    width: 50%;
-    font-size: 3vw;
-  }
-
-  ${responsive.smLte} {
-    width: 60%;
-    font-size: 4vw;
-  }
-`
-
-const StyledFlex = styled(Flex)`
-  width: 100%;
-  padding: 24px 0;
-
-  ${responsive.mdLte} {
-    padding: 18px 0;
-  }
-
-  ${responsive.smLte} {
-    padding: 12px 0;
-  }
+  font-family: SUIT Regular;
 `

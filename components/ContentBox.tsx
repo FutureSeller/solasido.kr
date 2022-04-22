@@ -1,13 +1,11 @@
 import styled from '@emotion/styled'
 import { Box } from '@chakra-ui/react'
 
-import { responsive } from '../styles/responsive'
-
 const ContentBox = styled(Box)`
-  padding: 0 55px;
+  padding: 0 24px;
 
-  ${responsive.mdLte} {
-    padding: 0 24px;
+  @media (min-width: 768px) {
+    padding: 0 55px;
   }
 `
 
