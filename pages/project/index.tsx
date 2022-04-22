@@ -1,12 +1,12 @@
 import styled from '@emotion/styled'
+import { Box } from '@chakra-ui/react'
 
 import DeviceProviderProvider from '../../contexts/DeviceProvider'
 
 import Meta from '../../components/Meta'
-import NavBar from '../../components/NavBar'
 import ContentBox from '../../components/ContentBox'
-import Footer from '../../components/Footer'
-import PageTitle from '../../components/PageTitle'
+import NavBar from '../../components/home/NavBar'
+import Footer from '../../components/home/Footer'
 import ProjectThumbnailList from '../../components/project/ProjectThumbnailList'
 
 import { initializeApollo } from '../../apollo/client'
@@ -18,13 +18,13 @@ export default function ProjectsPage() {
     <>
       <Meta title="Projects | SOLASIDO" description="Design brands and user experiences." />
       <Main>
-        <NavBar color="black" backgroundColor="white" alwaysVisible />
-        <ContentBox>
-          <PageTitle>Projects</PageTitle>
+        <NavBar />
+        <StyledContentBox>
+          <StyledPageHeader as="h1">{`ARCHIVE OF WORK\n2012 → 2022`}</StyledPageHeader>
           <DeviceProviderProvider>
             <ProjectThumbnailList />
           </DeviceProviderProvider>
-        </ContentBox>
+        </StyledContentBox>
         <Footer color="white" backgroundColor="black" />
       </Main>
     </>
@@ -35,6 +35,27 @@ const Main = styled.main`
   position: relative;
   height: 100%;
   min-height: 100vh;
+  min-width: 320px;
+`
+
+const StyledPageHeader = styled(Box)`
+  font-family: Gordita Bold;
+  margin-bottom: 18px;
+  color: ${({ theme }) => theme.colors.primary};
+  font-size: 20px;
+  white-space: pre-wrap;
+
+  @media (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 40px;
+  }
+`
+
+const StyledContentBox = styled(ContentBox)`
+  margin-top: 77px;
 `
 
 export const getStaticProps = async () => {

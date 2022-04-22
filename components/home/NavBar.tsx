@@ -17,7 +17,7 @@ export default function NavBar() {
       <Flex alignItems="center" justifyContent="space-between" color={customTheme.colors.primary}>
         <Link href="/" passHref shallow>
           <StyledBox as="a" aria-label="홈으로">
-            <Image src="/assets/logo.svg" alt="" aria-hidden layout="fill" />
+            <Image src="/assets/logo.svg" alt="" layout="fill" aria-hidden />
           </StyledBox>
         </Link>
         <StyledNavButton color={customTheme.colors.primary} isOpen={isOpen} onToggle={onToggle} />

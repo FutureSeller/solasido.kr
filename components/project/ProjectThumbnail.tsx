@@ -40,18 +40,25 @@ export default function ProjectThumbnail({ figure }: Props) {
 
 const Title = styled(Text)`
   margin-bottom: 10px;
+  font-family: Gordita Regular;
   font-weight: 400;
   font-size: 16px;
-
-  ${responsive.smLte} {
-    margin-bottom: 4px;
-  }
 `
 
 const Summary = styled(Text)`
   margin: 0;
-  font-weight: 700;
-  font-size: 2vw;
+  font-family: Gordita Bold;
+  font-size: 24px;
+
+  @media (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 50px;
+  }
+
+  /* font-size: 2vw;
 
   ${responsive.lgLte} {
     font-size: 3vw;
@@ -63,7 +70,7 @@ const Summary = styled(Text)`
 
   ${responsive.smLte} {
     font-size: 4.5vw;
-  }
+  } */
 `
 
 const StyledBox = styled(Box)`
