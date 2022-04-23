@@ -9,10 +9,6 @@ import NavBar from '../../components/home/NavBar'
 import Footer from '../../components/home/Footer'
 import ProjectThumbnailList from '../../components/project/ProjectThumbnailList'
 
-import { initializeApollo } from '../../apollo/client'
-import { ProjectPage_ProjectsDocument } from '../../__generated__/graphql'
-import type { ProjectPage_ProjectsQuery } from '../../__generated__/graphql'
-
 export default function ProjectsPage() {
   return (
     <>
@@ -59,15 +55,7 @@ const StyledContentBox = styled(ContentBox)`
 `
 
 export const getStaticProps = async () => {
-  const apolloClient = initializeApollo({})
-
-  await apolloClient.query<ProjectPage_ProjectsQuery>({
-    query: ProjectPage_ProjectsDocument,
-  })
-
   return {
-    props: {
-      initialApolloState: apolloClient.cache.extract(),
-    },
+    props: {},
   }
 }
