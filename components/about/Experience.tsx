@@ -131,7 +131,7 @@ const Title = styled(Box)`
     font-size: 18px;
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1440px) {
     min-width: 220px;
     font-size: 23px;
   }
@@ -154,7 +154,7 @@ const ExperienceList = styled(Box)`
     border-bottom: 2px solid black;
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1440px) {
     flex-direction: row;
   }
 `
@@ -172,7 +172,7 @@ const ExperienceItem = styled(Box)`
     padding-bottom: 15px;
   }
 
-  @media (min-width: 1920px) {
+  @media (min-width: 1440px) {
     width: 33.3%;
 
     &:nth-last-of-type(-n + 3):nth-of-type(3n + 1),
