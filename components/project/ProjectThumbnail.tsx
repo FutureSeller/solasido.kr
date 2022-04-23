@@ -1,32 +1,34 @@
 import styled from '@emotion/styled'
-import { Box, Heading, Text } from '@chakra-ui/react'
+import { Box, Heading, Text, AspectRatio } from '@chakra-ui/react'
 import Link from 'next/link'
 import Image from 'next/image'
 
 import { responsive } from '../../styles/responsive'
+import projectsData from '../../public/data/projects.json'
 
-import type { Projects_ThumbnailsFragment } from '../../__generated__/graphql'
+type ArrayElement<A> = A extends readonly (infer T)[] ? T : never
+type FigureType = ArrayElement<typeof projectsData>
 
 interface Props {
-  figure: Projects_ThumbnailsFragment
+  figure: FigureType
 }
 
 export default function ProjectThumbnail({ figure }: Props) {
-  const { slug, title, summary, thumbnail } = figure
+  const { slug, title, summary, thumbnail, isPortrait, placeholder } = figure
 
   return (
     <Link href={`/project/${slug}`} key={title} passHref prefetch={false}>
       <a>
-        <Figure isPortrait={thumbnail?.source?.height! > thumbnail?.source?.width!}>
+        <AspectRatio ratio={isPortrait ? 888 / 1108 : 888 / 592} marginBottom="16px">
           <HoverImage
-            src={thumbnail?.source?.url!}
+            src={thumbnail}
             layout="fill"
             objectFit="cover"
             alt={title}
             placeholder="blur"
-            blurDataURL={thumbnail?.placeholder!}
+            blurDataURL={placeholder}
           />
-        </Figure>
+        </AspectRatio>
         <StyledBox>
           <Heading as="h2">
             <Title>{title}</Title>
@@ -57,20 +59,6 @@ const Summary = styled(Text)`
   @media (min-width: 1920px) {
     font-size: 50px;
   }
-
-  /* font-size: 2vw;
-
-  ${responsive.lgLte} {
-    font-size: 3vw;
-  }
-
-  ${responsive.mdLte} {
-    font-size: 4vw;
-  }
-
-  ${responsive.smLte} {
-    font-size: 4.5vw;
-  } */
 `
 
 const StyledBox = styled(Box)`
@@ -79,15 +67,6 @@ const StyledBox = styled(Box)`
   ${responsive.mdLte} {
     margin-bottom: 30px;
   }
-`
-
-const Figure = styled.figure<{ isPortrait?: boolean }>`
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-  margin-bottom: 16px;
-  padding-top: ${({ isPortrait }) => (isPortrait ? '124.8%' : '66.6%')};
 `
 
 const HoverImage = styled(Image)`
