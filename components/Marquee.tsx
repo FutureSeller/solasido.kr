@@ -4,10 +4,10 @@ import { Box } from '@chakra-ui/react'
 import { css, keyframes } from '@emotion/react'
 
 const scroll = keyframes`
-  0% {
+  from {
     transform: translateX(0%);
   }
-  100% {
+  to {
     transform: translateX(-100%);
   }
 `
@@ -15,6 +15,7 @@ const scroll = keyframes`
 const MarqueeBox = styled(Box)<{ duration: string; delay: string; direction: string }>`
   display: flex;
   flex-direction: row;
+  flex: 0 0 auto;
   align-items: center;
   z-index: 1;
 
@@ -33,7 +34,7 @@ interface MarqueeProps {
   children?: React.ReactNode
 }
 
-const Marquee: React.FC<MarqueeProps> = ({ className = '', direction = 'left', speed = 20, delay = 0, children }) => {
+export default function Marquee({ className = '', direction = 'left', speed = 20, delay = 0, children }: MarqueeProps) {
   const [containerWidth, setContainerWidth] = useState(0)
   const [marqueeWidth, setMarqueeWidth] = useState(0)
   const [duration, setDuration] = useState(0)
@@ -42,22 +43,20 @@ const Marquee: React.FC<MarqueeProps> = ({ className = '', direction = 'left', s
   const marqueeRef = useRef<HTMLDivElement>(null)
 
   const calculateWidth = () => {
-    // Find width of container and width of marquee
     if (marqueeRef.current && containerRef.current) {
       setContainerWidth(containerRef.current.getBoundingClientRect().width)
       setMarqueeWidth(marqueeRef.current.getBoundingClientRect().width)
     }
 
     if (marqueeWidth < containerWidth) {
-      setDuration(containerWidth / speed)
+      setDuration(Math.round(containerWidth / speed))
     } else {
-      setDuration(marqueeWidth / speed)
+      setDuration(Math.round(marqueeWidth / speed))
     }
   }
 
   useEffect(() => {
     calculateWidth()
-
     // Rerender on window resize
     window.addEventListener('resize', calculateWidth)
     return () => {
@@ -93,5 +92,3 @@ const Marquee: React.FC<MarqueeProps> = ({ className = '', direction = 'left', s
     </Fragment>
   )
 }
-
-export default Marquee
