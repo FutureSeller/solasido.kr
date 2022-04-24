@@ -101,7 +101,7 @@ export default function Experience() {
       </ContentBox>
       <ContentBox>
         <Title as="h2">AWARDS</Title>
-        <ExperienceList as="ul" widthflexWrap="wrap">
+        <ExperienceList as="ul" flexWrap="wrap">
           {AWARDS.map(award => (
             <ExperienceItem as="li" key={award.title}>
               <DateBox>{award.startYear}</DateBox>

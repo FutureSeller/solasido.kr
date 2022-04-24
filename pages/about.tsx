@@ -35,7 +35,7 @@ export default function AboutPage() {
             <StyledNameBox>Brand + Visual Designer</StyledNameBox>
           </Stack>
           <StyledDescription>
-            {`디자인이란 사람들에게 이야기하고자 하는 바를 시각적으로 어떻게 전달하는 것이\n효율적인가를 따지는 실속 문학이라고 합니다.\n브랜드의 가치를 시각화하고 브랜드와 소비자, 온라인과 오프라인을 연결하여\n가치있는 실속 문학을 하고자합니다.`}
+            {`브랜드의 가치를 시각화하고 브랜드와 소비자, 온라인과 오프라인을 연결하여\n명확하고, 매력적이며, 유쾌하고, 직관적인 브랜드와 경험을 디자인합니다.`}
           </StyledDescription>
         </StyledContentBox>
         <StyledMarqueeBox>
@@ -127,10 +127,24 @@ const Divider = styled.hr`
 `
 
 const StyledDescription = styled(Box)`
-  font-size: 22px;
-  line-height: 34px;
+  font-family: SUIT Bold;
+  font-size: 18px;
+  line-height: 26px;
   white-space: pre-wrap;
-  margin-bottom: 20px;
+  word-break: keep-all;
+  margin-bottom: 150px;
+
+  @media (min-width: 768px) {
+    font-size: 22px;
+    line-height: 34px;
+    margin-bottom: 204px;
+  }
+
+  @media (min-width: 1920px) {
+    font-size: 28px;
+    line-height: 44px;
+    margin-bottom: 180px;
+  }
 `
 
 const StyledMarqueeBox = styled(Box)`
