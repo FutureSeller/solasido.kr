@@ -43,6 +43,7 @@ export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof 
                 width="100%"
                 height="100%"
                 background={`url(${imgUrl}) no-repeat center`}
+                backgroundSize="cover"
                 transition=""
                 _after={{
                   display: 'block',
