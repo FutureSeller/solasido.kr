@@ -76,7 +76,7 @@ export default function Experience() {
           <ExperienceItem as="li">
             <DateBox>{`2021 \u2794 NOW`}</DateBox>
             <StyledText>주식회사 하이앤디</StyledText>
-            <StyledText>브랜드 디자이너</StyledText>
+            <StyledText>브랜드/UXUI 디자이너</StyledText>
           </ExperienceItem>
           <ExperienceItem as="li">
             <DateBox>2020</DateBox>
