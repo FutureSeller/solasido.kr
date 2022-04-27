@@ -40,7 +40,6 @@ export default function Experience() {
       <ContentBox>
         <Title as="h2">AWARDS</Title>
         <ExperienceList as="ul" flexWrap="wrap">
-          {/* {AWARDS.map(award => ( */}
           {Array.from({ length: 3 }).map((_, index) => (
             <ExperienceItem as="li" key={`awards-${index.toString()}`}>
               <DateBox>{t(`about:awards.${index}.startYear`)}</DateBox>
@@ -49,7 +48,6 @@ export default function Experience() {
               <StyledText>{t(`about:awards.${index}.prize`)}</StyledText>
             </ExperienceItem>
           ))}
-          {/* ))} */}
         </ExperienceList>
       </ContentBox>
     </Box>
