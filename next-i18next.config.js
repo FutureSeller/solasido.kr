@@ -3,5 +3,6 @@ module.exports = {
     defaultLocale: 'ko',
     locales: ['ko', 'en'],
     localePath: './locales',
+    localeDetection: false,
   },
 }
