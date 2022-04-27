@@ -1,5 +1,7 @@
 import styled from '@emotion/styled'
 import { Box, Heading, VisuallyHidden } from '@chakra-ui/react'
+import { useTranslation } from 'next-i18next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 import DeviceContextProvider from '../contexts/DeviceProvider'
 
@@ -11,19 +13,11 @@ import Footer from '../components/home/Footer'
 
 import Experience from '../components/about/Experience'
 
-import { initializeApollo } from '../apollo/client'
-import {
-  AboutPage_AwardsDocument,
-  AboutPage_CareersDocument,
-  AboutPage_OutsourcingsDocument,
-} from '../__generated__/graphql'
-import type {
-  AboutPage_AwardsQuery,
-  AboutPage_CareersQuery,
-  AboutPage_OutsourcingsQuery,
-} from '../__generated__/graphql'
+import type { GetServerSideProps } from 'next'
 
 export default function AboutPage() {
+  const { t } = useTranslation('about')
+
   return (
     <>
       <Meta title="About | SOLASIDO" description="Better Design, Better Life." />
@@ -34,9 +28,7 @@ export default function AboutPage() {
             <Heading as="h1">HANSOL CHUNG</Heading>
           </VisuallyHidden>
           <StyledNameBox>{`HANSOL CHUNG\nBrand + Visual Designer`}</StyledNameBox>
-          <StyledDescription>
-            {`브랜드의 가치를 시각화하고 브랜드와 소비자,\n온라인과 오프라인을 연결하여\n명확하고, 매력적이며, 유쾌하고, 직관적인\n브랜드와 경험을 디자인합니다.`}
-          </StyledDescription>
+          <StyledDescription>{t('description')}</StyledDescription>
         </StyledContentBox>
         <StyledMarqueeBox>
           <Marquee speed={400}>
@@ -146,24 +138,10 @@ const StyledMarqueeBox = styled(Box)`
   }
 `
 
-export const getStaticProps = async () => {
-  const apolloClient = initializeApollo({})
-
-  await apolloClient.query<AboutPage_AwardsQuery>({
-    query: AboutPage_AwardsDocument,
-  })
-
-  await apolloClient.query<AboutPage_CareersQuery>({
-    query: AboutPage_CareersDocument,
-  })
-
-  await apolloClient.query<AboutPage_OutsourcingsQuery>({
-    query: AboutPage_OutsourcingsDocument,
-  })
-
+export const getStaticProps: GetServerSideProps = async ({ locale }) => {
   return {
     props: {
-      initialApolloState: apolloClient.cache.extract(),
+      ...(await serverSideTranslations(locale!)),
     },
   }
 }

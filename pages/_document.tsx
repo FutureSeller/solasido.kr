@@ -3,7 +3,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang="ko">
+      <Html>
         <Head>
           <link rel="shortcut icon" href="/favicon.ico" />
           {/** TODO: NeueDisplay는 더 이상 쓰이지 않는 폰트라 지워져야함. */}
