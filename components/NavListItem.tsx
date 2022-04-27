@@ -9,7 +9,7 @@ export default function NavListItem() {
   const router = useRouter()
 
   return (
-    <StyledUl as="ul" flexDirection="column" alignItems="center" justifyContent="center" height="100%" color="black">
+    <StyledUl as="ul" flexDirection="column" alignItems="center" justifyContent="center" color="black">
       <li>
         <Link href="/" passHref prefetch={false}>
           <StyledA isActive={router.asPath === '/'}>HOME</StyledA>

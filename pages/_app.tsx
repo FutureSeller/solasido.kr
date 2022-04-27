@@ -8,6 +8,7 @@ import { Global } from '@emotion/react'
 import { ApolloProvider } from '@apollo/client'
 import Router from 'next/router'
 import NProgress from 'nprogress'
+import { appWithTranslation } from 'next-i18next'
 
 import { useApollo } from '../apollo/client'
 
@@ -105,4 +106,4 @@ function App({ Component, pageProps }: AppProps) {
     </ApolloProvider>
   )
 }
-export default App
+export default appWithTranslation(App)

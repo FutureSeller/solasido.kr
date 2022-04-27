@@ -1,0 +1,83 @@
+{
+  "description": "Visualize the value of the brand and connect the brand\nwith the consumer, online and offline to design brands\nand experiences that are clear, compelling, delightful, and intuitive.",
+  "inhouse": [
+    {
+      "company": "HI&D Co., Ltd",
+      "position": "Brand/UXUI Designer"
+    },
+    {
+      "company": "Korea University",
+      "position": "Brand Designer"
+    }
+  ],
+  "freelance": [
+    {
+      "title": "InkTec",
+      "description": "Product Info page design for Amazon",
+      "startYear": 2021,
+      "endYear": null
+    },
+    {
+      "title": "HWAYEON",
+      "description": "Brand/Package Design",
+      "startYear": 2020,
+      "endYear": null
+    },
+    {
+      "title": "Young Doctors Forum",
+      "description": "Event Identity Design",
+      "startYear": 2019,
+      "endYear": null
+    },
+    {
+      "title": "Woowahan",
+      "description": "Designer of Baeminchan",
+      "startYear": 2015,
+      "endYear": 2018
+    },
+    {
+      "title": "Seoul Social Economy Center",
+      "description": "Product Info page design for Wemakeprice",
+      "startYear": 2018,
+      "endYear": null
+    },
+    {
+      "title": "CHEMSTREE Inc.",
+      "description": "Brand Design",
+      "startYear": 2017,
+      "endYear": null
+    },
+    {
+      "title": "OVIS",
+      "description": "Brand Design",
+      "startYear": 2015,
+      "endYear": 2016
+    },
+    {
+      "title": "Korea University Students’ Association\nfor Educational Donation",
+      "description": "Brand Design Renewal",
+      "startYear": 2012,
+      "endYear": null
+    }
+  ],
+  "awards": [
+    {
+      "title": "Adobe Design Achievement Awards",
+      "category": "Print Communications Category",
+      "prize": "Semi Finalist",
+      "startYear": 2015
+    },
+    {
+      "title": "Samsung Mobile Display",
+      "category": "OLED Idea Contest\nAdvertising Design Category",
+      "prize": "Finalist",
+      "startYear": 2011
+    },
+    {
+      "title": "Korea Tea Culture Association",
+      "category": "Korea Tea Package Contest",
+      "prize": "Special Selection Award",
+      "startYear": 2010
+    }
+  ]
+}
