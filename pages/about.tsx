@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { Box, Flex } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
 import DeviceContextProvider from '../contexts/DeviceProvider'
 
@@ -30,12 +30,9 @@ export default function AboutPage() {
       <Box as="main" height="100%" backgroundColor="black" minWidth="320px">
         <NavBar />
         <StyledContentBox as="section" backgroundColor="black" color="white">
-          <Stack>
-            <StyledNameBox>HANSOL CHUNG</StyledNameBox>
-            <StyledNameBox>Brand + Visual Designer</StyledNameBox>
-          </Stack>
+          <StyledNameBox>{`HANSOL CHUNG\nBrand + Visual Designer`}</StyledNameBox>
           <StyledDescription>
-            {`브랜드의 가치를 시각화하고 브랜드와 소비자, 온라인과 오프라인을 연결하여\n명확하고, 매력적이며, 유쾌하고, 직관적인 브랜드와 경험을 디자인합니다.`}
+            {`브랜드의 가치를 시각화하고 브랜드와 소비자,\n온라인과 오프라인을 연결하여\n명확하고, 매력적이며, 유쾌하고, 직관적인\n브랜드와 경험을 디자인합니다.`}
           </StyledDescription>
         </StyledContentBox>
         <StyledMarqueeBox>
@@ -91,33 +88,19 @@ const StyledContentBox = styled(ContentBox)`
   }
 `
 
-const Stack = styled(Flex)`
-  margin-bottom: 60px;
-  flex-direction: column;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-`
-
 const StyledNameBox = styled.div`
   font-weight: 700;
   font-size: 20px;
+  line-height: 1.3;
+  white-space: pre-wrap;
+  margin-bottom: 60px;
 
   @media (min-width: 768px) {
     font-size: 26px;
-
-    &:first-of-type {
-      margin-right: 40px;
-    }
   }
 
   @media (min-width: 1920px) {
     font-size: 40px;
-
-    &:first-of-type {
-      margin-right: 50px;
-    }
   }
 `
 
