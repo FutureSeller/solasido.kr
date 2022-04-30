@@ -3,7 +3,6 @@ import { Box, Heading, Text, AspectRatio } from '@chakra-ui/react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-import { responsive } from '../../styles/responsive'
 import projectsData from '../../public/data/projects.json'
 
 type ArrayElement<A> = A extends readonly (infer T)[] ? T : never
@@ -19,7 +18,7 @@ export default function ProjectThumbnail({ figure }: Props) {
   return (
     <Link href={`/project/${slug}`} key={title} passHref prefetch={false}>
       <a>
-        <AspectRatio ratio={isPortrait ? 888 / 1108 : 888 / 592} marginBottom="16px">
+        <StyledAspectRatio ratio={isPortrait ? 888 / 1108 : 888 / 592}>
           <HoverImage
             src={thumbnail}
             layout="fill"
@@ -28,7 +27,7 @@ export default function ProjectThumbnail({ figure }: Props) {
             placeholder="blur"
             blurDataURL={placeholder}
           />
-        </AspectRatio>
+        </StyledAspectRatio>
         <StyledBox>
           <Heading as="h2">
             <Title>{title}</Title>
@@ -39,6 +38,14 @@ export default function ProjectThumbnail({ figure }: Props) {
     </Link>
   )
 }
+
+const StyledAspectRatio = styled(AspectRatio)`
+  margin-bottom: 12px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 16px;
+  }
+`
 
 const Title = styled(Text)`
   margin-bottom: 4px;
@@ -72,10 +79,10 @@ const Summary = styled(Text)`
 `
 
 const StyledBox = styled(Box)`
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
-  ${responsive.mdLte} {
-    margin-bottom: 30px;
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
   }
 `
 
