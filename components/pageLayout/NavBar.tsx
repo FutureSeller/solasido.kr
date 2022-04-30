@@ -2,16 +2,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styled from '@emotion/styled'
 import { motion } from 'framer-motion'
-import { useRouter } from 'next/router'
-import { Drawer, DrawerBody, DrawerOverlay, DrawerContent, Flex, Box, Text, useDisclosure } from '@chakra-ui/react'
+import { Drawer, DrawerBody, DrawerOverlay, DrawerContent, Flex, Box, useDisclosure } from '@chakra-ui/react'
 
 import { customTheme } from '../../styles/theme'
 
-import NavButton from '../NavButton'
-import NavListItem from '../NavListItem'
+import LocaleSelectArea from './LocaleSelectArea'
+import NavButton from './NavButton'
+import NavListItem from './NavListItem'
 
 export default function NavBar() {
-  const router = useRouter()
   const { isOpen, onClose, onToggle } = useDisclosure()
 
   return (
@@ -33,20 +32,9 @@ export default function NavBar() {
                 <StyledNavButton color={customTheme.colors.primary} isOpen={isOpen} onToggle={onToggle} />
               </Flex>
             </StyledHeader>
-            <Box display="flex" flexDirection="column" justifyContent="center" height="calc(100% - 60px)">
+            <Box display="flex" flexDirection="column" height="100%" justifyContent="center" alignItems="center">
               <NavListItem />
-            </Box>
-            <Box display="flex" justifyContent="flex-end">
-              <Link href={router.pathname} locale="ko" prefetch={false} passHref>
-                <StyledText as="a" isActive={router.locale === 'ko'} marginRight="8px">
-                  KR
-                </StyledText>
-              </Link>
-              <Link href={router.pathname} locale="en" prefetch={false} passHref>
-                <StyledText as="a" isActive={router.locale === 'en'}>
-                  EN
-                </StyledText>
-              </Link>
+              <LocaleSelectArea />
             </Box>
           </DrawerBody>
         </DrawerContent>
@@ -102,15 +90,5 @@ const StyledNavButton = styled(NavButton)`
   @media (min-width: 1920px) {
     width: 34px;
     height: 34px;
-  }
-`
-
-const StyledText = styled(Text)<{ isActive?: boolean }>`
-  font-size: 32px;
-  font-family: ${({ theme }) => theme.fonts.neueDisplay};
-  color: ${({ isActive, theme }) => (isActive ? theme.colors.black : theme.colors.gray.dark)};
-
-  &:hover {
-    color: ${({ theme }) => theme.colors.primary};
   }
 `

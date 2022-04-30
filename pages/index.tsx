@@ -6,8 +6,8 @@ import { Box, Flex, Heading, VisuallyHidden, Fade } from '@chakra-ui/react'
 import fs from 'fs'
 
 import Meta from '../components/Meta'
-import NavBar from '../components/home/NavBar'
-import Footer from '../components/home/Footer'
+import NavBar from '../components/pageLayout/NavBar'
+import Footer from '../components/pageLayout/Footer'
 
 import type { InferGetStaticPropsType } from 'next'
 
