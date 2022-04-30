@@ -1,4 +1,4 @@
-import {useRef, useEffect} from 'react'
+import { useRef, useEffect } from 'react'
 import styled from '@emotion/styled'
 import { Box, Flex, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
@@ -6,13 +6,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Meta from '../../../components/Meta'
-import NavBar from '../../../components/NavBar'
-import Footer from '../../../components/Footer'
+import NavBar from '../../../components/pageLayout/NavBar'
+import Footer from '../../../components/pageLayout/Footer'
 import CoverSection from '../../../components/[project]/CoverSection'
 import ExplainSection from '../../../components/[project]/ExplainSection'
 
 import { responsive } from '../../../styles/responsive'
-import { customTheme } from '../../../styles/theme'
 
 import { initializeApollo } from '../../../apollo/client'
 import {
@@ -41,7 +40,7 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
   const [next] = data?.next ?? []
   const [prev] = data?.prev ?? []
   const [projectDetail] = project?.projectDetails ?? []
-  
+
   // TODO: Video 관련 로직을 따로 분리해야한다.
   const videoRef = useRef<HTMLVideoElement>(null)
   useEffect(() => {
@@ -51,11 +50,11 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
     }
 
     const handleMove = () => {
-      if(video.currentTime >= video.duration - 0.5) {
-        video.currentTime = 0.0;
+      if (video.currentTime >= video.duration - 0.5) {
+        video.currentTime = 0.0
+      }
     }
-    }
-    video.addEventListener('timeupdate', handleMove);
+    video.addEventListener('timeupdate', handleMove)
 
     return () => {
       video.removeEventListener('timeupdate', handleMove)
@@ -70,7 +69,7 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
         imageUrl={project?.mainCoverImage?.source?.url}
       />
       <Box as="main" position="relative" width="100%" height="100vh" minHeight="100vh">
-        <NavBar color={customTheme.colors.primary} />
+        <NavBar />
         <CoverSection
           src={project?.mainCoverImage?.source?.url!}
           alt={project?.mainCoverImage?.alt!}

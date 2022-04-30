@@ -5,8 +5,8 @@ import DeviceProviderProvider from '../../contexts/DeviceProvider'
 
 import Meta from '../../components/Meta'
 import ContentBox from '../../components/ContentBox'
-import NavBar from '../../components/home/NavBar'
-import Footer from '../../components/home/Footer'
+import NavBar from '../../components/pageLayout/NavBar'
+import Footer from '../../components/pageLayout/Footer'
 import ProjectThumbnailList from '../../components/project/ProjectThumbnailList'
 
 export default function ProjectsPage() {

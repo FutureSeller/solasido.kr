@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { Heading, Text } from '@chakra-ui/react'
 
-import { responsive } from '../styles/responsive'
+import { responsive } from '../../styles/responsive'
 
 import type { ReactNode } from 'react'
 

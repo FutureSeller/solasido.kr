@@ -3,8 +3,6 @@ import { useRouter } from 'next/router'
 import styled from '@emotion/styled'
 import { Flex } from '@chakra-ui/react'
 
-import { responsive } from '../styles/responsive'
-
 export default function NavListItem() {
   const router = useRouter()
 
@@ -30,15 +28,15 @@ export default function NavListItem() {
 }
 
 const StyledUl = styled(Flex)`
-  font-size: 60px;
+  font-size: 50px;
   font-family: ${({ theme }) => theme.fonts.neueDisplay};
 
   & > :not(style) ~ :not(style) {
     margin-top: 16px;
   }
 
-  ${responsive.smLte} {
-    font-size: 50px;
+  @media (min-width: 768px) {
+    font-size: 60px;
   }
 `
 

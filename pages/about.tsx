@@ -8,8 +8,8 @@ import DeviceContextProvider from '../contexts/DeviceProvider'
 import Meta from '../components/Meta'
 import ContentBox from '../components/ContentBox'
 import Marquee from '../components/Marquee'
-import NavBar from '../components/home/NavBar'
-import Footer from '../components/home/Footer'
+import NavBar from '../components/pageLayout/NavBar'
+import Footer from '../components/pageLayout/Footer'
 
 import Experience from '../components/about/Experience'
 
