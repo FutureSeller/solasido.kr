@@ -41,23 +41,33 @@ export default function ProjectThumbnail({ figure }: Props) {
 }
 
 const Title = styled(Text)`
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   font-family: Gordita Regular;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 10px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  @media (min-width: 1920px) {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
 `
 
 const Summary = styled(Text)`
   margin: 0;
   font-family: Gordita Bold;
-  font-size: 24px;
+  font-size: 18px;
 
   @media (min-width: 768px) {
     font-size: 26px;
   }
 
   @media (min-width: 1920px) {
-    font-size: 50px;
+    font-size: 40px;
   }
 `
 
