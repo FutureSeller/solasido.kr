@@ -45,7 +45,7 @@ export const customTheme = {
     stickyTitle: 5,
     bloatTitle: 10,
     logo: 20,
-    menuIcon: 40,
+    menuIcon: 1401,
   },
   lineHeights: {
     base: 1.15,

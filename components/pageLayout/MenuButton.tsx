@@ -53,7 +53,7 @@ const StyledBox = styled(Box)`
   position: fixed;
   top: 22px;
   right: 24px;
-  z-index: 3000;
+  z-index: ${({ theme }) => theme.zIndices.menuIcon};
 
   @media (min-width: 768px) {
     right: 55px;
