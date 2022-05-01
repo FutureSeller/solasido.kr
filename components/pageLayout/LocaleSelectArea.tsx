@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Box, Text } from '@chakra-ui/react'
 
+import { outlineStyle } from '../../styles/outline'
+
 export default function LocaleSelectArea() {
   const router = useRouter()
 
@@ -55,6 +57,7 @@ const StyledDivider = styled(Box)`
 const StyledText = styled(Text, {
   shouldForwardProp: prop => isPropValid(prop) && prop !== 'isActive',
 })<{ isActive?: boolean }>`
+  ${outlineStyle};
   font-size: 20px;
   font-family: ${({ theme }) => theme.fonts.neueDisplay};
   color: ${({ isActive, theme }) => (isActive ? theme.colors.black : theme.colors.gray.dark)};

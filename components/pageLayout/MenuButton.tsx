@@ -1,3 +1,4 @@
+import { useRef } from 'react'
 import styled from '@emotion/styled'
 import { css } from '@emotion/react'
 import isPropValid from '@emotion/is-prop-valid'
@@ -18,6 +19,7 @@ const STOROKE_WIDTH = 2
 
 export default function MenuButton() {
   const { isOpen, onClose, onToggle } = useDisclosure()
+  const initialRef = useRef<HTMLElement>(null)
 
   return (
     <>
@@ -30,7 +32,7 @@ export default function MenuButton() {
           </StyledHamburger>
         </Button>
       </StyledBox>
-      <Drawer isOpen={isOpen} placement="right" onClose={onClose} size="lg">
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose} initialFocusRef={initialRef} size="lg">
         <DrawerOverlay />
         <DrawerContent>
           {/* NOTE: Modal spec을 지키기위해 같은 포지션에 ghost button을 그려둠 */}
@@ -39,7 +41,7 @@ export default function MenuButton() {
           </StyledBox>
           <DrawerBody backgroundColor="gray.light">
             <Box display="flex" flexDirection="column" height="100%" justifyContent="center" alignItems="center">
-              <NavListItem />
+              <NavListItem ref={initialRef} />
               <LocaleSelectArea />
             </Box>
           </DrawerBody>

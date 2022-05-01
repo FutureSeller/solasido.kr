@@ -8,7 +8,7 @@ import { MENU_BUTTON_SIZE } from './MenuButton'
 export default function Logo() {
   return (
     <StyledBox>
-      <Link href="/" passHref shallow>
+      <Link href="/" prefetch={false} passHref shallow>
         <StyledLinkBox as="a" aria-label="홈으로">
           <Image src="/assets/logo.svg" alt="" layout="fill" aria-hidden />
         </StyledLinkBox>

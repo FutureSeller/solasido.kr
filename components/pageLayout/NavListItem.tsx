@@ -1,17 +1,36 @@
+import { forwardRef } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import styled from '@emotion/styled'
 import isPropValid from '@emotion/is-prop-valid'
-import { Box, Flex } from '@chakra-ui/react'
+import { Flex } from '@chakra-ui/react'
 
-export default function NavListItem() {
+import { outlineStyle } from '../../styles/outline'
+
+interface Props {}
+
+export default forwardRef<HTMLElement, Props>(function NavListItem(_, initialRef) {
   const router = useRouter()
 
   return (
     <StyledUl as="ul" flexDirection="column" alignItems="center" justifyContent="center" color="black">
       <li>
         <Link href="/" passHref prefetch={false}>
-          <StyledA as="a" isActive={router.asPath === '/'}>
+          <StyledA
+            as="a"
+            isActive={router.asPath === '/'}
+            ref={e => {
+              if (!initialRef) {
+                return
+              }
+
+              if (typeof initialRef === 'function') {
+                initialRef(e)
+              } else {
+                initialRef.current = e
+              }
+            }}
+          >
             HOME
           </StyledA>
         </Link>
@@ -32,7 +51,7 @@ export default function NavListItem() {
       </li>
     </StyledUl>
   )
-}
+})
 
 const StyledUl = styled(Flex)`
   font-size: 50px;
@@ -47,9 +66,10 @@ const StyledUl = styled(Flex)`
   }
 `
 
-const StyledA = styled(Box, {
+const StyledA = styled('a', {
   shouldForwardProp: prop => isPropValid(prop) && prop !== 'isActive',
 })<{ isActive?: boolean }>`
+  ${outlineStyle};
   display: inline-block;
   color: ${({ isActive, theme }) => (isActive ? theme.colors.black : theme.colors.gray.dark)};
 
