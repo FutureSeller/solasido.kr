@@ -8,7 +8,6 @@ import DeviceContextProvider from '../contexts/DeviceProvider'
 import Meta from '../components/Meta'
 import ContentBox from '../components/ContentBox'
 import Marquee from '../components/Marquee'
-import NavBar from '../components/pageLayout/NavBar'
 import Footer from '../components/pageLayout/Footer'
 
 import Experience from '../components/about/Experience'
@@ -22,7 +21,6 @@ export default function AboutPage() {
     <>
       <Meta title="About | SOLASIDO" description="Better Design, Better Life." />
       <Box as="main" height="100%" backgroundColor="black" minWidth="320px">
-        <NavBar />
         <StyledContentBox as="section" backgroundColor="black" color="white">
           <VisuallyHidden>
             <Heading as="h1">HANSOL CHUNG</Heading>

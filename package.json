@@ -16,6 +16,7 @@
     "@chakra-ui/react": "^1.6.8",
     "@chakra-ui/react-utils": "^1.1.2",
     "@emotion/core": "^11.0.0",
+    "@emotion/is-prop-valid": "^1.1.2",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@fontsource/open-sans": "^4.5.1",

@@ -1996,6 +1996,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/is-prop-valid@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@emotion/is-prop-valid@npm:1.1.2"
+  dependencies:
+    "@emotion/memoize": ^0.7.4
+  checksum: 58b1f2d429a589f8f5bc2c33a8732cbb7bbcb17131a103511ef9a94ac754d7eeb53d627f947da480cd977f9d419fd92e244991680292f3287204159652745707
+  languageName: node
+  linkType: hard
+
 "@emotion/memoize@npm:0.7.4":
   version: 0.7.4
   resolution: "@emotion/memoize@npm:0.7.4"
@@ -8098,6 +8107,7 @@ fsevents@~2.3.2:
     "@commitlint/config-conventional": ^13.1.0
     "@emotion/core": ^11.0.0
     "@emotion/eslint-plugin": ^11.2.0
+    "@emotion/is-prop-valid": ^1.1.2
     "@emotion/react": ^11
     "@emotion/styled": ^11
     "@fontsource/open-sans": ^4.5.1

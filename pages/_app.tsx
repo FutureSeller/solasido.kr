@@ -14,6 +14,9 @@ import { useApollo } from '../apollo/client'
 
 import theme from '../styles/theme'
 
+import Logo from '../components/pageLayout/Logo'
+import MenuButton from '../components/pageLayout/MenuButton'
+
 import type { AppProps } from 'next/app'
 
 Router.events.on('routeChangeStart', () => NProgress.start())
@@ -101,6 +104,8 @@ function App({ Component, pageProps }: AppProps) {
           }          
         `}
         />
+        <Logo />
+        <MenuButton />
         <Component {...pageProps} />
       </ChakraProvider>
     </ApolloProvider>
