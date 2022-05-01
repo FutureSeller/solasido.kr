@@ -1,5 +1,7 @@
 import styled from '@emotion/styled'
 import { css } from '@emotion/react'
+import isPropValid from '@emotion/is-prop-valid'
+
 import { Button, Box, Drawer, DrawerBody, DrawerOverlay, DrawerContent, useDisclosure } from '@chakra-ui/react'
 
 import LocaleSelectArea from './LocaleSelectArea'
@@ -31,6 +33,10 @@ export default function MenuButton() {
       <Drawer isOpen={isOpen} placement="right" onClose={onClose} size="lg">
         <DrawerOverlay />
         <DrawerContent>
+          {/* NOTE: Modal spec을 지키기위해 같은 포지션에 ghost button을 그려둠 */}
+          <StyledBox>
+            <Button css={hamburgerSizeStyle()} variant="ghost" aria-label="목록 닫기" />
+          </StyledBox>
           <DrawerBody backgroundColor="gray.light">
             <Box display="flex" flexDirection="column" height="100%" justifyContent="center" alignItems="center">
               <NavListItem />
@@ -87,7 +93,9 @@ const StyledHamburger = styled(Box)`
 `
 
 // 출처: https://github.com/jonsuh/hamburgers
-const HamburgerBox = styled(Box)<{ isOpen: boolean }>`
+const HamburgerBox = styled(Box, {
+  shouldForwardProp: prop => isPropValid(prop) && prop !== 'isOpen',
+})<{ isOpen: boolean }>`
   ${hamburgerSizeStyle()};
   position: relative;
   display: inline-block;
@@ -144,7 +152,9 @@ const hamburgerGutterStyle = (isBefore?: boolean) => css`
       `}
 `
 
-const HamburgerInner = styled(Box)<{ isOpen: boolean }>`
+const HamburgerInner = styled(Box, {
+  shouldForwardProp: prop => isPropValid(prop) && prop !== 'isOpen',
+})<{ isOpen: boolean }>`
   ${({ theme, isOpen }) => hamburgerBaseLineStyle({ theme, isOpen })};
   top: 50%;
   left: 50%;

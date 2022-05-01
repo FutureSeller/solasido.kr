@@ -1,4 +1,5 @@
 import styled from '@emotion/styled'
+import isPropValid from '@emotion/is-prop-valid'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Box, Text } from '@chakra-ui/react'
@@ -8,7 +9,7 @@ export default function LocaleSelectArea() {
 
   return (
     <StyledWrapper>
-      <StyledLocaleBox>
+      <StyledLocaleBox tabIndex={1}>
         <Link href={router.pathname} locale="ko" prefetch={false} passHref>
           <StyledText as="a" isActive={router.locale === 'ko'}>
             KR
@@ -16,7 +17,7 @@ export default function LocaleSelectArea() {
         </Link>
       </StyledLocaleBox>
       <StyledDivider />
-      <StyledLocaleBox>
+      <StyledLocaleBox tabIndex={1}>
         <Link href={router.pathname} locale="en" prefetch={false} passHref>
           <StyledText as="a" isActive={router.locale === 'en'}>
             EN
@@ -51,7 +52,9 @@ const StyledDivider = styled(Box)`
   }
 `
 
-const StyledText = styled(Text)<{ isActive?: boolean }>`
+const StyledText = styled(Text, {
+  shouldForwardProp: prop => isPropValid(prop) && prop !== 'isActive',
+})<{ isActive?: boolean }>`
   font-size: 20px;
   font-family: ${({ theme }) => theme.fonts.neueDisplay};
   color: ${({ isActive, theme }) => (isActive ? theme.colors.black : theme.colors.gray.dark)};
