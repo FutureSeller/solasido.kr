@@ -35,7 +35,7 @@ export default function MenuButton() {
         <DrawerContent>
           {/* NOTE: Modal spec을 지키기위해 같은 포지션에 ghost button을 그려둠 */}
           <StyledBox>
-            <Button css={hamburgerSizeStyle()} variant="ghost" aria-label="목록 닫기" />
+            <Button css={hamburgerSizeStyle()} variant="ghost" aria-label="목록 닫기" onClick={onClose} />
           </StyledBox>
           <DrawerBody backgroundColor="gray.light">
             <Box display="flex" flexDirection="column" height="100%" justifyContent="center" alignItems="center">

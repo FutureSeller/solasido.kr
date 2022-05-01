@@ -9,7 +9,7 @@ export default function LocaleSelectArea() {
 
   return (
     <StyledWrapper>
-      <StyledLocaleBox tabIndex={1}>
+      <StyledLocaleBox>
         <Link href={router.pathname} locale="ko" prefetch={false} passHref>
           <StyledText as="a" isActive={router.locale === 'ko'}>
             KR
@@ -17,7 +17,7 @@ export default function LocaleSelectArea() {
         </Link>
       </StyledLocaleBox>
       <StyledDivider />
-      <StyledLocaleBox tabIndex={1}>
+      <StyledLocaleBox>
         <Link href={router.pathname} locale="en" prefetch={false} passHref>
           <StyledText as="a" isActive={router.locale === 'en'}>
             EN

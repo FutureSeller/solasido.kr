@@ -9,21 +9,21 @@ export default function NavListItem() {
 
   return (
     <StyledUl as="ul" flexDirection="column" alignItems="center" justifyContent="center" color="black">
-      <li tabIndex={1}>
+      <li>
         <Link href="/" passHref prefetch={false}>
           <StyledA as="a" isActive={router.asPath === '/'}>
             HOME
           </StyledA>
         </Link>
       </li>
-      <li tabIndex={1}>
+      <li>
         <Link href="/about" passHref prefetch={false}>
           <StyledA as="a" isActive={router.asPath === '/about'}>
             ABOUT
           </StyledA>
         </Link>
       </li>
-      <li tabIndex={1}>
+      <li>
         <Link href="/project" passHref prefetch={false}>
           <StyledA as="a" isActive={router.asPath === '/project'}>
             PROJECT
