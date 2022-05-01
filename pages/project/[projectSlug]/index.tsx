@@ -6,7 +6,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import Meta from '../../../components/Meta'
-import NavBar from '../../../components/pageLayout/NavBar'
 import Footer from '../../../components/pageLayout/Footer'
 import CoverSection from '../../../components/[project]/CoverSection'
 import ExplainSection from '../../../components/[project]/ExplainSection'
@@ -69,7 +68,6 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
         imageUrl={project?.mainCoverImage?.source?.url}
       />
       <Box as="main" position="relative" width="100%" height="100vh" minHeight="100vh">
-        <NavBar />
         <CoverSection
           src={project?.mainCoverImage?.source?.url!}
           alt={project?.mainCoverImage?.alt!}

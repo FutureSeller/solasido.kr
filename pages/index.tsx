@@ -6,7 +6,6 @@ import { Box, Flex, Heading, VisuallyHidden, Fade } from '@chakra-ui/react'
 import fs from 'fs'
 
 import Meta from '../components/Meta'
-import NavBar from '../components/pageLayout/NavBar'
 import Footer from '../components/pageLayout/Footer'
 
 import type { InferGetStaticPropsType } from 'next'
@@ -28,7 +27,6 @@ export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof 
   return (
     <>
       <Meta title="Home | SOLASIDO" description="SOLASIDO's Portfolio" />
-      <NavBar />
       <Box as="main" display="flex" flexDirection="column" width="100%" height="100%" backgroundColor="black">
         <VisuallyHidden>
           <Heading as="h1">Solasido&apos;s Portfolio</Heading>

@@ -5,7 +5,6 @@ import DeviceProviderProvider from '../../contexts/DeviceProvider'
 
 import Meta from '../../components/Meta'
 import ContentBox from '../../components/ContentBox'
-import NavBar from '../../components/pageLayout/NavBar'
 import Footer from '../../components/pageLayout/Footer'
 import ProjectThumbnailList from '../../components/project/ProjectThumbnailList'
 
@@ -14,7 +13,6 @@ export default function ProjectsPage() {
     <>
       <Meta title="Projects | SOLASIDO" description="Design brands and user experiences." />
       <Main>
-        <NavBar />
         <StyledContentBox>
           <StyledPageHeader as="h1">{`ARCHIVE OF WORK\n2012 \u2794 ${new Date().getFullYear()}`}</StyledPageHeader>
           <DeviceProviderProvider>
