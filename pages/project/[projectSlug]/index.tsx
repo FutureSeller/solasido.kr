@@ -191,7 +191,7 @@ const Description = styled(Flex)<{ isRight?: boolean }>`
     font-size: 20px;
   }
 
-  @media (min-width: ${breakpoints['largeScreen']}) {
+  @media (min-width: ${breakpoints['desktop']}) {
     padding: 8vw 10vw;
     font-size: 26px;
   }
@@ -201,7 +201,7 @@ const StyledText = styled(Text)`
   width: 100%;
   white-space: pre-line;
 
-  @media (min-width: ${breakpoints['largeScreen']}) {
+  @media (min-width: ${breakpoints['desktop']}) {
     width: 55%;
   }
 `
