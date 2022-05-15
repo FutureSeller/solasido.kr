@@ -3,11 +3,37 @@ import styled from '@emotion/styled'
 import { Box } from '@chakra-ui/react'
 import Image from 'next/image'
 
+import { titleFontStyle, BOTTOM_POSITON, STICKY_GUTTER } from './titleStyle'
+
 import ClipBox from '../ClipBox'
 
 import useEventListener from '../../hooks/useEventListener'
 
 import { breakpoints } from '../../styles/responsive'
+
+const StyledTitleBox = styled(Box)`
+  ${titleFontStyle};
+  bottom: ${BOTTOM_POSITON}px;
+  font-weight: 700;
+  padding: 0 24px;
+  pointer-events: none;
+
+  @media (min-width: ${breakpoints['tablet']}) {
+    padding: 0 10vw;
+  }
+`
+
+const StickyWhiteSpace = styled(Box)`
+  margin-bottom: ${STICKY_GUTTER['mobile']}px;
+
+  @media (min-width: ${breakpoints['tablet']}) {
+    margin-bottom: ${STICKY_GUTTER['tablet']}px;
+  }
+
+  @media (min-width: ${breakpoints['desktop']}) {
+    margin-bottom: ${STICKY_GUTTER['desktop']}px;
+  }
+`
 
 interface Props {
   title: string
@@ -45,62 +71,17 @@ export default function CoverSection({ title, src, alt, placeholder, fixedTitleC
               blurDataURL={placeholder}
             />
           </Box>
-          <FixedTitleBox>
-            <StyledHeadingBox color={fixedTitleColor}>{title}</StyledHeadingBox>
-          </FixedTitleBox>
+          <StyledTitleBox position="fixed" color={fixedTitleColor}>
+            {title}
+          </StyledTitleBox>
         </ClipBox>
       </Box>
       <Box position="absolute" zIndex="stickyTitle" top="0" left="0" width="100%">
-        <StickyWhiteSpace height={height}></StickyWhiteSpace>
-        <StickyTitleBox>
-          <StyledHeadingBox as="h1" color={stickyTitleColor}>
-            {title}
-          </StyledHeadingBox>
-        </StickyTitleBox>
+        <StickyWhiteSpace height={height} />
+        <StyledTitleBox position="sticky" as="h1" color={stickyTitleColor}>
+          {title}
+        </StyledTitleBox>
       </Box>
     </Box>
   )
 }
-
-const FixedTitleBox = styled(Box)`
-  position: fixed;
-  bottom: 50px;
-  margin: 0;
-  padding: 0 24px;
-  pointer-events: none;
-
-  @media (min-width: ${breakpoints['tablet']}) {
-    padding: 0 10vw;
-  }
-`
-
-const StyledHeadingBox = styled(Box)`
-  font-weight: 700;
-  font-size: 36px;
-
-  @media (min-width: ${breakpoints['tablet']}) {
-    font-size: 4vw;
-  }
-`
-
-const StickyTitleBox = styled(Box)`
-  position: sticky;
-  bottom: 50px;
-  padding: 0 24px;
-
-  @media (min-width: ${breakpoints['tablet']}) {
-    padding: 0 10vw;
-  }
-`
-
-const StickyWhiteSpace = styled(Box)`
-  margin-bottom: 60px;
-
-  @media (min-width: ${breakpoints['tablet']}) {
-    margin-bottom: 80px;
-  }
-
-  @media (min-width: ${breakpoints['largeScreen']}) {
-    margin-bottom: 120px;
-  }
-`
