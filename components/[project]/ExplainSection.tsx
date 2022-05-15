@@ -110,8 +110,7 @@ const DescriptionBox = styled(Box)`
   word-break: keep-all;
 
   @media (min-width: ${breakpoints['desktop']}) {
-    width: 41%;
-    margin-right: 9%;
+    width: 50%;
     font-size: 20px;
   }
 `
@@ -123,7 +122,7 @@ const ColumnBox = styled(Flex)`
   width: 100%;
 
   @media (min-width: ${breakpoints['desktop']}) {
-    justify-content: flex-start;
+    justify-content: flex-end;
     width: 50%;
     font-size: 20px;
   }
@@ -132,11 +131,6 @@ const ColumnBox = styled(Flex)`
 const GhostBox = styled(Box)`
   margin-bottom: 50px;
   opacity: 0;
-  font-size: 36px;
-
-  @media (min-width: ${breakpoints['tablet']}) {
-    font-size: 4vw;
-  }
 `
 
 const StyledUl = styled.ul`
