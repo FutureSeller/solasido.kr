@@ -15,12 +15,7 @@ const StyledTitleBox = styled(Box)`
   ${titleFontStyle};
   bottom: ${BOTTOM_POSITON}px;
   font-weight: 700;
-  padding: 0 24px;
   pointer-events: none;
-
-  @media (min-width: ${breakpoints['tablet']}) {
-    padding: 0 10vw;
-  }
 `
 
 const StickyWhiteSpace = styled(Box)`

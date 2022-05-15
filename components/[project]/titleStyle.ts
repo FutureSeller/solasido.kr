@@ -3,9 +3,11 @@ import { breakpoints } from '../../styles/responsive'
 
 export const titleFontStyle = css`
   font-size: 36px;
+  padding: 0 24px;
 
   @media (min-width: ${breakpoints['tablet']}) {
     font-size: 4vw;
+    padding: 0 10vw;
   }
 `
 
