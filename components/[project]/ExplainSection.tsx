@@ -74,7 +74,7 @@ export default function ExplainSection({ project }: Props) {
 const StyledFlex = styled(Flex)`
   flex-direction: column;
 
-  @media (min-width: ${breakpoints['largeScreen']}) {
+  @media (min-width: ${breakpoints['desktop']}) {
     flex-direction: row;
   }
 `
@@ -86,7 +86,7 @@ const StyledBox = styled(Box)`
     padding: 80px 10vw;
   }
 
-  @media (min-width: ${breakpoints['largeScreen']}) {
+  @media (min-width: ${breakpoints['desktop']}) {
     padding: 120px 10vw;
   }
 `
@@ -109,7 +109,7 @@ const DescriptionBox = styled(Box)`
   line-height: 1.4;
   word-break: keep-all;
 
-  @media (min-width: ${breakpoints['largeScreen']}) {
+  @media (min-width: ${breakpoints['desktop']}) {
     width: 41%;
     margin-right: 9%;
     font-size: 20px;
@@ -122,7 +122,7 @@ const ColumnBox = styled(Flex)`
   justify-content: flex-start;
   width: 100%;
 
-  @media (min-width: ${breakpoints['largeScreen']}) {
+  @media (min-width: ${breakpoints['desktop']}) {
     justify-content: flex-start;
     width: 50%;
     font-size: 20px;
