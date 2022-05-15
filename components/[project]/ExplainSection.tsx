@@ -46,9 +46,12 @@ const DescriptionBox = styled(Box)`
   line-height: 1.4;
   word-break: keep-all;
 
+  @media (min-width: ${breakpoints['tablet']}) {
+    font-size: 20px;
+  }
+
   @media (min-width: ${breakpoints['desktop']}) {
     width: 50%;
-    font-size: 20px;
   }
 `
 
@@ -58,10 +61,13 @@ const ColumnBox = styled(Flex)`
   justify-content: flex-start;
   width: 100%;
 
+  @media (min-width: ${breakpoints['tablet']}) {
+    font-size: 20px;
+  }
+
   @media (min-width: ${breakpoints['desktop']}) {
     justify-content: flex-end;
     width: 50%;
-    font-size: 20px;
   }
 `
 
