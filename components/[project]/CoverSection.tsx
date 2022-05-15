@@ -14,8 +14,12 @@ import { breakpoints } from '../../styles/responsive'
 const StyledTitleBox = styled(Box)`
   ${titleFontStyle};
   bottom: ${BOTTOM_POSITON}px;
-  font-weight: 700;
   pointer-events: none;
+  padding: 0 24px;
+
+  @media (min-width: ${breakpoints['tablet']}) {
+    padding: 0 10vw;
+  }
 `
 
 const StickyWhiteSpace = styled(Box)`
