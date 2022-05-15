@@ -10,7 +10,7 @@ import Footer from '../../../components/pageLayout/Footer'
 import CoverSection from '../../../components/[project]/CoverSection'
 import ExplainSection from '../../../components/[project]/ExplainSection'
 
-import { responsive } from '../../../styles/responsive'
+import { breakpoints } from '../../../styles/responsive'
 
 import { initializeApollo } from '../../../apollo/client'
 import {
@@ -131,10 +131,10 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
           })}
         </Box>
         <Flex as="footer" justifyContent="space-between" backgroundColor="black" color="white">
-          <StyledBox width="50%" padding="95px 24px">
+          <StyledBox width="50%">
             {prev && (
               <>
-                <Link href={`/project/${prev.slug}`} passHref>
+                <Link href={`/project/${prev.slug}`} passHref prefetch={false}>
                   <a aria-label={`${prev.title} 페이지로 이동`} rel="prev">
                     <Box width="8vw">
                       <Img
@@ -155,14 +155,14 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
             )}
           </StyledBox>
           <VerticalLine />
-          <StyledBox width="50%" padding="95px 24px" justifyContent="flex-end">
+          <StyledBox width="50%" justifyContent="flex-end">
             {next && (
               <>
                 <NextBox textAlign="right">
                   <Label>NEXT PROJECT</Label>
                   <Value>{next.title}</Value>
                 </NextBox>
-                <Link href={`/project/${next.slug}`} passHref>
+                <Link href={`/project/${next.slug}`} passHref prefetch={false}>
                   <a aria-label={`${next.title} 페이지로 이동`} rel="next">
                     <Box width="8vw">
                       <Img src="/assets/right-arrow.svg" alt={`${next.title} 페이지로 이동`} />
@@ -180,41 +180,37 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
 }
 
 const Description = styled(Flex)<{ isRight?: boolean }>`
-  padding: 8vw 10vw;
+  padding: 60px 24px;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 14px;
   line-height: 1.5;
   word-break: keep-all;
 
-  ${responsive.lgLte} {
+  @media (min-width: ${breakpoints['tablet']}) {
+    padding: 80px 10vw;
     font-size: 20px;
   }
 
-  ${responsive.mdLte} {
-    padding: 80px 24px;
-    font-size: 18px;
-  }
-
-  ${responsive.smLte} {
-    padding: 60px 24px;
-    font-size: 14px;
+  @media (min-width: ${breakpoints['largeScreen']}) {
+    padding: 8vw 10vw;
+    font-size: 26px;
   }
 `
 
 const StyledText = styled(Text)`
-  width: 55%;
+  width: 100%;
   white-space: pre-line;
 
-  ${responsive.lgLte} {
-    width: 100%;
+  @media (min-width: ${breakpoints['largeScreen']}) {
+    width: 55%;
   }
 `
 
 const StyledBox = styled(Flex)`
-  padding: 95px 24px;
+  padding: 30px 24px;
 
-  ${responsive.mdLte} {
-    padding: 30px 24px;
+  @media (min-width: ${breakpoints['tablet']}) {
+    padding: 95px 24px;
   }
 `
 
@@ -232,32 +228,28 @@ const NextBox = styled(Box)`
 
 const Img = styled(motion.img)`
   display: inline-block;
-  width: 6vw;
+  width: 10vw;
 
-  ${responsive.mdLte} {
-    width: 10vw;
-  }
-
-  ${responsive.smLte} {
-    width: 10vw;
+  @media (min-width: ${breakpoints['tablet']}) {
+    width: 6vw;
   }
 `
 
 const Label = styled(Box)`
   margin-bottom: 8px;
-  font-size: 18px;
+  font-size: 14px;
 
-  ${responsive.mdLte} {
-    font-size: 14px;
+  @media (min-width: ${breakpoints['tablet']}) {
+    font-size: 18px;
   }
 `
 
 const Value = styled(Box)`
   font-weight: 700;
-  font-size: 3vw;
+  font-size: 4vw;
 
-  ${responsive.mdLte} {
-    font-size: 4vw;
+  @media (min-width: ${breakpoints['tablet']}) {
+    font-size: 3vw;
   }
 `
 

@@ -1,23 +1,19 @@
 import styled from '@emotion/styled'
-import { Box } from '@chakra-ui/react'
+import { Box, useMediaQuery } from '@chakra-ui/react'
 
-import { useDevice } from '../../contexts/DeviceProvider'
 import ProjectThumbnail from './ProjectThumbnail'
 
 import projectsData from '../../public/data/projects.json'
 
-import { isSmallThanTabletViewPort, DeviceType } from '../../styles/responsive'
+import { breakpoints } from '../../styles/responsive'
 
 export default function ProjectThumbnailList() {
-  const deviceType = useDevice() ?? DeviceType.XXL
+  const [isLargerThanTablet] = useMediaQuery(`(min-width: ${breakpoints['tablet']})`)
+
   const leftColumn = projectsData.filter((_, idx) => idx % 2 === 0)
   const rightColumn = projectsData.filter((_, idx) => idx % 2 === 1)
 
-  return isSmallThanTabletViewPort(deviceType) ? (
-    <Box paddingBottom="80px">
-      {projectsData.map(figure => figure && <ProjectThumbnail key={figure.slug} figure={figure} />)}
-    </Box>
-  ) : (
+  return isLargerThanTablet ? (
     <Flex>
       <StyledBox>
         {leftColumn.map(figure => figure && <ProjectThumbnail key={figure.slug} figure={figure} />)}
@@ -26,6 +22,10 @@ export default function ProjectThumbnailList() {
         {rightColumn.map(figure => figure && <ProjectThumbnail key={figure.slug} figure={figure} />)}
       </StyledBox>
     </Flex>
+  ) : (
+    <Box paddingBottom="80px">
+      {projectsData.map(figure => figure && <ProjectThumbnail key={figure.slug} figure={figure} />)}
+    </Box>
   )
 }
 
