@@ -1,8 +1,9 @@
+import { useEffect } from 'react'
 import styled from '@emotion/styled'
 import { css } from '@emotion/react'
 import isPropValid from '@emotion/is-prop-valid'
-
 import { Button, Box, Drawer, DrawerBody, DrawerOverlay, DrawerContent, useDisclosure } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 
 import LocaleSelectArea from './LocaleSelectArea'
 import NavListItem from './NavListItem'
@@ -17,7 +18,12 @@ export const MENU_BUTTON_SIZE = {
 const STOROKE_WIDTH = 2
 
 export default function MenuButton() {
+  const router = useRouter()
   const { isOpen, onClose, onToggle } = useDisclosure()
+
+  useEffect(() => {
+    onClose()
+  }, [router.pathname, onClose])
 
   return (
     <>

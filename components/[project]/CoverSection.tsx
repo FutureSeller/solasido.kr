@@ -7,7 +7,7 @@ import ClipBox from '../ClipBox'
 
 import useEventListener from '../../hooks/useEventListener'
 
-import { responsive } from '../../styles/responsive'
+import { breakpoints } from '../../styles/responsive'
 
 interface Props {
   title: string
@@ -65,50 +65,42 @@ export default function CoverSection({ title, src, alt, placeholder, fixedTitleC
 const FixedTitleBox = styled(Box)`
   position: fixed;
   bottom: 50px;
-  left: 10vw;
   margin: 0;
-  padding-right: 10vw;
+  padding: 0 24px;
   pointer-events: none;
 
-  ${responsive.mdLte} {
-    left: 24px;
-    padding-right: 24px;
+  @media (min-width: ${breakpoints['tablet']}) {
+    padding: 0 10vw;
   }
 `
 
 const StyledHeadingBox = styled(Box)`
-  color: ${({ color }) => color};
   font-weight: 700;
-  font-size: 4vw;
-  letter-spacing: -0.03em;
+  font-size: 36px;
 
-  ${responsive.lgLte} {
-    font-size: 5vw;
-  }
-
-  ${responsive.mdLte} {
-    font-size: 36px;
+  @media (min-width: ${breakpoints['tablet']}) {
+    font-size: 4vw;
   }
 `
 
 const StickyTitleBox = styled(Box)`
   position: sticky;
   bottom: 50px;
-  padding: 0 10vw;
+  padding: 0 24px;
 
-  ${responsive.mdLte} {
-    padding: 0 24px;
+  @media (min-width: ${breakpoints['tablet']}) {
+    padding: 0 10vw;
   }
 `
 
 const StickyWhiteSpace = styled(Box)`
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 
-  ${responsive.mdLte} {
+  @media (min-width: ${breakpoints['tablet']}) {
     margin-bottom: 80px;
   }
 
-  ${responsive.smLte} {
-    margin-bottom: 60px;
+  @media (min-width: ${breakpoints['largeScreen']}) {
+    margin-bottom: 120px;
   }
 `

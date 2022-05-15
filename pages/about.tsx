@@ -3,8 +3,6 @@ import { Box, Heading, VisuallyHidden } from '@chakra-ui/react'
 import { useTranslation } from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
-import DeviceContextProvider from '../contexts/DeviceProvider'
-
 import Meta from '../components/Meta'
 import ContentBox from '../components/ContentBox'
 import Marquee from '../components/Marquee'
@@ -41,9 +39,7 @@ export default function AboutPage() {
             <StyledMotionDiv>FOCUS ON - BASIC - CLEARNESS - IDENTITY - &nbsp;</StyledMotionDiv>
           </Marquee>
         </StyledMarqueeBox>
-        <DeviceContextProvider>
-          <Experience />
-        </DeviceContextProvider>
+        <Experience />
         <Footer color="white" backgroundColor="black" />
       </StyledBox>
     </>

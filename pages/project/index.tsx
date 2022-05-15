@@ -1,8 +1,6 @@
 import styled from '@emotion/styled'
 import { Box } from '@chakra-ui/react'
 
-import DeviceProviderProvider from '../../contexts/DeviceProvider'
-
 import Meta from '../../components/Meta'
 import ContentBox from '../../components/ContentBox'
 import Footer from '../../components/pageLayout/Footer'
@@ -15,9 +13,7 @@ export default function ProjectsPage() {
       <Main>
         <StyledContentBox>
           <StyledPageHeader as="h1">{`ARCHIVE OF WORK\n2012 \u2794 ${new Date().getFullYear()}`}</StyledPageHeader>
-          <DeviceProviderProvider>
-            <ProjectThumbnailList />
-          </DeviceProviderProvider>
+          <ProjectThumbnailList />
         </StyledContentBox>
         <Footer color="white" backgroundColor="black" />
       </Main>
@@ -29,7 +25,6 @@ const Main = styled.main`
   position: relative;
   height: 100%;
   min-height: 100vh;
-  min-width: 320px;
 `
 
 const StyledPageHeader = styled(Box)`

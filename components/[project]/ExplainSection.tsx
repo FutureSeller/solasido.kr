@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import { Box, Flex, Heading, Text, VisuallyHidden } from '@chakra-ui/react'
 import Link from 'next/link'
 
-import { responsive } from '../../styles/responsive'
+import { breakpoints } from '../../styles/responsive'
 
 import type { ProjectSlugPage_ProjectDetailQuery } from '../../__generated__/graphql'
 
@@ -72,80 +72,70 @@ export default function ExplainSection({ project }: Props) {
 }
 
 const StyledFlex = styled(Flex)`
-  ${responsive.lgLte} {
-    flex-direction: column;
+  flex-direction: column;
+
+  @media (min-width: ${breakpoints['desktop']}) {
+    flex-direction: row;
   }
 `
 
 const StyledBox = styled(Box)`
-  padding: 120px 10vw;
+  padding: 60px 24px;
 
-  ${responsive.mdLte} {
-    padding: 80px 24px;
+  @media (min-width: ${breakpoints['tablet']}) {
+    padding: 80px 10vw;
   }
 
-  ${responsive.smLte} {
-    padding: 60px 24px;
+  @media (min-width: ${breakpoints['desktop']}) {
+    padding: 120px 10vw;
   }
 `
 
 const CategoryTitle = styled(Text)`
   margin-bottom: 8px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 14px;
 
-  ${responsive.mdLte} {
+  @media (min-width: ${breakpoints['tablet']}) {
     font-size: 14px;
   }
 `
 
 const DescriptionBox = styled(Box)`
-  width: 41%;
-  margin-right: 9%;
+  width: 100%;
+  margin-bottom: 40px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.4;
   word-break: keep-all;
 
-  ${responsive.lgLte} {
-    width: 100%;
-    margin: 0;
-    margin-bottom: 40px;
-  }
-
-  ${responsive.mdLte} {
-    font-size: 16px;
+  @media (min-width: ${breakpoints['desktop']}) {
+    width: 41%;
+    margin-right: 9%;
+    font-size: 20px;
   }
 `
 
 const ColumnBox = styled(Flex)`
-  justify-content: space-around;
-  width: 50%;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 14px;
+  justify-content: flex-start;
+  width: 100%;
 
-  ${responsive.lgLte} {
+  @media (min-width: ${breakpoints['desktop']}) {
     justify-content: flex-start;
-    width: 100%;
-  }
-
-  ${responsive.mdLte} {
-    font-size: 14px;
+    width: 50%;
+    font-size: 20px;
   }
 `
 
 const GhostBox = styled(Box)`
   margin-bottom: 50px;
-  font-size: 4vw;
   opacity: 0;
+  font-size: 36px;
 
-  ${responsive.lgLte} {
-    font-size: 5vw;
-  }
-
-  ${responsive.mdLte} {
-    margin-bottom: 30px;
-    font-size: 36px;
+  @media (min-width: ${breakpoints['tablet']}) {
+    font-size: 4vw;
   }
 `
 
@@ -156,9 +146,7 @@ const StyledUl = styled.ul`
 `
 
 const ScopeBox = styled(Box)`
-  ${responsive.lgLte} {
-    width: 50%;
-  }
+  width: 50%;
 `
 
 const MetaBox = styled(Box)`

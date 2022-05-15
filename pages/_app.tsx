@@ -82,6 +82,7 @@ function App({ Component, pageProps }: AppProps) {
           }
 
           html, body {
+            min-width: 320px;
             height: 100%;
           }
 
