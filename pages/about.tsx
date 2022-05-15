@@ -20,7 +20,7 @@ export default function AboutPage() {
   return (
     <>
       <Meta title="About | SOLASIDO" description="Better Design, Better Life." />
-      <Box as="main" height="100%" backgroundColor="black" minWidth="320px">
+      <StyledBox as="main" height="100%" backgroundColor="black" minWidth="320px">
         <StyledContentBox as="section" backgroundColor="black" color="white">
           <VisuallyHidden>
             <Heading as="h1">HANSOL CHUNG</Heading>
@@ -45,10 +45,14 @@ export default function AboutPage() {
           <Experience />
         </DeviceContextProvider>
         <Footer color="white" backgroundColor="black" />
-      </Box>
+      </StyledBox>
     </>
   )
 }
+
+const StyledBox = styled(Box)`
+  padding-top: 77px;
+`
 
 const StyledMotionDiv = styled(Box)`
   display: inline-block;
@@ -70,15 +74,7 @@ const StyledMotionDiv = styled(Box)`
 `
 
 const StyledContentBox = styled(ContentBox)`
-  padding-top: 76px;
-
-  @media (min-width: 768px) {
-    padding-top: 90px;
-  }
-
-  @media (min-width: 1920px) {
-    padding-top: 128px;
-  }
+  font-family: ${({ theme }) => theme.fonts.gorditaBold};
 `
 
 const StyledNameBox = styled.div`
