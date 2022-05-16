@@ -2136,13 +2136,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/open-sans@npm:^4.5.1":
-  version: 4.5.1
-  resolution: "@fontsource/open-sans@npm:4.5.1"
-  checksum: 9ef47cd26535ccbda954010eb1072726f5185f23ae1e29f8fb2695cb7f57a68d2af48f542353b3792b004cf662d902c48fd26a6b73e8bad149076e67890994a3
-  languageName: node
-  linkType: hard
-
 "@graphql-codegen/cli@npm:2.2.1":
   version: 2.2.1
   resolution: "@graphql-codegen/cli@npm:2.2.1"
@@ -8110,7 +8103,6 @@ fsevents@~2.3.2:
     "@emotion/is-prop-valid": ^1.1.2
     "@emotion/react": ^11
     "@emotion/styled": ^11
-    "@fontsource/open-sans": ^4.5.1
     "@graphql-codegen/cli": 2.2.1
     "@graphql-codegen/fragment-matcher": ^3.1.0
     "@graphql-codegen/introspection": 2.1.0
