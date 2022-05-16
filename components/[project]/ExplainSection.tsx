@@ -30,6 +30,7 @@ const StyledBox = styled(Box)`
 
 const CategoryTitle = styled(Text)`
   margin-bottom: 8px;
+  font-family: ${({ theme }) => theme.fonts.suitRegular};
   font-weight: 400;
   font-size: 14px;
 

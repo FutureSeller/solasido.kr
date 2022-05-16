@@ -11,9 +11,7 @@ export const customTheme = {
     },
   },
   fonts: {
-    // TODO: 나중에 SUIT Regular로 body를 바꿔야함
-    body: "'Open Sans', sans-serif",
-    // TODO: 나중에 neueDisplay는 지워져야 함
+    body: 'SUIT Bold, sans-serif',
     neueDisplay: 'Neue Display, sans-serif',
     suitBold: 'SUIT Bold, sans-serif',
     suitMeidum: 'SUIT Medium, sans-serif',

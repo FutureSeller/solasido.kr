@@ -1,7 +1,10 @@
 import { css } from '@emotion/react'
+import { customTheme } from '../../styles/theme'
+
 import { breakpoints } from '../../styles/responsive'
 
 export const titleFontStyle = css`
+  font-family: ${customTheme.fonts.gorditaBold};
   font-weight: 700;
   font-size: 36px;
 
