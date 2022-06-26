@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="82" height="53" xmlns="http://www.w3.org/2000/svg">
-  <g stroke="#FFF" stroke-width="2.4" fill="none" fill-rule="evenodd" stroke-linecap="round">
+<svg viewBox="0 0 82 53" xmlns="http://www.w3.org/2000/svg" fill="current">
+  <g stroke="currentColor" stroke-width="2.4" fill-rule="evenodd" stroke-linecap="round">
     <path d="M2 26.61h78.46M55.948 51.22l24.658-24.61M55.948 2l24.658 24.61" />
   </g>
 </svg>

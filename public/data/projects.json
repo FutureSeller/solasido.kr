@@ -1,5 +1,13 @@
 [
   {
+    "slug": "wechelin",
+    "title": "WECHELIN",
+    "summary": "Our Michelin Guide",
+    "thumbnail": "/images/projects/wechelin.jpg",
+    "isPortrait": false,
+    "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAYHAwX/xAAmEAACAgECBgEFAAAAAAAAAAABAgMEBQAhBgcREjFRIhMUcYGR/8QAFgEBAQEAAAAAAAAAAAAAAAAABgQF/8QAIBEAAgEDBAMAAAAAAAAAAAAAAQIDAAQRBiGR0RIxYf/aAAwDAQACEQMRAD8A3y08lXFW54EZ5Y4mZQvTyAd9/XnXUv8AAnDuRxdPJS5TNUeykkkwrXWJlPQEu3crb/j+aWLtmS3Vuws7RpJXlHwPQjohPn9aRc3zDzE06xVWWtXgjjigUAM0XaoHcG6eT03PrbUEtvPOyiJvED39pjqOY2siqxO42wau3C3DPLpsQgkyn3UqOyvJkMlKk3cD4IHbt6+I20aiGGqz8RxWMjetu1mSZvqMQSWJAJOxHvRrTa2ySQ2OOqHi/nAwXPJ7r//Z"
+  },
+  {
     "slug": "national-patriots-and-veterans",
     "title": "NATIONAL PATRIOTS AND VETERANS",
     "summary": "Thank you for serving our country.",

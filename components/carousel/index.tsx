@@ -23,6 +23,7 @@ const StyledMotionBox = styled(motion(Box))`
 `
 
 interface CarouselProps {
+  className?: string
   autoplay?: boolean
   interval?: number
   customAnimate?: typeof animate
@@ -32,7 +33,7 @@ interface CarouselProps {
   renderBottomNavigation?: (props: { index: number; handleNext: () => void }) => JSX.Element
 }
 
-export function Carousel({ autoplay, interval, renderCarouselItem, renderBottomNavigation }: CarouselProps) {
+export function Carousel({ className, autoplay, interval, renderCarouselItem, renderBottomNavigation }: CarouselProps) {
   const x = useMotionValue(0)
   const containerRef = useRef<HTMLDivElement>(null)
   const [index, setIndex] = useState(0)
@@ -79,7 +80,7 @@ export function Carousel({ autoplay, interval, renderCarouselItem, renderBottomN
   }, [])
 
   return (
-    <Box width="100%" height="100%">
+    <Box className={className}>
       <StyledMotionBox ref={containerRef}>
         {range.map(rangeValue => {
           return (

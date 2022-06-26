@@ -4,5 +4,7 @@ module.exports = {
     locales: ['ko', 'en'],
     localePath: './locales',
     localeDetection: false,
+    defaultNS: 'common',
+    fallbackNS: 'common',
   },
 }

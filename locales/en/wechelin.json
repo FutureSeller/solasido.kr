@@ -1,0 +1,192 @@
+{
+  "title": "WECHELIN",
+  "summary": {
+    "descriptions": [
+      "A restaurant sharing platform, ‘Our Michelin Guide, WECHELIN’",
+      "Eating, which is indispensable for going to work, traveling, or meeting friends, is a big part of our lives. We often save places on SNS or map apps to remember and recommend famous restaurants we have visited. WECHELIN is a service conceived in this series of processes.",
+      "You can share your restaurant information, see those of your friend’s, and list our restaurant. You can also see it vividly through other people’s restaurant record even if you haven’t been there.",
+      "Blog reviews, portal community ratings, and SNS searches also recommend good restaurants, but in WECHELIN, you can see good restaurants from friends and other users who have similar food tastes and you can see them on map."
+    ],
+    "scope": ["Brand Design", "Design Guidelines", "UXUI", "Mobile App"],
+    "period": "2022. 02 - 2022. 04",
+    "work": {
+      "type": "PERSONAL WORK",
+      "value": "w/ Gihwan Lee"
+    }
+  },
+  "biSection": {
+    "title": "Brand Identity",
+    "descriptions": [
+      "We performed from establishing brand identity to UI design considering UX.",
+      "The name ‘WECHELIN’ means ‘Our Michelin Guide connecting my restaurant and your restaurant’.",
+      "Food + Save + Share were selected as the keywords to encompass brand and app planning, and based on this, brand identity and guidelines were produced.",
+      "The logo was designed with excellent visibility and appetizing colors as the main color, and speech balloons were used to mean sharing famous restaurants and communicating each others."
+    ]
+  },
+  "backgroundSection": {
+    "title": "Background & Issue",
+    "description": "When looking for good restaurants, one in five adults uses app, and the needs of good restaurant app users are soaring day by day. Even if eating just one meal, it has become a daily pleasure to want to eat delicious food rather than eat roughly. As a result, the frequency of using restaurant-related apps such as location based restaurant service apps and restaurant reservation service apps is increasing."
+  },
+  "userResearchSection": {
+    "title": "User Research",
+    "description": "In order to identify the problems of existing apps and derive the app concept. In the trend of ‘visiting good restaurants’, we conducted a survey and analyzed of users of good restaurants apps.",
+    "questions": [
+      {
+        "title": "How do you usually go to\nFamous restaurants?<0>({{subwords}})</0>",
+        "answers": [
+          {
+            "title": "Search Portal/Blog",
+            "portion": "73.8%",
+            "background": "#F82F62"
+          },
+          {
+            "title": "SNS",
+            "portion": "48.7%",
+            "background": "#F82F62"
+          },
+          {
+            "title": "Recommendation from an acquaintance",
+            "portion": "41.7%",
+            "background": "#F82F62"
+          },
+          {
+            "title": "Broadcasting",
+            "portion": "24%",
+            "background": "#D6D6D6"
+          },
+          {
+            "title": "Restaurant app",
+            "portion": "14.7%",
+            "background": "#D6D6D6"
+          },
+          {
+            "title": "Crowded place",
+            "portion": "8.7%",
+            "background": "#D6D6D6"
+          },
+          {
+            "title": "Magazine",
+            "portion": "2.8%",
+            "background": "#D6D6D6"
+          }
+        ]
+      },
+      {
+        "title": "What is the reliability of the restaurant\nrecommendation app vs search portal/blog?",
+        "answers": [
+          {
+            "title": "The app is much better",
+            "portion": "34.9%",
+            "background": "#F82F62"
+          },
+          {
+            "title": "Same",
+            "portion": "29.7%",
+            "background": "#F82F62"
+          },
+          {
+            "title": "I can’t trust either of them",
+            "portion": "23.1%",
+            "background": "#D6D6D6"
+          },
+          {
+            "title": "Search portal/blog is better",
+            "portion": "12.3%",
+            "background": "#D6D6D6"
+          }
+        ]
+      },
+      {
+        "title": "What would be a good app to\nrecommend good restaurants?",
+        "answers": [
+          {
+            "title": "Recommend restaurants through reviews without advertising",
+            "portion": "68.1%",
+            "background": "#F82F62"
+          },
+          {
+            "title": "Offer discount coupon",
+            "portion": "17.6%",
+            "background": "#D6D6D6"
+          },
+          {
+            "title": "Provide booking system",
+            "portion": "8.3%",
+            "background": "#D6D6D6"
+          },
+          {
+            "title": "Lots of authentication photos",
+            "portion": "5.5%",
+            "background": "#D6D6D6"
+          },
+          {
+            "title": "Etc.",
+            "portion": "0.5%",
+            "background": "#D6D6D6"
+          }
+        ]
+      }
+    ]
+  },
+  "missionSection": {
+    "title": "Mission",
+    "description": "I want to find good restaurants more efficiently, so I use various search and apps, but I get fooled by advertisements and blogs... I want to hear vivid reviews from users who are more reliable than paid advertisements."
+  },
+  "problemAndSolutionSection": {
+    "title": "Problem & Solution",
+    "description": "Based on the results of user research, we identified the inconveniences, problems, and needs of users and derived problems and solutions.",
+    "topCircles": [
+      "I want to record not only other people’s reviews but also my favorite restaurants.",
+      "I want to see a review of my friends’ rather than an unspecified others.",
+      "Too much advertising reduces confidence of apps.",
+      "I want to see vivid reviews of actual visitors, not advertisements."
+    ],
+    "bottomCircles": [
+      "I want to see vivid reviews of actual visitors, not advertisements.",
+      "You can share reviews with your friends and see their restaurants.",
+      "Increase reliability by showing reviews of visitors rather than advertisements.",
+      "People who has similar tastes with you are recommended."
+    ]
+  },
+  "projectGoalSection": {
+    "title": "Project Goal",
+    "description": "WECHELIN is designed to provide a service that helps users\nchoose a meal, which they must check before eating.",
+    "goals": [
+      "You can see real reviews,\nnot advertisements,",
+      "Save your own good restaurants,",
+      "And get recommendations from\nyour friends or users who have\nsimilar tastes to you."
+    ]
+  },
+  "flowchartSection": {
+    "title": "Flow Chart",
+    "description": "We divided the big categories into Restaurant search,\nMy Michelin, Your Michelin, Feed, and My.\nUnlike other restaurant search apps, we have strengthened\n‘My restaurant map contents’ and ‘My friend’s restaurant\nMap contents’ so that users can get a lot of information\non restaurants."
+  },
+  "onboardingSection": {
+    "title": "Onboarding",
+    "description": "We provide preferential information customization\nfor first-time users of the WECHELIN.]nThe information you set is reflected in recommending\ngood restaurants and recommended friends."
+  },
+  "findingSection": {
+    "title": "Finding good restaurants",
+    "description": "The main screen recommends today’s menu and\nshows restaurant information based on the user’s location.\nUsers can set the restaurants they want to see by theme."
+  },
+  "myMichelinSection": {
+    "title": "My Michelin",
+    "description": "You can see at a glance the location of your own\nMichelin on the Map. When you click the store,\nyou can see the information, menus, reviews of other\nusers, and set a pin on the restaurant you want to\ngo or remember."
+  },
+  "yourMichelinSection": {
+    "title": "Your Michelin",
+    "description": "You can see a map of famous restaurants of your followings\nand recommended friend. The recommended friend is a user\nwho has similar taste from the taste information setting or\noverlaps a lot of pins."
+  },
+  "mySection": {
+    "title": "My",
+    "description": "You can check the records, grades, and pictures you visited.\nAlso You can upload posts, modify profiles, and search for\nfollowers or tags."
+  },
+  "feedSection": {
+    "title": "Feed",
+    "description": "You can see posts and recommendations from users you follow.\nRecommended posts randomly expose from users who have similar tastes to you."
+  },
+  "designElementSection": {
+    "title": "Design - Element",
+    "description": "Icon style, color, and font are elements that customers\nnaturally encounter in the service. Defining and using\nelements consistently conveys a sense of WECHELIN."
+  }
+}
