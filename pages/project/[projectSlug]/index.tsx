@@ -1,9 +1,10 @@
 import { useRef, useEffect } from 'react'
 import styled from '@emotion/styled'
 import { Box, Flex, Text } from '@chakra-ui/react'
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
+
+import IcRightArrow from '../../../public/assets/right-arrow.svg'
 
 import Meta from '../../../components/Meta'
 import Footer from '../../../components/pageLayout/Footer'
@@ -37,7 +38,10 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
     },
   })
   const [next] = data?.next ?? []
-  const [prev] = data?.prev ?? []
+  const [prev] =
+    data?.prev ?? project?.slug === 'national-patriots-and-veterans'
+      ? [{ __typename: 'Project', slug: 'wechelin', title: 'WECHELIN' }]
+      : []
   const [projectDetail] = project?.projectDetails ?? []
 
   // TODO: Video 관련 로직을 따로 분리해야한다.
@@ -137,8 +141,7 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
                 <Link href={`/project/${prev.slug}`} passHref prefetch={false}>
                   <a aria-label={`${prev.title} 페이지로 이동`} rel="prev">
                     <Box width="8vw">
-                      <Img
-                        src="/assets/right-arrow.svg"
+                      <StyledIcRightArrow
                         style={{
                           transform: 'rotate(180deg)',
                         }}
@@ -165,7 +168,7 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
                 <Link href={`/project/${next.slug}`} passHref prefetch={false}>
                   <a aria-label={`${next.title} 페이지로 이동`} rel="next">
                     <Box width="8vw">
-                      <Img src="/assets/right-arrow.svg" alt={`${next.title} 페이지로 이동`} />
+                      <StyledIcRightArrow alt={`${next.title} 페이지로 이동`} />
                     </Box>
                   </a>
                 </Link>
@@ -226,8 +229,9 @@ const NextBox = styled(Box)`
   padding-inline-end: 3vw;
 `
 
-const Img = styled(motion.img)`
-  display: inline-block;
+const StyledIcRightArrow = styled(IcRightArrow)`
+  color: #fff;
+  padding-right: 24px;
   width: 10vw;
 
   @media (min-width: ${breakpoints['tablet']}) {
@@ -264,17 +268,19 @@ export const getStaticPaths = async () => {
     query: ProjectSlugPage_ProjectSlugsDocument,
   })
 
-  const paths = data.projects?.map(project => {
-    if (project == null) {
-      return null
-    }
+  const paths = data.projects
+    ?.map(project => {
+      if (project == null) {
+        return null
+      }
 
-    return {
-      params: {
-        projectSlug: project.slug,
-      },
-    }
-  })
+      return {
+        params: {
+          projectSlug: project.slug,
+        },
+      }
+    })
+    .filter(Boolean)
 
   return {
     paths,

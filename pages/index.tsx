@@ -5,6 +5,8 @@ import { motion } from 'framer-motion'
 import { Box, Flex, Heading, VisuallyHidden, Fade } from '@chakra-ui/react'
 import fs from 'fs'
 
+import IcRightArrow from '../public/assets/right-arrow.svg'
+
 import Meta from '../components/Meta'
 import Footer from '../components/pageLayout/Footer'
 
@@ -70,14 +72,16 @@ export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof 
           </ProjectCountBox>
           <Link href="/project" passHref>
             <a aria-label="Projects 페이지로 이동">
-              <Img
+              <ArrowBox
                 src="/assets/right-arrow.svg"
                 whileHover={{
                   x: 10,
                   transition: { duration: 0.1 },
                 }}
                 alt="Projects 페이지로 이동"
-              />
+              >
+                <StyledIcRightArrow />
+              </ArrowBox>
             </a>
           </Link>
         </StyledFlex>
@@ -127,7 +131,14 @@ const ProjectCountBox = styled(Box)`
     font-size: 48px;
   }
 `
-const Img = styled(motion.img)`
+
+const StyledIcRightArrow = styled(IcRightArrow)`
+  color: #fff;
+  width: 65px;
+  height: 40px;
+`
+
+const ArrowBox = styled(motion(Box))`
   width: 65px;
   height: 40px;
 `
