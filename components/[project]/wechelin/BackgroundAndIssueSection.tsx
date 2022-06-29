@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { AspectRatio } from '@chakra-ui/react'
 
-import { SectionBox, HeadingText, DescriptionText } from './CommonLayout'
+import { SectionBox, HeadingText, DescriptionText } from '../CommonLayout'
 
 interface Props {
   title: string

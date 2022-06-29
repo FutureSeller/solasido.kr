@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { Box, Text } from '@chakra-ui/react'
 
-import { breakpoints } from '../../../styles/responsive'
+import { breakpoints } from '../../styles/responsive'
 
 export const SectionBox = styled(Box)`
   padding: 50px 16px;

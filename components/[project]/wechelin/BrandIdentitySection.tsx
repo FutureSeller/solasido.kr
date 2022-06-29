@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import Image from 'next/image'
 import { Box, Text, AspectRatio, useMediaQuery } from '@chakra-ui/react'
 
-import { HeadingText, DescriptionText } from './CommonLayout'
+import { HeadingText, DescriptionText } from '../CommonLayout'
 
 import { Carousel } from '../../carousel'
 import IcRightArrow from '../../../public/assets/right-arrow.svg'

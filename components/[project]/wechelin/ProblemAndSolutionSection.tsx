@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import { Box, Text, AspectRatio } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 
-import { SectionBox, HeadingText, DescriptionText } from './CommonLayout'
+import { SectionBox, HeadingText, DescriptionText } from '../CommonLayout'
 import { IntersectionObserver } from '../../../contexts/IntersectionObserver'
 import { TFunction } from 'next-i18next'
 import { breakpoints } from '../../../styles/responsive'

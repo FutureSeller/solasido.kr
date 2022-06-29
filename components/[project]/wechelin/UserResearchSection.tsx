@@ -4,7 +4,7 @@ import { Box, Text } from '@chakra-ui/react'
 
 import { Trans, TFunction } from 'next-i18next'
 
-import { SectionBox, HeadingText, DescriptionText } from './CommonLayout'
+import { SectionBox, HeadingText, DescriptionText } from '../CommonLayout'
 
 import { IntersectionObserver } from '../../../contexts/IntersectionObserver'
 import { breakpoints } from '../../../styles/responsive'
