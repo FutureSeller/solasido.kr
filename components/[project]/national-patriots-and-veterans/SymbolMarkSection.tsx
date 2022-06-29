@@ -22,13 +22,15 @@ const StyledSectionBox = styled(Box)`
 `
 
 const StyledBox = styled(Box, { shouldForwardProp: props => props !== 'isVisible' })<{ isVisible: boolean }>`
-  display: ${({ isVisible }) => (isVisible ? 'block' : 'none')} !important;
+  visibility: ${({ isVisible }) => (isVisible ? 'visible' : 'hidden')};
+  opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
+  transition: all 1s ease-out;
 `
 
 export default function SymbolMarkSection() {
   const intersectionRef = useRef(null)
   const intersection = useIntersection(intersectionRef, {
-    threshold: 0.5,
+    threshold: 1,
   })
 
   return (
