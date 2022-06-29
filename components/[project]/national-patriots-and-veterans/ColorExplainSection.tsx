@@ -107,7 +107,8 @@ const StyledWord = styled(Box)`
 
 const StyledRightAlignBox = styled(Box)`
   @media (min-width: ${breakpoints['desktop']}) {
-    padding-left: 50%;
+    display: flex;
+    justify-content: flex-end;
   }
 `
 
