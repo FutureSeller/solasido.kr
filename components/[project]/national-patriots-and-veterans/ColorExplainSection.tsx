@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 import type { TFunction } from 'next-i18next'
 import { breakpoints } from '../../../styles/responsive'
 
-const StyledBox = styled(Box)<{ isRight?: boolean }>`
+const StyledBox = styled(Box, { shouldForwardProp: props => props !== 'isRight' })<{ isRight?: boolean }>`
   font-family: ${({ theme }) => theme.fonts.suitMeidum};
   padding: 50px 16px;
   background: #f2f2f2;

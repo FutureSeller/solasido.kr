@@ -24,7 +24,7 @@ export default function LogoAnimationSection() {
 
   return (
     <Box overflow="hidden">
-      <Box margin="8px 0" width="100%">
+      <Box display="flex" justifyContent="center" margin="8px 0" width="100%">
         <video
           ref={videoRef}
           src={'/projects/national-patriots-and-veterans/logo_animation.mp4'}

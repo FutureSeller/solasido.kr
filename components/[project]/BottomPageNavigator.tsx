@@ -7,7 +7,9 @@ import IcRightArrow from '../../public/assets/right-arrow.svg'
 
 import { breakpoints } from '../../styles/responsive'
 
-const StyledIcRightArrow = styled(IcRightArrow)<{ isRight?: boolean }>`
+const StyledIcRightArrow = styled(IcRightArrow, { shouldForwardProp: props => props !== 'isRight' })<{
+  isRight?: boolean
+}>`
   width: 30px;
   color: #fff;
   ${({ isRight }) =>

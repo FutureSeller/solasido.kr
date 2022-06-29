@@ -21,7 +21,7 @@ const StyledSectionBox = styled(Box)`
   }
 `
 
-const StyledBox = styled(Box)<{ isVisible: boolean }>`
+const StyledBox = styled(Box, { shouldForwardProp: props => props !== 'isVisible' })<{ isVisible: boolean }>`
   display: ${({ isVisible }) => (isVisible ? 'block' : 'none')} !important;
 `
 
