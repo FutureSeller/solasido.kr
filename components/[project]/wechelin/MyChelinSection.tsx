@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { Box } from '@chakra-ui/react'
-import { SectionBox, HeadingText, DescriptionText } from './CommonLayout'
+import { SectionBox, HeadingText, DescriptionText } from '../CommonLayout'
 import { breakpoints } from '../../../styles/responsive'
 
 const StyledBox = styled(Box)`

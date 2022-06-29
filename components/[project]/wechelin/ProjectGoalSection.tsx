@@ -1,7 +1,7 @@
 import styled from '@emotion/styled'
 import { Box, Text } from '@chakra-ui/react'
 import { TFunction } from 'next-i18next'
-import { SectionBox, HeadingText, DescriptionText } from './CommonLayout'
+import { SectionBox, HeadingText, DescriptionText } from '../CommonLayout'
 import { breakpoints } from '../../../styles/responsive'
 
 const StyledSectionBox = styled(SectionBox)`

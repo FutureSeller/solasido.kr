@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { AspectRatio, Box } from '@chakra-ui/react'
-import { SectionBox, HeadingText, DescriptionText } from './CommonLayout'
+import { SectionBox, HeadingText, DescriptionText } from '../CommonLayout'
 
 const StyledDescriptionText = styled(DescriptionText)`
   margin-bottom: 0 !important;

@@ -1,5 +1,5 @@
 import { AspectRatio, Box } from '@chakra-ui/react'
-import { SectionBox, HeadingText, DescriptionText } from './CommonLayout'
+import { SectionBox, HeadingText, DescriptionText } from '../CommonLayout'
 
 interface Props {
   title: string

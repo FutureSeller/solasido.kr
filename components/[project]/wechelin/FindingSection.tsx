@@ -1,6 +1,6 @@
 import { AspectRatio } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-import { SectionBox, HeadingText, DescriptionText } from './CommonLayout'
+import { SectionBox, HeadingText, DescriptionText } from '../CommonLayout'
 
 const StyledBackgroundDiv = styled(SectionBox)`
   align-items: baseline;

@@ -1,0 +1,38 @@
+{
+  "title": "NATIONAL PATRIOTS AND VETERANS",
+  "summary": {
+    "descriptions": [
+      "Taegeuk symbolizes balance and harmony, and has been together for a long time in our history as a symbol of our country, Korea. In addition, Geongongamri is a four gwaes symbolizing heaven and earth, water and fire, showing the change and development of yin and yang. Geon-gwae and Gon-gwae represent infinite spirit, and Gam-gwae and Ri-gwae represent the spirit of Gwangmyeong, which is consistent with the spirit of national patriots and veterans who protected the country.",
+      "The combination of Taegeuk and the four gwae expresses Korea protected by national patriots and veterans, and actively utilized the form and color of the Taegeuk pattern to show balance and harmony."
+    ],
+    "scope": ["Brand Identity Design", "Design Guidelines", "Brand Materials"],
+    "period": "2021. 12 - 2022. 01",
+    "work": {
+      "type": "TEAM",
+      "value": "HI&D Planning Team"
+    },
+    "client": "Ministry of Patriots and\nVeterans Affairs",
+    "website": "www.mpva.go.kr"
+  },
+  "symbolMarkDescription": "The symbol mark, which represents a meritorious person,\nsymbolizes Korea and the people protected by national\npatriots and veterans by combining the Taegeuk pattern and\nGeongwae among the design elements of the Taegeukgi.",
+  "colors": {
+    "descriptions": [
+      "The colors are expressed with gradation in red and blue\ncolors of Taegeukgi. This means that red, which is a symbol of\npassionate and creative culture, and blue, which is a symbol of\ntrust, leads not to each other’s spirit but to one.",
+      "Red and blue are designated as veteran red and veteran blue,\nrespectively, and gray is one of the Korean government colors.\nThe logotype also used the font of Korean government."
+    ],
+    "palette": [
+      {
+        "name": "Veteran Red",
+        "value": "KS | Scarlet"
+      },
+      {
+        "name": "Veteran Blue",
+        "value": "KS | Cobalt Blue"
+      },
+      {
+        "name": "GOK Gray",
+        "value": ""
+      }
+    ]
+  }
+}
