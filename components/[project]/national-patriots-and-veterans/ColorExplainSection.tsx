@@ -105,6 +105,12 @@ const StyledWord = styled(Box)`
   }
 `
 
+const StyledRightAlignBox = styled(Box)`
+  @media (min-width: ${breakpoints['desktop']}) {
+    padding-left: 50%;
+  }
+`
+
 const StyledHorizontalColorBox = styled(Box)`
   display: flex;
   height: 72px;
@@ -186,9 +192,11 @@ export default function ColorExplainSection({ t }: Props) {
       </StyledBox>
       {renderVerticalColors(t)}
       {renderHorizontalColors(t)}
-      <StyledBox isRight>
+      <StyledBox>
         <StyledWord />
-        <>{t('national-patriots-and-veterans:colors.descriptions.1')}</>
+        <StyledRightAlignBox>
+          <>{t('national-patriots-and-veterans:colors.descriptions.1')}</>
+        </StyledRightAlignBox>
       </StyledBox>
     </>
   )
