@@ -2,12 +2,11 @@ import { useRef, useEffect } from 'react'
 import styled from '@emotion/styled'
 import { Box, Flex, Text } from '@chakra-ui/react'
 import Image from 'next/image'
-import Link from 'next/link'
-
-import IcRightArrow from '../../../public/assets/right-arrow.svg'
 
 import Meta from '../../../components/Meta'
 import Footer from '../../../components/pageLayout/Footer'
+
+import BottomPageNavigator from '../../../components/[project]/BottomPageNavigator'
 import CoverSection from '../../../components/[project]/CoverSection'
 import ExplainSection from '../../../components/[project]/ExplainSection'
 
@@ -134,48 +133,7 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
             }
           })}
         </Box>
-        <Flex as="footer" justifyContent="space-between" backgroundColor="black" color="white">
-          <StyledBox width="50%">
-            {prev && (
-              <>
-                <Link href={`/project/${prev.slug}`} passHref prefetch={false}>
-                  <a aria-label={`${prev.title} 페이지로 이동`} rel="prev">
-                    <Box width="8vw">
-                      <StyledIcRightArrow
-                        style={{
-                          transform: 'rotate(180deg)',
-                        }}
-                        alt={`${prev.title} 페이지로 이동`}
-                      />
-                    </Box>
-                  </a>
-                </Link>
-                <PrevBox>
-                  <Label>PREVIOUS PROJECT</Label>
-                  <Value>{prev.title}</Value>
-                </PrevBox>
-              </>
-            )}
-          </StyledBox>
-          <VerticalLine />
-          <StyledBox width="50%" justifyContent="flex-end">
-            {next && (
-              <>
-                <NextBox textAlign="right">
-                  <Label>NEXT PROJECT</Label>
-                  <Value>{next.title}</Value>
-                </NextBox>
-                <Link href={`/project/${next.slug}`} passHref prefetch={false}>
-                  <a aria-label={`${next.title} 페이지로 이동`} rel="next">
-                    <Box width="8vw">
-                      <StyledIcRightArrow alt={`${next.title} 페이지로 이동`} />
-                    </Box>
-                  </a>
-                </Link>
-              </>
-            )}
-          </StyledBox>
-        </Flex>
+        <BottomPageNavigator prev={prev} next={next} />
         <Footer />
       </Box>
     </>
@@ -207,58 +165,6 @@ const StyledText = styled(Text)`
   @media (min-width: ${breakpoints['desktop']}) {
     width: 55%;
   }
-`
-
-const StyledBox = styled(Flex)`
-  padding: 30px 24px;
-
-  @media (min-width: ${breakpoints['tablet']}) {
-    padding: 95px 24px;
-  }
-`
-
-const PrevBox = styled(Box)`
-  display: inline-block;
-  vertical-align: middle;
-  padding-inline-start: 3vw;
-`
-
-const NextBox = styled(Box)`
-  display: inline-block;
-  vertical-align: middle;
-  padding-inline-end: 3vw;
-`
-
-const StyledIcRightArrow = styled(IcRightArrow)`
-  color: #fff;
-  padding-right: 24px;
-  width: 10vw;
-
-  @media (min-width: ${breakpoints['tablet']}) {
-    width: 6vw;
-  }
-`
-
-const Label = styled(Box)`
-  margin-bottom: 8px;
-  font-size: 14px;
-
-  @media (min-width: ${breakpoints['tablet']}) {
-    font-size: 18px;
-  }
-`
-
-const Value = styled(Box)`
-  font-weight: 700;
-  font-size: 4vw;
-
-  @media (min-width: ${breakpoints['tablet']}) {
-    font-size: 3vw;
-  }
-`
-
-const VerticalLine = styled.div`
-  border-right: 1px solid white;
 `
 
 export const getStaticPaths = async () => {

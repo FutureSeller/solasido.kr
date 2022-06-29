@@ -78,8 +78,8 @@ interface BottomPageNavigateItemProps {
 }
 
 interface Props {
-  prev?: BottomPageNavigateItemProps
-  next?: BottomPageNavigateItemProps
+  prev?: BottomPageNavigateItemProps | null
+  next?: BottomPageNavigateItemProps | null
 }
 
 export default function BottomPageNavigator({ prev, next }: Props) {
