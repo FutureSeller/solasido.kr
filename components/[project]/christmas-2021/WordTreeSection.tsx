@@ -15,7 +15,7 @@ const TEXT = 'CHRISTMAS'
 
 const StyledMotionSpan = styled(motion.span)`
   font-family: ${({ theme }) => theme.fonts.neueDisplay};
-  font-size: 24px;
+  font-size: 18px;
   opacity: 0;
 
   @media (min-width: ${breakpoints['tablet']}) {
