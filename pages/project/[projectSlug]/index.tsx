@@ -37,10 +37,7 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
     },
   })
   const [next] = data?.next ?? []
-  const [prev] =
-    data?.prev ?? project?.slug === 'national-patriots-and-veterans'
-      ? [{ __typename: 'Project', slug: 'wechelin', title: 'WECHELIN' }]
-      : []
+  const [prev] = data?.prev ?? []
   const [projectDetail] = project?.projectDetails ?? []
 
   // TODO: Video 관련 로직을 따로 분리해야한다.
