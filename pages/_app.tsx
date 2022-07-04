@@ -1,11 +1,13 @@
 import 'nprogress/nprogress.css'
 
+import { useEffect } from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import { ApolloProvider } from '@apollo/client'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 import { appWithTranslation } from 'next-i18next'
+import { useRouter } from 'next/router'
 
 import { useApollo } from '../apollo/client'
 
@@ -16,14 +18,31 @@ import MenuButton from '../components/pageLayout/MenuButton'
 
 import type { AppProps } from 'next/app'
 
+const NEXT_PUBLIC_GA_KEY = process.env.NEXT_PUBLIC_GA_KEY as string
+
 Router.events.on('routeChangeStart', () => NProgress.start())
 Router.events.on('routeChangeComplete', () => NProgress.done())
 Router.events.on('routeChangeError', () => NProgress.done())
 
 function App({ Component, pageProps }: AppProps) {
+  const router = useRouter()
   const apolloClient = useApollo({
     initialState: pageProps.initialApolloState,
   })
+
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'production') {
+      const handleRouteChange = (url: URL) => {
+        window.gtag('config', NEXT_PUBLIC_GA_KEY, {
+          page_path: url,
+        })
+      }
+      router.events.on('routeChangeComplete', handleRouteChange)
+      return () => {
+        router.events.off('routeChangeComplete', handleRouteChange)
+      }
+    }
+  }, [router.events])
 
   return (
     <ApolloProvider client={apolloClient}>

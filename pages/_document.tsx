@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import Script from 'next/script'
 
 const NEXT_PUBLIC_GA_KEY = process.env.NEXT_PUBLIC_GA_KEY
 
@@ -8,20 +7,18 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" href="/favicon.ico" />
           {process.env.NODE_ENV === 'production' && (
             <>
               {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-              <Script id="google-analytics" src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GA_KEY}`} />
-              <Script
+              <script async src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GA_KEY}`} />
+              <script
                 id="google-analytics-data-layer"
-                strategy="afterInteractive"
+                async
                 dangerouslySetInnerHTML={{
                   __html: `
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-
                 gtag('config', '${NEXT_PUBLIC_GA_KEY}', {
                   page_path: window.location.pathname,
                 });
@@ -30,6 +27,7 @@ export default class MyDocument extends Document {
               />
             </>
           )}
+          <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="preload" href="/fonts/NeueDisplay.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
           <link
             rel="preload"

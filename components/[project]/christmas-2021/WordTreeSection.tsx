@@ -52,6 +52,7 @@ export default function WordTreeSection() {
 
   useEffect(() => {
     sequence()
+    // eslint-disable-next-line
   }, [])
 
   return (

@@ -51,6 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@graphql-codegen/typescript-react-apollo", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:3.1.6"],\
             ["@next/env", "npm:12.2.0"],\
             ["@svgr/webpack", "npm:6.2.1"],\
+            ["@types/gtag.js", "npm:0.0.10"],\
             ["@types/lodash", "npm:4.14.182"],\
             ["@types/node", "npm:17.0.42"],\
             ["@types/nprogress", "npm:0.2.0"],\
@@ -7555,6 +7556,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@types/gtag.js", [\
+        ["npm:0.0.10", {\
+          "packageLocation": "./.yarn/cache/@types-gtag.js-npm-0.0.10-9fee8cef80-5c18ffdc64.zip/node_modules/@types/gtag.js/",\
+          "packageDependencies": [\
+            ["@types/gtag.js", "npm:0.0.10"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@types/hoist-non-react-statics", [\
         ["npm:3.3.1", {\
           "packageLocation": "./.yarn/cache/@types-hoist-non-react-statics-npm-3.3.1-c0081332b2-2c0778570d.zip/node_modules/@types/hoist-non-react-statics/",\
@@ -13836,6 +13846,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@graphql-codegen/typescript-react-apollo", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:3.1.6"],\
             ["@next/env", "npm:12.2.0"],\
             ["@svgr/webpack", "npm:6.2.1"],\
+            ["@types/gtag.js", "npm:0.0.10"],\
             ["@types/lodash", "npm:4.14.182"],\
             ["@types/node", "npm:17.0.42"],\
             ["@types/nprogress", "npm:0.2.0"],\
