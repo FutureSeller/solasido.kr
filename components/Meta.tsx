@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 const DOAAIN = 'https://solasido.design'
 
 const getCanonicalUrl = (router: ReturnType<typeof useRouter>) => {
-  const locale = router.locale === 'ko' ? '' : `/${router.locale}`
+  const locale = router.locale !== router.defaultLocale ? `/${router.locale}` : ''
 
   return `${DOAAIN}${locale}${router.pathname}`.replace(/\/+$/, '')
 }
@@ -17,11 +17,15 @@ interface Props {
 
 export default function Meta({ title, description, imageUrl }: Props) {
   const router = useRouter()
+  const { locales } = router
 
   return (
     <Head>
       <title>{title}</title>
       <link rel="canonical" href={getCanonicalUrl(router)} />
+      {locales?.map(l => (
+        <link key={l} rel="alternate" href={getCanonicalUrl(router)} hrefLang={l} />
+      ))}
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content={description} />
