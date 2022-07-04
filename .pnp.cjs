@@ -49,6 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@graphql-codegen/typescript", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:2.2.4"],\
             ["@graphql-codegen/typescript-operations", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:2.1.8"],\
             ["@graphql-codegen/typescript-react-apollo", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:3.1.6"],\
+            ["@next/env", "npm:12.2.0"],\
             ["@svgr/webpack", "npm:6.2.1"],\
             ["@types/lodash", "npm:4.14.182"],\
             ["@types/node", "npm:17.0.42"],\
@@ -67,6 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lottie-web", "npm:5.9.2"],\
             ["next", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:12.1.5"],\
             ["next-i18next", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:11.0.0"],\
+            ["next-sitemap", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:3.1.7"],\
             ["nprogress", "npm:0.2.0"],\
             ["prettier", "npm:2.4.1"],\
             ["react", "npm:18.2.0"],\
@@ -5639,6 +5641,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@corex/deepmerge", [\
+        ["npm:4.0.29", {\
+          "packageLocation": "./.yarn/cache/@corex-deepmerge-npm-4.0.29-aacab9d89d-78626fd29c.zip/node_modules/@corex/deepmerge/",\
+          "packageDependencies": [\
+            ["@corex/deepmerge", "npm:4.0.29"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@ctrl/tinycolor", [\
         ["npm:3.4.0", {\
           "packageLocation": "./.yarn/cache/@ctrl-tinycolor-npm-3.4.0-5c020477bc-28217900f3.zip/node_modules/@ctrl/tinycolor/",\
@@ -6903,6 +6914,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@next-env-npm-12.1.5-a885604bbc-21a6345ad6.zip/node_modules/@next/env/",\
           "packageDependencies": [\
             ["@next/env", "npm:12.1.5"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:12.2.0", {\
+          "packageLocation": "./.yarn/cache/@next-env-npm-12.2.0-cd66749879-5fb317bdb5.zip/node_modules/@next/env/",\
+          "packageDependencies": [\
+            ["@next/env", "npm:12.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -13652,6 +13670,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["minimist", "npm:1.2.5"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:1.2.6", {\
+          "packageLocation": "./.yarn/cache/minimist-npm-1.2.6-f4cee4b4af-d15428cd1e.zip/node_modules/minimist/",\
+          "packageDependencies": [\
+            ["minimist", "npm:1.2.6"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["minimist-options", [\
@@ -13809,6 +13834,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@graphql-codegen/typescript", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:2.2.4"],\
             ["@graphql-codegen/typescript-operations", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:2.1.8"],\
             ["@graphql-codegen/typescript-react-apollo", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:3.1.6"],\
+            ["@next/env", "npm:12.2.0"],\
             ["@svgr/webpack", "npm:6.2.1"],\
             ["@types/lodash", "npm:4.14.182"],\
             ["@types/node", "npm:17.0.42"],\
@@ -13827,6 +13853,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lottie-web", "npm:5.9.2"],\
             ["next", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:12.1.5"],\
             ["next-i18next", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:11.0.0"],\
+            ["next-sitemap", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:3.1.7"],\
             ["nprogress", "npm:0.2.0"],\
             ["prettier", "npm:2.4.1"],\
             ["react", "npm:18.2.0"],\
@@ -13942,6 +13969,34 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/react",\
             "next",\
             "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["next-sitemap", [\
+        ["npm:3.1.7", {\
+          "packageLocation": "./.yarn/cache/next-sitemap-npm-3.1.7-01a31ee725-5889a15566.zip/node_modules/next-sitemap/",\
+          "packageDependencies": [\
+            ["next-sitemap", "npm:3.1.7"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:3.1.7", {\
+          "packageLocation": "./.yarn/__virtual__/next-sitemap-virtual-81bd361e61/0/cache/next-sitemap-npm-3.1.7-01a31ee725-5889a15566.zip/node_modules/next-sitemap/",\
+          "packageDependencies": [\
+            ["next-sitemap", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:3.1.7"],\
+            ["@corex/deepmerge", "npm:4.0.29"],\
+            ["@next/env", "npm:12.2.0"],\
+            ["@types/next", null],\
+            ["@types/next__env", null],\
+            ["minimist", "npm:1.2.6"],\
+            ["next", "virtual:ddccc941eb8b35cd4b898a64351d8bba4ecc85eb47e8f1b36dce7852d6c3635665e0fc5464861f723d175edb2248ce0fa54dfefb9b5e4d2fdaef4b2353c4aa82#npm:12.1.5"]\
+          ],\
+          "packagePeers": [\
+            "@next/env",\
+            "@types/next",\
+            "@types/next__env",\
+            "next"\
           ],\
           "linkType": "HARD"\
         }]\

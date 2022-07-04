@@ -11,7 +11,6 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/favicon.ico" />
           {process.env.NODE_ENV === 'production' && (
             <>
-              <meta name="naver-site-verification" content="46026a2a546f167b1b61a5aacf4a281f92d3fc94" />
               {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
               <Script id="google-analytics" src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GA_KEY}`} />
               <Script

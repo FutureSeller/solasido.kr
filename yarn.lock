@@ -3264,6 +3264,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@corex/deepmerge@npm:^4.0.26":
+  version: 4.0.29
+  resolution: "@corex/deepmerge@npm:4.0.29"
+  checksum: 78626fd29cb9cbd2953ce5a06f963132c9b4837bb76397982d255131533b61c3ef447f0d295f300aa6b2c3ead182a6fe2e4763181e06a2124df28c08205de1d2
+  languageName: node
+  linkType: hard
+
 "@ctrl/tinycolor@npm:^3.4.0":
   version: 3.4.0
   resolution: "@ctrl/tinycolor@npm:3.4.0"
@@ -4077,6 +4084,13 @@ __metadata:
   version: 12.1.5
   resolution: "@next/env@npm:12.1.5"
   checksum: 21a6345ad6ff39edd76630484af3f2a87a0984d06be19ca88d9758583a1c724905f1ea6c0d110a4c825430e5bcda835f7197ee820c7173c428416fb615ff97e6
+  languageName: node
+  linkType: hard
+
+"@next/env@npm:latest":
+  version: 12.2.0
+  resolution: "@next/env@npm:12.2.0"
+  checksum: 5fb317bdb5eb2d5df12ff55e335368792dba21874c5ece3cabf8cd312cec911a1d54ecf368e69dc08640b0244669b8a98c86cd035c7874b17640602e67c1b9d9
   languageName: node
   linkType: hard
 
@@ -9680,6 +9694,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"minimist@npm:^1.2.6":
+  version: 1.2.6
+  resolution: "minimist@npm:1.2.6"
+  checksum: d15428cd1e11eb14e1233bcfb88ae07ed7a147de251441d61158619dfb32c4d7e9061d09cab4825fdee18ecd6fce323228c8c47b5ba7cd20af378ca4048fb3fb
+  languageName: node
+  linkType: hard
+
 "minipass-collect@npm:^1.0.2":
   version: 1.0.2
   resolution: "minipass-collect@npm:1.0.2"
@@ -9814,6 +9835,7 @@ fsevents@~2.3.2:
     "@graphql-codegen/typescript": 2.2.4
     "@graphql-codegen/typescript-operations": 2.1.8
     "@graphql-codegen/typescript-react-apollo": 3.1.6
+    "@next/env": latest
     "@svgr/webpack": ^6.2.1
     "@types/lodash": ^4.14.182
     "@types/node": ^17.0.42
@@ -9832,6 +9854,7 @@ fsevents@~2.3.2:
     lottie-web: ^5.9.2
     next: latest
     next-i18next: latest
+    next-sitemap: ^3.1.7
     nprogress: ^0.2.0
     prettier: ^2.4.1
     react: ^18.2.0
@@ -9876,6 +9899,22 @@ fsevents@~2.3.2:
     next: ">= 10.0.0"
     react: ">= 16.8.0"
   checksum: f905452719eb2b51ee8259e72c95c3247ea5ad470f82ac68faca97e7ae5394d3c0e123a006b37b0fcbe5ad9d3088e6ef3b105d1aba8184cecf1963ed0ca471b0
+  languageName: node
+  linkType: hard
+
+"next-sitemap@npm:^3.1.7":
+  version: 3.1.7
+  resolution: "next-sitemap@npm:3.1.7"
+  dependencies:
+    "@corex/deepmerge": ^4.0.26
+    minimist: ^1.2.6
+  peerDependencies:
+    "@next/env": "*"
+    next: "*"
+  bin:
+    next-sitemap: bin/next-sitemap.mjs
+    next-sitemap-cjs: bin/next-sitemap.cjs
+  checksum: 5889a155665d4528830cbb38a03fe8865b4cb3897b0fa8d05b4097a5397d8720f143506f5863fd878ff4138439e72c5847ce97dac1544100679657c503fd475b
   languageName: node
   linkType: hard
 
