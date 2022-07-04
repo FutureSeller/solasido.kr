@@ -179,7 +179,7 @@ export const getStaticPaths = async () => {
         }
 
         // TODO: 백엔드를 없애면 지워야할 코드
-        if (['national-patriots-and-veterans', 'christmas-2021'].includes(project.slug)) {
+        if (['national-patriots-and-veterans', 'christmas-2021', 'there'].includes(project.slug)) {
           return null
         }
 
