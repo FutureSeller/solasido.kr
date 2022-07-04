@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
-const DOAAIN = 'https://solasido.design'
+const DOMAIN = 'https://solasido.design'
 
-const getCanonicalUrl = (router: ReturnType<typeof useRouter>) => {
-  const locale = router.locale !== router.defaultLocale ? `/${router.locale}` : ''
+const getLinkUrl = ({ pathname, lang }: { pathname: string; lang?: string }) => {
+  const urls = [DOMAIN, lang || '', pathname.slice(1).replace(/\/+$/, '')].filter(Boolean)
 
-  return `${DOAAIN}${locale}${router.pathname}`.replace(/\/+$/, '')
+  return urls.join('/').replace(/\/+$/, '')
 }
 
 interface Props {
@@ -17,14 +17,20 @@ interface Props {
 
 export default function Meta({ title, description, imageUrl }: Props) {
   const router = useRouter()
-  const { locales } = router
+  const { defaultLocale, locale, locales, pathname } = router
 
   return (
     <Head>
       <title>{title}</title>
-      <link rel="canonical" href={getCanonicalUrl(router)} />
-      {locales?.map(l => (
-        <link key={l} rel="alternate" href={getCanonicalUrl(router)} hrefLang={l} />
+      <link
+        rel="canonical"
+        href={getLinkUrl({
+          lang: locale !== defaultLocale ? locale : '',
+          pathname,
+        })}
+      />
+      {locales?.map(lang => (
+        <link key={lang} rel="alternate" href={getLinkUrl({ lang, pathname })} hrefLang={lang} />
       ))}
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
