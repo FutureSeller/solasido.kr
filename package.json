@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint",
     "commitlint": "commitlint",
@@ -19,6 +20,7 @@
     "@emotion/is-prop-valid": "^1.1.2",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
+    "@next/env": "latest",
     "@yarnpkg/pnpify": "^4.0.0-rc.9",
     "framer-motion": "^6.3.11",
     "graphql": "^15.6.1",
@@ -26,6 +28,7 @@
     "lottie-web": "^5.9.2",
     "next": "latest",
     "next-i18next": "latest",
+    "next-sitemap": "^3.1.7",
     "nprogress": "^0.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
