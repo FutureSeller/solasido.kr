@@ -34,7 +34,7 @@ export default function There() {
 
   return (
     <>
-      <Meta title={t('there:title')} description="Merry Christmas!" imageUrl="/projects/there/main.png" />
+      <Meta title={t('there:title')} description="Here, There and Everywhere" imageUrl="/projects/there/main.png" />
       <Box as="main" position="relative" width="100%" height="100%" minHeight="100vh">
         <ProjectIntroSection
           title={t('there:title')}
