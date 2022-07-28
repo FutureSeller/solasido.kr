@@ -4,6 +4,7 @@ module.exports = {
   i18n,
   images: {
     domains: ['s3.ap-northeast-2.amazonaws.com'],
+    formats: ['image/avif', 'image/webp'],
   },
   reactStrictMode: true,
   webpack: config => {

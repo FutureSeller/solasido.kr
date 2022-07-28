@@ -39,13 +39,10 @@ export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof 
             <Fade key={imgUrl} in={index === page}>
               <Box
                 position="absolute"
-                top="0"
                 width="100%"
                 height="100%"
-                background={`url(${imgUrl}) no-repeat center`}
-                backgroundSize="cover"
-                transition=""
-                _after={{
+                _before={{
+                  position: 'absolute',
                   display: 'block',
                   content: '""',
                   background: 'rgba(0,0,0,0.7)',
@@ -53,7 +50,15 @@ export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof 
                   height: '100%',
                   width: '100%',
                 }}
-              />
+              >
+                {/* NOTE: next/api 로 serverless image loader를 만드는게 나을까 싶음. */}
+                <picture>
+                  <source srcSet={imgUrl.replace(/jpg/g, 'avif')} type="image/avif" />
+                  <source srcSet={imgUrl.replace(/jpg/g, 'webp')} type="image/webp" />
+                  {/* eslint-disable-next-line */}
+                  <img src={imgUrl} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                </picture>
+              </Box>
             </Fade>
           ))}
         </Box>
@@ -144,7 +149,7 @@ const ArrowBox = styled(motion(Box))`
 `
 
 export const getStaticProps = async () => {
-  const baseDir = '/images/main'
+  const baseDir = '/images/main/jpg'
   const mainImageUrls = fs.readdirSync(`./public${baseDir}`)
 
   mainImageUrls.sort((prev, cur) => {
