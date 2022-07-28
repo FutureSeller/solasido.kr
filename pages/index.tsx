@@ -53,8 +53,8 @@ export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof 
               >
                 {/* NOTE: next/api 로 serverless image loader를 만드는게 나을까 싶음. */}
                 <picture>
-                  <source srcSet={imgUrl.replaceAll('jpg', 'avif')} type="image/avif" />
-                  <source srcSet={imgUrl.replaceAll('jpg', 'webp')} type="image/webp" />
+                  <source srcSet={imgUrl.replace(/jpg/g, 'avif')} type="image/avif" />
+                  <source srcSet={imgUrl.replace(/jpg/g, 'webp')} type="image/webp" />
                   {/* eslint-disable-next-line */}
                   <img src={imgUrl} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                 </picture>
