@@ -56,7 +56,13 @@ export default function IndexPage({ imageUrls }: InferGetStaticPropsType<typeof 
                   <source srcSet={imgUrl.replace(/jpg/g, 'avif')} type="image/avif" />
                   <source srcSet={imgUrl.replace(/jpg/g, 'webp')} type="image/webp" />
                   {/* eslint-disable-next-line */}
-                  <img src={imgUrl} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  <img
+                    src={imgUrl}
+                    alt=""
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </picture>
               </Box>
             </Fade>
@@ -105,7 +111,7 @@ const StyledFlex = styled(Flex)`
 `
 
 const StyledSlogan = styled(Box)`
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
