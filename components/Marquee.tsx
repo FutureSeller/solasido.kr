@@ -38,7 +38,6 @@ export default function Marquee({ className = '', direction = 'left', speed = 20
   const [containerWidth, setContainerWidth] = useState(0)
   const [marqueeWidth, setMarqueeWidth] = useState(0)
   const [duration, setDuration] = useState(0)
-  const [isMounted, setIsMounted] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
   const marqueeRef = useRef<HTMLDivElement>(null)
 
@@ -64,31 +63,25 @@ export default function Marquee({ className = '', direction = 'left', speed = 20
     }
   })
 
-  useEffect(() => {
-    setIsMounted(true)
-  }, [])
-
   return (
     <Fragment>
-      {!isMounted ? null : (
-        <Box ref={containerRef} className={className} display="flex" flexDirection="row" width="100%" overflow="hidden">
-          <MarqueeBox
-            ref={marqueeRef}
-            direction={direction === 'left' ? 'normal' : 'reverse'}
-            duration={`${duration}s`}
-            delay={`${delay}s`}
-          >
-            {children}
-          </MarqueeBox>
-          <MarqueeBox
-            direction={direction === 'left' ? 'normal' : 'reverse'}
-            duration={`${duration}s`}
-            delay={`${delay}s`}
-          >
-            {children}
-          </MarqueeBox>
-        </Box>
-      )}
+      <Box ref={containerRef} className={className} display="flex" flexDirection="row" width="100%" overflow="hidden">
+        <MarqueeBox
+          ref={marqueeRef}
+          direction={direction === 'left' ? 'normal' : 'reverse'}
+          duration={`${duration}s`}
+          delay={`${delay}s`}
+        >
+          {children}
+        </MarqueeBox>
+        <MarqueeBox
+          direction={direction === 'left' ? 'normal' : 'reverse'}
+          duration={`${duration}s`}
+          delay={`${delay}s`}
+        >
+          {children}
+        </MarqueeBox>
+      </Box>
     </Fragment>
   )
 }
