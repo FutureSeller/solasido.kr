@@ -26,7 +26,7 @@ import type {
   ProjectSlugPage_ProjectSlugsQuery,
   ProjectSlugPage_ProjectLinkQuery,
 } from '../../../__generated__/graphql'
-import type { GetStaticProps, InferGetStaticPropsType } from 'next'
+import type { GetStaticProps, InferGetStaticPropsType, GetStaticPathsResult } from 'next'
 
 const isVideoUrl = (url: string) => url.endsWith('.mp4')
 
@@ -171,25 +171,28 @@ export const getStaticPaths = async () => {
     query: ProjectSlugPage_ProjectSlugsDocument,
   })
 
-  const paths =
-    data.projects
-      ?.map(project => {
-        if (project == null) {
-          return null
-        }
+  const locales = ['ko', 'en']
+  const paths: GetStaticPathsResult['paths'] = []
 
-        // TODO: 백엔드를 없애면 지워야할 코드
-        if (['national-patriots-and-veterans', 'christmas-2021', 'there'].includes(project.slug)) {
-          return null
-        }
+  data.projects?.forEach(project => {
+    if (project == null) {
+      return null
+    }
 
-        return {
-          params: {
-            projectSlug: project.slug,
-          },
-        }
+    // TODO: 백엔드를 없애면 지워야할 코드
+    if (['national-patriots-and-veterans', 'christmas-2021', 'there'].includes(project.slug)) {
+      return null
+    }
+
+    locales.forEach(locale => {
+      paths.push({
+        params: {
+          projectSlug: project.slug,
+        },
+        locale,
       })
-      .filter(Boolean) ?? []
+    })
+  })
 
   return {
     paths,
