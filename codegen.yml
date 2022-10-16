@@ -1,5 +1,5 @@
 overwrite: true
-schema: 'https://admin.commonfox0405.com/graphql'
+schema: '${NEXT_PUBLIC_API_ENDPOINT}/graphql'
 documents: 'graphql/**/*.graphql'
 generates:
   __generated__/graphql.tsx:

@@ -9,8 +9,7 @@ function createApolloClient() {
   return new ApolloClient({
     ssrMode: typeof window === 'undefined', // set to true for SSR
     link: new HttpLink({
-      // uri: `${process.env.NEXT_PUBLIC_API_ENDPOINT}/graphql`,
-      uri: `https://admin.commonfox0405.com/graphql`,
+      uri: `${process.env.NEXT_PUBLIC_API_ENDPOINT}/graphql`,
     }),
     cache: new InMemoryCache({
       typePolicies,
