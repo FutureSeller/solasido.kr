@@ -1,7 +1,10 @@
-import React, { Fragment, useEffect, useState, useRef } from 'react'
+import React, { Fragment, useState, useCallback } from 'react'
 import styled from '@emotion/styled'
 import { Box } from '@chakra-ui/react'
 import { css, keyframes } from '@emotion/react'
+
+import useCallbackRef from '../hooks/useCallbackRef'
+import useEventListener from '../hooks/useEventListener'
 
 const scroll = keyframes`
   from {
@@ -38,36 +41,47 @@ export default function Marquee({ className = '', direction = 'left', speed = 20
   const [containerWidth, setContainerWidth] = useState(0)
   const [marqueeWidth, setMarqueeWidth] = useState(0)
   const [duration, setDuration] = useState(0)
-  const containerRef = useRef<HTMLDivElement>(null)
-  const marqueeRef = useRef<HTMLDivElement>(null)
 
-  const calculateWidth = () => {
-    if (marqueeRef.current && containerRef.current) {
-      setContainerWidth(containerRef.current.getBoundingClientRect().width)
-      setMarqueeWidth(marqueeRef.current.getBoundingClientRect().width)
+  const containerCallbackRef = useCallbackRef((node: HTMLDivElement | null) => {
+    if (!node) {
+      return
     }
+    setContainerWidth(node.getBoundingClientRect().width)
+  })
 
+  const marqueeCallbackRef = useCallbackRef((node: HTMLDivElement | null) => {
+    if (!node) {
+      return
+    }
+    setMarqueeWidth(node.getBoundingClientRect().width)
+  })
+
+  const calculateWidth = useCallback(() => {
     if (marqueeWidth < containerWidth) {
       setDuration(Math.round(containerWidth / speed))
     } else {
       setDuration(Math.round(marqueeWidth / speed))
     }
-  }
+  }, [marqueeWidth, containerWidth])
 
-  useEffect(() => {
-    calculateWidth()
-    // Rerender on window resize
-    window.addEventListener('resize', calculateWidth)
-    return () => {
-      window.removeEventListener('resize', calculateWidth)
-    }
+  useEventListener({
+    type: 'resize',
+    handleBeforeListen: calculateWidth,
+    listener: calculateWidth,
   })
 
   return (
     <Fragment>
-      <Box ref={containerRef} className={className} display="flex" flexDirection="row" width="100%" overflow="hidden">
+      <Box
+        ref={containerCallbackRef}
+        className={className}
+        display="flex"
+        flexDirection="row"
+        width="100%"
+        overflow="hidden"
+      >
         <MarqueeBox
-          ref={marqueeRef}
+          ref={marqueeCallbackRef}
           direction={direction === 'left' ? 'normal' : 'reverse'}
           duration={`${duration}s`}
           delay={`${delay}s`}
