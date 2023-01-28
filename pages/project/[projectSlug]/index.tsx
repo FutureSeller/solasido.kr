@@ -1,4 +1,3 @@
-import { useRef, useEffect } from 'react'
 import styled from '@emotion/styled'
 import { Box, Flex, Text } from '@chakra-ui/react'
 import Image from 'next/image'
@@ -9,6 +8,8 @@ import Footer from '../../../components/pageLayout/Footer'
 import BottomPageNavigator from '../../../components/[project]/BottomPageNavigator'
 import CoverSection from '../../../components/[project]/CoverSection'
 import ExplainSection from '../../../components/[project]/ExplainSection'
+
+import useCallbackRef from '../../../hooks/useCallbackRef'
 
 import { breakpoints } from '../../../styles/responsive'
 import type {
@@ -34,23 +35,18 @@ export default function ProjectSlugPage({ project, next, prev }: InferGetStaticP
   const [prevProject] = prev ?? []
   const [projectDetail] = project?.projectDetails ?? []
 
-  // TODO: Video 관련 로직을 따로 분리해야한다.
-  const videoRef = useRef<HTMLVideoElement>(null)
-  useEffect(() => {
-    const video = videoRef.current
-    if (!video) {
-      return
-    }
+  const videoAutoplayCallbackRef = useCallbackRef((videoNode: HTMLVideoElement) => {
+    if (!videoNode) return
 
     const handleMove = () => {
-      if (video.currentTime >= video.duration - 0.5) {
-        video.currentTime = 0.0
+      if (videoNode.currentTime >= videoNode.duration - 0.5) {
+        videoNode.currentTime = 0.0
       }
     }
-    video.addEventListener('timeupdate', handleMove)
+    videoNode.addEventListener('timeupdate', handleMove)
 
     return () => {
-      video.removeEventListener('timeupdate', handleMove)
+      videoNode.removeEventListener('timeupdate', handleMove)
     }
   }, [])
 
@@ -84,7 +80,7 @@ export default function ProjectSlugPage({ project, next, prev }: InferGetStaticP
               if (isVideoUrl(url)) {
                 return (
                   <Box key={`${detail.__typename}-${index}`} margin="8px 0" width="100%">
-                    <video ref={videoRef} src={url} muted autoPlay playsInline />
+                    <video ref={videoAutoplayCallbackRef} src={url} muted autoPlay playsInline />
                   </Box>
                 )
               }
