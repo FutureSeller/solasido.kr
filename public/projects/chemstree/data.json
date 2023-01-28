@@ -1,0 +1,160 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "6",
+    "slug": "chemstree",
+    "title": "CHEMSTREE",
+    "summary": "Enrich Humanity by Innovative Materials.",
+    "description": "캠스트리(Chemstree)는 한국화학연구원의 연구소 기업으로, 생활 밀착형 화학 제품을 개발하여 지속적으로 성장하고 있는 기업입니다.\n캠스트리는 기술을 인정받아 충남대학교 산학협력중개센터의 가족 회사로 선정되었으며, 지역 사회에 이바지할 수 있도록 꾸준히 노력합니다.\n\n서로 유기적 관계를 형성하는 창의, 신뢰, 성장, 공유의 네 가지 핵심 가치를 바탕으로 ‘창의적인 연구로 생활 밀착형 화학 제품을 개발하여 지속적으로 성장’을 기업 목표로 하고 있습니다.",
+    "scope": "Corporate Identity\nDesign Guidelines\nBrand Materials",
+    "link": "https://www.chemstree.com ",
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "black",
+    "startDate": "2017. 03",
+    "endDate": "2017. 05",
+    "order": 6,
+    "work": {
+      "__typename": "Work",
+      "type": "CLIENT",
+      "value": "CHEMSTREE"
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "CHEMSTREE",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAcGCAP/xAAoEAACAQQBAwEJAAAAAAAAAAABAgMABAURIQYHEhQTQVNhcYGhsbL/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/xAAbEQACAgMBAAAAAAAAAAAAAAAAAQIRBBIxUf/aAAwDAQACEQMRAD8ArlSvuB3bXpjN3WHtMNLc30AUl55liiIYAgrrZYc/Krrj8TbSQpKwMgZdjZ9/0FYjudjuleoMQmMyvoZryGdbiK3iOpGZdggledeJPBNRhzfkO9nV73TGK6xlqvwo7cOF+7bJpXTeC6EwcWMiWywmPih1wpRd/wA0raBu/Dzz3nc4/wBLJNKIDx4K5UfishapDi87YwWdtCqtMiliuyQTo/ulKo9BkNqFosUMpgT2aBfEHjYpSlISbP/Z",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/chemstree_main_65af58b32a.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "7",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "Chemstree 심벌마크 도출 과정",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQC/8QAIBABAAICAAcBAAAAAAAAAAAAAQACAxEEEhQhQmGBkf/EABYBAQEBAAAAAAAAAAAAAAAAAAYBAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AJMjTp8QVpz7do9/s1mMduIChjx00ean7ERSJJ00pvfsiIlZf//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1145,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/chemstree_02_a886e61e38.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "심벌마크는 기업명 Chemstree의 C와 T를 결합하여 지속적으로 성장하는 ‘화학의 나무’와 태양의 열정을 형상화하였습니다. 로고타이프는 견고한 기업 이미지를 구축하기 위해 산세리프로 디자인하였습니다. 또한 캠스트리의 핵심 가치인 창의와 신뢰를 표현하기 위해 블루 계열의 컬러를 활용하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "Chemstree 심벌마크",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAJABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAEDBQj/xAAiEAABBAECBwAAAAAAAAAAAAABAAIDEQQFURITFSFBgbL/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/ANL6g/Px5udjBk8NAGInhIN70dyfSjgz9Rls9NY2vByBfyrZCaITSS0EijXcITQgv//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1286,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/chemstree_03_36771796fd.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "그린과 블루 컬러는 환경을 생각하는 지속 가능한 화학과 기업 이념인 창의와 신뢰를 나타냅니다. 레드 컬러는 열정을 바탕으로 끊임없이 연구하여 성장하겠다는 캠스트리의 의지를 상징합니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "Chemstree 심볼마크에 쓰인 컬러 정의",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAMFCP/EAB8QAAEEAgIDAAAAAAAAAAAAAAEAAgQRAyEFEgYxYf/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//EABgRAAMBAQAAAAAAAAAAAAAAAAABEQIh/9oADAMBAAIRAxEAPwDQBieQs1h5Hj+lmu8d7iB9Pbalgt55soNnSoOTEC1xOKOW23dt2479bqkRO8hlnMdRdA2ERFBn/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1009,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/chemstree_04_4da43777a1.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "Chemstree 그래픽 모티프",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAMABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMHBQb/xAAgEAACAQQCAwEAAAAAAAAAAAABAgMABAURBiEHEkGR/8QAFgEBAQEAAAAAAAAAAAAAAAAABAUG/8QAHBEAAgMAAwEAAAAAAAAAAAAAAQIAAwQREiFR/9oADAMBAAIRAxEAPwBvH4o5c3jUlRXR7mJWVhsEFxsGqB51xdhjeL2kuPsra1la9CF4YghI9G62PnVTOwvJLS9t54gvvDIsi7HW1II3+Vu825ZkOUYyKzyKWyRRzCUGFCp3oj6T13V3bW7MOp+zPYLERT2HPonGY92aAlmLH2+min28KxIVUtre+zRSc6sK1BhdLKbWIHk//9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1786,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/chemstree_05_04f0a25348.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "각종 응용 아이템의 활용성을 높이기 위해 그래픽 모티프를 개발하였습니다. 브랜드 아이덴티티를 일관적으로 전달하기 위해 캠스트리의 심벌마크와 지정색상을 활용하였습니다. 또한 주목성 및 장식성의 목적으로 보조 디자인인 캠스트리 패턴을 개발하였습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "Chemstree 사원증 및 명함",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAATABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAcFBv/EACYQAAIBBAEEAAcAAAAAAAAAAAECAwAEBREGEiExQQgTFDVzgbH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABoRAQEAAgMAAAAAAAAAAAAAAAABAhESMTL/2gAMAwEAAhEDEQA/AKxyZouOY29Fojm8NtLMFRepmZYyEAGt72q6HesT4Xr7O5jjGRyfJWZ7p7toUZ7dYXIVU31AAbOye5qxXscccUt0sUf1EcbFXKgkaG/NcNyLknJ7HA3N/hsZHkrmJesQEiPrUdyQfZA9DzRFDpUq4ZyvnOQxBueQYS1tbl5SY44ZF18vQ1vZPfz79Upo5RTcj9vuvxN/DUe5Ld3LyW9sbiYW6JsRq5VT39gef3SlWJn5qlWShLWJUACqugB6FKUoTp//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2882,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/chemstree_06_333e54cffa.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "Chemstree 브랜드 키트",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUEBgf/xAAnEAABAwMBBwUAAAAAAAAAAAABAgMEAAUREgYTITVBc7IjMWGRsf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDS7fYUXSRPkb4LLUhYVHRwURqPX56VFvtgtNuXJu65jqHZDaW40Zcr00AYzpbA4nIzk9Sc0vlzJUO4XBUKS7GcWtxBW2QCBqPtmloaSVpdXlx0DGtZKlfZ/aC+7C8pf758U0UbC8pe758U0UH/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1841,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/chemstree_07_130a23cea9.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "Chemstree 심벌마크의 활용예시",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABwAEBv/EACQQAAIBBAEDBQEAAAAAAAAAAAECAwAEBREhEhMxIiVBUWGh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAZEQACAwEAAAAAAAAAAAAAAAAAAwECEiH/2gAMAwEAAhEDEQA/AHfIX03atlCIzyoW1OgGzr4I8VxOcupYSxkkSPnkRbArJmp7nsjV1cAqulYSHYH1Rrl8/k4Lnoa7aZFJbplVTs6Pnj9NVYuakls10UmhsgE9xtl2oOpH039NVCBmeX1uepm5JNVEZ//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 4000,
+              "height": 2400,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/chemstree_08_6b5c7c4991.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "Chemstree 워드마크 활용예시",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAYHBAj/xAAnEAACAQMCBQQDAAAAAAAAAAABAgMABBEFBhIUITFRBxNBcjJCUv/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQIREyEx/9oADAMBAAIRAxEAPwB50/euztKt7qNtUieazADwwgu8hx2jH7+DjoPmkbcPrDqd1KH02EafYo3EkIYe7Lj+n+fqmR5NQaG5s4EKXdxKAfyht1ILfZz3rWd0pbwSRWFokIZChdyXcjGMZNPkYKhXDuWfUS5R+h4kVu/kZoqSQ78t+SssBs8tFnoe/AKKQJz2f//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2323,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/chemstree_09_c9c4a032f8.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "ovis",
+      "title": "OVIS"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "citizen-politics-society",
+      "title": "CITIZEN POLITICS SOCIETY"
+    }
+  ]
+}

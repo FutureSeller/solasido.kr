@@ -1,0 +1,192 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "3",
+    "slug": "korean-traditional-pattern",
+    "title": "KOREAN TRADITIONAL PATTERN",
+    "summary": "Beauty of Korean Tradition.",
+    "description": "전통문양은 미적 감각을 불러일으키기 위해 점이나 선, 색채를 도형과 같이 형상화 한 것입니다. 한국 전통문양은 우리 조상들의 의식과 염원이 반영된 정신 활동의 소산이며 창조적 미적 활동의 결과입니다. \n무한한 가치를 가진 우리 전통문양을 온고지신의 정신을 바탕으로 현대화하여 우수성을 홍보하고 발전 가능성을 보여주고자 하였습니다.",
+    "scope": "Cultural Identity\nPattern\nEnvelope\nMerchandise",
+    "link": null,
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "black",
+    "startDate": "2013. 01",
+    "endDate": "2013. 11",
+    "order": 3,
+    "work": {
+      "__typename": "Work",
+      "type": "PERSONAL_WORK",
+      "value": null
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "KOREAN TRADITIONAL PATTERN",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAUGBwP/xAAjEAACAQQCAgMBAQAAAAAAAAABAgMABAURITEGYQcSQRMy/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAmEQABAwIDCQEAAAAAAAAAAAABAAIRAyESMVEEExQiI0FxkfDB/9oADAMBAAIRAxEAPwDb5ZEiQvIwVR+mqnn8/Ot3bxY64gjjVi1wrL9nZRxpSP8APJHuuE/j1+hGQyV7cHKXVsLd3ilJijYNsGNOl6B981UYcKML/HJ+U30FpdIzRxxFxqbZ0ocjrvoc611R2bQ2o4gXAhIFHDBmLOg5i2U6KNy/yT5FiMlPZx2cZRCCpCM4IIHIOuj3r3SpjIZDItMox8trFEi/UpLJJHpgT0q8a6753ulUBQc0YWsshcRRfzOqCT9qtD8muZ447WCKZ41lLAlDojWjwfyqB5xi7bKfDVxfXalp4Yxdw60BEwb6aX0R2P2lKMwAOt9kkkdMnx+qb+PPHLLKeFYi8vzPNcywAu5fROuB16FKUpW8eO5QDRpkyWj0v//Z",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ktp_main_0ef3c39119.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "4",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "문화포털에서 제공하는 전통문양",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAgAI/8QAGxABAQEAAgMAAAAAAAAAAAAAAQARAhIhMTL/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A1II9jNSWefk9TqAnHDOo1KoP/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1412,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ktp_01_607fb71e96.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "우선 문화체육관광부의 문화포털(www.culture.go.kr)에서 제공하는 전통문양을 크게 일곱 가지 의미로 나누어 의미별로 분류하였습니다. 분류한 후에는 각 의미를 대표하는 문양을 하나씩 선정하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "문양과 색상의 의미별 매칭",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAQADCP/EABoQAAIDAQEAAAAAAAAAAAAAAAABAhEhMdH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOnpSVtKTvQctdumr8NVFbiBJXxEDHnbIeEB/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1519,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ktp_02_0ffb11cca5.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "그리고 각 문양과 색상을 의미별로 매치하였습니다. 일곱 가지의 색은 1991년 국립현대미술관의 ‘한국전통표준색명 및 색상에 관한 연구’에서 제시한 색에서 선정하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "의미와 색으로 새롭게 결합안 문양과 기념일 매칭",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAECAwj/xAAeEAACAgIDAQEAAAAAAAAAAAABAgARAyEEEjFRcf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDqLkGyACRXtGpDdjkA7trz7NeQjvjyDEwVipCkjw1ox9DWyt/kC1NqIRjQhA//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2136,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ktp_03_7d2c30839c.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "의미와 색으로 새롭게 결합한 전통문양을 기념일과 매치하였습니다. 기념일은 예로부터 중요시되었던 기념일과 현대 사회의 기념일 중 일곱 가지를 선정하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "7가지 패턴의 기념일 전통문양",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAMABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAYHBAX/xAAmEAABAwIFAwUAAAAAAAAAAAABAgMRAAQFEhMhMSJRYRQyU3Hx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAMEBf/EAB0RAAEEAgMAAAAAAAAAAAAAAAIAARESEyExYcH/2gAMAwEAAhEDEQA/ALU7jVmMN1NJwpLAXwONXLHu5nf6re1fW71+GQhSVKduESoCJSkSeeN/yp9btMjAUj09vAw7NGkmNrwjtXXuzlxM5Utgh7EgDppMQ2I5FBbYYTTat279T47dtMr0ylRKUpEgCDsPNFLSyVuqCsvShsDoT8aD280VlHks8RyqwEKtK//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1801,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ktp_04_b49790cf9a.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "각종 기념일에서 가장 많이 쓰이는 소재인 봉투를 제작하기 위해 의미와 색, 기념일을 결합한 전통문양 일곱 가지를 패턴으로 디자인하였습니다. 겉봉투와 속봉투, 포장용 종이, 스티커 등 다양한 용도로 활용할 수 있도록 각각 여섯 개의 패턴을 디자인했습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "여섯가지의 전통색",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAYC/8QAJBAAAQIDCAMAAAAAAAAAAAAAAAECBAVRAxETFRY0ZHWBsbL/xAAXAQADAQAAAAAAAAAAAAAAAAACAwUG/8QAHhEAAAUFAQAAAAAAAAAAAAAAAAEDBHECMjNzwbH/2gAMAwEAAhEDEQA/ANzlr8vd11eUl5fydHavltMeK+EABdY0ILgYpY52dIWMfu7Tx6QAGPcZa5P0V0rKYIf/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1249,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ktp_05_f58c87547b.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "패턴을 활용한 봉투",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUBBgf/xAAjEAACAQQBBAMBAAAAAAAAAAABAgMABAYhEQUSMUETUWGx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAaEQACAwEBAAAAAAAAAAAAAAABAgADETFB/9oADAMBAAIRAxEAPwDUctySPoVzapPKYklRn7u3kEggcfh3SnIOureQW8ttIWVXZSYZWUHSkbHnRpnm+J2+RQJczXEsM1nE/wAfaAVJO9jz69EUtwjFbSLoTQXrtckTs4Ycx8cqvOgT9VCkotmuNHso6M1JZWxhyXmM8xqfwfyipAAAA8DVFGGf/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2007,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ktp_06_0bb5adf4fa.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "제작한 패턴을 활용하여 두 가지 디자인의 봉투와 원형 스티커를 제작하였습니다. 겹겹으로 이루어진 형상과 봉투를 마감하는 띠는 한복에서 모티프를 얻었습니다. 봉투의 뒷면에는 각 문양의 의미에 따라 키워드를 은박으로 후가공하여 미적 요소를 더하고 쓰임이 용이하도록 하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "패턴을 활용한 원형 스티커",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAcDBAX/xAAlEAABAwMCBgMAAAAAAAAAAAABAgMEAAURMUEGEiEjUWETFDL/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABoRAQEAAgMAAAAAAAAAAAAAAAEAAiERYfD/2gAMAwEAAhEDEQA/AH7xldrlapDZjS7fHYkNlln7CVEl85xnG2nrztWLZeLZ9wkNsputndefKWWkIbWnuoHdHXXfHnamC/HZfCPnabd5FBaOdIVyqGhGdD7qNmBDZUhTMSO2pBUpJS2AUlX6I6anfzQnOqsUNp7usjOBnWiiimm//9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1597,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ktp_07_9f3f4fa7b8.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "패턴을 활용한 패키지들",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQGB//EACQQAAICAAYCAgMAAAAAAAAAAAECAwQABQYRIUESEzEyIlGh/8QAFQEBAQAAAAAAAAAAAAAAAAAABAP/xAAfEQABBAICAwAAAAAAAAAAAAABAAIDESExUZEEQeH/2gAMAwEAAhEDEQA/ALvRuqM11lkrSWjDEtiyzweuThYhwUk2HRB2/uE81kt1teXMw0xnitLPXZVoWmKQQIg8WYKfuA3wAB8784qdTZJKimvTumnDIPRXirwqkcCcH6j7HcHnjg4z7UsUmX6juaby+eSGenWhlizJvzmDSbnvoeIG3Y4P7wLxWuke9pdeehx9SZJWwgSNGwAfd7s91jVcrbMhnns5RWmtvG87ruzRoVU89A84MN1fYa0PuZXl8F82VfEM2w3IHXPWDF0df//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1943,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ktp_08_8e348d7887.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "패턴을 활용한 굿즈",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAcFBgT/xAAmEAABAwIEBgMAAAAAAAAAAAABAAIDBBEFEjJRBiEiMUFxEzOB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAWEQEBAQAAAAAAAAAAAAAAAAAAMSH/2gAMAwEAAhEDEQA/ALviDaxkjRDFKY8puYw089ufbdafCrZskjqhrmvLW3zNynufC3ZNDvRXAV9biLKiT4JniERkjoLuq2+bfxZSatUFFHsO4jxSWnvVPkbKDlN45I7/AISUVRX5frf6K4STUERB5JdaIiD/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2564,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ktp_09_4aaa9e0d2c.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "패턴을 활용한 굿즈",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMCBAUH/8QAJBAAAgEDBAICAwAAAAAAAAAAAQIDBAUGAAcRIRITMVEyQbH/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABoRAQABBQAAAAAAAAAAAAAAAAASAQIRIYH/2gAMAwEAAhEDEQA/AE5HmmRx51faODILjDDFXTRxoJyFUByAo+hq0ctyJZSsWQXGaIAH2e5gD+v7rcyLZXIrjlN2uUNfaVgqquWdFd5PIKzEgHhOOe9QXZfKVRUF0tJRegC8nQ+vw0VyuyG5cdW2iuFXcsUaevq5KuYVLr7HfyPAC9c6NP2txytxbGnoLnNTzTmoeXygJK8EDj5A760aUP/Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2119,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ktp_10_7c28718659.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "ed",
+      "title": "E:D"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "welivearth",
+      "title": "WELIVEARTH"
+    }
+  ]
+}

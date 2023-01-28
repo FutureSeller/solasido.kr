@@ -1,0 +1,236 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "4",
+    "slug": "welivearth",
+    "title": "WELIVEARTH",
+    "summary": "We Once Lived on the Earth Like You.",
+    "description": "오늘날까지 멸종된 동물은 900종 이상에 달하고, 약 17,000종이 멸종 위기에 처해있습니다. 멸종 위기 동물을 보호하고자 대중의 관심을 불러일으키고 경각심을 일깨우기 위해 멸종한 동물을 추모하는 캠페인을 기획하였습니다.\n\nWELIVEARTH는 2015 어도비 글로벌 디자인 공모전(Adobe Design Achievement Awards) 프린트 커뮤니케이션 분야에서 Semi Finalist에 올랐습니다.",
+    "scope": "Campaign Identity\nBranding\nIcon\nArtbook\nGraphic Design\nBrand Materials",
+    "link": "https://www.adobeawards.com/the-gallery?y=2015&liveproject=20151053",
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "black",
+    "startDate": "2014. 12",
+    "endDate": "2015. 04",
+    "order": 4,
+    "work": {
+      "__typename": "Work",
+      "type": "TEAM",
+      "value": "WELIVEARTH"
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "WELIVEARTH",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECB//EACQQAAEEAQMDBQAAAAAAAAAAAAEAAhESIQMxQRMicTJCUcHw/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDtQeYdLHCDjmUu68UNazaefhZMjqzc+PpUiTHeJbuD+yirpMcbuu4WM1PtwMIt6XoG487oiCIiChERB//Z",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_main_3ee8ac7a8d.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "5",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "WELIVEARTH 캠페인 네임",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAFABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAMECP/EAB8QAAEEAgIDAAAAAAAAAAAAAAEAAgMEESEFEhRBcf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oADAMBAAIRAxEAPwDT9+tJZawRWZIC05JZ7UTONLXNPm3D1IODJo/dIiLci+iIiP/Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 763,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_01_e2265c9897.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "잊혀져 가고 있는 멸종 동물의 입장이 되어 그들을 대변할 수 있는 캠페인 네임과 로고타이프를 제작하였습니다. ‘We once lived on the earth like you’는 ‘우리도 한때 너희들처럼 이 지구에 살았었다’는 의미로, 멸종된 동물이 인간에게 보내는 메시지입니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "WELIVEARTH 로고 타이프",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKABQDASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAMEBQYI/8QAIhAAAwACAQIHAAAAAAAAAAAAAQIDABEEBRIGEyFRYYGR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANF+LORaEeL5FWmWc77SRsBfgg5D8G3UXeVnu6RWqKxNW2xNFHboufTR9jvLleEbqFvKdFB2A6g6P3iS9P4aurLxOOGU7BE12D+YDnDDDA//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1533,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_02_9e4d92b384.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "멸종된 동물들",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAQHAgMF/8QAJRAAAgICAQQCAgMAAAAAAAAAAQIDEQAEBQYSITEyURNBFWKx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAED/8QAGxEBAAIDAQEAAAAAAAAAAAAAAQARAhIhUWH/2gAMAwEAAhEDEQA/ALv5TprltrmOQ2tfrDkdWGZgI9WMKVhorfbZv0D4/tmcfH7ackZF6tleoAiwO6drGvnV3f7+sgdX7nSkB5P+Xh3ZCkitMYllAssg8EED2F9fWQNXb6MfSM8HD7yRjVtHaB+4Rn2LJ/3Mty3FTv2K2a87LJ4mGSDRRJdttxrJ/M1WbN14+sZA6Mm4+fp7Xfh4potK2CLMCG+Rs+SfF4zTEAAlbvs6ra0bF7F95BIoexhtWJ2csoPcKNgecYyyTaiBFCqAAP0BWMYxE//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 3042,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_03_7a344bd5e7.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "WELIVEARTH에서는 인간에 의해 멸종한 동물을 한 해에 열두 종씩 선별하여 매달 한 종씩 추모합니다. 이를 위해 열두 종의 멸종 동물을 선별하고 선별 과정에서 각 동물의 멸종 시기, 서식지와 멸종 이유를 조사하였습니다. \n그리고 선별한 열두 종의 멸종 동물을 캠페인 로고와 각종 홍보물에서 사용하기 위해 일러스트로 표현하였다. 추모의 의미에서 흑백 이미지로 나타내었습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "멸종된 동물들의 서식 지역을 선으로 표현",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAFABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAIDCP/EAB0QAQACAgIDAAAAAAAAAAAAAAEAAgMREhMxQXH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A1MY0svZZ2r8kOm3W1MtxTXL3EQLMdWldNmz52xEQP//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 735,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_04_1274259c3d.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "멸종된 동물들과 서식지를 매칭",
+            "placeholder": "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAPoAAAD6AG1e1JrAAABg0lEQVQokY1SX0+CUBT3k/bY+gj5JdpaLW1o+aCr1morwjTN6Wwp1ZvT2ZOB0gCFETBkcLmn9LgLWWudp3MP93d/fzgpWBalFBsAIISwo+PY47GkKJMgCHBimgbrU3ivWq2m09ulUhEAmq1WJpNRVXUxvyvv7e90Og8IGAx6XO7AsizkW4E1Tcvn8/wNTwiZzqbZbNZxHAAIgsDzPCbt/OKkUOCYxhT8q1YuoijyfX8dTCmNogh7TVPxhq5rXfFRliUk/5nOSnZ/0B++DtGYKHaeX0QA8H2/3W42GnVFmQBArVaRx9JSBv0GlmU5f3zUFRcY5V2p1Sv42fO8+dzDR0/PiuVbPkkey7ZtG2MMSYgW6LKYyCh5SDJblmUYBrPNhAVh4Ptzxua6rq5rMTN2o9Ebl+MEQSCEhGFICMFsr/jLZuueUWUOdze3NsSnzuo/s61yHNs0zUV4/Z5QvsZHbfvDdR3mYjrVJWnEwo89MzGUUsOYIfnfFS/JWjy/DpPr8AX+BE0W3kHl3Pk1AAAAAElFTkSuQmCC",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2015,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_05_c46ca46ab3.gif"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "그 후 세계 지도에 열두 동물이 살았었던 서식지를 표시하고 멸종 순서에 따라 연결하였습니다. 연결한 이미지를 조각내어 만든 패턴과 각 서식지의 동물을 매치하여 열두 개의 유동적인 캠페인 로고를 제작하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "동물들의 특징을 딴 패턴들",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAUGBAj/xAAkEAACAgEEAgEFAAAAAAAAAAABAgMEBQAREiEGMSITQVJhcf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFREBAQAAAAAAAAAAAAAAAAAAADH/2gAMAwEAAhEDEQA/AOia+PjjrxI2FgLKiqeovYHetOKmaCu8aUJVUSyALHw4j5HofIabn1qL8rjyU+MZ8BkGqZKraeRUI3jlHIgq4+42O/8AdFpxkvJK+OnWKzVth2XmOKoetyPy/WjUZ5G8kD4+K9cNq2lRFlmKcfqPybc7AAe9GoP/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2256,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_06_1e858f1cd1.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "각 동물들을 표현한 유동적인 캠페인 로고",
+            "placeholder": "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAPoAAAD6AG1e1JrAAACbklEQVQokWVTW2sTQRjd/2EptHtNa5PaJDS1KYaqVKkPIr7oWpCioFhQKDQ07e7Mbi5NmjRUS/NSwUIrvqggfbCC9ka81SY0TbKzs5vGB3+DLyJWZpI0ReGwO3zM+b6z53zLIAEiEZJnDTywPHHLm2hWGsDdMXqhWWHIiwUnS9ibIGQRIofehKjZ/pTlTyEOHM9jEAdsfxq7ZwwOYFEzeFBm1ZIAEAuMllD5BEwWmM5ofQZtwWBXtHp5EUmaKcADQck6Q0V35Edb5LNbfS8nd+T0ljy3I6c/yMlsz5TVDo2aOlcUSRqVzQGDh6YACw71RWBcu3TnOXv36ajyBeVyB/l8eb9olrLl3Y0bSbtVNSRC/n59CbtilExhiNDmtMlzt9xDAz29nvsP7mU3Nj9ubW+sv1t7+SpXyH+6OY9bpmvkw+GM2RVpkEUyvyyAFc/YmO9aYDAQ1fVCPr+3v/ctv3v0+8/Po1/rt5NWq2qI1HBJo4aJ0GBVq3fWOkucrHJ6lQtDryyPjszNJlZiC6uJxSdLi68Xni0Pjeek6cO+FPbEiWEiZEgbap3dl0QOvSSopghLvDoauDrjHimcCr4VHk5cHFkentjuDhVExXbH8ZkY4qnbZodeD6AeoIYFPdeprPofrfmCFUcES/p6f+jNhamcE9gcyZLMYynZ8sTtgXTtG4ht7SpqU/cl5atT2ewKlkRwIKk7zsm900pRAmYj5MrgvNWfYkyHbnaGa4tpdoSrw5nqlQwpcgDz9Y6YhxbNsnFNr5x/THMmMqhggXho+WYtXxJJmiHU94HIOXGug250M+dj2UT5f3/Fv6C7/RdbW61/jjThqwAAAABJRU5ErkJggg==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2145,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_07_92f8a6c4ca.gif"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "또한 각종 홍보물 및 애플리케이션에서 활용하기 위해 아이콘을 디자인하였습니다. 뿔이나 부리의 유무, 가죽이나 털의 종류, 발의 모양 등 동물의 특징을 나타낼 수 있도록 하였습니다. 디자인한 아이콘을 배치하여 각 동물에 맞는 패턴을 제작하여 활용하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "패턴을 활용한 홍보물",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwj/xAAjEAACAQQBAwUAAAAAAAAAAAABAgMABBESIQUxQRNRYXHh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDTPV79rFY/TiaRnzjGTjt4H3UBc3iC2ecRosralNTspIyOc48U3crIJYpIk31yCAQO4/KpkiuJ5Id440VJA5O5Y8Z+B71A9RRRVH//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2285,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_08_eb988a2fcd.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "메인 애플리케이션으로는 아트북을 제작하여 아트북의 다양한 미니 게임을 통해 멸종 동물의 형상을 구현함으로써 각 동물을 기억하고자 하였고, 동물별로 설명 페이지를 구성하여 열두 동물들의 정보를 제공하였습니다.\n\n(Art Book size 250*250mm)",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "WELIVEARTH 아트북의 미니 게임",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFBv/EACQQAAIBAwMFAAMAAAAAAAAAAAECAwQFEQAGIRIiMTJBFFFx/8QAFgEBAQEAAAAAAAAAAAAAAAAABgME/8QAIxEAAgAFAgcAAAAAAAAAAAAAAQIAAxEhMQQFI0FRcYGh8P/aAAwDAQACEQMRAD8A1lXt62WWajo9tTLcbpIOozcFgw7gSx7Y1xyR7EfDpvdDVzzUcNymWsqJiem208RKjjhgvs+MYJbt5zgY1Oop5rpWWmz0UptixI1S0kCrglDgYXGA2DgtzkfOdNbhrhsnrrKRJar8yIpKJpj1SupHc7+xGGx0jA4HjVVYzKMMn7xCDiT5yq5LO1aVyeWcKLWpgjoYn7ouN6orhGs22qNnkhRyxUylvmSVIAPHgZ/ujWLqdx3epmaQ3CohHhY4JGjRB+goPjRrWuntcD3COTsQVAHlIT3aP//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1900,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_09_397921cc00.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "WELIVEARTH 아트북의 미니 게임",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBBQYH/8QAJRAAAgEDBAEEAwAAAAAAAAAAAQIDBAURAAYSIUETIkKRYXGx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAZEQEAAwEBAAAAAAAAAAAAAAABABEhAhL/2gAMAwEAAhEDEQA/AO1bm3FxuMtCl8W3SRSe5I1WSVx4Ayrcfo6bLfZRTusla6sq5BIwxx13jHf60u9WC9VlyqailjSF/VJjcS9SLnoOvWR9EeDquex7mEcZhtdKsoZi4eoVxk/JSe/5qPXsbIsSa3YlbNX2eWWd5ZCKh0V5DnkBjBH40ajYVBcbdY3ivEccdU07vxRww4nGOxo1UuthZ//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2223,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_10_a6302ca404.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "WELIVEARTH 굿즈",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABwACBP/EACcQAAICAQQABAcAAAAAAAAAAAECAwQRAAUSIQYiMYEHExZBQlFx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwIG/8QAIxEAAQIDCQEAAAAAAAAAAAAAAQAFAgNRERMUFlJhcYGSof/aAAwDAQACEQMRAD8AV9pjanb3GUK12gjmJCbEfKrIR2gD45dnIBb21mHc3h2p0tMkm8wQgy11jaLMjHCeVu8H7kdeuNdTVx9PMOIsSq4NsyHiHHfmRcMuQceqnRN40v2ILslhZT82S/IqugEZCQYjRQF6X8j1+9NLgvCtA1N4dZxhJsI+nfkA0PaZ4/ODxIfBKkqcgEdEatEa/FDcFHEUq7gdBnY8j/cYGfbVqsNMomyi56B6C//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2116,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_11_964cf5109a.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "WELIVEARTH 굿즈",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUECP/EACQQAAIBAwMDBQAAAAAAAAAAAAECAwAEEQUhMRIiYRNRcpHS/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAP/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAQJB/9oADAMBAAIRAxEAPwDpfVZTExZZHDBMhFO7bngEjfipk2r9Wr+jDPM0cSSNMqRscMGQKOPlx5qjqdjc3MhMUsIBI2ePOF2yPusraRdZuWjuEWSQ5VsnY936FFMWdWrcsYULghiM92xpSBGSJVfHUPY+aUTf/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2093,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_12_4d5e4081e1.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "WELIVEARTH 포스터",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYEBQf/xAAkEAACAQMEAQUBAAAAAAAAAAABAgMEERIABSExQRUyUZGxYf/EABUBAQEAAAAAAAAAAAAAAAAAAAIA/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERQf/aAAwDAQACEQMRAD8A2Ou3iopaiojhWjdGQCMyswxOLXyt4uB+eRqxSaNpw+KyIQqsoUtZiyg8jxYn90i7g9bNMDCtPivRcnuxHItz3bvr7ELcN53ClqSIY6WRGYOVkvwwIPBsfjVhXBtqZ4UcLLiJQozCggA2/vOjSJ6jPIc5VRXIFwntFhbj60aQv//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2056,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_13_acd86fb80c.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "WELIVEARTH 포스터",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUHBP/EACkQAAEEAQMDAQkAAAAAAAAAAAECAwQFEQAGEgcTITEUFTJBUWGBkaH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAYEQEBAQEBAAAAAAAAAAAAAAABAAIRYf/aAAwDAQACEQMRAD8Alt7ua3iX9x2rWcjFi+jth9YwA4r08+ny1RobVjYdOHtwi+uGH0suLEcPhTZCTjzyPL9azWvSMTLu1ecu1BD0x13tiMcDLiiB8fnGdO0bPt2NvqpY25VNVqkKQWEwxjCjkjPPPk/fTCe9ZfZ70CuXp+zJTrsyTJcTOWlTjyiVE8Gyfx50addHtnGg23Li+8PaOcxTvLs8MZQgYxyP0/ujUQ7Zl//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2022,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/weli_14_de63aa6c20.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "korean-traditional-pattern",
+      "title": "KOREAN TRADITIONAL PATTERN"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "ovis",
+      "title": "OVIS"
+    }
+  ]
+}

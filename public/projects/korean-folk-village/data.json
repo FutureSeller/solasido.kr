@@ -1,0 +1,196 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "1",
+    "slug": "korean-folk-village",
+    "title": "KOREAN FOLK VILLAGE",
+    "summary": "Understand, Experience, and Share K.",
+    "description": "한국민속촌은 국내 유일의 전통문화 테마파크로, 오랜 시간을 거쳐 전승되어 온 우리 문화와 풍속을 내외국인 관광객에게 소개하기 위해 1974년 창립되었습니다. 전통문화와 가치를 새롭게 발견하여 함께 경험하고, 나아가 세계에서 빛날 수 있도록 보전해 가는 것이 한국민속촌의 역할입니다.",
+    "scope": "Brand Identity Renewal\nBranding\nRe-positioning\nBrand Materials",
+    "link": null,
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "black",
+    "startDate": "2012. 03",
+    "endDate": "2012. 06",
+    "order": 1,
+    "work": {
+      "__typename": "Work",
+      "type": "PERSONAL_WORK",
+      "value": null
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "KOREAN FOLK VILLAGE",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGgABAQACAwAAAAAAAAAAAAAAAAcBAwUGCP/EACgQAAIBBAEDAwQDAAAAAAAAAAECAwAEBRESBiExE3GBIkFRYRUjUv/EABUBAQEAAAAAAAAAAAAAAAAAAAQF/8QAIBEBAAIBAgcAAAAAAAAAAAAAAQACAxExBBIhIzNRcf/aAAwDAQACEQMRAD8Am1pg89eBLhMa6odjnKh4yeT5/Q/H4rE/SuesItN6CySKG4h/qI3v53V5wU83U1o6NDHbTY9jEkTRuUb6RxYDsD238jWxWktjcVhZMtmgyWQdoQkMJkk7Dhvf27KxPvvfagOdpbla9fUUcPja6jPN1zNd2cvozxyh1A35pVG67yVllczHcdM4tf430ECO0SJ6nk8gGO9EEa8e1KdUrYFrDuI13nfMazWWEkjtGaGR5ltWnU/2FWcKTv8A1r9fc1yfWJGL6Ns0s1VUjvoogpGxx5EEfI3v3NKVLzPePsZTxsk+bvGxWdyVjHFDPHBcNGjzpybiPA32pSlUmzrvFYsVGgoT/9k=",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kfv_main_61cc073fdb.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "2",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "KOREAN FOLK VILLAGE POSITIONING",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwf/xAAgEAACAgICAwEBAAAAAAAAAAABAgMRABIEIQUxQWEi/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAXEQADAQAAAAAAAAAAAAAAAAAAAQIR/9oADAMBAAIRAxEAPwDhQmMyRh5RVHX+K6H7XeKuUZtEmXYrYNHonFfDcRefyNJHIFGq+dZXbxMfGXdZGNUKofBgqZVQk8I/LnPFnaHUzFKG63Tde/WGblBOS71tZBofuGO0TiP/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1999,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kfv_01_fd9721ffc8.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "브랜드 리뉴얼에 앞서 컨셉과 방향을 설정하기 위해 기존 한국민속촌의 포지셔닝을 분석하였습니다. 한국민속촌은 민속 관광지와 테마파크의 성격을 모두 가지고 있기 때문에 장소 아이덴티티에 주목하였습니다. 상업 요소, 유희 요소, 관광 요소 세 가지로 분석하였고 리포지셔닝 방안과 새로운 아이덴티티 디자인을 제안하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "ORIGINAL LOGO",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAFABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAQFCP/EAB8QAAICAgEFAAAAAAAAAAAAAAIDAAQBERIhMWFxkf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDUdlJNrsWpxqMuzB65H7ItSg9DxYy/YcIjkeB61nz7iIFhERA//9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 775,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kfv_02_6de883111a.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "한국의 정체성과 전통문화 아이덴티티를 반영할 수 있도록 브랜드 아이덴티티를 강화하고 체계적인 디자인 가이드가 필요하다고 판단하여 로고 디자인 리뉴얼을 제안하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "GRAPHIC SOURCE",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAQGCP/EACMQAAEDAwQCAwAAAAAAAAAAAAECBBEABRIDBiFBEyMxMmH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERIf/aAAwDAQACEQMRAD8A0G7a7oO9G7hs+Zjbg0cdRspHt8kHmY5H17HdQbyw3iu04264NA6OsSpKkmcDEYq6gyfgyP2lKTpS5oyCE5kFUckCJNKUoP/Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1007,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kfv_03_dd53048f80.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "LOGO SUGGESTION",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAUGB//EACMQAAEEAgEDBQAAAAAAAAAAAAEAAgMEERIFITFBUVJhcYH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AyDjaUXIiRrrcVadg2AlGrXt9Afd8efxSU/BVa0Vve02wWEthmryMLZM41Ouc4z0P2q4mSOxKAiIg/9k='",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1460,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kfv_04_dd1c516f5e.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "동양화를 방불케하는 캘리그래피의 유연하고 동적인 선과 독특한 번짐, 그리고 여백의 균형미는 늘 곁에 두고 사용하는 글씨마저 독창적으로 표현하고 싶어 하는 현대인들의 욕구가 반영된 결과물입니다. 캘리그래피의 특성을 이용하여 과거와 현대의 연결, 끊임없는 변화를 표현하고자 하였습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "SLOGAN",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMGCP/EACEQAAICAgEEAwAAAAAAAAAAAAEDAAIEEQUGITGBEyLB/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDTvMZLcTjXvRQXYuu9HwBvufQ2fUn+l+Yz87kPiyGLYo0tc/UC1fGv2VhAIII2IpSEqsbKUulj2JrUAmFNhCEI/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1681,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kfv_05_980d1bc018.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "슬로건에는 ‘한국 문화를 쉽게 이해하고, 체험을 통해, 함께하고, 한국을 느낄 수 있는 도심 속 컬처파크’라는 의미를 담았습니다. ‘K’는 Korea의 앞 글자로 K-pop, K-drama와 같이 한국을 상징하며, 한국민속촌에서는 K-culture를 제안합니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "LOGO TYPE",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUI/8QAIhAAAQMEAgIDAAAAAAAAAAAAAQIDEQAEBSEGEiIxMkGR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANNut3xunUtuti2W2ShZT5tuagR6Uk7P0f3Ubl7PJbrhz7eDWwxnFBPwc6gjt5BClA9VFPokGDSlBR4pa5Oz49ZW+dvBeZFtJS6+EgFezExqYgEjUzSlKD//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1088,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kfv_06_0938c582b3.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "로고타이프의 ㅎ을 독자적으로 사용하며, 정원 내부에 결합된 형태로 활용 가능한 아이콘을 개발하였습니다. 단색으로 사용할 경우 컬러 시스템의 색을 이용하도록 하였습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "TRADITIONAL COLORS",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCBAj/xAApEAABAwMCAgsAAAAAAAAAAAABAgMEAAUSERMGUSEiNUFShJGjscPS/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgED/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECERLw/9oADAMBAAIRAxEAPwDQsdq6MJTuz4gSrxMHq+rh51N+XIGGNyt7PQc9xCTp7gpiuKy42hDqEuJSdRmkK+arPWS2PFzdt8NeY0OUdB7tOVGpVPWWacvUKUTp5SCriKxJPIxwfuopgOGLCB2Jaz5Nr80Vr2/JBw//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1787,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kfv_07_da9ffa0959.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "기존의 전통색으로 많이 쓰이는 적, 청, 황, 백, 흑의 오방색에 사이 색인 오간색을 조합하여 차별화 된 컬러를 활용하였습니다. 색은 1991년 국립현대미술관의 ‘한국전통표준색명 및 색상에 관한 연구’에서 선정하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "RENEWAL PACKAGES",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAcDBQb/xAAmEAABAwMDBAIDAAAAAAAAAAABAgMEAAURBiExEhNhcQdBFCIy/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAYEQEBAQEBAAAAAAAAAAAAAAABABECMf/aAAwDAQACEQMRAD8Afdx1RabbKaalzGEJcc7PdLgKEuZ/hWOD7pKOyrtadcX+5aOm3GQ4JahJhTGyvvkDJ22yPocKAAxkU1o/xtpeO+t5y2plOKlflpMlRX21jjp8b8HOds5xWwSopJI5PPn3Qi+VcvJum1RpK7PX3TsG5SoTlvdkI6zHdOSPPo8jODg0VPZH3JFrYfeV1uO9SyT9fsdh4oppv//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1731,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kfv_08_a22ae21f23.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "리뉴얼한 브랜드 디자인으로 입장권, 배지, 기념품 패키지 등 다양한 애플리케이션을 제안하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "TRADITIONAL CLOTHES",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAdABQDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAcFBgMECP/EACoQAAEEAQQBAwIHAAAAAAAAAAECAwQFEQAGEiEHMUFRE3EUFRYiIzKB/8QAFwEBAQEBAAAAAAAAAAAAAAAAAgQBA//EABsRAQACAwEBAAAAAAAAAAAAAAEAEQIDEiFB/9oADAMBAAIRAxEAPwCdQ7eWG26s0Fk/HBjKlPOTZS1OqByU5PoSMenQGfjWDwva2Mzf1aLO6luZQ6hMRTzrgcV9JRUpWTxAHsO/801N97cpq3blrafh3AtDBC/5HVJKSQDlKVDrBPppebShV1dPjWlFCZ/MWgpTIbU6+UpUOCspKvXBx3rmj1crdmt188+/GdBaNKn9c3awFR1QnmiOnEx1gK+cDl86Nb2SZxRpmt5P8j1KHrjacqLatPJLTbkhtpJbWlXFRCTyB7GU/c6pdfY0tsqupnXZ8eRPcQwXGo4QVFQSkKI5HH9RkdjsnGdMDdWwoNtuiwnvSHkuSOPJIJx0kD5x7ajNv+K4cHcMOxcsXnnGJaJDKeHEJAOQk/uOfv19tF2N0nkePhYywUfjRutqo8NyYh0sgpCw1xyMnGRn1xjJ99GmNo0nAW4Omf/Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 4340,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kfv_09_849f4ce216.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "TRADITIONAL GOODS",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAMABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgj/xAAiEAACAgIBBAMBAAAAAAAAAAABAgMFBBEABhIhMUFRYXH/xAAUAQEAAAAAAAAAAAAAAAAAAAAB/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/AOgr6+fBWIZCrAGndQBOATGmiX/Bo+R8eOL4nUctxRz5lPPCJphJjY6svekOQNhRIw+/Hxrzy3aUNdahBmwd4QOo0xGw40wOj6IGjzdJS11LjPBU4cWJC0jSskY0C7ez/eBpbo9LmOhgHUc8c9iSSzIoGgfQOgASPsAcOWuHEP/Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1745,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kfv_10_8147f619fb.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "ed",
+      "title": "E:D"
+    }
+  ]
+}

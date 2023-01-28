@@ -1,0 +1,193 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "5",
+    "slug": "ovis",
+    "title": "OVIS",
+    "summary": "Obviously, Ovisly.",
+    "description": "OVIS(오비스)는 아트 디렉팅, DJ, 패션, 포토그래피, 일러스트레이션 등 다양한 예술 분야의 91년생 양띠 아티스트들로 결성되었습니다. 아티스트 개개인의 스타일을 존중하며, 활발한 유닛 결성과 콜라보레이션을 통해 상호보완적으로 성장하고자 합니다.",
+    "scope": "Brand Identity\nBranding\nGraphic Design\nBrand Materials",
+    "link": null,
+    "color": "white",
+    "backgroundColor": "black",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "white",
+    "startDate": "2015. 11",
+    "endDate": "2016. 02",
+    "order": 5,
+    "work": {
+      "__typename": "Work",
+      "type": "CLIENT",
+      "value": "OVIS"
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "OVIS",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAEGBwL/xAAnEAACAQMDAgYDAAAAAAAAAAABAgMABBEFBiESMQcTFDJBcVFhgf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oADAMBAAIRAxEAPwDCNkbatNfj1CW+vpLSGzVXkaKNZGjQnHmMhIJQHpB6ckdQJwOatu4vCCTbdy9nqusxNfMvXEsMOIwioHld3YgKqBl5+ew5wKoG1dZOh6p6tbVbljG8QQyFAetSpBx3BBwQe4/Herf4kbzutdFp67TmiYabDZE+bgGWPHU3BOQcKcHHIB+KjGckjPB4+qVzk/v+UpUBUlmb3En7NKVkopSlKf/Z",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ovis_main_f59f9d0ffb.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "6",
+        "color": "white",
+        "backgroundColor": "black",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "OVIS 코어 밸류",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAADABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMI/8QAHxAAAQUAAQUAAAAAAAAAAAAAAQACAxESMQQTMnGR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AMsCVwjDBnIOvEXfvlUb1crZHSDt6dzcTSPlUERBAmzaIiD/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 469,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ovis_01_5e09523f80.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "양과 관련된 이미지들",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAdABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABwAGBf/EACoQAAEDAwMEAAYDAAAAAAAAAAECAwQABREGEjEHEyFBIjJRYXGRodHx/8QAFQEBAQAAAAAAAAAAAAAAAAAABAP/xAAjEQACAQIEBwAAAAAAAAAAAAABAgADEQQSISITMVFhkcHR/9oADAMBAAIRAxEAPwBYkajda1mxYxbJK47jBdVOCVdtKvSeP5zjyK3zk5bK0NJDZJRkblY9f7+qJLt1YsVuu1+gG3X6QqyrUiY6xHbKEALCNwy4CQVEDjPmu4nqFp64Wqy31b02NFeBcQy9tTuBCkfGAFcbSRg/1RaCFDuFrxVdw4262iigkpBPJFVHLHVizvdzssrU2hZQF7/mx74qpdoDjL38H5MH1T0Fpi13ybNct98lv31xS5ZjyylsZV3PICTgbkj8feuc1DiWxmExAlLhwG7NHfVbpSd77aFp3lKl/UFRHFabpRfrreNYSF3C4SpDDq3UiO45uQjbnGBShL0rapd2k3F9lapMhpLLh3nBSOMD1UXUuunOXBysD0hTpqJJftSHrchIhOHcyC3uIRgbRk8+MVUgs9N9OsqdLbMtPcXvUBKcxnAHgZ8cCqojBUraiJbEZjf0J//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 4411,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ovis_02_2aab80baa9.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "OVIS는 포유류 하위 분류 군에서 ‘양 속’을 뜻합니다. 심벌마크에서는 강하고 프로페셔널한 멤버들을 표현하기 위해 기존의 순한 양의 이미지를 탈피하고자 하였습니다. 콜라보레이션 활동이 많은 브랜드 특성상 유닛의 성향에 따라 요소를 추가하는 등 자유롭게 변형하여 활용 가능하도록 하였습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "OVIS 슬로건",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEI/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAECEmERIf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDKylxJVj5gtiAAjAAH/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 609,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ovis_03_9c158c02af.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "Obviously와 Ovisly의 발음 유사성으로 간결한 슬로건을 제작하였습니다. ‘명백하게, 오비스답게’라는 의미로, 브랜드와 작업물에 대한 OVIS의 자신감을 나타냅니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "OVIS 심벌마크",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUGBwj/xAAjEAACAgEEAgIDAAAAAAAAAAABAwIEAAUGERITIQcyIjFx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AM87B0/TNT1s1dVixgmuRSqDPH5WD2Id+D1MhyIkgjsRz6OTj5G2JtfaVaUK9y9YY6ou4hzZAHicR0WICI5JJJJJ/GMD6JIyqaVuxRswsU3sQ6H1YuRjIfwjGmu6/a1RaVzs3JLWmFfq5vYGEPoPQH65OAkwwwwP/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2309,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ovis_04_8af47b0661.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "OVIS 심벌마크에 쓰인 기하학적 도형 모티프",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAIDBAUI/8QAIRAAAgICAgEFAAAAAAAAAAAAAQIAAwQREiExBRQjU5H/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/EABcRAQEBAQAAAAAAAAAAAAAAAAEAEQL/2gAMAwEAAhEDEQA/AM61Y9JxqiaaySo2deeolsenZ+FPyVAzMgKFFp0OgIe8v+wx2rlCc9RRUvARQo4joQkay17W5WNs+IQhdb//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1716,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ovis_05_a252156198.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "OVIS의 다양성과 자유로운 아티스트의 이미지를 나타내고자 화려한 그라데이션을 활용하였습니다.그리고 심벌마크의 라인에서 기하학적 도형의 모티프를 얻어 각종 애플리케이션에서 활용할 수 있도록 주목성 및 장식성의 목적으로 패턴을 개발하여 활용하도록 하였습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "OVIS 심벌마크의 활용 예시",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAEECP/EACIQAAEEAgIBBQAAAAAAAAAAAAECAwQRACESExQiQVFhcf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAMAwEAAhEDEQA/ANMzY01UJ5EWaW31KtDhbCuI+K98gx5nntETl9AZIUjrG11XK6+7rGMZcFmrMBEhEcCW8HXbPqCeOr1r8xjGBf/Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1190,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ovis_06_9e65e5aec2.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "OVIS 명함",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQCAwcI/8QAJhAAAQMCBQQDAQAAAAAAAAAAAQIDEQQhAAUSQVEHCBQxEyJhI//EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AxdRNHmj3jsmoSVEu1LxhJQozImw5vJnbFOrx8xUlKHMwcWP6OLMIKDvf3aDJgfmJ1RW9loqa6FhC1Flpv6J0lUQeIPHJvhdLiqvJFVFT9KdhzSlpm2oHYzwd7m5wV1f2wpUjp9WJdqA8oZk7CgLR8bcR+RHq2DC/ajU+R0zqT8aEJRmTyEpF4Ghvc+/eDBH/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2026,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ovis_07_4878e29de4.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "OVIS의 심벌마크와 슬로건을 활용한 책표지",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQHBQb/xAAnEAABAwIFAwUBAAAAAAAAAAABAgMRBAUABhMhMRIUYQcyQUJRYv/EABUBAQEAAAAAAAAAAAAAAAAAAAED/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEDERL/2gAMAwEAAhEDEQA/AJHmD1EuDtQntmE0dFM9CjLryeDKvoD43HnGUuqtttstYwbZ3LtekOUtyUs6iBMlKgdgoHYxBmDMc9ZfcvW1jNtU+acOKeZFQEn2oV1EKgedj43w7YcuUV1aeduKddjVB0SIHWPtPPGxHyIngYXiwqpPh0FMp52r3bK0Ku0XCvcbJR3FOiQsCIn+v3BihstoZaS0yhLbaBCUIEAD8AwYCR//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1936,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ovis_08_b3aa2af0c4.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "OVIS 굿즈",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAQGBwMF/8QAJxAAAgEEAAQGAwAAAAAAAAAAAQIDAAQRIQUGEhMHIjFBUWEycYH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAwDAQACEQMRAD8Ahc/8zXXL72i2iWz95WY97q9iBrH7qv2PiIk0VtDPaPcX80jKY7QHyjOtHZ1vXxVk5yjmaa3eG2lnzG8fkaMAHII/IjZ+qzSytb48at5ZbOe2kMpZu4AvbPSRs517UVMlrVY5O5GjlWQsobpb1GR6GlcY2IjQMcsFGd53ilEvR4nBHcwukwJUrg4YjIyDjX2Af5VTu+V+DSyPJLYxvIxyzMSST8kk7pSgmRRrBGscQwijAHwKUpQf/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2928,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ovis_09_8d3aad2408.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "OVIS 활용 예시",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMEBQYI/8QAIxAAAQMEAgIDAQAAAAAAAAAAAQIDBAAFESEGMRITBzJRgf/EABQBAQAAAAAAAAAAAAAAAAAAAAH/xAAbEQACAgMBAAAAAAAAAAAAAAAAIQERAhJBcf/aAAwDAQACEQMRAD8AZyPjtttd5kSrg849JlTi6GUjA9XvJXvOfrrtPdKlXiDLeh2CDDbhxbhiL5NYJSvOllI+2f0kmovPr27yO6zTKQI4gy1sJMclJU2HwFA5zvfdZeNDt7lunvhl5EpmP7W1qeUsjxByc51nXX5TGVwkOtSzsPiUVEOyoabOR5rV1jZUaKo/hwAfH1tKWktBQUoJT1snf97oofQ8P//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2195,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ovis_10_a037e0a339.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "OVIS 심벌 활용 예시",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgj/xAAfEAACAgICAwEAAAAAAAAAAAABAgADETEEISJBQmH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6ErqrUg3aP5FonIexndK66PlSMnGd5Esr7BB0dxXK8UCr0B6ECRwoYwmG3CB/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1670,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ovis_11_d6275b91ff.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "welivearth",
+      "title": "WELIVEARTH"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "chemstree",
+      "title": "CHEMSTREE"
+    }
+  ]
+}

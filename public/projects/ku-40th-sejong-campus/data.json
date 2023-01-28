@@ -1,0 +1,160 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "10",
+    "slug": "ku-40th-sejong-campus",
+    "title": "KOREA UNIVERSITY SEJONG CAMPUS",
+    "summary": "40th Anniversary.",
+    "description": "대한민국의 새로운 중심 세종특별자치시에 위치한 고려대학교 세종 캠퍼스는 글로벌 레지던스 시스템으로 대학 교육의 새로운 패러다임을 제시하며 전인 교육의 새 지평을 열어왔습니다. 1905년 고려대학교의 전신인 보성전문학교가 설립된 이래 1980년 현재의 세종 캠퍼스가 설립되었고, ‘창의교육, 실용연구 대학’이라는 비전을 선포하여 세계 고대 100년의 역사를 창조해 나가고 있습니다.",
+    "scope": "University Identity\nIdeation\nVisual Design\nEmblem\nSignage\nBrochure\nMerchandise",
+    "link": "https://sejong.korea.ac.kr/kr",
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "black",
+    "startDate": "2020. 03",
+    "endDate": "2020. 05",
+    "order": 11,
+    "work": {
+      "__typename": "Work",
+      "type": "TEAM",
+      "value": "고려대학교 디자인혁신센터"
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "KOREA UNIVERSITY SEJONG CAMPUS",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAUHBAb/xAAnEAABAwQCAAUFAAAAAAAAAAABAgMEAAUGERIhExQxUZEiI0Fhcf/EABYBAQEBAAAAAAAAAAAAAAAAAAEDAP/EACARAAIBAwQDAAAAAAAAAAAAAAABAgMEBREiMUFSobH/2gAMAwEAAhEDEQA/AKMC+WmR5sONynW2FBCXG2+fPsj269D6mvRx7nj0dS2pTkyOUqCebsYlGz3rad/ioGL5DZsItz4hP3BCXfuuuvJ8NCzo6I5b10ahXLO7tkl4acggOIQvbKWUF1ZUDtKiSNbFM8nOK5IQtaLe56GwwpeOuMbZukHgDr6l8SD+xSsqGH5TclKlOMNsqcO+MiVpf9IFKm8hUfX0qrej5eixbri+6gB3gtPspOxVeLMVGQpUZphknoltsJ38UpQ0Y5HbzMCyAsfFKUpMf//Z",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/40_main_8d22f28b63.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "11",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "40주년 맞이 엠블럼",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCBAj/xAAhEAACAgICAQUAAAAAAAAAAAABAwIEABEFEhUhMUFhcf/EABUBAQEAAAAAAAAAAAAAAAAAAAED/8QAGREAAwADAAAAAAAAAAAAAAAAAAECESEx/9oADAMBAAIRAxEAPwDUlqwurWa98uqlRM5HROgPoepxPxXN+SppuoW6CXR7iLFgaG9a7D5xtaqptR6uiTr2IJBH4Rka9FFeC4LieqxqIMidYPJSXKW+lnDDDEmf/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1863,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/40_01_0a6bb42c10.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "2020년 고려대학교 세종 캠퍼스 설립 40주년을 맞이하여 엠블럼을 디자인하였습니다. 세종 캠퍼스만의 역사를 표현하기 위해 세종 캠퍼스 설립 30주년 기념 엠블럼을 모티프로 하였습니다. 좌측의 숫자 4는 동, 서, 남, 북 방위를 뜻하는 4방위표를 상징하며, 고려대학교 세종 캠퍼스가 지성인들에게 방향을 제시하는 역할임을 나타내었습니다. 우측의 원형은 창의교육, 실용연구로 세계를 향해 뻗어 나가는 세종 캠퍼스만의 비전을 상징하며, 12개의 막대는 고려대학교 세종 캠퍼스가 1년, 12달 쉬지 않고 젊음과 열정의 빛을 발산한다는 의미를 담았습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "각 컬러가 반영된 엠블럼",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAYIB//EACQQAAEDAwMEAwAAAAAAAAAAAAECAxEABAUTITEGBxJhCBTS/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAcEQABBAMBAAAAAAAAAAAAAAAAAQIDBAUhIjH/2gAMAwEAAhEDEQA/AH3MdsL6/wATd2TGQxqXdMoUR5mD725rOOoeyd/eWqLhGUwIt2nA4pB1tMpE7TzHuaql9CEpeKUpBKZMDk0u5Jlv67remjT1APHxERHEUGtTiq8xJ6VpspYmYrXrpSUHPjtmbpRdbzmJSk7QEO/miqWYADSY2opxJP/Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1522,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/40_02_f4b1aae944.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "고려대학교의 아이덴티티를 반영하기 위해 교색인 크림슨 색상과 세종 캠퍼스를 상징하는 오렌지를 활용하였습니다. 크림슨은 활기와 정열을 상징하는 컬러로 고려대학교의 학풍과 기질을 나타낸다. 오렌지 컬러는 젊음, 활력, 첨단 학문을 상징합니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "엠블럼이 활용된 브로슈어",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEB//EACMQAAIBBAEEAwEAAAAAAAAAAAECAwQFESEABhIiMRMyUYH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABkRAAIDAQAAAAAAAAAAAAAAAAABAhEhEv/aAAwDAQACEQMRAD8A3e9dZ2+1XwWypmkWdkEikkBSCxUBcnyOjkD1yytuNe01A1uVZqSYgyylyCq40QMbz/OLvPRttu08clZSh3imM8ThyGRid9rDYB/AccZc7NWVE2aZ/hHjhlKk4GPHDA6Pri8K0splfSM1ymskb3sBa4u/coxodx7fWvrjhyi0Uc1NTOkqqrFywAOdYHDgSfTs/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2217,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/40_03_20df72788e.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "개발한 엠블럼은 개교기념일 및 각종 대내외 행사에서 홍보 목적으로 현수막, 브로슈어, 포스터, 기념품 패키지 디자인 등으로 활용되었습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "엠블럼이 활용된 기념품",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAMABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAYHBP/EACQQAAIBAwIHAQEAAAAAAAAAAAECBQMEEQAGBxITITFBYUKB/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQME/8QAGxEBAAICAwAAAAAAAAAAAAAAAQARAgMEIUH/2gAMAwEAAhEDEQA/ALdxB3PWjJWNi7ehJlroM3VtqDMrN4VAw/Wcn4MZ0s7g4o3fD6NhY/dNg8hM1qDVbhqVdFCKHIXPbuxA+Dt51YcaT5HhztmR3au5L2wNeSGCepUZqbEDCsUJxkDx6+aEfJo47qM72lkZoq+oycXaX9tzdC6opWp8wweVgCMj+6NaVUKoVQAAMAD1o0yDV9T/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1864,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/40_04_d429768bbc.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "엠블럼이 활용된 기념품",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQGAgP/xAApEAABBAEDAwEJAAAAAAAAAAABAgMEEQAFEiEGEzEUFSMyM0FRgZHw/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgT/xAAaEQEBAQEAAwAAAAAAAAAAAAABAgADETHw/9oADAMBAAIRAxEAPwC21LqfWIOrdQxosaKtmDGS7HUtBJKiW73c8/Gr9DOMzrLXEvrbESHt9jeuHuz87YTR58WPGUiNGYkvSnXXXSZKA24Bt8WD9r+gzU3QY7jncU8/fYMci00pFVzx/XgStdPfgSDH3gyfTM1/VdBhzZqEIkOpJWlAoWFEePxhjDSRFbSw1exAoXhjNHaNLPrf/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2006,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/40_05_cf9c513666.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "엠블럼이 활용된 브로슈어",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCBAUH/8QAIxAAAgEDBAIDAQAAAAAAAAAAAQIDAAQRBQYSIUFRMTJxQv/EABUBAQEAAAAAAAAAAAAAAAAAAAAD/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECESFh/9oADAMBAAIRAxEAPwDqs77W0SZNL1y4CXjxiUzzI6RnPhZMcR+Z/ayNX21q88ovNuGzNg65it79mjklA/tXA6B8Bh8d+cVXhvZUjEMhE9tkE28w5xtg57U0yvuqG4hd7iCRLkL0A3JHPr2KFVcTjS76Jyw3cI4apaGyuh9oTIsmPR5L1g/NFTd3klkkkYtJIxZmPkmihOnr1H//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2250,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/40_06_45012894cb.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "엠블럼이 활용된 각종 굿즈",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAgEBgf/xAAlEAACAgEDAwQDAAAAAAAAAAABAgMEBQARIQYHEhMiUWExcZH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAQX/xAAgEQACAQIHAQAAAAAAAAAAAAABAgAFMQMEEhNBUaHw/9oADAMBAAIRAxEAPwC12e51jJ4vG3sFT9FJpws6zkP6aBiGJI2A/p0dRdcWcBcKZDI2rKtEZVfHQRmNVJI5LA7Hjg77aW1ZZFXxWRwvwDxqbZy92aJ4nnfwbdWAP5Hx+vrRwSTqJt93NvEp6hgi2M2+r3xq42ulW/TsZWyg99uvIiJJvyNgRxsCAfsHRpf9GruNFCm5fkez/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1852,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/40_07_bc20aae222.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "엠블럼이 활용된 현수막",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQAGB//EACUQAAEDAwMDBQAAAAAAAAAAAAECAwQABhEFEiExUXEUQWGBof/EABYBAQEBAAAAAAAAAAAAAAAAAAEAA//EABsRAAMAAgMAAAAAAAAAAAAAAAABAhEhAxIT/9oADAMBAAIRAxEAPwBKLrUXTdLXK1GZCTLUtXp4jTAeynjaN2R8581r7ZuCRKZK5duNiGOkhwhgdOu1Z79jQNuuLXGSVrUopHGTnFF3TPloSNkqQnJOcOEZ/aPXmp7szUwlqUJXdd1wo1go0I6dGhJQAAHG1bzySrnzj6qrlz86Wp1RVKfJz7uGqpzTeewZP//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1569,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/40_08_336a94862e.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "ku-innovation",
+      "title": "KUIP"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "ku-115th",
+      "title": "KOREA UNIVERSITY"
+    }
+  ]
+}

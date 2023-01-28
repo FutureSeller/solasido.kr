@@ -1,0 +1,182 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "13",
+    "slug": "lavida",
+    "title": "LA VIDA",
+    "summary": "For a Meaningful Yet Ordinary Day.",
+    "description": "LA VIDA는 스몰 웨딩을 지향하는 신혼부부를 타겟으로 청첩장, 답례품 등의 디자인을 제공하는 웨딩 전문 서비스 브랜드입니다.\nLA VIDA는 새로운 시작을 앞둔 신혼부부에게 의미 있고 특별한 날을 선사하기 위해 차별화된 디자인과 경험을 가장 중요한 가치로 두고 있습니다.",
+    "scope": "Brand Identity\nBranding\nNaming\nPackage Design\nMerchandise\nBrand Materials",
+    "link": null,
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "black",
+    "startDate": "2020. 11",
+    "endDate": "2021. 03",
+    "order": 14,
+    "work": {
+      "__typename": "Work",
+      "type": "CLIENT",
+      "value": "LA VIDA"
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "LA VIDA",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAcEBv/EACgQAAICAQIFAgcAAAAAAAAAAAECAwQABREGEiExUQcTIiNCYXGRsf/EABYBAQEBAAAAAAAAAAAAAAAAAAMEAv/EAB4RAAICAQUBAAAAAAAAAAAAAAABAhETAxIhI1Jh/9oADAMBAAIRAxEAPwCcx2Z5ZkWEiRz9LvyAfffY/wAyq8NaNoum6BBY4gjS9euqGp1Yz81yx6FSSAST38DItHemSRJIW5HU7qVHXf8AWbdenaaWvLYlsROw+KGMgyKQduqnbbY/g+Ml1YuVIpctrtnc3IuDbUi2Ee7EZVDNCFYCJuxQb9ehBxkqqX9UpRslF2kidi5Pu8xB7EHwenbGFifoxl+HZcFSpHoWpxPXgmWxerRN7q8xUBXYFfB3HfMPq0BPZpajKqm5Zjb3pFULzldiCQNhuOYjfGMa+wopYyn8JVaeg6HXqUqNdoyolZpeZmZmAJJO+MYzbXISP//Z",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/lavida_main_7ad1745202.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "14",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "LA VIDA 로고 타이프",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIGBwj/xAAiEAABAgYCAwEAAAAAAAAAAAABAgUAAwQGESESMUFRYYH/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EAB0RAAICAQUAAAAAAAAAAAAAAAECAAMRBCExUaH/2gAMAwEAAhEDEQA/ANJXU5VjSzzqptbZzlUIxxp5RwpWfP53oE/Ih1k30/vTsmlc7XqaSQokGoPJKZWj3ySM5OtHO+osiFShIOQlIPsCLKtRSlTVvUGY8HJ29xCZGLAhsDqMIIIIjiz/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1701,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/lavida_01_05980ae3b2.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "스몰 웨딩을 지향하는 신혼부부의 대다수가 기존의 웨딩 전문 업체와는 차별화 된 컨셉을 추구한다는 니즈를 반영하여 트렌디한 로고타이프을 제작하고자 하였습니다. 결혼이 주는 유려한 느낌을 캘리그래피로 표현하였고, 이를 무게감 있게 잡아줄 수 있도록 세리프 서체로 슬로건을 둘러 풍성한 느낌을 주고자 하였습니다. 컬러는 신뢰를 상징하는 블루 컬러를 사용하였으며, 채도를 높여 가시성을 강조하였습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "LA VIDA의 핵심가치",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECCP/EAB4QAAICAgIDAAAAAAAAAAAAAAABAhEDIRITIkFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAWEQEBAQAAAAAAAAAAAAAAAAAAATH/2gAMAwEAAhEDEQA/ANTOHk3zltVV6RCxVFx7Mn29gFINXiuMUrbr2wAC6T//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 602,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/lavida_02_c96c45aea5.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "결혼식을 위한 경험을 만든다는 점에서 핵심가치로는 특별함과 의미, 새로운 시작의 세 가지로 설정하였습니다.\n나아가 여느 때와 같은 보통날이 결혼식을 통해 두 사람에게는 의미있는 날이 된다는 점에서 착안하여 ‘의미있는 보통 날’이라는 슬로건을 제작하였습니다. 슬로건은 로고타이프와 같이 상하조합, 좌우조합등으로 활용하여 후에 패키지 디자인에서 유동적으로 활용할 수 있도록 하였습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "LA VIDA의 슬로건",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAIDCP/EABsQAAEFAQEAAAAAAAAAAAAAAAABAgMREmET/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAWEQEBAQAAAAAAAAAAAAAAAAAAESH/2gAMAwEAAhEDEQA/ANTS7wvnWukYXzKtSxo3qOsAtyC0AEH/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1180,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/lavida_03_2dca0c1245.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "LA VIDA의 로고타이프와 슬로건의 조합",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAJABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUBB//EACgQAAECAgcJAAAAAAAAAAAAAAEAAgYHAwUWITJB0hETIzFRVXGBov/EABUBAQEAAAAAAAAAAAAAAAAAAAEF/8QAHBEAAQQDAQAAAAAAAAAAAAAAAgABU5EFFdHS/9oADAMBAAIRAxEAPwDpdq5h9th/bnxzd9pauYY5VbD5d0351qjm/wALGY/aqbEYAp/SpaYJCtuKeIrmGLmVZD7m5E051oqVFgCIfJDAFP6S2FCQrbi//9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1290,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/lavida_04_b315e36eb4.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "로고타이프와 슬로건을 조합하여 패턴을 디자인하였고, 시그니처 및 아이콘과 함께 청첩장이나 답례품 등 각종 패키지 디자인에 활용하였습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "LA VIDA 명함",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCBAUH/8QAIRAAAgEEAgMBAQAAAAAAAAAAAgMBAAQFEQYhEjFBInH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgT/xAAiEQABAgQHAQAAAAAAAAAAAAABABECAyJxBBITMVGBocH/2gAMAwEAAhEDEQA/AO8LYxbVkmJk4LrXyl3mOBy+Q5XhrppLiyVoyYFwS2LKC2X5jovKBEPfUTNQ5nnLnjF/j3AIXNtctBYqKPAllvXlBx7/AJMU7KeSDY0tNYf0vlNK1MIIZ8LVAgHw9h7XCqPJNo43+LNncTO41NFXWCNwZNONEfcxHqisLJXX/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2000,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/lavida_05_80046eca96.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "LA VIDA 청첩장",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUEBgf/xAAhEAABAwQDAQEBAAAAAAAAAAABAgMEAAUGERIhMYEiUf/EABcBAAMBAAAAAAAAAAAAAAAAAAABAwT/xAAdEQACAgEFAAAAAAAAAAAAAAAAAQIhUQMiMWHh/9oADAMBAAIRAxEAPwDa86yxjFUNz7yJESyRnEqXKYKVlxZH5bKN8vf4CNb3r2nOG5IcrtLdzbtkiHAkoDkVb60FbqDvspSTxPXmz7STNcEtGf2SNbr8qWENLLra473ApcI0VEaIP0HWzS+1s5DjGR27HJN/auttlRngw49AS3IjhCOhzQoJV9TutKjB6dPdfOOvRLDLnJbBdJ6oqHIfU2sIT4Egdmiogf/Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1897,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/lavida_06_c1b9ec6732.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "LA VIDA 답례품 패키지 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAcGCAT/xAAkEAABAwMDBQEBAAAAAAAAAAABAgMEAAURBhIhBxMxQXEyUf/EABgBAAIDAAAAAAAAAAAAAAAAAAMEAAEC/8QAIREAAQMDBAMAAAAAAAAAAAAAAQACAxEhQQQTkdExUaH/2gAMAwEAAhEDEQA/AOqF/hXyoq01qOXbJ0p2FDgzGnChlsPbw43nJJ488nA8fKmMnrHdIrMdrTV6kv7jvdVLHe249Aq559j+ZqsaE6nz71EmtyIkGVJi7MSIbii07uSo/kjKSNpyKdhikELpg0FoIv6+5r0jNeI37YuSs3J03c3Oytm4Q2VKbBcQWisBfvBJHFK6CbwttKikAkA+KUETuGBwOlo6hxPk8rA6l6XaQ1MlSLjZ2G3HHC4p6MkMuFeMbtyfeAK82kOkunbHZZlvju3J5t+SHVOPSMrGwKSlIKQOMKV9z5pSg1tRLqktpCEJQnwkADNKUqlF/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 3000,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/lavida_07_7311545f94.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "LA VIDA 선물 패키지 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAUDB//EACAQAAEDBQADAQAAAAAAAAAAAAECAxEABAUSIRQxUUH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAwX/xAAbEQACAgMBAAAAAAAAAAAAAAABAgADESExQf/aAAwDAQACEQMRAD8A7Qw2p10IQnZRmBMTyt7myTZtqC3XHFq1UnYDkzsng/IHvvalZBi5fZPg3rljcgHR9tIUUmPh91Lw9lnxkU3efzAvNGi0hpCdU9IOxAAE8+TTEqDqXLgY83kzZte0XKqrlT3mpepSlTjJ/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 4000,
+              "height": 3000,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/lavida_08_b5b1b0351a.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "LA VIDA 쇼핑백 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCBgj/xAAiEAACAQQCAwADAAAAAAAAAAABAwIABAURBiEHElETMUH/xAAVAQEBAAAAAAAAAAAAAAAAAAACBP/EAB4RAAICAgIDAAAAAAAAAAAAAAERAAITIQQSMUFh/9oADAMBAAIRAxEAPwDRnLOWYniiLZ2bfNK7hhXAxXKfYG+9DrqkOM8hWuTvbcWAQ+zuLgJW0TMT6+2t6I/nyn3LuKYjlliu1zdvJy1T91mLJQMJa1sEH59pNg/GuAwyVKQLxsVsLYfldv1JO9dAdbqtcXACzkexpL57hpa4uRYDqteW5c4uXIbjOJH0GioptkpWILXERH6GqKkin//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2000,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/lavida_09_7232b5680a.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "LA VIDA 모바일 청첩장 커버 이미지",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAcEBQb/xAAnEAABAwMDAwQDAAAAAAAAAAABAgMEAAUREiExBgdBExYzUmGz8P/EABUBAQEAAAAAAAAAAAAAAAAAAAID/8QAGxEAAwACAwAAAAAAAAAAAAAAAAECAxMUUWH/2gAMAwEAAhEDEQA/ALeX01PkRw26sKQpGNOoaW3ARhQICVYIznnfxWS7kXaVbuopNpRLcMNqOwjQQMkek2c555A/s03OEZGxxSE72qPvu67n4GP0Io3CSHiptkt7rGwSWYqLhFuLb8dlLJMZxGleN9W4zkknmilMUp+o5Pj8mio8aex7PD//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1434,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/lavida_10_8639d3b7e9.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "hwayeon",
+      "title": "HWAYEON"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "global-order",
+      "title": "GLOBAL ORDER"
+    }
+  ]
+}
