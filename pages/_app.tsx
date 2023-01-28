@@ -3,13 +3,10 @@ import 'nprogress/nprogress.css'
 import { useEffect } from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
-import { ApolloProvider } from '@apollo/client'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 import { appWithTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
-
-import { useApollo } from '../apollo/client'
 
 import theme from '../styles/theme'
 
@@ -26,9 +23,6 @@ Router.events.on('routeChangeError', () => NProgress.done())
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
-  const apolloClient = useApollo({
-    initialState: pageProps.initialApolloState,
-  })
 
   useEffect(() => {
     if (process.env.NODE_ENV === 'production') {
@@ -45,10 +39,9 @@ function App({ Component, pageProps }: AppProps) {
   }, [router.events])
 
   return (
-    <ApolloProvider client={apolloClient}>
-      <ChakraProvider theme={theme}>
-        <Global
-          styles={`
+    <ChakraProvider theme={theme}>
+      <Global
+        styles={`
           @font-face {
             font-family: 'Neue Display';
             src: url('/fonts/NeueDisplay.woff2') format('woff2');
@@ -120,12 +113,11 @@ function App({ Component, pageProps }: AppProps) {
             box-shadow: 0 0 10px var(--chakra-colors-primary), 0 0 5px var(--chakra-colors-primary);
           }          
         `}
-        />
-        <Logo />
-        <MenuButton />
-        <Component {...pageProps} />
-      </ChakraProvider>
-    </ApolloProvider>
+      />
+      <Logo />
+      <MenuButton />
+      <Component {...pageProps} />
+    </ChakraProvider>
   )
 }
 export default appWithTranslation(App)

@@ -1,0 +1,151 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "15",
+    "slug": "citizen-politics-society",
+    "title": "CITIZEN POLITICS SOCIETY",
+    "summary": "CPS Summer Academic Seminar",
+    "description": "시민정치학회는 경희대학교 정치외교학과에 재직 중이거나 재직했던 교수 및 경희대학교에서 정치학을 수학한 동문을 중심으로 구성된 학회입니다. 매년 동계(2월), 하계(8월) 학술 세미나를 개최하여 학문성과를 발표하고 토론하는 자리를 마련하고 있습니다.\n\n반기마다 개최되는 학술 세미나에서는 연구자 패널과 대학원생 패널이 운영되고 있으며, 정치학 전반에 걸친 다양한 논문을 발표하고 토론하는 기회를 가짐으로써 학문 발전에 공헌하고 있습니다. 또한 교수 및 동문, 그리고 재학생 상호 간의 학문적, 사회적 교류의 장으로도 역할하고 있습니다.",
+    "scope": "Event Identity\nPoster\nBrochure\nBanner",
+    "link": "https://politics.khu.ac.kr",
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "black",
+    "startDate": "2017. 07",
+    "endDate": "2017. 08",
+    "order": 7,
+    "work": null,
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "CITIZEN POLITICS SOCIETY 메인 이미지",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAYFBP/EACQQAAICAQMDBQEAAAAAAAAAAAECAAMEBREhEzFBBhIyYXGh/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEF/8QAFxEBAQEBAAAAAAAAAAAAAAAAAAECEv/aAAwDAQACEQMRAD8ArNTAatgvf6Mmsnh1JOxBB/s0szMO7K3DA7EHxMS9zfYVUE+TMPEauqsbfUWnpYyiyx9j8kQkGJMU4oasERJxleqq9U0fFzD1X96WdiUO2/7J3WcGnA1CunHBC9IMSTuSSTyYiTFNR1UKOmOIiIH/2Q==",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/cps_main_ab3080b905.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "16",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAdABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAcCBQYD/8QAKxAAAQMDAgUDBAMAAAAAAAAAAQIDBAAFERIhBhMiMUEHcYEVFiRRYZKh/8QAFQEBAQAAAAAAAAAAAAAAAAAABAX/xAAbEQADAQADAQAAAAAAAAAAAAAAAQIDBBIxEf/aAAwDAQACEQMRAD8A1vAs12x8YQktLIjynBHeRnZQVsD7g4/2mgPqH27K/Nm87njQ6WetKcjIAB3870jX7g4i4MvRVBL7aw4hWM6SDkGmJ6b8UXNy7Ii3OaubHkHSFLIUptfjBHg9sVOw0lLrY3WG32kacNRTFaS6sqcShIWVYznA7/zRXIlPPewk51DP9RRVEEKz1RssS2W61SIMBiK2X3Eu8lASCSOnPwk1ScKLQm92pEVpsOKfGcIycDc9vanVd7PDu1qet85Bcjud9+pJzkEHwQapOGOBrXYHnHkF2W8oFKVyNJ0J/QAGPmh6cd1oqXgmNlMfH6ahAQsawgdW+6cH5oqYAAAAwBRTAx//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 4288,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/cps_01_1af11ec98b.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "2017년 8월 시민정치학회의 주제는 ‘한반도와 국제 평화 : 새로운 질서’였습니다. 평화를 상징하기 위해서는 알을, 새로운 질서를 나타내기 위해서는 0을 활용하고자 하였습니다. 그리고 두 요소의 공통점을 가장 기본 도형인 원으로 형상화하여 표현했습니다. 컬러는 새로운 질서가 출발할 땅, 흙을 연상하는 브라운을 활용하였습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgAH/8QAIhAAAgEEAQQDAAAAAAAAAAAAAQIDAAQFBhESFCExIkFx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAaEQADAAMBAAAAAAAAAAAAAAAAAQIREjET/9oADAMBAAIRAxEAPwDad2vLix16ee0mMMwZQHH15ozouxX+VykMd1dvL8GDoVABI9EUv2bHPlcTJaxsqksDy3rgUb1TVLrD5ruZJ4GgIbhF56vI/KmtX6rHB5c6PPRzVVVVIB//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2032,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/cps_02_2f0a7e296c.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "그래픽 모티프를 활용하여 학술 세미나를 홍보하기 위한 포스터와 배너를 디자인하였고, 행사 프로그램 브로슈어를 제작하여 행사에 사용하였습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgAI/8QAKRAAAgECBQMCBwAAAAAAAAAAAQIDBBEABQYSIRMxQRRRBxUiI0Jhgf/EABYBAQEBAAAAAAAAAAAAAAAAAAUBA//EABwRAAICAgMAAAAAAAAAAAAAAAACAREDIRRSsf/aAAwDAQACEQMRAD8AZ5rTZbExqIqSaGqnLTGppqjbuICna6Hhjbzwee+AmbaskpNRtlE1P6tCyWkdzGyq1uSAfF/fDfTsnrMumizFEqDJMGja20xgAAAW78La/m+AvxuzH5RU5c1JTxbpVlgZm5JG1QDfvx4wft2oQWki5GVBp/LquSsE1VDH0Zumv3z9Q2K1+W92I/mLGeX1RWvHCgVF6MYiJBN3t+R/eLGfFydiznW9eH//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1995,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/cps_03_0e5f62546f.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMFBAb/xAAjEAACAQQBBAMBAAAAAAAAAAABAgMABBEhBQYSMVETYXGR/8QAFQEBAQAAAAAAAAAAAAAAAAAABAP/xAAZEQADAQEBAAAAAAAAAAAAAAAAAQIDESH/2gAMAwEAAhEDEQA/AM/S9jb3SpJNbiVlmKnuyRjtyBjx7qxLxPHs9ra3FqsLOhdpEBU5Pjf1quW4rmbri4pUtewfIQSWGSNY1/abP1BeXCSC5IkleMxiUaIBO/31Qrz0ddTKRrko416TJxGJpBCWaIMQhbyRnWaKXRSQZ//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1985,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/cps_04_0b32323bd6.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIEBQYH/8QAJhAAAgAFAwMFAQAAAAAAAAAAAQIAAwQFEQYSIQcxQRMUMkJhkv/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//EABYRAQEBAAAAAAAAAAAAAAAAAAEAIf/aAAwDAQACEQMRAD8Afp/pGVquZWepXmnFLtZpaS9zsrZ5BJx3GI3zdMrNOsFbJoBOa5qhMqomzT8hyMqOAD2/I4/aLtV2av8Ac0DhJrJsyc8c5B7+MRIu2oLvd+LlcKieo+m7an8rgQcshAq11ZHZXBVlJBB8EeIIWCJC/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1980,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/cps_05_416402d512.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAUG/8QAHhAAAQMFAQEAAAAAAAAAAAAAAQIDBAAFERIhBhP/xAAWAQEBAQAAAAAAAAAAAAAAAAADAQT/xAAYEQEBAQEBAAAAAAAAAAAAAAABAgAhMf/aAAwDAQACEQMRAD8Ah2OM3Musdh4EtrJ2AOOYJrTehsVvh+ffkxmCl9C2wFFZPCe8rJQZTkKSl9kJ3TnGwyOiqM30U+ZBdiP/AA+LmpOqCDw5Hc1mubbE80ioIRO6NSlKbBv/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1982,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/cps_06_722023771a.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAWABQDASIAAhEBAxEB/8QAGAABAQADAAAAAAAAAAAAAAAAAAYDBQf/xAAlEAABAwMEAgIDAAAAAAAAAAABAgMEAAURBhIhMQcTIjJhcsH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgD/xAAbEQEAAgIDAAAAAAAAAAAAAAABAAIREgMhwf/aAAwDAQACEQMRAD8AqdU3VQub7UOZJPpfwtaHVBIJJ+PfNbXwhIkua41U1IlPvpbbaCfY4VD7K5AJ4qp1bpe0Wq1uSmYa31reTuQt9QByO+P1FSdhlN6Yvst+021lEuaAJBekuLHByAAevtWR23s9PkktUNKnZ7O3UqPsWqZtwiLdeiNNqS4UAJJ6wD/aUjxWHDIOatjJM/kNmU/a4LcJSErM5oK3qIBTyCOAc99VPXvSkmU+hcZcdt31q3qUpXOCMDrrulKNNqoys4uJKWz2ox4hSdmSrPB/ApSlMrmHWpif/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 3294,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/cps_07_6a62c5012b.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABwAFBv/EACcQAAEDAwMDBAMAAAAAAAAAAAECAwQABREGEiETFDEHFUGBYXGR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAwT/xAAaEQACAwEBAAAAAAAAAAAAAAABAgADESFB/9oADAMBAAIRAxEAPwBt1LeY1ncHcsuO9UOKyHSnGD4ou1NqP3MkwJk+JlSVAtzFDak8EYH8+6SZsC8yH5SnuwcQlTnTSongbsjkoODx+fJo/wBG+n14tVtkKfdtbr769ykKy42kjPIygHJzz+hUtlRsPfIqsoE770uYmN2KUJcmUtfdqx1nVLIGxHySTjyfuqtbREK4xbZIRPVGLipBUnoqJG3akfIHOQaqdVwZD2f/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2078,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/cps_08_7c6d88fee2.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "chemstree",
+      "title": "CHEMSTREE"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "young-doctors-forum",
+      "title": "YOUNG DOCTORS’ FORUM"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "2",
+    "slug": "ed",
+    "title": "E:D",
+    "summary": "Breath of Hope.",
+    "description": "대한민국 대학생 교육기부단은 대학생들의 자발적인 모임이며, 교육부와 한국과학창의재단의 협력 단체입니다. 교육기부를 통해 초중등생에게는 수준 높고 다양한 교육 프로그램을 제공하고, 대학생에게는 건전한 시민이자 글로벌 리더로 성장하는 계기를 마련하고자 2012년 출범하였습니다. 쏙쏙캠프, 함성소리, 알락달락 행복한 교실 등 여러 교육기부 프로그램을 운영하고 있으며, 창의적 체험활동, 문화예술체육 등 다양한 형태의 교육기부 활동을 통해 학생들의 창의 인성 교육을 돕고자 합니다.",
+    "scope": "Brand Identity Renewal\nBranding\nCall Name\nSlogan\nDesign Guidelines\nBrand Materials",
+    "link": "https://www.youthforumfoundation.com/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EB%8C%80%ED%95%99%EC%83%9D%EA%B5%90%EC%9C%A1%EA%B8%B0%EB%B6%80%EB%8B%A8",
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "black",
+    "startDate": "2012. 09",
+    "endDate": "2012. 12",
+    "order": 2,
+    "work": {
+      "__typename": "Work",
+      "type": "CLIENT",
+      "value": "대한민국 대학생 교육기부단"
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "ED COVER IMAGE",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGQABAAMBAQAAAAAAAAAAAAAAAAUGBwED/8QAKRAAAQQCAQIFBAMAAAAAAAAAAQIDBBEABSESMQYHE0FRFBUiYSOBsf/EABYBAQEBAAAAAAAAAAAAAAAAAAQFA//EACERAAEEAQMFAAAAAAAAAAAAAAEAAgMREwQSIRSx0fDx/9oADAMBAAIRAxEAPwDd/Em81s3UXHdK3rBbHTRvtXORaN39klRn90ytKnGv4WgLUkdhwefnMw3+vmwd4WZM8qk36PpJX1rPYkcAC+R25y7Mvq27ahsWnGJRqkOilBKRQIvseBf7yW2dz3EkUVbOljjYObBV8h76RsIyJOvgocjr7Fx8IVf7TVj+8Z4RfCWv+nbKXHCFJCrFc374xoy+/FNOG+Ox8qv+XujhydgrcSQt6c4hLylrVf5K54HsM55rka9pM6KlKJNJV1VfPVX+HGMwaBgtIcT1FKR8GT3o+oUyilIS6quslR5AJ5J+ScYxm0ZO0I0gG8r/2Q==",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ed_main_ce422c6660.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "3",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "BASIC DESIGN SYSTEM",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAJABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAEEB//EAB0QAAICAwADAAAAAAAAAAAAAAABAgMRITEFQVH/xAAXAQADAQAAAAAAAAAAAAAAAAABAwYH/8QAHBEAAgICAwAAAAAAAAAAAAAAAREAAgMhMXHR/9oADAMBAAIRAxEAPwDVdY6V+SrrrvrjBKMXVCTx9a37IxLhhNcgFDVcrfXssjVluN9AAFQz/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1409,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ed_01_62fd252937.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "대한민국 대학생 교육기부단의 규모가 커지고 산하의 교육기부 프로그램이 다양해짐에 따라 브랜드 아이덴티티를 강화하고자 리뉴얼을 진행하게 되었습니다. 브랜드 리뉴얼에 앞서 기존의 로고와 슬로건을 분석하고 컨셉과 방향 설정을 위한 솔루션을 제안하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "PREVIOUS LOGO",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQI/8QAHBABAAMAAgMAAAAAAAAAAAAAAQACEQQhEhTR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAME/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A0+1QfFd7TXZPX3SwWeM13tCw59iJjWVG53ERA//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1044,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ed_02_7aa6c1e1ea.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "우선 교육부 인증마크가 심벌과 충돌하고 교육기부단을 대표하는 마크가 아니라는 점에서 보증의 역할을 하도록 로고에서는 제외하였습니다. 워드마크는 ‘대한민국 대학생 교육기부단’이라는 명칭이 길어 커뮤니케이션이 불편하고 다소 권위적이고 딱딱한 느낌을 주어 친근한 단체의 특성을 반영하지 못한다고 판단하였습니다. 이에 브랜드 인지도를 향상시키고 커뮤니케이션의 용이를 위한 애칭을 제작하였습니다. 심벌마크는 심벌마크로써의 역할을 위한 위치 및 크기를 조정하고 민들레 꽃씨 디자인을 리뉴얼 하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "PREVIOUS SLOGAN",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEI/8QAHBAAAgMAAwEAAAAAAAAAAAAAAAECERITIWFi/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQME/8QAFREBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhEDEQA/ANP4tNakrd3Y4/uffoBjVqxjlVpv1gAC/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 626,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ed_03_1087d86bf2.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "슬로건은 문구가 어려워 친근감을 감소하고 지나치게 길어 내용 전달이 어렵다고 생각하였습니다. 따라서 민들레를 형상화한 심벌마크를 연상하고 단체의 비전을 함축적으로 제시할 수 있는 간결한 슬로건을 제작하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "CURRENT LOGO & SLOGAN",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIBBAUI/8QAIhAAAQQCAQQDAAAAAAAAAAAAAQACESEDBBITMTJxQVFh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAv/EABYRAQEBAAAAAAAAAAAAAAAAABEAAf/aAAwDAQACEQMRAD8A6c29w6uTg3E58sOSZqiK92q+LbAfkZ0t5z3m+xDfwWtQAiZJPv4S8Xz519QiaycMMmaImzZm0KUJRv/Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1994,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ed_04_9265526906.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "‘E:D(에디)’는 Educational Donation의 앞 글자 E와 D를 활용한 대한민국 대학생 교육기부단의 새로운 애칭입니다. 로고타입은 새로운 애칭과 웃는 얼굴을 나타내는 이모티콘을 결합하여 개발하였습니다. 기존의 서체를 최소한으로 변형하여 주목성이 뛰어나도록 하며 이모티콘의 느낌을 표현했습니다. 심벌마크는 민들레를 형상화하고 친근한 이미지를 구축하고자 하였습니다. 그리고 슬로건은 심벌마크의 민들레와 교육기부를 나타낼 수 있는 간결한 문구로 제작하였습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "ED: NAME CARD",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIFBAb/xAAnEAABBAECBQQDAAAAAAAAAAABAgMEEQUAIRITMUFCBhQiMhVRYf/EABYBAQEBAAAAAAAAAAAAAAAAAAQCA//EACARAAEDAwUBAAAAAAAAAAAAAAEAITECEXFBYZGhsfD/2gAMAwEAAhEDEQA/AO7ncOSdyMuIXYLZfQPZpIL0iQlXQtnazRtHQ7KN63Tn3J8/GIVDML1In5LcsJb5ZNKo+YvoPFQ326zFhOZe5kkI/PS5JajskFLTK2h8jxJ3+I8gbVSR22o5Rx9/IY7EZtTLfLQX/dhJUqQgAhYofQEAhQ8r2I6aJoSfnT7PSBOduxjCTF5LJwY647OHOXShxQM5Sg2Xje5s/f8AXH3r+aNNh2M4zjmk4uVGZxpFxUyUqdWWuyrscIO5Ce11o1Yh/FnVJsOCv//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2253,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ed_05_bdc8e99f34.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "대한민국 대학생 교육기부단은 브랜드 리뉴얼을 마친 후 2013년부터 새로운 애칭인 ‘에디’로 활동하며 학생들에게 꾸준히 다양한 교육기부를 하고 있습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "ED: PACKAGES",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUCBAYI/8QAIRAAAQIGAwEBAAAAAAAAAAAAAQIDAAQREhMhBTFBBlH/xAAUAQEAAAAAAAAAAAAAAAAAAAAD/8QAHBEAAgICAwAAAAAAAAAAAAAAAAECEQMhEjFR/9oADAMBAAIRAxEAPwDobkJ+bb+hRLJzJlyASvGqwa9VS3v9MW5JTr3KF1T7+EIoEhaS0s7rTVde77hg7LZHSu8pJFNAQif+Tae51PKKnprKlgs4xbZ0RdSne4OfLuKsfE4bUnWvLNLBEGG8LCGwoqtAFT7BCAH/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2003,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ed_06_4831d80d75.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "ED: PACKAGES",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAQBAwUH/8QAJBAAAgEEAQMFAQAAAAAAAAAAAQMCAAQFERIhMVEGEyJBYXH/xAAWAQEBAQAAAAAAAAAAAAAAAAADAgT/xAAdEQACAgEFAAAAAAAAAAAAAAACEQABEiExQUKh/9oADAMBAAIRAxEAPwDq+Oxt/dN5hYlb89EsHCIj9al3NX5pmEwFu0StJrkB7so8pESJ0N8iep7ap3BNN0ltg4yKdc4kHRj17fyk/U0U3CxjXJjNatETJ+Xnp4rOQl19jgQus2uVMy3eu4QtypCS2REon8oqVJWlcVqXCC4jQjEAAUVdNawyTvHaf//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2012,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ed_07_5d69fe9181.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "ED: PACKAGES",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEEAgj/xAAlEAACAQMCBgMBAAAAAAAAAAABAgMABBEFQRITFCFRYSIxocH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABkRAQADAQEAAAAAAAAAAAAAAAEAAhEhEv/aAAwDAQACEQMRAD8A6bme7juTh7YROOFA7EENtt3z/KemSXRidNQa26hD35LkgrsSCBjPj9p6jY9Y9uebJGInDkIccfo+q0bQGSRu3yBA8ip1o1Xso2POZKUZXUMjBlO4ORRU9jai1tliLtIR9sxyTRTNTsDP/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2074,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ed_08_36c2a412ad.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "ED: REAL WORLD",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAGABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMF/8QAJRAAAgEDAgUFAAAAAAAAAAAAAQIDAAQFESEGEzEyURIiJGGx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwDazt9FjExVwsuWIeV1IW+0IBKHdihLd310qSX13ORJa5LNq3PLSl8hoWCBdRtH0Oo2/KUob2o5LinM2c4EqiTmAyJ8tvapY+kdngDzSlKg/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 887,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ed_09_feb339754c.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "korean-folk-village",
+      "title": "KOREAN FOLK VILLAGE"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "korean-traditional-pattern",
+      "title": "KOREAN TRADITIONAL PATTERN"
+    }
+  ]
+}

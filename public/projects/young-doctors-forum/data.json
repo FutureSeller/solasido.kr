@@ -1,0 +1,149 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "7",
+    "slug": "young-doctors-forum",
+    "title": "YOUNG DOCTORS’ FORUM",
+    "summary": "Young Doctors Looking at the World.",
+    "description": "대한 의과대학·의학전문대학원 학생협회(KMSA), 대한전공의협의회, 대한공중보건의사협의회 등 젊은 의사 3단체가 개최하는 ‘젊은 의사 포럼’은 의료계 현안에 대한 문제의식을 공유하고 소통하는 기회를 제공하여 한층 더 성숙한 의료 환경 조성에 기여하고자 합니다. 사회 각계각층의 전문가들을 초청해 다양한 꿈과 비전을 듣고 논의하며, 현재 의료계가 처한 현실을 인식하고 각 단체별로 아젠다를 설정하여 적극 추진해 나가고자 합니다.\n\n제9회 젊은 의사 포럼은 2019년 9월 28일 서울 코엑스 오디토리움에서 개최되었습니다.",
+    "scope": "Event Identity\nGraphic Design\nPoster\nBackwall\nSignage",
+    "link": "http://www.kmsa.org ",
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "black",
+    "stickyTitleColor": "black",
+    "startDate": "2019. 08",
+    "endDate": "2019. 09",
+    "order": 8,
+    "work": {
+      "__typename": "Work",
+      "type": "CLIENT",
+      "value": "KMSA"
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "YOUNG DOCTORS’ FORUM",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAQADAAAAAAAAAAAAAAAAAAYCBAf/xAAmEAACAQMDAwQDAAAAAAAAAAABAgMABCEREjEFQYETFCJRkaHw/8QAFwEAAwEAAAAAAAAAAAAAAAAAAgMEBf/EACARAAICAQMFAAAAAAAAAAAAAAECAAMRIUHwEhMxgaH/2gAMAwEAAhEDEQA/AO89ei+LYOh7g6Gpi4nSAP6UriRwQ69tueT3+9Kqr6YMpBqf6zLaMFWGNo2c7XbJ0HHA/ucVV3SFxMe2oM3UDM1HTOoww3QvI7RZI1IRydTjn86jxSp20uraJHjvY7aO5VyrgBtuMDbjjQClKS9sb89RZCnXT7Ki7mfac1DdVupJpG9Tayga7SPj5HfzSlDZ4jiNG5uJu28j+2iZmLE7lz9K7IP0opSlSI7BcAyxKkZQSBP/2Q==",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ydf_main_119e35902f.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "8",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "포럼의 아이덴티티를 표현하기 위한 컬러와 키워드들",
+            "placeholder": "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAjklEQVQYlaWQwQrEIAxE+/9fKHr0Ayy0aXDNxIID7up156KZ5IUhR/9DBx8AnyF3p9Naq7WaGUt35wCABWbj92NmHLIh7iIwW1/4eZ6UUs4ZANvneYYQVJXwdV0xxhBCKWWBAdRaRURVmZyZRaQN9d5V9b5vzizwDDNDuruZcQuvgCH6+8EIzGtNZys35wWyWJ0U66KDOwAAAABJRU5ErkJggg==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 1200,
+              "height": 399,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ydf_01_8495c1c6ee.gif"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "포럼의 전체적인 무드와 아이덴티티를 위해 키워드를 설정하였습니다. 젊은 의사 3단체를 상징하는 ‘젊음’, ‘의사로서의 신념’, 그리고 젊은 의사 포럼의 목표인 ‘성숙한 의료 환경 조성’에서 세 가지 키워드를 찾았습니다. 젊음, 신뢰, 성장 세 가지 키워드는 각각 그린, 블루, 옐로우로 지정하여 포럼의 전반적인 무드를 표현하였다. 이 중 메인 컬러는 블루로, 의사의 직업윤리를 상징합니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "컬러와 무드의 영감이 된 요소들",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAVABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAcGBP/EACYQAAIBBAIBBAIDAAAAAAAAAAECAwQFBhEAEiEHFDFBImETccL/xAAXAQADAQAAAAAAAAAAAAAAAAADBAUB/8QAJhEAAQMCBAYDAAAAAAAAAAAAAgABAxEhBCIxcRITQVGBodHh8P/aAAwDAQACEQMRAD8ApVxzWSHJLhblyu1rXUTalpRFKTGB5PYBCPsDY/XC+o0lLldVTVldD7VFiIZvEZJiVj1Gu2tk/PMfY/YZXe6/KWSuoku0vtHpzUwlGZU2vT8Nltn7OvGzzmzjJGa1WIR01JaK9JJY5f5JYJpJ44+iq7MF6nZ7Ar9a5GJ55jcI9LUo71fp9pljeIeZKOXwrliWURZBQT1MBRlinMO1OwSFU/645K8erc6u1sSpxiioVotlHNNLCitIPDHXjz8ccLHiJwFhOMqtt8oBGxPxCNt2WHoL3FDhSZLVWykluFFXFaZYAYIlZgCWZF8Md/1yg4X6YWm/UEFxnqamFY6mSdaZFQxkSrG5VuykkA/GiOOObhLSW7JmbNHmvp+9Kq4ZjkOK2KO101VUVUMbsyvOF7AE71+IGwPjz5/fHHHKaU0X/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 3113,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ydf_02_020cff3e88.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "젊은 의사 포럼 로고타이프",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIDBQb/xAAhEAABAwMEAwAAAAAAAAAAAAABAAIDBBExBRIhoRNRgf/EABUBAQEAAAAAAAAAAAAAAAAAAAIG/8QAGREAAgMBAAAAAAAAAAAAAAAAAAECESFB/9oADAMBAAIRAxEAPwDCaTQR1VDVzSeO8RFt04jdyDgHOOlI3QZHyShlVRtawX5nDiRZxtxk2aevapk5e45c4/VTU+Mi1KNahEIQkA//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1644,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ydf_03_2bdd815438.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "로고타이프의 색상은 신뢰와 믿음을 상징하는 블루를 활용하였고, 의사에 대한 기존의 무겁고 딱딱한 이미지를 탈피하고자 자유롭고 역동적인 캘리그래피로 표현하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "젊은 의사 포럼 포스터",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQHBQb/xAAkEAACAQQBAwUBAAAAAAAAAAABAgMABAUREgYTMSNSYYGhsf/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARAv/aAAwDAQACEQMRAD8AvMk0a5C4DaJMrDW/k0te34TJwwvwEckTkBTvxrVc9n55HvMjGG4+s42CfcaxrV7mTIm6uZkeQLxHFSuh9k0HKehcyrXTLBse5Hjun+CikuhJDJh5C3nvsPwUUar/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1994,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ydf_04_8a3b9eebc9.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "각종 홍보물에서 장식 및 보조 수단으로 사용하기 위해 그래픽 패턴을 개발하였습니다. 물방울과 잎사귀로 젊은 의사 개개인을 상징하였고, 신뢰를 바탕으로 성장하고자 하는 젊은 의사들을 상승하는 형상으로 표현하였습니다. 그래픽 패턴은 행사 포스터 및 포토월, 배너, 부스 등 포럼의 전반적 응용 디자인에서 활용하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "젊은 의사 포럼 배너 및 부스",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABwAG/8QAKRAAAgEEAQIDCQAAAAAAAAAAAQIDAAQFESESEwZBYQcUFSIxUVOSwf/EABYBAQEBAAAAAAAAAAAAAAAAAAEAAv/EABkRAQEBAAMAAAAAAAAAAAAAAAEAERJRYf/aAAwDAQACEQMRAD8A1OSt2yJcXOBvD1RRIFhRhsoednQ4ZePP+0veDbqD4GmmliiV2WNLle26qDwNH0rRUYe2HCZLO4TL4/EIkt3dRxCNJHCKOkkk7P0PP28qQFxsuhpJXvMH5o/2FVHeFtLuyxVpbMzd2KJVk2Qfn0N69N1VZ7HJ6v/Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2196,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ydf_05_9ebb50e03e.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "젊은 의사 포럼 가로형 포스터",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMFB//EACUQAAIBAwMDBQEAAAAAAAAAAAECAwAEEQUSIQYTMQcUIlFhQf/EABYBAQEBAAAAAAAAAAAAAAAAAAMCBP/EABwRAAICAgMAAAAAAAAAAAAAAAECABEysQMEIf/aAAwDAQACEQMRAD8A2W66DCTEC7upFKcskS8H65aoWo9PiyDbZpXMY3srKoZfzGfNNu/UX2V5cMmLk3HblZe+XSA7ANigL8fGSDzkk/lRtX60GrIizWwj2uWBBbJH148f2qDAAmrhcqucDEzafMj7VDOAOGGOaKgXuo3U8weNpIU2gBEiOBRShkr0bmYp2Ly1P//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2429,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ydf_06_05d5b7077b.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "젊은 의사 포럼 세로형 포스터",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAmEAACAQIFBAIDAAAAAAAAAAABAwIEEQAFEiExBgdBcRMUIkJR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAXEQEBAQEAAAAAAAAAAAAAAAAAAREx/9oADAMBAAIRAxEAPwDv0Vyc0qlroad1ZqBto/EDm15HYeZeyMSeq8kFAynlWwqEKe3RFNHH5ZRibRBlI8AA8jfc/wBxrk+dGm+Mrsta+BpuLedvWFO6vUQd0hmdStjFRgkRSLbiciADfxzzhuRN7FWPQeVLGk0Kpkfs2OqR9k74MI9jcwZUduaD7TJsmtjVxlMmR0iZtucGCn//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2250,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/ydf_07_54bbdc3845.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "citizen-politics-society",
+      "title": "CITIZEN POLITICS SOCIETY"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "ku-farm",
+      "title": "KOREA UNIVERSITY FARM"
+    }
+  ]
+}

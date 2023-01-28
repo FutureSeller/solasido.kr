@@ -1,0 +1,171 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "12",
+    "slug": "hwayeon",
+    "title": "HWAYEON",
+    "summary": "Premium Handmade Soap.",
+    "description": "화연은 한국화학연구원의 연구소 기업 캠스트리(Chemstree)의 수제 비누 브랜드입니다. 좋은 비누를 만들기 위해 모든 작업 과정은 30년 경력을 가진 약학 박사의 솔루션을 통하여 이루어집니다. 차별화된 제조법과 노하우, 그리고 합리적인 가격으로 고급형 수제 비누를 제공하는 것을 목표로 합니다.",
+    "scope": "Brand Identity\nDesign Guidelines\nPackage Design\nBrand Materials",
+    "link": "https://www.hwayeon.co.kr",
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "black",
+    "startDate": "2020. 08",
+    "endDate": "2020. 09",
+    "order": 13,
+    "work": {
+      "__typename": "Work",
+      "type": "CLIENT",
+      "value": "HWAYEON"
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "HWAYEON",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAlEAABAwMDAwUAAAAAAAAAAAABAgMEABEhBQYSExRBMUJhcXL/xAAWAQEBAQAAAAAAAAAAAAAAAAADBAX/xAAaEQEAAgMBAAAAAAAAAAAAAAABAAIDESFB/9oADAMBAAIRAxEAPwDo9E1LuWJsh7hHiQkdR95xWEpz4GScU5svckXdT0hnTo0oKZIsVowpJ93wPvNOQ4EZZkEtAdw0WXbY5pPg1vsrbGn7UfLmkmQAtHBxLi+YXm6b/nxShlLKvPJljgamxGVDGsbHBoqqW+oorV6qNzRTbk8//9k=",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hwayeon_main_66e7b1dfbf.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "13",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "화연 비누의 디자인 방향성",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAECAwQI/8QAJBAAAQMDAQkAAAAAAAAAAAAAAQACAwQREiEFEyIjQmFxgaL/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABgRAAMBAQAAAAAAAAAAAAAAAAABEQID/9oADAMBAAIRAxEAPwDSk8O0jUSGKsY2MnhaWjT5VqJ1WJGCU0+PVjlf0p93zC7N3i+iV0ZMgcHuHYHRFZhR9KpEPuhCEiZ//9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2002,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hwayeon_01_363f93f74c.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "온몸의 세정은 물론이고 식기 세척과 세탁까지 모두 해결 가능하다는 점과 불필요한 플라스틱 용기와 비닐류를 사용하지 않아 자연친화적이라는 점에서 High Quality와 Eco-Friendly를 핵심 가치로 선정하였습니다. 핵심 가치를 바탕으로 무드보드를 제작하여 브랜드 아이덴티티 디자인의 전반적인 방향을 설정하였습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "화연 비누의 디자인 무드보드 제작",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAYABQDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAYHAwQFCP/EACQQAAEDAwQCAwEAAAAAAAAAAAIBAxEABAUGEiExB0ETIlFh/8QAFwEAAwEAAAAAAAAAAAAAAAAAAAIDAf/EABkRAAMBAQEAAAAAAAAAAAAAAAABAhEDEv/aAAwDAQACEQMRAD8A9U1XWdunmCO4w7SXCicEBHCpzzU93uboQCVOpmsAYjHtkTg2VujhckSNpKr/AGp9IdrE8HilL1rThWj5KwikTIKvO0lVaVIGLa3UOGGYn0KUo8C6UF5cyuvcV5Tdc03YZ27xC2jMJbNOG0h/bdEcT1NbmgdQ62ynkDCMZfFZy1xgBcOXLtwyYNkXxFtQpSInpP2lKoYXbi3BO3JUEkTcvaz6SlKUAf/Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 3638,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hwayeon_02_6fb377387b.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "화연비누 로고",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAIECP/EACIQAAEDAwMFAAAAAAAAAAAAAAEAAgMREhMEIVEUMUFhsf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A03rOqy0gLwNqEBpHvv5UI26wE5JJSOGsaD9REVegvwx5K32i6vNN0RER/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1244,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hwayeon_03_36922db0aa.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "‘프리미엄 수제 비누 브랜드’를 모토로 하였고, 이를 직관적으로 나타내고자 하였습니다. 고급스럽고 깨끗한 비누의 특성을 살리기 위해 산세리프와 블랙 앤 화이트를 활용하였습니다. 또한 품질에 대한 화연의 자부심을 강조하기 위해 ‘Premium’을 레드 컬러로 표현하였습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "개발된 아이콘 및 패턴",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAARABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIECAf/xAAmEAABAwMDAgcAAAAAAAAAAAABAAIDBBESBSExBmETFyNCUZGh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEQMRAD8A0XLmIHCnIfJfbJ3f5Uj4uZsG447b+5cG6Tn608zaRla7XhpJ1CTMSskEJju619rW4/FoB1sRx9qLFWhNSaOE1rYmVOPqNicXNB7E7lFZFuyIUPCiiKoIiIP/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2492,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hwayeon_04_617ff79ed4.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "구절초, 어성초 등 화연의 다양한 제품 라인의 패키지를 디자인하기 위해 보조 수단으로 아이콘을 개발하였습니다. 한국화학연구원과 캠스트리를 연상하는 화학 기호들의 원형으로 화연의 꽃을 형상화하였습니다. 구절초는 노랑, 어성초는 빨강, 순비누는 파랑 등 각 제품별로 차별화된 컬러를 사용하여 컬러만으로도 제품을 알아보기 쉽도록 하였습니다. 아이콘을 활용하여 주목성 등 장식의 목적으로 패키지 디자인에 활용할 패턴을 개발하였습니다.\n\n시그니처와 아이콘, 패턴을 활용하여 낱개 비누와 비누 세트 패키지를 디자인하였습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "화연비누 패키지 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAASABQDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAEHAgQGCP/EACQQAAEEAQMEAwEAAAAAAAAAAAEAAgMRBAUGIQcSMUETFCKR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwD1FLKO0n9CnVwteDJbI+g6Xz74XP8AUzWdZ2/t9mXtvShqma/Jax0BjfJTSDbqbzxQ/qrvROom/wDK1nCx8vZjYcabIZHNL9WcfG0uAc6yaFDlFXix3d3V6NIpaALr2bRED4UIiDJERB//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2645,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hwayeon_05_5ae7e9208d.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "화연비누 패키지 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgAI/8QAJhAAAAUEAQIHAAAAAAAAAAAAAAECAwUEBxESBiJBExQhMUJR4v/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwBhdSXuFSc5rGeNJljiiQybfl6XdGTT1dWPsE1T92vi1O5z3pPyNSiAGbdPylTwiIenifKUWzmo8ZGq9tj9y7emBBMIB//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1365,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hwayeon_06_326aac1e2d.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "화연비누 패키지 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABgAI/8QAJRAAAQMDAwMFAAAAAAAAAAAAAQIDEQAEBQYHEjFBcRUWISIy/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AF26+c1jZa0yDOEus+1ZpaaLKLOwDrRJRJ+3nr1op7l3ADoByGreEST6SmZkdvE1qaqgN7e3GQutFYd/LquFX62AXlPo4OEyf0nsYj4qpJVQf//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1369,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hwayeon_07_b63f7f5757.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "화연비누 패키지 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAwb/xAAlEAABAwMDAwUAAAAAAAAAAAABAgMEABEhBQYSExRBMUJhcXL/xAAWAQEBAQAAAAAAAAAAAAAAAAADBAX/xAAaEQEAAgMBAAAAAAAAAAAAAAABAAIDESFB/9oADAMBAAIRAxEAPwDo9E1LuWJsh7hHiQkdR95xWEpz4GScU5svckXdT0hnTo0oKZIsVowpJ93wPvNOQ4EZZkEtAdw0WXbY5pPg1vsrbGn7UfLmkmQAtHBxLi+YXm6b/nxShlLKvPJljgamxGVDGsbHBoqqW+oorV6qNzRTbk8//9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 6500,
+              "height": 5100,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hwayeon_08_2affebd501.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "화연비누 패키지 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEBQf/xAAiEAACAgIBAwUAAAAAAAAAAAABAgADBBESEyFRIjFBQpH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAgX/xAAcEQACAQUBAAAAAAAAAAAAAAAAAREEEhMhQWH/2gAMAwEAAhEDEQA/AOm102WVs6j0r7kxKOGR22AqHixJ0AfG4u2/JGM9FF3TDfbiCR+yPGxVpw66Ns/DkS7Hu5YgsW+CdiJd3DOmmxpbnpoCxSNhgR5BhJkx6wDtASe53CWvQbidH//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 4000,
+              "height": 3000,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hwayeon_09_3f8a2f82d9.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "ku-115th",
+      "title": "KOREA UNIVERSITY"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "lavida",
+      "title": "LA VIDA"
+    }
+  ]
+}

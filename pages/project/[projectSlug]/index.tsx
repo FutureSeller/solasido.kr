@@ -11,33 +11,27 @@ import CoverSection from '../../../components/[project]/CoverSection'
 import ExplainSection from '../../../components/[project]/ExplainSection'
 
 import { breakpoints } from '../../../styles/responsive'
-
-import { initializeApollo } from '../../../apollo/client'
-import {
-  ProjectSlugPage_ProjectIdDocument,
-  ProjectSlugPage_ProjectDetailDocument,
-  ProjectSlugPage_ProjectSlugsDocument,
-  ProjectSlugPage_ProjectLinkDocument,
-  useProjectSlugPage_ProjectLinkQuery,
-} from '../../../__generated__/graphql'
 import type {
-  ProjectSlugPage_ProjectIdQuery,
   ProjectSlugPage_ProjectDetailQuery,
-  ProjectSlugPage_ProjectSlugsQuery,
   ProjectSlugPage_ProjectLinkQuery,
 } from '../../../__generated__/graphql'
 import type { GetStaticProps, InferGetStaticPropsType, GetStaticPathsResult } from 'next'
 
+import fs from 'fs'
+import PROJECT_LIST_JSON from '../../../public/data/projects.json'
+
+const EXCLUDE_PAGE_SLUGS = ['national-patriots-and-veterans', 'christmas-2021', 'there', 'wechelin']
 const isVideoUrl = (url: string) => url.endsWith('.mp4')
 
-export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const { data } = useProjectSlugPage_ProjectLinkQuery({
-    variables: {
-      order: project?.order ?? -1,
-    },
-  })
-  const [next] = data?.next ?? []
-  const [prev] = data?.prev ?? []
+interface ProjectDetailPageJSONType {
+  project: ProjectSlugPage_ProjectDetailQuery['project']
+  next: ProjectSlugPage_ProjectLinkQuery['next']
+  prev: ProjectSlugPage_ProjectLinkQuery['prev']
+}
+
+export default function ProjectSlugPage({ project, next, prev }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const [nextProject] = next ?? []
+  const [prevProject] = prev ?? []
   const [projectDetail] = project?.projectDetails ?? []
 
   // TODO: Video 관련 로직을 따로 분리해야한다.
@@ -130,7 +124,7 @@ export default function ProjectSlugPage({ project }: InferGetStaticPropsType<typ
             }
           })}
         </Box>
-        <BottomPageNavigator prev={prev} next={next} />
+        <BottomPageNavigator prev={prevProject} next={nextProject} />
         <Footer />
       </Box>
     </>
@@ -165,23 +159,12 @@ const StyledText = styled(Text)`
 `
 
 export const getStaticPaths = async () => {
-  const apolloClient = initializeApollo({})
-
-  const { data } = await apolloClient.query<ProjectSlugPage_ProjectSlugsQuery>({
-    query: ProjectSlugPage_ProjectSlugsDocument,
-  })
-
   const locales = ['ko', 'en']
   const paths: GetStaticPathsResult['paths'] = []
 
-  data.projects?.forEach(project => {
-    if (project == null) {
-      return null
-    }
-
-    // TODO: 백엔드를 없애면 지워야할 코드
-    if (['national-patriots-and-veterans', 'christmas-2021', 'there'].includes(project.slug)) {
-      return null
+  PROJECT_LIST_JSON.forEach(project => {
+    if (EXCLUDE_PAGE_SLUGS.includes(project.slug)) {
+      return
     }
 
     locales.forEach(locale => {
@@ -200,56 +183,26 @@ export const getStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps<
-  { project: ProjectSlugPage_ProjectDetailQuery['project'] },
-  { projectSlug: string }
-> = async ({ params }) => {
+export const getStaticProps: GetStaticProps<ProjectDetailPageJSONType, { projectSlug: string }> = async ({
+  params,
+}) => {
   if (params?.projectSlug == null) {
     return {
       notFound: true,
     }
   }
 
-  const apolloClient = initializeApollo({})
-
-  const { data } = await apolloClient.query<ProjectSlugPage_ProjectIdQuery>({
-    query: ProjectSlugPage_ProjectIdDocument,
-    variables: {
-      slug: params.projectSlug,
-    },
-  })
-
-  const [project] = data.projects ?? []
-  if (project == null) {
+  try {
+    const res = fs.readFileSync(`public/projects/${params.projectSlug}/data.json`, 'utf-8')
+    const data = JSON.parse(res) as ProjectDetailPageJSONType
+    return {
+      props: {
+        ...data,
+      },
+    }
+  } catch (e) {
     return {
       notFound: true,
     }
-  }
-
-  const { data: projectDetail } = await apolloClient.query<ProjectSlugPage_ProjectDetailQuery>({
-    query: ProjectSlugPage_ProjectDetailDocument,
-    variables: {
-      id: project?.id,
-    },
-  })
-
-  if (projectDetail?.project == null) {
-    return {
-      notFound: true,
-    }
-  }
-
-  await apolloClient.query<ProjectSlugPage_ProjectLinkQuery>({
-    query: ProjectSlugPage_ProjectLinkDocument,
-    variables: {
-      order: project?.order,
-    },
-  })
-
-  return {
-    props: {
-      initialApolloState: apolloClient.cache.extract(),
-      project: projectDetail.project,
-    },
   }
 }

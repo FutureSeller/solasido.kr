@@ -1,0 +1,160 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "11",
+    "slug": "ku-115th",
+    "title": "KOREA UNIVERSITY",
+    "summary": "115th Anniversary.",
+    "description": "1905년 대한제국 내장원경 충숙공 이용익 선생이 교육구국의 신념으로 고려대학교의 전신인 보성전문학교를 설립하였고, 이는 우리나라 최초의 고등교육기관이었습니다. 2020년 개교 115주년을 맞이한 고려대학교는 이용익 선생의 신념으로 창의적 미래 인재를 양성하고 세계를 변화하고자 합니다.",
+    "scope": "University Identity\nIdeation\nVisual Design\nEmblem\nSignage\nBrochure\nMerchandise",
+    "link": "https://www.korea.ac.kr ",
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "black",
+    "startDate": "2020. 03",
+    "endDate": "2020. 05",
+    "order": 12,
+    "work": {
+      "__typename": "Work",
+      "type": "TEAM",
+      "value": "고려대학교 디자인혁신센터"
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "KOREA UNIVERSITY 115th Anniversary",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAYHAwT/xAAnEAACAQMEAQMFAQAAAAAAAAABAgMABBEFBhIhURMxYQdBUnGBsf/EABcBAQEBAQAAAAAAAAAAAAAAAAMEAQL/xAAdEQACAgMAAwAAAAAAAAAAAAAAAQIRAyExEpHw/9oADAMBAAIRAxEAPwC1sfrCNSuFtFn9J2bj6nEIOlye89ZxVdfbvvbdHWBXklSISuWA4qPBbz3WHnUINPs+V3BazpLGVFokYDSIfyx0o+ffPtXTR91LbXN5cCae6sp4TFBbqrZgCjARu/4D8VLDNcbkDHJp30tBubdFyomafkJMkESqoxk+SP8AKVnmo71guLjMXqQoihOChjjH26cY/WKVjhB78n7ETRJ6zuHUdNureS3my6uEJfvkpUHB8914td1a5vI7yCYR8REtwrKvFg3XWR2R2Rg5pSpoxSp19YOLhMQ3rwxJhI2LDkSwJJPt5+KUpTvp0f/Z",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/115_main_e649e342c2.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "12",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "115주년 엠블럼 디자인 모티프",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAMFCP/EACEQAAAFBAIDAAAAAAAAAAAAAAABAgMEBRITIRExIpGh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANMvRZa6wxIblWw0INK2N+R739L0IKhTpsqHiRU5LLmdLmVtKUnYR8mjroy0AALcAAB//9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1011,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/115_01_13fd738741.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "2020년 고려대학교 개교 115주년을 맞이하여 기념 엠블럼을 디자인하였습니다. 전통문양을 모티프로 하여 ‘민족고대’의 자부심과 고려대학교 전통의 계승을 표현하였습니다.\n또한 설립연도와 2020을 연결하여 고대 정신과 끊임없는 생명력을 연속성으로 나타내고자 하였습니다. 이는 온고지신의 자세로 더 발전하고 나아가겠다는 고려대학교의 의지를 상징합니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "115주년 기념 엠블럼",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAUGCP/EACYQAAECBAMJAAAAAAAAAAAAAAEAAgMEBREGEiEUIiMxMkFRgrH/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/xAAcEQACAQUBAAAAAAAAAAAAAAAAARECAxIhQZH/2gAMAwEAAhEDEQA/ANH1o1cR7U1rywt6hksD7G6ipyUxUYh2aoZWaW4MM9teZ8/EREGlN3Hi8LNT2zLJGC2ceHzAbvuAtcoiJIbnZ//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1182,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/115_02_e4bb7f1df5.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "고려대학교 University Identity에서는 전반적으로 고려대학교의 상징색과 전용서체를 활용하여 정체성을 반영한 디자인 구축에 초점을 두었습니다. 다만 개교 115주년 엠블럼은 행사 사용과 홍보 등 일회성의 성격이 강하다고 판단하여 아이덴티티를 유지하는 동시에 목적에 부합하는 의미를 강조하여 디자인하였습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "엠블럼에 사용된 컬러",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAQGB//EACcQAAECBAILAAAAAAAAAAAAAAABAgUGERMDBwQSFBYhJFFhYrHR/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwAC/8QAHxEAAQMDBQAAAAAAAAAAAAAAAAECEgMRFEJhYnGR/9oADAMBAAIRAxEAPwDfIhvildgSFr0uq4rmmPzZ1+Vw5YVvmr6+wDNh2V4aUXtCLezhqqWZX4dn/QAUdxcvg3w//9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1206,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/115_03_c4c1b9ea27.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "엠블럼에 사용된 폰트",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQH/8QAIRABAAEEAgEFAAAAAAAAAAAAAQACAwQREyESJDFBgZH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AN4pozi/U+ZxK6Gk6P3cZZm8/pkLej3B7+4iSKccuFmkv1FVz5Q1ERA//9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1016,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/115_04_d6d27bef59.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "개발한 엠블럼은 개교기념일 및 각종 대내외 행사에서 홍보 목적으로 현수막, 브로슈어, 포스터 등으로 활용되었습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "115주년 엠블럼이 사용된 현수막",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABwAE/8QAIRAAAQQCAgIDAAAAAAAAAAAAAQIDBBEABQYSITETMkH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABsRAQADAAMBAAAAAAAAAAAAAAEAAhEDEiGh/9oADAMBAAIRAxEAPwBDic92L+lcgOPOx5zkdTrc8tqUUK+SuvTqBYAJskePz1eSPyveKbnpTMmOy246igtgqQRQ6rA6/a/FHHHLJNLttLeR9jdSHHCt7tp2hae2iJyJhNOpWkpIVQvxXrLEfLLnJYMX5BYq2UMn/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1305,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/115_05_d26bd165ac.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "115주년 엠블럼이 사용된 책자",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAYHBf/EACgQAAIBAwQABAcAAAAAAAAAAAEDAgAEBQYREiETFDGBIiNBUnGR8f/EABYBAQEBAAAAAAAAAAAAAAAAAAIDBf/EAB4RAAEDBAMAAAAAAAAAAAAAABEAAQIDBCFxMdHh/9oADAMBAAIRAxEAPwCr5PNWOMapV46KnN38OEyI89vXaR69vWska/04vKssri8WrgszLGy+GUvtHEHc/wApgvbW3vEeHdJg2MJBsOURLhMdiQ3BG9K2oMi3Tj43UAtlxcnti1LVLrrs8Sf0RQLDhXo02qSGdepkusNY5mS73zN9CLIRMPKXDVwMfoeIkO/aipRm9Z5peQnFTkCOwPzFlhJ/Mpb0USy0I2FyGEsbfpf/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2006,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/115_06_5e34b07997.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "115주년 엠블럼이 사용된 굿즈",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAKABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMEBgj/xAAjEAABBQABAgcAAAAAAAAAAAABAAIDBBEhBVETFRYxQXHB/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ANI1+qvf125SkDGxRMY6N+gbo+/xQ/PZ/Tli6GxutRkjwxnw7PbeyseAnkBGDNwagTUnE9eOQ4C5oJGjjhCcAOwQg//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1500,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/115_07_fcba6ee9c2.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "115주년 엠블럼이 사용된 굿즈",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAIDBQYH/8QAJBAAAgIBBAEEAwAAAAAAAAAAAQIDBBEABRIhEyIxQmFRcbH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAYEQEBAAMAAAAAAAAAAAAAAAAAAQIRIf/aAAwDAQACEQMRAD8A1LeLNmtu1LhuMMNVgA9ZolLyerBZWzkYBBIwdRG7789O5NLTszXyqlZKkChfAuFxJyb0nvr65H8atUtGs92DcXhQ3awMcM3yRWxyA/eBp2QeWIxv2jgqw9sg9H+nWZ43V6Ic+FOTcjxBLY99GlqoVQqjAAwB9aNQX//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1695,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/115_08_0e8611af51.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "ku-40th-sejong-campus",
+      "title": "KOREA UNIVERSITY SEJONG CAMPUS"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "hwayeon",
+      "title": "HWAYEON"
+    }
+  ]
+}

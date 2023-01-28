@@ -1,0 +1,258 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "17",
+    "slug": "hind",
+    "title": "HI&D",
+    "summary": "Connect the world.",
+    "description": "타임오더에서 출발하였으나 ‘ORDER’ 세계관을 구축하고자 사명을 변경하였던 글로벌오더가 계속되는 사업 확장과 블록체인 기반 커머스, 명품관 등 새로운 사업 구축을 추진하며 주식회사 하이앤디로 새로운 출발을 하게 되었습니다.\n\n주식회사 하이앤디는 O2O 서비스 기반의 라이프 케어 플랫폼 기업으로, 생활 전반의 영역들을 연결하고 혁신해 나가고자 합니다. 소비자에게는 편리성과 선택의 자유를, 사업주에게는 비즈니스의 혁신과 가능성을 제공합니다. 하이앤디는 편리한 생활의 혁신과 기술의 혜택을 제공하여 연결이 상생으로 이어지는 생태계를 만들어 나가고자 합니다. 하이앤디 브랜드 디자인에서는 ‘연결’과 ‘혁신’의 가치를 담아 사내 서비스 브랜드들을 모두 아우를 수 있도록 하였습니다. ",
+    "scope": "Brand Identity Renewal\nBranding\nDesign Guidelines\nPackage Design\nMerchandise\nSignage\nBrand Materials",
+    "link": "https://www.hianddtech.com",
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "black",
+    "startDate": "2021. 09",
+    "endDate": "2021. 11",
+    "order": 16,
+    "work": {
+      "__typename": "Work",
+      "type": "TEAM",
+      "value": "하이앤디 기획팀"
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": " ",
+      "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAACrklEQVQ4jZWTy08TURTG72vu7bxvp9OZ6UyBkkIfWApU+qBFJYUuJDEhllVxA40xslCsiSCJUVZoJOCCEGFrXJgY/kZzpwhSNYQvk1mcyW/u951zLgC3EwwfIUS0W4Gw/5btWavwyq19AbBfuhlEAADMeGzyddD8ESx8T8yfChhjzBijjEVC0VCMMUmSWChKGYIA0ahT/pRcPPfmz7y5Y6d2BDDGlFJN03RdMw1VUxVCiCzLhmEoihLWdU3TCEZWcSe5dO41Tt36iVM9csofr1mLuPeJOiwOQfiPsjCsuPeCxZ+J+TOvfuLWBBkv7QnbQgAgzFS/iajFmCTLcpjztwCIz7wPFr559WOvduRWBGlP7QKEUPj1agZ/zQYQ2fUaXz3h9tCZ3bdLe7Gpt1ahBwghlw2HkEAkXWeFZxqdFFGrh85seGZx1yr0ohObFzMgSsJId6w7L3m2q/pNHLGFEwj74XlQ9xsn8bv7fbfWZC+a3+SZrvi7pI86lc9u9TBWfMOzz8x0Rw1amMUux2u40171wJ75YIdu+6Q5tgYwIfbUjlM5sApbZqarp1YVf0mO16iZgfCi54hG7el39nToNr/JsxtGek0faYOIOe6U961Cj4939VRb8VtyvEzNHFGTEEcus5tjT2LF7WjuOc9smOmOPvJYG1oGkWjBLm7zzIaRWlWDlhKvMJ4nahIzDhGBEMAwNuO5WGGLZ9bNdMdItfXhZdVvAqL40exTI9XWhNsq5TlJCTA1B9sOgOq3+Pi6PrKiDQlSceois+ovasmHsi3cYiVA/yJF8zBTvAf6yIqSaMrOHIvNiCVA1IjESpRP9EmAyP+2RRtqWcUXiteI2CXG8xdXEmKGmYWoDpF0tZWDAsboIzXZxMyS1IBqQzdc4wEhIiMi1r6/j7eDB/QLHUJiDZ4NSVAAAAAASUVORK5CYII=",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/main_0ad3d92e67.png"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "17",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAA/klEQVQokY2SMUvEQBCF88PyU7xauM7mmkBEIaVXaJFGTSdnGbA6bGNx2XTpTiyUA20iskW8mew+2TGrV5yJC8Mblse3j5kNuq4DcwevRARiBgHSs+t73fX+VYFvvo0GP+ftVcTa3yumcWjgDcZYaK2hVIX75RJ32TVuFwus14/IsgxPzy8ClbRjCZlZzE3TII5jHEwmOJrNEIYhoijC4XSK/OpSPJ8u5f8SGrRtizzPkaYp5vMzgSdJguOTU9xcnON9s4GbgJ/nIJB7aF3XKIoCZVmiqioopUQfVit8aA1rzDhwdzFDx1o7COuB7kUjG3ZFxNhuaW/5n+B1X30BsJJaBvGNk7cAAAAASUVORK5CYII=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 1920,
+              "height": 800,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_01_549d7f56c3.gif"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "하이앤디의 CI는 영문 명칭 HI&D를 직관적으로 표현하여 스크린과 프린트를 막론하고 어느 매체에서는 쉽게 인식될 수 있도록 하였습니다. 알파벳 i와 약자를 나타내는 온점을 레드 컬러로 표현하여 하이앤디의 목표 의식과 혁신을 형상화하였습니다. 볼드한 라인은 하이앤디의 브랜드와 고객, 그리고 고객과 기술의 연결을 의미합니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsTAAALEwEAmpwYAAAANUlEQVQImZ3GsQ2AMAwAMGcAKeGW3oD6QGHqwv9/dGTvYMnQMPHg3TSuiK9X3nCgkLvO/7EAFNIHK0hit0oAAAAASUVORK5CYII=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 344,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_02_6222737a7f.png"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "레드 컬러의 원형과 블랙 컬러의 라인은 하이앤디를 상징하는 메인 아이덴티티 요소로써 ‘연결’과 ‘혁신’을 상징하며, 각종 응용 시스템에 자유롭게 활용함으로써 하이앤디의 유연함을 나타내고자 하였습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA0klEQVQYlU2OPQrCQBSEN5BLaGGrgmdKGcgFIthEsLBIIXYexkS8QtA22PmTbBLcbCBhd0d2wdUH08yb970h7LAH223BbzkGpaCnbVvEcYwoihCGIfI8N76UEkoplGWJuq6N13UdhBDG1yL32Qiv+RiP0xHvfjChoijgui4IIUZpmhr/e9T3PYbhl2WM2T25T0d4LSZ4nlNwIW3IcRwLTJLEHuiW/6Pbcs5/wGa9BNusQK8XPCmFFMJ8DIIAnufB931kWYamaWxDDf2CKaWoqsoCPyfTEBpxhmqZAAAAAElFTkSuQmCC",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 577,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_03_41b1788721.png"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "컬러는 하이앤디의 아이덴티티를 구성하는 중요한 요소 중 하나로, 하이앤디의 컬러는 레드, 블랙, 화이트 세 가지로 구성됩니다. 각 컬러는 하이앤디의 아이덴티티 요소와 함께 인쇄물, 사이니지, 스크린 등 각종 아이템 및 응용 시스템에 폭넓게 사용하도록 하였습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAv0lEQVQoka2RsQ6CMBCG+9BG1048gTyB7goDIbC46ESITPgUspLetb9pDSgRsEQv+XPXpv36904wM8ZE9MpENNibkxgDdReVUlBEUKyftaKvcDHtkNBH2/alMWYWKqYcaq1xrSqc8hyH/Q5FWSJNU9ybZgBlPyDBGCCKjtiGIVabNYIggJQSt8sZ0Ma1YoFDcsC6rp2rLMuQJAniOEZZFB+9Zr8e2qzd1+0Xu7DrRUOht5et0zGxPeM7lF/1d+ADoogG715SBp0AAAAASUVORK5CYII=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 1920,
+              "height": 1000,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_04_7be5739cd1.gif"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "하이앤디의 슬로건은 영문 앞 글자 H, I, N(&), D를 활용하여 개발하였고, 하이앤디의 성장 방향성과 핵심 가치를 담고자 하였습니다.\n\n‘우리는 더 나은 세상을 꿈꾸고, 다른 이들에게 영감을 주며, 인재를 키우고, 새로운 가치를 발견합니다’",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAACwklEQVQ4jW2TX0hTYRjGjy7LjEDDG0kMKwy8EZVA6C7BCyONTDcxp/Oi7CIvNp3bhXPI1pnu7OwshS1Ib6qLvEgDMVQihECyWnmTtekU/81tbm662fTY98RObeWfi4cPPt7vx/O+3/NSJpMJcbEsC6PRCJqmYbPZoGpvx9XiYpxITgZFUUj6q7Npp1FUUACptF6o/59BmUwmEhPLssRgMBCLxULGJ8bIRsBHGqR3CUVR5AyVRPLz8khtdRXJz8khpaXXyY3yciKTyUhPT4/wPi4q7qy7uxuDgy/h8a1jKxLC3q9dfLJP40J2NmQSMTiWQVOjFHXiGkgkEqjVapjN5gPu4g4FYKzN4dfDWHUvw7U4j82tAHb3ozBzLGprxbhTdRs6XRcc8w70DzyFtlMLjuPAMMxR4D+oAdMfPyASDSO4vYmd3Qh+OL+jXdkG+9fPguu9/ShmHd+gUCiOuDMdBsba7h/oRzDkRzDgg9fvQSgcxJcZOxaXFjDnciIQ8gvQ5y+eQalUwmKxHHCZAMahj2gak+/eYmlhDk6XA+GdLcwvODE+MYbIzzCC4aBw5/asCnOkaRqsmT0eGBNjNMLS+xguxyy8q0uYmp5CW6scTU0yrLlXsB3yY93rRnRvB2/GRiGXyw+4PAKMZ3Fo6BWsT6wQ11SjVSGHtL4OXVoNvO4VYa6bIT98fg86tZ3Q6XSJHz8WqNVq0djQgMqyMhhoPR4+aMalzEykp6dj6v0kNtaWYZ+xw2qzoqOj40+42UPBZhiGcBxHFHI5uVVxk1zOzSXnUlPJlYu5QriTKUo4m+/fIyOjI0StVhGNRiMsREwHgi3MjmGEXGk0GmRmZAgrliISCSt3SiTC+awsVFZUQKVSQa/XJ+qPiw0fF8MwfG9fH3+tpISnKIpPO3mST01J4YsKC/mWlhahhuM43mw2J94c1m9xE6oF6PwxHwAAAABJRU5ErkJggg==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2005,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_05_f8982616e8.png"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABgAEBf/EACQQAAEDBAEEAwEAAAAAAAAAAAECAwQABRESBhMUIVExQYGR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AE/CIrV45nNtk4ExGbciUkIOqty6UfPrFd28L4Dapj8Ofeo0aYz4Wy7MwpJxkAj9FFrG4qy3iTc4RPcyI4jL6hKkhAVsMD6OaSMc0fajJZfhR33RnZ0+Co+/5gflAUjvtSWG3o7iXGXE7IWk5Ch7FVa5snu5j0jRLfVUVap+BVQf/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2003,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_06_2ca4033e41.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABQAEBv/EACcQAAEDAwIEBwAAAAAAAAAAAAECAwQAERIFIQYxMlETFEFhgZGx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDudNi+bkBACceRJVYD3pSXoyEoZKG3GFK6szkAbWA27n9oOJqbkWG7HbbbOZvmRuk7cvqkWOJ5aUK8Vtp1R5HpsPipB0rGPIcZVuptWJI71VklPmRJdeUAC4oqIHpeqg//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3500,
+              "height": 2500,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_07_14cc4037cb.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAC4jAAAuIwF4pT92AAACP0lEQVQokX2STU8TURSG+QsCRvtBpaWfJFRQMVKV6kIhRqLVaiCACxSCgZUk0k0dNrKR4LaruijhB4yLwvR+de60TZoUIis7q3ZBd8y0M6RNTRfaDmlLUd/lzXnOe95zTxduCLUJNtT+ghDCf1NXB4kQisfjgiDwPI8xBgBACAEAHMddbNGCIYSEEJZlF5eWAoFAOByORqOUUm0KjDGE8J8wACCRSHzZ2pqYnDQYjMY+07jX+2FtDQAgyzKsF8T+50wpXVldffbcd63fHInsPJ2a0huMs7Nz+Xz+6OhIqzwHt6+EZdn5+Tf3x706vT4Y/OR98NBz9x6zsVEsFiVJyuVyzQjnYAihIAihUMjnezE8cuNSd8+Vqzqr1TY05GbZ79VqVWqIUgoA6BxbC/xxff2l/5VObzD2mewOp93hHB29nc1my+XyycmJoiiZTCYWizXNW5k5jltYePvo8URP7+V+s8XlGhyw2paX31cqFUmSZFlWVVUURY7jzjlDCHme34lEXk9P3/F4unt66wO73Ta7nWGYWq2mwYqiHB8ft8c+g1Op1OfNzScTk+Y+k85gdLoGrw+PjI15tre/KqenpYZUVS2VSslkshn7bOy68+7uyrtF781bJrPFMmB1OJx+vz8a3ft5cPCrUpFkuVAoiKKonU0L1njK81Sge/v738LhYDA4PTPDMEw6nc4kEj8OD6kgIITat9WCm2uLEyIIQiqVIoQgCAnGEGMuFuv44U64vUvrjBEiGBNCLpb9gX8DeZpPkAQ95NMAAAAASUVORK5CYII=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2199,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_card_fe412d5f52.png"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYCBAUH/8QAJBABAAIBBAEDBQAAAAAAAAAAAQIDBAAFETESBiFBFCJRUmH/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EABoRAQADAQEBAAAAAAAAAAAAAAEAAhHwMWH/2gAMAwEAAhEDEQA/AKeZnbft20yvnCV80I2U2VpKL+9dseQPzGZ186S/Uezb1vG3UbjFK8THtY5NVMvNoPhnWhI5epdcJ18tqCIgj7I6llybMLym8yOavJ7YnCC9of3VK3DNN7vsDVfGczhnbhQNcMq1jF4PP3eNGtPMqh9RL7TRoLrsQT//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1687,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_08_7bca930848.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "  ",
+            "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAC4jAAAuIwF4pT92AAABuUlEQVQokWN4hgGewsATVPD06VM0lQxo/BcvXrwEg1evXr2GAQj75cuX+DQ/f/789u3bV65cvnLlyqXLl0+fAYFzZ8+cP3fu7Nmz169ff/78OT6b+/snZmbk5OYXZWWk2VpbmJua6hqY6ekbKSmqJCYkvnj5Arvm58+fP3nyaPLE2dUVnVOnr9685eCda+cunTjS1r+qsbZjet+EWVMm3r1378WLF9g0P3v+9OmT2urmpNj8tMSiyNimtVtOPLl3Nyd/RnPTjEM7Nq5etujOnbsvsWt+/vzp00f5eU3uLtkRIdkpcSVpBZNiM/pdXbK8vHJnTpi0YdWSm7duIwcbuuaM9Oa42M7WloWd7bP9fdIszEMdbRPcnOJD/NLaGhsfPHz44jkOm589exIfm+Nol5Cd3RPgl6UibyAvqWugG+psF2BhHJSRkvn02dPnzxABjhLa9+7dq6urjY2OiY9Pi4iIiQiPio6Ki4tNiIqMiYqMa2xsunfvHs7QfvDgwf3795+AktajZ89Aqerx48dPn4LS1tOnT+7du/fgwQPkqEZPJGCfg9hPnyIjUNKEyGK3GQLgCRsrQFMMAB7IV7lpoqCjAAAAAElFTkSuQmCC",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2000,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_laptop_e1db47b135.png"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAACkElEQVQokR2OW0siYQCGPw/oBhJduNUGCXbYm/5B7F/Mi+2qriSIYGFTY1kPUaQWtB5wjs7Jw+gccdRRG51xTt9iz93DCw8v+HF+fpRM7u3tBQKBWCy2u7sbCoUikUgwGNzZ2cEwzHXd5XK5Xq8XiwXP847jQN93XNc0TRAOh8OhUCAQAABEIpFoNAoAiEajwWBwe3ubZVkIoed5EELLMsfj8XK5fHl6omkaQgjiX+PxePzg4FsicXj6/fT4+CiRODw5OU4mk2dnZ8VikWVZFEUJgmg06pVK+f39/SKVukmn2yQJYrEYAODy8hJCaK5WnudZ6zVBELquz+fzyWSi6zqO4zzPz3T94+PDMIzhcCjL8mw229wGAFxdXUMIH/P5avnFs21JkgzDaDabtm1DCEejke3Ys6n+Xqn4jqNp2ljT1pYF9vf3t7a+pFIXqqrkcrlcNktTVL1ex3H87u6OZRlBEGq1GsuyOIb9eXjosCyG46+v1WKhACiK4jiu2+0qikzTFMPQsqJsVFUwDGs06pIo9vt9WZZ7vS6CIIP+oMNxQ2GoqiqwLIvjONu2RVHSNE0YDMaqAn04UlVZkibjyWQ8WZmmNhoZhqFNNag73tQ09Knc6wNRFEulEs/zb29vCIJgKEqgiCSKbYLAUYQkyWKhwLAM1aY6HMewTJdmWBxHG/W/2QxAEKTVaj0+ljAMQ1GUJMlOp/P0/ExSFL4BI0myXH5pNhubGopSNFWpVKrVSptqAwih67qSJLmuCz/xPY/n+77veZ7n+z6EUFGU1Wq1mT5VVdX5fL6YzYDjuLZt8zyPtFr9Xm+m6/9aCJH9bWd//by+rtdqEEJBEG7S6UI+n8lkbm9v7+/vLcsSBOE/gboYoW+OCwwAAAAASUVORK5CYII=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2340,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_09_410cf194ff.png"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAArklEQVQYlY3MMQqDMBSA4efL0CSYUWJI3EJSEEo9gEOc3HoDwTMUHHXrIA71BvWmhQilLRT6Df/4AwIkAJDsSWjEGCOEHCJK6V5KKSEE3p2k9MbwNEVEzrkxRimltRZC5HkupcyyTGtdFIVSSgixT621lDEYp+mxbX3fAwAifox/QMT7ul7aFoZhWJZlHMe6rpsohPDqlxA1Idzm+dp14L231jrnqqo6/805dyzLJ13TKimdABV3AAAAAElFTkSuQmCC",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 709,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_10_200125b480.png"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsTAAALEwEAmpwYAAADaklEQVQokQXB+U8iVwAA4Plz26QJ21R7CHhBlFpQd9c1rkIUOUUG5oC5eXO8Od7MADMMTDjEE3Rd07TJNmn6Y78PsyCAqihKLN0iCQon2yQniTwQmY4o6RB53fF03PM9ksB3khs/Rb7/+OFge3sr8u6HSOQ7zLU0ZACodYAssRwtAmEUThRD5xWgWKYz6M/vbkezydPz4vbxXpbFcrlwsJ9K7+2srv6IeV2za0MHQYR0QWR1U5tMbzRkUBLLaUovDCbzWXgzXbw8PyyfHp+Xs7s7b+BZtknTTSzoW37Pcm2oaYDjW45rPzwuvMFAhDIHFdWx/FEwmo2XX15u7m9n9/O7xdPbX38+LB/6gYeNAnfoO13XMAwZyJzTRYvlcz/wgalKli5a0PH7o+n45etrOJs8LBcAauF0/Pc/38KbCRYO3TBwvb5tIVXRxFE4eH17s7oOp0qSpTFQUZHpBt7sbh5Mx+F8lj7MtNj2t//+DcZDLAzccOj6HkJIhQbwg+78/tbs2oIOWF3BO4JoQNi1w9kYDTzNQcWrUm/oPX59QZ6LDX17OHB8z7RtTdOlUeh/eX0JZ6GgA1oDhRaJcywlCqwqC7pGSWK2eA4sCJBBCTw26FuBj7y+adsQGqDnoZv5FDpQRhoBhGyjXiKatXaLFPk6x1zRVL5WoSWxRlPX+DXWc6HX07uu7jg6NIDtGoYNVaQCS8FFLtuoX9SvKxTR5NgyRZXJZrVFHedysXh8N7WL2abs2pplKTrsKKqgm4rTs1HPEvTONc+c1q9yV9VCA6+QZJEkL/FGIpVaWVlJJpOHHw4xqEqGAaDeURShAzgTQadnG44uqFKVoY+rpbNKKVut5uv4WbG4vrn1LhJJJBLpTLpQKGKSxMgyL8uc2GkLUtuwNMsxIYKszJWoxlEp/7lUyFbKn87ONjc2fl5djUajiWTi5PTzefYCYxhCEGheoDmeYnkSGjLQJM1U2xJTaNY/Fi6OcrnM+4PUbnI9Ho1Fo7FYLPV76vKy9D5ziOF4hSBqBFkjW3WqhUuA4yRGABzNt85rlT9OTxI7yVj012RiKx5bSyYSsXj8/OLy+Ogks7eP5fPZYjlfvSrW6qVGs0rQONluUixJMOSn3Ona1vp6PLr22y+bG/HE9tZGPJ7OZC7OC5m9/f304f8Coa8Myy5EwQAAAABJRU5ErkJggg==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2400,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_11_ff56c1c66e.png"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "하이앤디는 2021년 11월 국내 최초 대규모 NFT, 블록체인 산업 B2B, B2C 컨퍼런스이자 박람회인 NFT BUSAN 2021에 참가하여 성공적인 시작을 알렸습니다.\n(부산 BEXCO / 2021년 11월 4일 ~ 11월 6일) ",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAIAAADUsmlHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADDUlEQVQ4jXXQ/UsTcRzA8f0LQr/ULGdoSQ+mPRBID/SAlYhSEcSkiCL9IZJAC8PAlpnOHySRYJlRkdpyTxJkNKdZu817+N682921O93dEW56d1O33YZKbRbpbzrfv78+n8/3qyFJYmjoS1OTobn56ZMnzQ0ND+vr77c+azUa29vajC6Xi+O4dDr9N1MahmFMJlNW1pZtW7NzdTt1ulytdkfZhfKSkmM5up1v377jeT6VSmXGFEV1d7/Kzs7Jz9+9f1/hqRPHTx45XHnm9PGjJYWFxWZzfzAY3BT7/X6T6aVWuz0vb1dBwd6L50611d5oaWy8V12jrygbtFs4bnLTs0mSNJlM2drtubl5BQV7Gu/cfG2orb5WVXr27KVLVZ+HhtlAYFNMEERPT09x8aEDB4qLig7W39Yb7+r15edLT5+5qr/ucAxyHJtKpVYypYFheGRkZGDAYrXabHa7zWIeHvo04nS6nMPDTue41xtg2ZWVlcybE4lEMplcXFxcWlpaXl5eWIjKsiIriizLiqJIkiTLcnxDsdU064aJokhTFEPTDMPQNE1RFE3TJEn6VyMIYmI1HMcBAJp1zxBFkaIonucFQQiFwrFYbH5+PhwORyKRWDSqKMr09DTLsmt+w2ZBIP3+X6I4K4rxaPRPIpmMq7Isz87O/k6n46oaXYhKkoRhGIqi67EgCCRJhkIhVVUjkQj044cgCAvx+PhAv9XY1NhQ19DR+cZs9wEM2Yh5nsdxXJYkhvnZ2/ueJklBENREsq+ro/X25aqyivKyK48M7QDDYARZj4PBIAAgPDOjzM25PR4/w8ZUNZ5IWC0fHz2ua6p50HKrsrWjHUFRZCOempoCOC4Eg5GZGbvV5rA55iRJCoWn2ABH+KCxbx7noGdsFM2IOY4jCML9/fuL5x39b3q6uzpbDAYwPi4EAqQPt/T1WT6YXc6vOI5nwJOTkxiGAQBgGEYQxOP1jo6OQhDkgSCP1wt5IDfkdkMQgiAZfpvjOBRFAQA4AD4cn5iY8Pl8KIrCCAIj/8ehq2xtwT8cVlEYea8gSQAAAABJRU5ErkJggg==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2742,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_12_6032a44bb0.png"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAcDBgj/xAAkEAACAQMDBAMBAAAAAAAAAAABAgQAAxEFBiEHEjFRExRhgf/EABQBAQAAAAAAAAAAAAAAAAAAAAP/xAAeEQABBAEFAAAAAAAAAAAAAAARAAECAwQiMXGBsf/aAAwDAQACEQMRAD8AXkCdYv5vyYVi38JKpdeUVRmUkEAhck5GeKZfTvR5V3fuh3Q2mAJdSQ2HuO3bjOFJ4J5/lUjq3tzSYMVpEOILNxmLELcbtz77c4z+4qfo/pUJdz7PlpHVZH3ky6kjPHocU8Muycd3HI8R2VyOlx0VtEeKKB4ooEi//9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1653,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_13_d420924f76.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": " ",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQGBf/EACgQAAEDAwMDAwUAAAAAAAAAAAECAwQABREGEjETIkEVIVFhcoGx0f/EABQBAQAAAAAAAAAAAAAAAAAAAAL/xAAYEQADAQEAAAAAAAAAAAAAAAAAARECIf/aAAwDAQACEQMRAD8AwnkK0vJsSIUow5VwQiI6nCXC4k5KVgAZyCoDHnNP3i7Xq2JeamXuR1W292xUVCdysZCePbjn61IDTPq9tszlykqCY7SYzfSyVLBA7iontI2/B5pLVUF3RZYFhuM9lMxCkvkuglePHHGDxTeYugd0+MbRrrVLoKhcAPu6I/YoqIF3uqR2z3QPx/KKEGf/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2114,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/hind_14_b717eee7ac.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "global-order",
+      "title": "GLOBAL ORDER"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "there",
+      "title": "(T)HERE"
+    }
+  ]
+}

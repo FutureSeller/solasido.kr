@@ -1,0 +1,203 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "14",
+    "slug": "global-order",
+    "title": "GLOBAL ORDER",
+    "summary": "Start of a New Life.",
+    "description": "주식회사 글로벌오더는 2019년 2월 출범하여 급격히 성장하고 있는 스타트업으로, 식당을 위한 스마트 오더 솔루션 ‘타임오더’, 호텔을 위한 스마트 컨시어지 서비스 ‘호텔오더’ 등을 운영하는 비대면 솔루션 전문 기업입니다.\n\n글로벌오더 내에서 다양한 서비스 브랜드가 신규 생성되고 기존 브랜드가 확장되며 각 브랜드의 체계 확립이 필요해졌습니다. 이에 브랜드 리뉴얼을 통해 글로벌오더의 기업 아이덴티티와 서비스 브랜드 아이덴티티 간 체계를 확립하여 브랜드 가치를 확고히 하고자 하였습니다. 슬로건이나 핵심가치, 인재상 등 브랜드 아이덴티티를 새롭게 수립하고 기존의 로고 디자인을 리뉴얼하였습니다.",
+    "scope": "Brand Identity Renewal\nBranding\nDesign Guidelines\nPackage Design\nMerchandise\nSignage\nBrand Materials",
+    "link": "https://www.globalorder.co.kr",
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "white",
+    "stickyTitleColor": "black",
+    "startDate": "2021. 06",
+    "endDate": "2021. 08",
+    "order": 15,
+    "work": {
+      "__typename": "Work",
+      "type": "TEAM",
+      "value": "글로벌오더 경영기획팀"
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "GLOBAL ORDER",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAYFB//EACYQAAEEAQIEBwAAAAAAAAAAAAEAAgMEEQUSBgcxYRMhIlGBkdH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAwX/xAAgEQABAwMFAQAAAAAAAAAAAAAAAQIhAwQREhMxccFy/9oADAMBAAIRAxEAPwDj2jUm6lqlem6YQmd2xryMgOPTPz5LX4o4bGjjMMzptu0SNIHoO0ZyR3yFOtc5jg5hw5pyD3HRWPMmyLFvT7NVnh1b1SO07aMB8pzvP2tV6vSs2YXMEaejadlMrBGoiJIYK9uQR2+UNK1MMz07Rjid7Nc7BB7fiIh3cLT+k9E2/D+l8IJERMDH/9k=",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/global_main_9cc38853e1.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "15",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "글로벌오더 심벌마크 리뉴얼 전/후",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAFABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAII/8QAIRAAAQUAAQQDAAAAAAAAAAAAAQACAwQRMRQhQVNhcaH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/ANPy1S9zj1Nhu+GvAz8VWa5lLSJ5489bgN++yIlCtXMTHAzzSa7dkdpHxxwiIg//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 743,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/global_01_3dcea6fd56.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "기존 로고의 심벌마크는 글로벌오더의 G를 형상화하고 빠르게 상승하는 이미지를 제시하였으나, 아래 획이 얇아 무게중심이 위로 쏠려 안정감이 떨어지는 단점이 있었습니다. 또한 로고타이프에 비해 크기가 작아 보여 심벌마크의 역할을 수행하는 데 어려움이 있었습니다. 로고타이프는 시각 보정을 고려하지 않아 글자 간 간격이 일정해 오히려 어색해 보였고, 컬러는 글로벌오더의 젊음, 성장을 대표하기에는 다소 어둡고 올드한 톤이었습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "글로벌 오더 심벌 마크",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAMEBv/EACQQAAECBQIHAAAAAAAAAAAAABEAAQIEEhMUBSEDFTEzQYKx/8QAFwEAAwEAAAAAAAAAAAAAAAAAAQIGB//EABkRAAMAAwAAAAAAAAAAAAAAAAABEQIhQf/aAAwDAQACEQMRAD8AxUu+l24MjNaOlqrdAqLkHwApmfQ7sW+pvwht2qj8HREWkPG9J9MpT7yuS/L72OGGQ8NZ9dkREy0oA//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1200,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/global_02_c2343c98da.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "심벌마크 내의 화살표 형상을 날렵하게 조정하였고, 화살표를 직관적으로 나타내기보다는 G의 느낌을 더 강조하고 보다 속도감 있도록 표현하였습니다. 로고타이프는 시각 보정을 고려하여 글자 간 간격을 조정하고, 커뮤니케이션의 용이를 위해 GLOBAL과 ORDER 사이의 간격을 조정하였습니다. 블루는 신뢰감을 주며 보편적으로 남성과 여성 모두에게 어필할 수 있는 컬러이므로, 블루 컬러를 그대로 사용하였습니다. 다만 글로벌오더의 젊음과 성장을 표현할 수 있도록 명도와 채도를 조정하였습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "글로벌 오더의 코어밸류",
+            "placeholder": "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAA8klEQVQoka2R227DIBAF/f+/WTeKHccyhmXv62rrqE1emyJeOOKwmmE43ljDP5TVvKF20og4E/foZICq5mcSEcQGXUX9t5wRynEc5l67eIR5AMr5EJDq9+2fh4gVWbPsHg1lKTStdFlwa4xsxHq94zjDtOK0YgVR9Xuhyy2P1xVLY/MYSIzFl62Pcx3nSqwNc+/A41w/5rruBKgstjX+vNVx3qcVgDIZPKKCVOStYu3Uek7uJKVh67wDlUalMYstpZeGO9AOuJSek5+Z1R7MydLFPaET9WSmh6pvLnuxDZganm0jp397ti3p/8X2u//8t/IX8dWHGdzVVucAAAAASUVORK5CYII=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 1200,
+              "height": 640,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/global_03_a6b577c827.gif"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "소비자들에게 일관적인 브랜드 경험을 제공하여 브랜드를 진정성 있게 유지하기 위해 글로벌오더만의 가치를 수립하였습니다. \n핵심 가치 세 가지를 수립하고 각각의 키워드를 인재상과 연결하여 일관성 있는 브랜드 가치를 수립하고자 하였습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "글로벌오더의 슬로건",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAMFCP/EACEQAAEDBAEFAAAAAAAAAAAAAAEAAhEDBAUhMRIiQWGx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAXEQEBAQEAAAAAAAAAAAAAAAARAAEh/9oADAMBAAIRAxEAPwDTWZdkG2oOJbSdX6tipxEH2PMKHHV8qXlt/aMALhD6bx2iNyJ3v7wiKnAIO1qiIpm//9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1248,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/global_04_ee68925fac.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "기존의 슬로건은 ‘새로운 주문의 시작’이었습니다. 글로벌오더의 서비스 브랜드가 확장됨에 따라 슬로건의 ‘새로운 주문’도 ‘새로운 라이프’로 변경하였습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "글로벌오더의 서비스 로고타이프 리뉴얼",
+            "placeholder": "data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAAPoAAAD6AG1e1JrAAAAxElEQVQYlW2QywuCQBDG/fc7Fh40kISyKHsYkfTCS4fw0CE6BeFjy6RCqlOZ7k6osW7Sx7wYmOHHxwEAASCJoBDA7iGvVFzW2BUr+uWvOAAI7mFTP85Wl83uUR8dahrqzU/9hX8OXub2JqpuSz/KGqp2Xb5lt6de+MYZ7/eYb1rSAGmGLw9RuWEJHUdUXcO8LtdBRbGV8UFQnYpil6R9e+I9wziDotgEYxLHOSIBiCISY4JTbgqfeMBiUzPSLBj2Mxfc+QBA/0/maoF1sQAAAABJRU5ErkJggg==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 1200,
+              "height": 338,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/global_05_5ec8096b29.gif"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "타임오더, 호텔오더, H-오더 등 서비스 브랜드의 로고타이프를 리뉴얼한 글로벌오더의 로고타이프 G와 같은 각도로 크롭하여 일관성을 유지할 수 있도록 하였습니다.",
+            "isRight": false
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "글로벌오더 명함 리뉴얼",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGB//EACkQAAECBAUCBwEAAAAAAAAAAAECAwAEBREGEiExQSJhBxMUFTNRcdH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAQX/xAAjEQACAAQFBQAAAAAAAAAAAAABAgADBBESMVFysRWR0dLw/9oADAMBAAIRAxEAPwB/I1WhUqgiakVgSqjl0BLq1gXynuPrYfkIsOYslUYgemPZ2EtP7vtfI19qVxrzax/YtsQeip+E5oGnsOyjDektbKk/w994y2nKTNSjLjCBLJUVDInqGhA5335iy5EullzakBmZja5btpC6R+rMtO9kUaDO3H2cUlc8QJhmoKRJU1tyXA6XHlG6+4txBEOupv8AmuBjK0hKim1r3IO8Ea8ulbCMUpb7j4MBenowxCMbbR7DiP/Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2000,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/global_06_d74518afd0.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "글로벌오더 쇼핑백 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAYDBAUH/8QAJRAAAgEDBAIBBQAAAAAAAAAAAQIDBAURAAYSIRMxQQcVUWGS/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQEAAgMAAAAAAAAAAAAAAAAAARECIWH/2gAMAwEAAhEDEQA/AO4fd1nuFVSUwIlpHCy8h0cqpGP60ob9+qNFtK7x26egrJpWhWcyR8SoDZwvZ99ad6e10sFbWVUat5qtxJKS2ckKFGPwMAazr1tCx3qd5rlReaV1CM3kYZAGAMZx8n41WVXoR1Psu/wbs29T3ejhlghmZ1EcuOQ4sVPrr2NGrG3LPRbdtMdutERho42ZlQsWwWYsez+ydGpL/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2000,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/global_07_6169fd40e6.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "글로벌오더 굿즈 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAUICQb/xAAmEAABBAEEAQMFAAAAAAAAAAABAAIDBAUGERIhFBNBcRYxUWKi/8QAFgEBAQEAAAAAAAAAAAAAAAAABQQG/8QAHhEBAQABAwUAAAAAAAAAAAAAAQADAgQREyIxUmH/2gAMAwEAAhEDEQA/ALUqlmtMRlvrTUkrdPZe0x+RsljmU5eLmlzuLg5re+yD0diuHw1B96jeuS5OOJtMB/jyzOD5/wBW/P2+SpPM4u/htRYp8zJale5JHNDD5XqFgD2gtdseiD7FK4tv0l7h+cUxuH1om7pLUT7L3RadznAnrehLuf5RaHBEe5ta81NmxxBIO3f5UtFfuZLPUJsjbntTCaJgfM8vIaHjYbn2RE4h5ixtEQiIs9KX/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 3000,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/global_08_c6b9ff40e9.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "글로벌오더 브로슈어 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMCBAUH/8QAIhAAAgEDBAIDAAAAAAAAAAAAAQIRAAMEBRITQSFhBiIx/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgD/xAAZEQADAQEBAAAAAAAAAAAAAAABAhEAEiH/2gAMAwEAAhEDEQA/AO12ce5eMIBJBKjto6Husz5hh6ph4uLm6Pe5sR4DqqAuDPg+x0R1V4u/HsRyhncGH6DS0SGZ2ZmdvJZjJNJG5Nl0ylhLNDBuXruLbfJtcN4j7JMwaKdRRPpyG//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2000,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/global_09_f7ef2e4393.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "글로벌오더 디자인 가이드",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGB//EACYQAAIBAwQBAwUAAAAAAAAAAAECAwQGEQAFEiETIjFBByNRcYH/xAAXAQADAQAAAAAAAAAAAAAAAAABAgME/8QAGhEAAwEAAwAAAAAAAAAAAAAAAAERAxIiYf/aAAwDAQACEQMRAD8A1af6cWoaOoRbeykZZlUzSYHpGSPudf3TTZrU2e3K15th2tqGaVHjeRJWOVDKQCC5/PxplVoxp63wwovBmL5lbteI6HWpq/7qWz2jrK+B5aWrDQUccLZaKQDLM+SMg9Y/WtPPTTrW76JEixpmk4vxSpXMjHHlz8n29WjSew9xi321KHcnpQz1AZmLOVJPIg9DIHY9tGptRxhR/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2072,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/global_10_b29b970092.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "글로벌오더 로고타이프 사용예시",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGQABAQEAAwAAAAAAAAAAAAAAAAcFBAYI/8QAKBAAAgEEAQIEBwAAAAAAAAAAAQIDAAQFESEGEjEyUZEiI0NhcZKx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwIE/8QAGxEAAgMBAQEAAAAAAAAAAAAAAAECERIDQlL/2gAMAwEAAhEDEQA/AL4matLyzluIWtZokJQbbgMOCCD/ACseTMW0sLJcWglj1oAooT9jo+2688jqrIWs0sOONv8AOKyNNICzbB2NAcffmubZLkr7NumXyNxeq9rMxi8sYYwsR8I9N78KdXm4oBqN1JlCyEuAN25lzmMsGP0BKD2+7bpU96d6Xx0+ODS2EpYNrZVjvgc0pNdV6Cxx+TquJCIRcNGsjBvK+yp/Iqx4iRVgR44II2kUdxVOfL6+NKVlbZqSNaW5lUr2uQO0cClKVBZ//9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 3000,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/global_11_43dfcca460.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "lavida",
+      "title": "LA VIDA"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "hind",
+      "title": "HI&D"
+    }
+  ]
+}

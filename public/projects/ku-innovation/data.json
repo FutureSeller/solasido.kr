@@ -1,0 +1,171 @@
+{
+  "project": {
+    "__typename": "Project",
+    "id": "9",
+    "slug": "ku-innovation",
+    "title": "KUIP",
+    "summary": "Innovation of University.",
+    "description": "대학혁신지원사업은 교육부에서 대학의 자율성 확대를 위해 대학 재정 지원 사업을 개편하며 계획하고 추진하게 된 사업입니다. 미래 사회 변화에 대응하여 대학 기본 역량 강화 및 전략적 특성화를 지원하고, 대학의 자율 혁신을 통해 국가 혁신 성장의 토대가 되는 미래형 창의 인재 양성 체제 구축 지원을 목적으로 합니다.\n\n고려대학교에서는 교육, 산학, IT, 행정, 캠퍼스 조성 영역에서 8개의 혁신 프로그램을 설계함으로써 고려대학교의 혁신을 위해 노력하고 있습니다. ",
+    "scope": "University Identity\nIdeation\nVisual Design\nDesign Guidelines",
+    "link": "https://www.instagram.com/ku_innov",
+    "color": "black",
+    "backgroundColor": "white",
+    "fixedTitleColor": "black",
+    "stickyTitleColor": "black",
+    "startDate": "2020. 05",
+    "endDate": "2020. 07",
+    "order": 10,
+    "work": {
+      "__typename": "Work",
+      "type": "TEAM",
+      "value": "고려대학교 디자인혁신센터"
+    },
+    "mainCoverImage": {
+      "__typename": "ComponentCommonImage",
+      "alt": "KU Innovation",
+      "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGQABAAIDAAAAAAAAAAAAAAAAAAUGAgME/8QAKRAAAQMDAgUDBQAAAAAAAAAAAQIDBAAFERIhBhMxQWEiUXEHMlKBkf/EABcBAAMBAAAAAAAAAAAAAAAAAAACAwH/xAAbEQACAwADAAAAAAAAAAAAAAAAAQIRIUGB0f/aAAwDAQACEQMRAD8Avl2+oiZN9ajcMWyRdLm2COVG9RI7cxQ9KAPJJ+KvHDcq6tW1lXEbMSPIdUpTjcVwuIYJVsNR7YIz2B8HaKtDkC2QBGscFiPFQM6GEaU/J7qPk12RHZz7iX1MLUlGSrURy8Y6Adz/AHqMGlTKTlGqiu+fC08jVus5PuaVFNTzHQEMlK2uqAtKiUD8cjrilNaJkTY4LDLaShP3HUQemff581ksF1wF5a3CBtk7D9DalKyWLAWo2DptSlKiB//Z",
+      "source": {
+        "__typename": "UploadFile",
+        "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kuip_main_680b3adb19.jpg"
+      }
+    },
+    "projectDetails": [
+      {
+        "__typename": "ProjectDetail",
+        "id": "10",
+        "color": "black",
+        "backgroundColor": "white",
+        "content": [
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "대학혁신지원사업의 디자인 컨셉",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAGABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAUGCP/EACIQAAEEAQMFAQAAAAAAAAAAAAEAAgMEEQUSIQYTFSIxgf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwDTc1a6+7UljvCOvGJO9AIQe9kDb7E5btOTx9yoLXND6ouanJPpXVvjqjg0NreOjm2kDn2ccnJ5REFnYx7Rh0m78REQf//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 876,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kuip_01_2197467e9d.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "1차년도 대학혁신지원사업 운영 결과, 행사 개최 시 대내외 홍보를 위하여 고려대학교 대학혁신지원사업단만의 독자적인 로고의 필요성이 대두되었습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "혁신지원사업만의 로고의 필요성 대두",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAANABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCBQj/xAAkEAABAwMDBAMAAAAAAAAAAAABAAIRAwQhEkFxBRQxURMikf/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERUf/aAAwDAQACEQMRAD8A0Ob0dyXh92Bqn4w5mnEDmN/KlW6i2oGlvcU4z9SzOD74VoQ8mQ+B6hGl+1QfiTcYVs7ynVpuIc4wYl8T4B25QnM7mShQf//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2015,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kuip_02_67af65dc24.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "대학혁신지원사업단 심벌마크",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAQFCP/EACAQAAICAgICAwAAAAAAAAAAAAECABEDBBIhBTFRcaH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFREBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhEDEQA/ANMb2PybbatpZ9ddcqoZMiEkGzZB+qFfsj4V86jucraOUG6UBkr477iIKuE5cF51yruvVxEQP//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1109,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kuip_03_99c6bf859b.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "기존의 고려대학교의 방패 모양 심벌 대신 고려대학교 대학혁신지원사업의 영문 명칭 ‘Korea University Innovation Project’의 앞 글자 KUIP를 활용하여 모던하게 개발하였습니다. 알파벳 i를 밝고 노란 빛깔의 등불로 형상화하여 대학혁신에 앞장서고자 하는 고려대학교의 의지를 나타냈습니다. 또한 고려대학교의 단과대학을 상징하는 여러 색상을 활용하여 고려대학교의 아이덴티티를 유지하는 동시에 다양한 학문 영역의 융합과 조화를 표현하였습니다.",
+            "isRight": true
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "개발된 엠블럼",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAMFCP/EACAQAAEEAwACAwAAAAAAAAAAAAECAwQRAAUhEkETImH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/EABcRAQADAAAAAAAAAAAAAAAAAAAREiH/2gAMAwEAAhEDEQA/ANG7SPuXWpIhvtoJWkoo0Si+gGj4mvdHIn4u/MFxDcxgyvgSkLAoFf18q5y6VR/RzGMKtkLTTNzWtYwjZOJclgHzUnvs0LoWQKBNCyLxjGEv/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 1016,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kuip_04_ef89e69689.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "사용된 컬러셋",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAOABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQGBQf/xAAmEAABAwQBBAEFAAAAAAAAAAABAgMEAAUGESEHEjFRQTJCYXHS/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgME/8QAIREAAQMEAQUAAAAAAAAAAAAAAQARIQIDBBIiQXGBkdH/2gAMAwEAAhEDEQA/AO5z87x0xH0RcggtSSkhC19xCVfBPFLQc9srKli6X+2chJQGyrnjz9I1v1Uy50quaidN4xz7jPf3Wu300dMdkOzm2nENhKkRxpsED7QQSB+zRB1m4C3j6qZQGgGNJfqWj0q215NZbrHU/brixIaSrsKkE6CtA68eiKKRx/EzZ4a45lKd7nC5s6+QBrx+KKW1JkOs9IutyAfuv//Z",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2030,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kuip_05_c7d2007bb0.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentProjectExplanation",
+            "description": "개발된 로고와 엠블럼은 고려대학교 대학혁신지원사업 프로그램 참여 부서에 배포하여 각종 서식류, 정기 간행물, 홍보자료, SNS 등에 활용하도록 하였습니다.",
+            "isRight": null
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "혁신지원사업 굿즈",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAUGB//EACUQAAICAQQBBAMBAAAAAAAAAAECAwQFAAYRIRIHIjFxQVGBkf/EABUBAQEAAAAAAAAAAAAAAAAAAAAD/8QAGREAAwEBAQAAAAAAAAAAAAAAAAECESEx/9oADAMBAAIRAxEAPwBxB685jLW8nTqUK9Uq5aCYe8xxhuOGB6JI8e/vr440Gz6g5RtrYeXFU6VnPWYknngsSNFGsZZkLAj88qevvV5S29hqMxmpYmhXlK+JeKuisR10SB38DUVunZuTyO+mytNa4pLQiroGfx94kdm6A/TD/dH4WqodbKxF3hcnXzGNiu1GLRSFl7HHDKxVh/CCNGkvpthbu39pw47JFDYSxYflW8h4vM7r39MNGhKkk+H/2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2410,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kuip_06_66d85e956f.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "혁신지원사업 굿즈",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUABQDASIAAhEBAxEB/8QAGwABAAEFAQAAAAAAAAAAAAAAAAYBAwQFBwj/xAAoEAABAwMEAgIBBQAAAAAAAAACAQMEAAURBhIhMQdBEyIUI1FhcdH/xAAVAQEBAAAAAAAAAAAAAAAAAAADAv/EABwRAAMAAQUAAAAAAAAAAAAAAAABAhEiMkFRYf/aAAwDAQACEQMRAD8A61EtOr73FWRqK6namQ2mDUXAOYHlULC45659J1zUyskIoFtYZdkvyFRtCJyQ5vLK8rlf2/ytJ5Iky2jtkeBIOM46j7hOCG5NoAi4L6lx169eqyIzZR5sXYZOtPKAu/InJfTH8d99UEyofY107nheIsrqq3xn32p82C2Yn+mnzJyCoiiva95pXDvLunvFVi1b+NqeZeY802BdBqMpKAtqpYRMCvtFpV6gT0DfobE2aw5JBDJncgZ6TKYXiqtqY4yZFzn7Ii80pR1uElLBCdfeLNMazvgXO/MSnpYsiyhBIIE2oqqiYT+1pSlXkg//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 3033,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kuip_07_ba0a5b4ed8.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "혁신지원사업 패키지 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAQABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAIDBAUH/8QAIhAAAQMDBQEBAQAAAAAAAAAAAQIDBAAFERITITFBBiJh/8QAFQEBAQAAAAAAAAAAAAAAAAAAAgP/xAAcEQACAgIDAAAAAAAAAAAAAAAAARESEyExkbH/2gAMAwEAAhEDEQA/AOw3O23yXKQ5aL3BgsBOFMvwd5RVnsK1DAPHH8qOLa/oYk1p24/QW+XFzhUdm3bSlZ6/es4weeq2Nph3iSFlPmjvNO+IxShDbTmkc5Dmkg584NCEUyOtddL0t2ppt+MouoBUFlOceUUtqebYjrS6rSSskDHlFNQTfJ//2Q==",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2347,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kuip_08_0853bbf004.jpg"
+            }
+          },
+          {
+            "__typename": "ComponentCommonImage",
+            "alt": "혁신지원사업 패키지 디자인",
+            "placeholder": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAPABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMEBQYH/8QAJxAAAQIFAwMFAQAAAAAAAAAAAQIDAAQREiEGEzEFQXEUI1FSYZH/xAAVAQEBAAAAAAAAAAAAAAAAAAADAv/EABsRAAICAwEAAAAAAAAAAAAAAAABAhEhIkFx/9oADAMBAAIRAxEAPwDuEzOSrUs66ZqWCW17Lii8kBpdOFGuORjmIU7JdVa0xcH33uoKp7jDbVyKqwq2oSUgcitad6xQ6X0VK6feeXLoZUxuqWypwFxbVcgJuJGPtzGt9Q6GNorNvnP9g7XRG4xeufRYW0hKUvC9wAXFuttfynbzn5ghKlZgiLDs/9k=",
+            "source": {
+              "__typename": "UploadFile",
+              "width": 3000,
+              "height": 2268,
+              "url": "https://s3.ap-northeast-2.amazonaws.com/solasido.kr/kuip_09_39439cd636.jpg"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "next": [
+    {
+      "__typename": "Project",
+      "slug": "ku-farm",
+      "title": "KOREA UNIVERSITY FARM"
+    }
+  ],
+  "prev": [
+    {
+      "__typename": "Project",
+      "slug": "ku-40th-sejong-campus",
+      "title": "KOREA UNIVERSITY SEJONG CAMPUS"
+    }
+  ]
+}
