@@ -1,10 +1,7 @@
-import React, { Fragment, useState, useCallback } from 'react'
+import React, { Fragment, useState, useRef, useEffect } from 'react'
 import styled from '@emotion/styled'
 import { Box } from '@chakra-ui/react'
 import { css, keyframes } from '@emotion/react'
-
-import useCallbackRef from '../hooks/useCallbackRef'
-import useEventListener from '../hooks/useEventListener'
 
 const scroll = keyframes`
   from {
@@ -21,10 +18,10 @@ const MarqueeBox = styled(Box)<{ duration: string; delay: string; direction: str
   flex: 0 0 auto;
   align-items: center;
   z-index: 1;
+  min-width: 100%;
 
   ${({ duration, delay, direction }) => css`
     animation: ${scroll} ${duration} linear ${delay} infinite;
-    animation-delay: ${delay};
     animation-direction: ${direction};
   `}
 `
@@ -40,48 +37,47 @@ interface MarqueeProps {
 export default function Marquee({ className = '', direction = 'left', speed = 20, delay = 0, children }: MarqueeProps) {
   const [containerWidth, setContainerWidth] = useState(0)
   const [marqueeWidth, setMarqueeWidth] = useState(0)
-  const [duration, setDuration] = useState(0)
+  const [isMounted, setIsMounted] = useState(false)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const marqueeRef = useRef<HTMLDivElement>(null)
 
-  const containerCallbackRef = useCallbackRef((node: HTMLDivElement | null) => {
-    if (!node) {
-      return
+  useEffect(() => {
+    if (!isMounted) return
+
+    const calculateWidth = () => {
+      if (marqueeRef.current && containerRef.current) {
+        setContainerWidth(containerRef.current.getBoundingClientRect().width)
+        setMarqueeWidth(marqueeRef.current.getBoundingClientRect().width)
+      }
     }
-    setContainerWidth(node.getBoundingClientRect().width)
-  })
 
-  const marqueeCallbackRef = useCallbackRef((node: HTMLDivElement | null) => {
-    if (!node) {
-      return
+    calculateWidth()
+
+    window.addEventListener('resize', calculateWidth)
+    return () => {
+      window.removeEventListener('resize', calculateWidth)
     }
-    setMarqueeWidth(node.getBoundingClientRect().width)
-  })
+  }, [isMounted])
 
-  const calculateWidth = useCallback(() => {
-    if (marqueeWidth < containerWidth) {
-      setDuration(Math.round(containerWidth / speed))
-    } else {
-      setDuration(Math.round(marqueeWidth / speed))
-    }
-  }, [marqueeWidth, containerWidth])
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
-  useEventListener({
-    type: 'resize',
-    handleBeforeListen: calculateWidth,
-    listener: calculateWidth,
-  })
+  const duration = marqueeWidth < containerWidth ? containerWidth / speed : marqueeWidth / speed
 
   return (
     <Fragment>
       <Box
-        ref={containerCallbackRef}
+        ref={containerRef}
         className={className}
         display="flex"
         flexDirection="row"
         width="100%"
+        position="relative"
         overflow="hidden"
       >
         <MarqueeBox
-          ref={marqueeCallbackRef}
+          ref={marqueeRef}
           direction={direction === 'left' ? 'normal' : 'reverse'}
           duration={`${duration}s`}
           delay={`${delay}s`}
@@ -92,6 +88,7 @@ export default function Marquee({ className = '', direction = 'left', speed = 20
           direction={direction === 'left' ? 'normal' : 'reverse'}
           duration={`${duration}s`}
           delay={`${delay}s`}
+          aria-hidden
         >
           {children}
         </MarqueeBox>

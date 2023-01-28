@@ -33,6 +33,7 @@ export default function AboutPage() {
           <Divider />
           <Marquee speed={300} direction="right">
             <StyledMotionDiv>SEOUL BASED DESIGNER&nbsp;</StyledMotionDiv>
+            <StyledMotionDiv>SEOUL BASED DESIGNER&nbsp;</StyledMotionDiv>
           </Marquee>
           <Divider />
           <Marquee speed={400}>
